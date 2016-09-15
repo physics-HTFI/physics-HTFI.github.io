@@ -197,7 +197,13 @@ div.note {
 	margin-bottom	: 30px				;
 	font-size		: 86%				;
 	}
-
+#update	{
+	font-size		: 80%	;
+	text-align		: right	;
+	}
+#update+#footer {
+	margin-top		: 0		;
+	}
 
 
 /* その他 */
@@ -229,7 +235,7 @@ div.note			{	background		: #ECEFFB	; }
 						background		: #7886BA	; }
 .note hr			{	border-color	: #317678	; }
 h2 a 				{	color			: white		; }
-#footer				{	color			: #464F6F	; }
+#footer, update		{	color			: #464F6F	; }
 div#left			{	border-color	: #ccf		; }
 #left.index			{	background-color: #20386D	; }
 
