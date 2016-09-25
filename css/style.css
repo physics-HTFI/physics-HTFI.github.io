@@ -147,7 +147,7 @@ img.eq {
 	}
 img.graph {
 	float		: right			;
-	margin		: 0px 10px 10px 30px	;
+	margin		: 0px 10px 10px 20px	;
 	}
 ul+div	{ padding-top	: 30px	!important	; }
 ul	{ padding	: 0 0 0 20px		; }
@@ -157,6 +157,7 @@ li	{ margin	: 5px 20px 15px 30px	; }
 /* 注 */
 div.note {
 	margin		: 20px 20px 50px 20px	;
+	clear		: both			;
 	overflow	: hidden		; /* clearfix */
 	}
 .note h3 {
