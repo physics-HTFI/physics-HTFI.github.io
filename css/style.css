@@ -8,22 +8,12 @@ body:before, body:after, div#left {
 	}
 body {
 	font-family	: Meiryo,'Hiragino Kaku Gothic Pro',sans-serif;
+	background	: #efefef url(background.png) repeat-y center;
 	color		: #282828	;
 	width		: 880px		; /* 5+(179+1)+690+5 */
 	font-size	: 15px		;
 	line-height	: 1.6		; /* 数式のための余裕を持たせている */
 	margin		: auto		; /* 中央に寄せる */
-	}
-body:before {
-	width		: 5px		;
-	background	: url(bg_left.png) repeat-y;
-	content		: ""		;
-	}
-body:after {
-	width		: 5px		;
-	background	: url(bg_right.png) repeat-y;
-	content		: ""		;
-	margin-left	: 875px		;
 	}
 div#left {
 	width		: 179px		;
@@ -220,7 +210,6 @@ a.fold		{	right		: -30px		;
 
 
 /* 色 */
-body			{	background	: #efefef	; }
 a.youAreHere		{	background	: #8299D0	; }
 h1, h2			{	color		: #FFFFFF	;
 				border-color	: #464F6F	;

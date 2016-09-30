@@ -22,3 +22,18 @@ function fold(h3tag) {
 		}
 	}
 }
+
+// ウィンドウが小さいときの水平スクロールに対応
+var scrollX_pre = 0;
+window.addEventListener('scroll', function horizontalScroll() {
+	if(scrollX_pre != window.scrollX) {
+		scrollX_pre = window.scrollX;
+		if(window.scrollX == 0) {
+			document.getElementById("left").style.left = ""; // これがないとウィンドウサイズ変更時に画面左端に張り付く
+		}
+		else {
+			document.getElementById("left").style.left = - window.scrollX + "px";
+		}
+	}
+}
+, false);
