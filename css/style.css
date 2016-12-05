@@ -140,6 +140,7 @@ img.graph {
 	margin		: 0px 10px 10px 20px	;
 	}
 ul+div	{ padding-top	: 30px	!important	; }
+ul+.note{ padding-top	: 0	!important	; }
 ul	{ padding	: 0 0 0 20px		; }
 li	{ margin	: 5px 20px 15px 30px	; }
 
@@ -219,7 +220,7 @@ div.p:first-letter	{	color		: #72a2cb	; }
 span.red		{	color		: red		; }
 span.blue		{	color		: blue		; }
 span.green		{	color		: green		; }
-span.weak		{	color		: #a0b0c9	; }
+span.weak		{	color		: #869dc0	; }
 div.note		{	background	: #ECEFFB	; }
          .mjx-chtml a 	{	color		: blue		; }
       h2 .mjx-chtml a	{	color		: white		; }
