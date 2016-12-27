@@ -164,6 +164,13 @@ div.note {
 	border-style	: dashed		;
 	border-width	: 1px 0 0 0		;
 	}
+.note hr+h3 {
+	font-size	: 1.0em			;
+	padding		: 0 0 0 5px		;
+	clear		: both			;
+	position	: relative		;
+	margin		: 20px 0 20px		;
+	}
 
 
 /* index.html */
@@ -215,7 +222,8 @@ a.youAreHere		{	background	: #8299D0	; }
 h1, h2			{	color		: #FFFFFF	;
 				border-color	: #464F6F	;
 				background	: #8299D0	; }
-h3			{	color		: #444		; }
+h3, .note hr+h3		{	color		: #444		;
+				background	: inherit	; }
 div.p:first-letter	{	color		: #72a2cb	; }
 span.red		{	color		: red		; }
 span.blue		{	color		: blue		; }
