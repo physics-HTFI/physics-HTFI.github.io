@@ -36,7 +36,13 @@ div#right {
 	height		: 80px		;
 	}
 #left #menu {
-	padding		: 10px 3px 10px 3px	;
+	padding		: 5px 3px 10px 3px	;
+	}
+#breadcrumb {
+	padding		: 0 0 10px 5px	;
+	}
+#breadcrumb > a {
+	text-decoration	: none;
 	}
 a.item {
 	text-decoration	: none		;
