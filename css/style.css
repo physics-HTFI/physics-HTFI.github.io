@@ -197,14 +197,18 @@ div.note {
 	}
 #right div.toc {
 	float		: left			;
-	width		: 50%			;
-	padding		: 30px 25% 30px 25%	;
+	width		: 44%			;
+	padding		: 30px 4% 30px 4%	;
 	margin-bottom	: 30px			;
 	font-size	: 86%			;
+	}
+#right div.toc + .toc {
+	padding-left	: 0			;
 	}
 #update	{
 	font-size	: 80%			;
 	text-align	: right			;
+	clear		: both			;
 	}
 #update+#footer {
 	margin-top	: 0			;
