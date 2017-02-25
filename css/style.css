@@ -217,35 +217,35 @@ div.note {
 
 /* その他 */
 a.fold		{	right		: -30px		;
-			cursor		: pointer	;
-			position	: absolute	; }
+				cursor		: pointer	;
+				position	: absolute	; }
 .fold img 	{	vertical-align	: middle	; }
-.note .fold 	{	right		: 0px		;
-			margin-right	: 5px		; }
+.note .fold {	right		: 0px		;
+				margin-right	: 5px		; }
 /*-----------------*/
-.mjx-chtml		{	font-size	: 2.26ex  !important	; }
+.mjx-chtml	{	font-size	: 2.26ex  !important	; }
 .mjx-chtml .mjx-chtml	{	font-size	: inherit !important	; }
 
 
 /* 色 */
-a.youAreHere		{	background	: #8299D0	; }
-h1, h2			{	color		: #FFFFFF	;
-				border-color	: #464F6F	;
-				background	: #8299D0	; }
-h3, .note hr+h3		{	color		: #444		;
-				background	: inherit	; }
-div.p:first-letter	{	color		: #72a2cb	; }
-span.red		{	color		: red		; }
-span.blue		{	color		: blue		; }
-span.green		{	color		: green		; }
-span.weak		{	color		: #869dc0	; }
-div.note		{	background	: #ECEFFB	; }
+a.youAreHere			{	background	: #8299D0	; }
+h1, h2					{	color		: #FFFFFF	;
+							border-color	: #464F6F	;
+							background	: #8299D0	; }
+h3, .note hr+h3			{	color		: #444		;
+							background	: inherit	; }
+div.p:first-letter		{	color		: #72a2cb	; }
+span.red				{	color		: red		; }
+span.blue				{	color		: blue		; }
+span.green				{	color		: green		; }
+span.weak				{	color		: #869dc0	; }
+div.note				{	background	: #F1F3FC	; }
          .mjx-chtml a 	{	color		: blue		; }
       h2 .mjx-chtml a	{	color		: white		; }
 .note h3 .mjx-chtml a	{	color		: white		; }
-.note h3, #menu h1	{	color		: #FFFFFF	;
-				background	: #8299D0	; }
-.note hr		{	border-color	: #317678	; }
-#footer, update		{	color		: #464F6F	; }
-div#left		{	border-color	: #ccf		; }
-#left.index		{	background-color: #20386D	; }
+.note h3, #menu h1		{	color		: #FFFFFF	;
+							background	: #8299D0	; }
+.note hr				{	border-color	: #317678	; }
+#footer, update			{	color		: #464F6F	; }
+div#left				{	border-color	: #ccf		; }
+#left.index				{	background-color: #20386D	; }
