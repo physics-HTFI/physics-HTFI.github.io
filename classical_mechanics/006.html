@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="shortcut icon" href="../css/favicon.png">
     <script src="../css/style.js" type="text/javascript"></script>
-    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "拘束された運動" } }, { "@type": "ListItem", "position": 3, "item": { "name": "拘束された運動" } } ] } </script>
+    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "拘束された運動" } }, { "@type": "ListItem", "position": 3, "item": { "name": "振り子" } } ] } </script>
   <style id="MathJax_CHTML_styles">.mjx-chtml {display: inline-block; line-height: 0; text-indent: 0; text-align: left; text-transform: none; font-style: normal; font-weight: normal; font-size: 100%; font-size-adjust: none; letter-spacing: normal; word-wrap: normal; word-spacing: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; margin: 0; padding: 1px 0}
 .MJXc-display {display: block; text-align: center; margin: 1em 0; padding: 0}
 .mjx-chtml[tabindex]:focus, body :focus .mjx-chtml[tabindex] {display: inline-table}
@@ -132,21 +132,21 @@
       <div id="menu">
         <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
         <span class="part">自由な運動</span>
-        <a href="001.html" class="item">1. 放物運動</a>
+        <a href="001.html" class="item">1. キャッチボール</a>
         <a href="002.html" class="item">2. ニュートンの運動方程式</a>
         <span class="part">衝突</span>
         <a href="003.html" class="item">3. 壁との衝突</a>
         <a href="004.html" class="item">4. 動く壁との衝突</a>
         <a href="005.html" class="item">5. ボール同士の衝突</a>
         <span class="part">拘束された運動</span>
-        <a class="item youAreHere">6. 拘束された運動</a>
-        <a href="007.html" class="item">7. 時間に依存する拘束</a>
-        <a href="008.html" class="item">8. 多体・多拘束系</a>
+        <a class="item youAreHere">6. 振り子</a>
+        <a href="007.html" class="item">7. 動く振り子</a>
+        <a href="008.html" class="item">8. 2重振り子</a>
         <a href="009.html" class="item">9. 自由な座標</a>
         <span class="part">剛体の運動</span>
         <a href="010.html" class="item">10. 剛体の座標・速度</a>
-        <a href="011.html" class="item">11. 剛体の運動方程式</a>
-        <a href="012.html" class="item">12. 拘束された剛体</a>
+        <a href="011.html" class="item">11. 自由な剛体の運動</a>
+        <a href="012.html" class="item">12. 拘束された剛体の運動</a>
         <a href="013.html" class="item">13. 滑り・転がり</a>
         <span class="part">補遺（数学）</span>
         <a href="014.html" class="item">14. 制約付き極値問題</a>
@@ -157,7 +157,7 @@
     <div id="right">
       <div id="rheader"><a href="..">物理学の見つけ方</a></div>
       <div id="contents">
-<h1>6. 拘束された運動</h1>
+<h1>6. 振り子</h1>
 <img class="graph" src="fig/ed5e3.gif">
 <div class="p">
 拘束された運動<!--
@@ -226,7 +226,11 @@
 --><span class="weak"><!--
 -->（6.2節）<!--
 --></span><!--
--->。
+-->。<!--
+--><span class="weak"><!--
+-->なお、拘束条件を表現する方法として、極座標などのパラメータ表示を用いる方法もあるが、それは第9章で扱う。<!--
+--></span><!--
+-->
 </div>
 <h2>6.1 
 初期値に対する拘束条件と、拘束力
@@ -543,6 +547,11 @@
 <span id="MathJax-Element-119-Frame" class="mjx-chtml"><span id="MJXc-Node-1338" class="mjx-math"><span id="MJXc-Node-1339" class="mjx-mrow"><span id="MJXc-Node-1340" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.519em; padding-right: 0.056em;">f</span></span><span id="MJXc-Node-1341" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-1342" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">m</span></span><span id="MJXc-Node-1343" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.519em;">g</span></span></span></span></span>
 を代入すれば確定する：
 <span class="mjx-chtml MJXc-display"><span id="MathJax-Element-120-Frame" class="mjx-full-width mjx-chtml" style="min-width: 12.069em;"><span id="MJXc-Node-1344" class="mjx-math" style="width: 100%;"><span id="MJXc-Node-1345" class="mjx-mrow" style="width: 100%;"><span id="MJXc-Node-1346" class="mjx-mtable" style="width: 100%; min-width: 16.225em;"><span style="width: 100%; text-align: center;" class="mjx-box"><span class="mjx-table" style="display: inline-table; width: auto; vertical-align: -0.255em;"><span id="MJXc-Node-1347" class="mjx-mlabeledtr" style="height: 2.6em;"><span id="MJXc-Node-1351" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: right; width: 1.537em;"><span id="MJXc-Node-1352" class="mjx-mrow" style="margin-top: 0.805em;"><span id="MJXc-Node-1353" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">m</span></span><span id="MJXc-Node-1354" class="mjx-texatom"><span id="MJXc-Node-1355" class="mjx-mrow"><span id="MJXc-Node-1356" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.165em; padding-bottom: 0.06em; padding-left: 0.111em;"><span id="MJXc-Node-1358" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.298em;">¨</span></span></span><span class="mjx-op"><span id="MJXc-Node-1357" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-1359" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: left; width: 10.532em;"><span id="MJXc-Node-1360" class="mjx-mrow"><span id="MJXc-Node-1361" class="mjx-mi"></span><span id="MJXc-Node-1362" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-1363" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">m</span></span><span id="MJXc-Node-1364" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.519em;">g</span></span><span id="MJXc-Node-1365" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-1366" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">m</span></span><span id="MJXc-Node-1367" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 4.776em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 4.776em; top: -1.805em;"><span id="MJXc-Node-1368" class="mjx-mrow"><span id="MJXc-Node-1369" class="mjx-texatom"><span id="MJXc-Node-1370" class="mjx-mrow"><span id="MJXc-Node-1371" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">|</span></span></span></span><span id="MJXc-Node-1372" class="mjx-texatom"><span id="MJXc-Node-1373" class="mjx-mrow"><span id="MJXc-Node-1374" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.17em; padding-bottom: 0.06em; padding-left: 0.111em;"><span id="MJXc-Node-1376" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.298em;">˙</span></span></span><span class="mjx-op"><span id="MJXc-Node-1375" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span><span id="MJXc-Node-1377" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-1378" class="mjx-texatom"><span id="MJXc-Node-1379" class="mjx-mrow"><span id="MJXc-Node-1380" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">|</span></span></span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.71em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-1381" class="mjx-texatom" style=""><span id="MJXc-Node-1382" class="mjx-mrow"><span id="MJXc-Node-1383" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span id="MJXc-Node-1384" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span id="MJXc-Node-1385" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-1386" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-1387" class="mjx-texatom" style=""><span id="MJXc-Node-1388" class="mjx-mrow"><span id="MJXc-Node-1389" class="mjx-texatom"><span id="MJXc-Node-1390" class="mjx-mrow"><span id="MJXc-Node-1391" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">T</span></span></span></span></span></span></span></span><span id="MJXc-Node-1392" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.519em;">g</span></span></span></span><span class="mjx-denominator" style="width: 4.776em; bottom: -0.795em;"><span id="MJXc-Node-1393" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">l</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 4.776em;" class="mjx-line"></span></span><span style="height: 2.6em; vertical-align: -0.795em;" class="mjx-vsize"></span></span><span id="MJXc-Node-1394" class="mjx-texatom"><span id="MJXc-Node-1395" class="mjx-mrow"><span id="MJXc-Node-1396" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.243em; padding-bottom: 0.06em; padding-left: 0.083em;"><span id="MJXc-Node-1398" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.519em; padding-bottom: 0.225em;">ˆ</span></span></span><span class="mjx-op"><span id="MJXc-Node-1397" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span><span class="mjx-strut"></span></span></span></span></span></span><span class="mjx-itable" style="vertical-align: top; margin-left: -1.278em;"><span class="mjx-label" style="height: 2.6em;"><span id="mjx-eqn-eqhBm" class="mjx-mtd"><span id="MJXc-Node-1349" class="mjx-mrow" style="margin-top: 0.805em;"><span id="MJXc-Node-1350" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(8)</span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span></span></span>
+<!--
+--><span class="weak"><!--
+-->なお、第9章の9.2節では、この方程式を極座標で書き直す。<!--
+--></span><!--
+-->
 </div>
 <img class="graph" src="fig/1d019.gif">
 <img class="graph" src="fig/ed5e3.gif">
