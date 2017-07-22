@@ -159,23 +159,33 @@ div.note {
 	}
 .note h3 {
 	border-style	: none			;
-	padding		: 0px 0px 0px 5px	;
+	}
+.note h3:first-child {
+	padding	: 0px 0px 0px 5px	;
 	margin		: 0			; /* 折りたたんだときにマージンが残らないようにする */
+	}
+.note h3:not(:first-child) {
+	display		: table	;
+	width			: 100%		;
+	padding		: 0			;
+	white-space	: nowrap	;
+	}
+.note h3:before {
+	content		: ""			;
+	display		: table-cell	;
+	width			: 50%			;
+	background	: url(../css/proof-left.png) no-repeat;
+	background-position	: left center;
+	}
+.note h3:after {
+	content		: ""			;
+	display		:table-cell	;
+	width			:50%			;
+	background	: url(../css/proof-right.png) no-repeat;
+	background-position:right center;
 	}
 .note h3+*,h3+img+div.p {
 	margin-top	: 20px			; /* h3のマージンを0にしたしわ寄せ */
-	}
-.note hr {
-	border		: none			;
-	border-style	: dashed		;
-	border-width	: 1px 0 0 0		;
-	}
-.note hr+h3 {
-	font-size	: 1.0em			;
-	padding		: 0 0 0 5px		;
-	clear		: both			;
-	position	: relative		;
-	margin		: 20px 0 20px		;
 	}
 
 
@@ -272,8 +282,8 @@ span.weak				{	color		: #869dc0	; }
 div.note				{	background	: #F1F3FC	; }
          .mjx-chtml a 	{	color		: blue		; }
       h2 .mjx-chtml a	{	color		: white		; }
-.note h3 .mjx-chtml a	{	color		: white		; }
-.note h3, #menu h1		{	color		: #FFFFFF	;
+.note h3:first-child .mjx-chtml a	{	color		: white		; }
+.note h3:first-child, #menu h1		{	color		: #FFFFFF	;
 							background	: #8299D0	; }
 .note hr				{	border-color	: #317678	; }
 #footer, update			{	color		: #464F6F	; }
