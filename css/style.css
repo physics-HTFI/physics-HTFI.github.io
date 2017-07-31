@@ -169,26 +169,21 @@ div.note {
 	width			: 100%		;
 	padding		: 0			;
 	white-space	: nowrap	;
+	color			: #5B71A5	;
 	}
 .note h3:not(:first-child):before {
 	content		: ""			;
 	display		: table-cell	;
 	width			: 50%			;
 	background	: url(../css/proof-left.png) no-repeat;
-	background-position	: left center;
+	background-position	: right center;
 	}
 .note h3:not(:first-child):after {
 	content		: ""			;
 	display		:table-cell	;
 	width			:50%			;
 	background	: url(../css/proof-right.png) no-repeat;
-	background-position:right center;
-	}
-.note h3:not(:first-child) span:before {
-	content		: "・"			;
-	}
-.note h3:not(:first-child) span:after {
-	content		: "・"			;
+	background-position:left center;
 	}
 .note h3+*,h3+img+div.p {
 	margin-top	: 20px			; /* h3のマージンを0にしたしわ寄せ */
