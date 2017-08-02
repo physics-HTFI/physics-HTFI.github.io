@@ -68,7 +68,6 @@ span.part {
 	padding-left	: 0.5em			;
 	}
 
-
 /* 右ペイン */
 #right #rheader {
 	height		: 80px			;
@@ -207,6 +206,14 @@ div.note {
 	border-width	: 1px 0 1px 0		;
 	}
 #left p.index a { color: inherit; }
+#left p.white {
+	text-align	: right	;
+	margin		: 20px 10px 0px 10px	;
+	color	: white	;
+}
+#left p.white a {
+	color	: white	;
+}
 #right div.toc {
 	float		: left			;
 	width		: 44%			;
