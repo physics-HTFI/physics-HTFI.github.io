@@ -30,9 +30,9 @@ function startSimulation(htmlPath) {
 	window.open(htmlPath, '', 'width='+w+',height='+h+',left='+(window.screenX+window.outerWidth/2-w/2)+',top='+(window.screenY+window.outerHeight/2-h/2));
 }
 
-
+var	allowFold = true;
 window.onload = function() {
-	addFold();
+	if(allowFold) { addFold(); }
 }
 
 
