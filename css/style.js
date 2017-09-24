@@ -25,7 +25,7 @@ function fold(h3tag) {
 
 // 数値計算の実行用ウィンドウを開く
 function startSimulation(htmlPath) {
-	var w = 330;
+	var w = 360;
 	var h = 430;
 	window.open(htmlPath, '', 'width='+w+',height='+h+',left='+(window.screenX+window.outerWidth/2-w/2)+',top='+(window.screenY+window.outerHeight/2-h/2));
 }

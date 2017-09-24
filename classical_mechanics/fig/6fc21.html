@@ -24,8 +24,10 @@
     <div class="emscripten" id="status">Downloading...</div>
     <div class="emscripten"><progress value="0" max="100" id="progress" hidden=1></progress>  </div>
     <div class="emscripten_border"><canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas></div>
-    <div class="emscripten" id="info"></div>
-    <div class="emscripten"><input type="button" value="t = 0" onclick="Module.cwrap('Restart','null',[])()"> <input type="button" value="次へ" onclick="Module.cwrap('Next','null',[])()"></div>
+    <div class="emscripten">
+		<span id="time"></span> <input type="button" value="再スタート" onclick="Module.cwrap('Restart','null',[])()"><br>
+		<span id="case"></span> <input type="button" value="次へ" onclick="Module.cwrap('Next','null',[])()">
+	</div>
     <hr>
     [1] 位置が異なる場合の散乱<br>
     [2] 速度が異なる場合の散乱<br>
@@ -36,7 +38,18 @@
     <script type='text/javascript'>
       var statusElement = document.getElementById('status');
       var progressElement = document.getElementById('progress');
-      var infoElement = document.getElementById('info');
+      var timeElement = document.getElementById('time');
+      var caseElement = document.getElementById('case');
+      var s0Element = document.getElementById('s0');
+      var s1Element = document.getElementById('s1');
+      var s2Element = document.getElementById('s2');
+      var s3Element = document.getElementById('s3');
+      var s4Element = document.getElementById('s4');
+      var s5Element = document.getElementById('s5');
+      var s6Element = document.getElementById('s6');
+      var s7Element = document.getElementById('s7');
+      var s8Element = document.getElementById('s8');
+      var s9Element = document.getElementById('s9');
 
       var Module = {
         preRun: [],
