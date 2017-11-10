@@ -160,16 +160,9 @@
 <h1>1. キャッチボール</h1>
 <img class="graph" src="fig/e7fe5.gif">
 <div class="p">
-投げられたボールは
+投げられたボールが
 <span id="MathJax-Element-1-Frame" class="mjx-chtml"><span id="MJXc-Node-1" class="mjx-math"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span>
-秒後、どこにあるのか。
-</div>
-<div class="p">
-この章のシミュレーション：<!--
---><span class="weak"><!--
--->（別ウィンドウで開く）<!--
---></span><!--
---><br><input type="button" value="キャッチボール" onclick="startSimulation('fig/44e8e.html')">
+秒後、どこにあるのかを計算する。
 </div>
 <h3>
 ボールの運動は、初期値(<!--
@@ -177,7 +170,10 @@
 -->)によって一意的に決まる
 </h3>
 <div class="p">
-キャッチボールをしている時、投げられたボールは毎回様々な軌跡を描く。しかし、うまい具合に「同じ投げ方」をすれば、常に同じ軌跡を描かせることもできる。では、「同じ投げ方」とは具体的にどうすればよいのだろうか。経験的に、以下の3つを固定すればよさそうである：<!--
+力学の目的は、物体の運動を知ることである。具体的には、まず、考えている運動の中に潜む法則を全て見つけ、それを数式で表す。この数式は方程式に他ならないので、適切な条件の下で解くことにより、その物体の運動が解析できることになる。ここでは、手頃な題材として、キャッチボールを考えることにしよう。
+</div>
+<div class="p">
+キャッチボールをしている時、投げられたボールは毎回様々な軌跡を描く。しかし、そこには法則がある。実際、うまい具合に「同じ投げ方」をすれば、常に同じ軌跡を描かせることができる。「同じ投げ方」とは具体的にどうすればよいのだろうか。経験的に分かるように、以下の3つを固定すればよさそうである：<!--
 --><span class="weak"><!--
 -->（投げる位置・方向・速さ）<!--
 --></span><!--
@@ -185,9 +181,9 @@
 <span class="mjx-chtml MJXc-display"><span id="MathJax-Element-3-Frame" class="mjx-full-width mjx-chtml" style="min-width: 7.722em;"><span id="MJXc-Node-8" class="mjx-math" style="width: 100%;"><span id="MJXc-Node-9" class="mjx-mrow" style="width: 100%;"><span id="MJXc-Node-10" class="mjx-mtable" style="width: 100%; min-width: 11.878em;"><span style="width: 100%; text-align: center;" class="mjx-box"><span class="mjx-table" style="display: inline-table; width: auto; vertical-align: 0;"><span id="MJXc-Node-11" class="mjx-mlabeledtr" style="height: 3.95em;"><span id="MJXc-Node-15" class="mjx-mtd" style="padding: 0px 0px 0px 0px; width: 7.722em;"><span id="MJXc-Node-16" class="mjx-mrow"><span id="MJXc-Node-17" class="mjx-mrow"><span id="MJXc-Node-18" class="mjx-mo" style="width: 0.12em;"></span><span id="MJXc-Node-19" class="mjx-mtable" style="vertical-align: -1.725em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-20" class="mjx-mtr" style="height: 1.25em;"><span id="MJXc-Node-21" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: left; width: 6.5em;"><span id="MJXc-Node-22" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-23" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">ど</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">こ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">か</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">ら</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">投</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">げ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">た</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">か</span></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-24" class="mjx-mtr" style="height: 1.45em;"><span id="MJXc-Node-25" class="mjx-mtd" style="padding: 0.2em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-26" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-27" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">ど</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">の</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">方</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">向</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">に</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">投</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">げ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">た</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">か</span></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-28" class="mjx-mtr" style="height: 1.25em;"><span id="MJXc-Node-29" class="mjx-mtd" style="padding: 0.2em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-30" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-31" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">ど</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">れ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">く</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">ら</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">い</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">の</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">速</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">さ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">で</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">投</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">げ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">た</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">か</span></span></span><span class="mjx-strut"></span></span></span></span></span></span><span id="MJXc-Node-32" class="mjx-mo" style="vertical-align: -0.801em;"><span class="mjx-delim-v"><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.667em; padding-bottom: 0.298em;">⎫</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.131em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="padding-top: 0.961em; padding-bottom: 0.961em;">⎬</span><span class="mjx-char MJXc-TeX-size4-R" style="line-height: 0.131em; margin-bottom: 0.087em; margin-top: -0.137em;">⎪</span><span class="mjx-char MJXc-TeX-size4-R" style="margin-top: -0.217em; padding-bottom: 1.182em;">⎭</span></span></span></span><span class="mjx-strut"></span></span></span></span></span></span><span class="mjx-itable" style="vertical-align: top; margin-left: -1.278em;"><span class="mjx-label" style="height: 3.95em;"><span id="mjx-eqn-eqByC" class="mjx-mtd"><span id="MJXc-Node-13" class="mjx-mrow" style="margin-top: 1.225em;"><span id="MJXc-Node-14" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(1)</span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span></span></span>
 <!--
 --><span class="weak"><!--
--->実際には風やボールの回転にも影響されるが、それらの影響は無視できるとする。例えば十分に重いボールを考えればよい。<!--
+-->ボールの回転や風による影響は無視できるとする（例えば十分に重いボールを考える）。<!--
 --></span><!--
--->
+-->ただしこの式は、ボールの運動が一致するための条件にすぎず、これらを決めた時に、ボールの運動が実際にどうなるかは導けない。まだ法則が足りていないのである。
 </div>
 <div class="p">
 この章では、これら3つの初期値から、その後のボールの運動<!--
@@ -202,15 +198,15 @@
 <span id="MathJax-Element-6-Frame" class="mjx-chtml"><span id="MJXc-Node-40" class="mjx-math"><span id="MJXc-Node-41" class="mjx-mrow"><span id="MJXc-Node-42" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-43" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-44" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-45" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span id="MJXc-Node-46" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 および速度ベクトル
 <span id="MathJax-Element-7-Frame" class="mjx-chtml"><span id="MJXc-Node-47" class="mjx-math"><span id="MJXc-Node-48" class="mjx-mrow"><span id="MJXc-Node-49" class="mjx-texatom"><span id="MJXc-Node-50" class="mjx-mrow"><span id="MJXc-Node-51" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.17em; padding-bottom: 0.06em; padding-left: 0.111em;"><span id="MJXc-Node-53" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.298em;">˙</span></span></span><span class="mjx-op"><span id="MJXc-Node-52" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span><span id="MJXc-Node-54" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-55" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-56" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span id="MJXc-Node-57" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
-を与えることと等価であり<!--
+を与えることと等価であること<!--
 --><span class="weak"><!--
 -->（1.1節）<!--
 --></span><!--
--->、その後のボールの運動
+-->。初期値が与えられたときのボールの運動
 <span id="MathJax-Element-8-Frame" class="mjx-chtml"><span id="MJXc-Node-58" class="mjx-math"><span id="MJXc-Node-59" class="mjx-mrow"><span id="MJXc-Node-60" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-61" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-62" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-63" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-64" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 は、運動方程式(<!--
 --><span id="MathJax-Element-9-Frame" class="mjx-chtml"><span id="MJXc-Node-65" class="mjx-math"><span id="MJXc-Node-66" class="mjx-mrow"><a href="#mjx-eqn-eqRdb"><span id="MJXc-Node-67" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-68" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></a></span></span></span><!--
--->)により決まる<!--
+-->)により決まること<!--
 --><span class="weak"><!--
 -->（1.2節）<!--
 --></span><!--
@@ -218,7 +214,7 @@
 <span id="MathJax-Element-10-Frame" class="mjx-chtml"><span id="MJXc-Node-69" class="mjx-math"><span id="MJXc-Node-70" class="mjx-mrow"><span id="MJXc-Node-71" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-72" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-73" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-74" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-75" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 は、式(<!--
 --><span id="MathJax-Element-11-Frame" class="mjx-chtml"><span id="MJXc-Node-76" class="mjx-math"><span id="MJXc-Node-77" class="mjx-mrow"><a href="#mjx-eqn-eqbZy"><span id="MJXc-Node-78" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-79" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">13</span></span></span></a></span></span></span><!--
--->)で与えられる<!--
+-->)で与えられることを見る<!--
 --><span class="weak"><!--
 -->（1.3節）<!--
 --></span><!--
@@ -230,13 +226,13 @@
 -->)の定量化
 </h2>
 <div class="p">
-ボールの運動を求めるためには、まず、ボールの位置や初期値(<!--
+ボールの運動を求めるためにまず必要なのは、ボールの位置や初期値(<!--
 --><span id="MathJax-Element-13-Frame" class="mjx-chtml"><span id="MJXc-Node-84" class="mjx-math"><span id="MJXc-Node-85" class="mjx-mrow"><a href="#mjx-eqn-eqByC"><span id="MJXc-Node-86" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-87" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></a></span></span></span><!--
 -->)をどのように定量化する<!--
 --><span class="weak"><!--
 -->（＝0や1.5といった数字で表す）<!--
 --></span><!--
--->かについて考えなければならない。この節では、その方法を考え、初期値の1つ目の「どこから投げたか」は位置ベクトル
+-->かを知ることである。この節では、その方法を考え、初期値の1つ目の「どこから投げたか」は位置ベクトル
 <span id="MathJax-Element-14-Frame" class="mjx-chtml"><span id="MJXc-Node-88" class="mjx-math"><span id="MJXc-Node-89" class="mjx-mrow"><span id="MJXc-Node-90" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-91" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-92" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-93" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span id="MJXc-Node-94" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 で、残りの2つは速度ベクトル
 <span id="MathJax-Element-15-Frame" class="mjx-chtml"><span id="MJXc-Node-95" class="mjx-math"><span id="MJXc-Node-96" class="mjx-mrow"><span id="MJXc-Node-97" class="mjx-texatom"><span id="MJXc-Node-98" class="mjx-mrow"><span id="MJXc-Node-99" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.17em; padding-bottom: 0.06em; padding-left: 0.111em;"><span id="MJXc-Node-101" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.298em;">˙</span></span></span><span class="mjx-op"><span id="MJXc-Node-100" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span><span id="MJXc-Node-102" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-103" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-104" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span><span id="MJXc-Node-105" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
