@@ -25,9 +25,14 @@ function fold(h3tag) {
 
 // 数値計算の実行用ウィンドウを開く
 function startSimulation(htmlPath) {
-	var w = 360;
-	var h = 430;
-	window.open(htmlPath, '', 'width='+w+',height='+h+',left='+(window.screenX+window.outerWidth/2-w/2)+',top='+(window.screenY+window.outerHeight/2-h/2));
+	var iframe = document.createElement('iframe');
+	iframe.src = htmlPath;
+	var div = document.createElement('div');
+	div.id = 'simulation';
+	div.insertBefore(iframe, div.firstChild);
+	div.addEventListener('click',function () { div.parentNode.removeChild(div); }, false);
+	var body = document.getElementsByTagName('body')[0];
+	body.insertBefore(div, body.firstChild);
 }
 
 var	allowFold = true;

@@ -274,6 +274,23 @@ a.fold		{	right		: -30px		;
 /*-----------------*/
 .mjx-chtml	{	font-size	: 2.26ex  !important	; }
 .mjx-chtml .mjx-chtml	{	font-size	: inherit !important	; }
+/*-----------------*/
+#simulation {	position	: fixed	;
+				top			: 0			;
+				right		: 0			;
+				bottom		: 0			;
+				left		: 0			;
+				background: rgba(0,0,0,0.8);
+				z-index	: 1			; }
+#simulation iframe {
+				position	: absolute	;
+				top			: 50%			;
+				left		: 50%			;
+				margin		: -250px 0 0 -190px;
+				border		: none			;
+				background: white		;
+				width		: 380px		;
+				height		: 500px		; }
 
 
 /* 色 */
