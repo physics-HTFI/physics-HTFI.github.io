@@ -170,19 +170,22 @@ div.note {
 	white-space	: nowrap	;
 	color			: #5B71A5	;
 	}
+.note h3:not(:first-child) span {
+	padding		: 0 10px 0 10px	;
+	}
 .note h3:not(:first-child):before {
 	content		: ""			;
 	display		: table-cell	;
 	width			: 50%			;
 	background	: url(../css/proof-left.png) no-repeat;
-	background-position	: right center;
+	background-position	: left center;
 	}
 .note h3:not(:first-child):after {
 	content		: ""			;
 	display		:table-cell	;
 	width			:50%			;
 	background	: url(../css/proof-right.png) no-repeat;
-	background-position:left center;
+	background-position:right center;
 	}
 .note h3+*,h3+img+div.p {
 	margin-top	: 20px			; /* h3のマージンを0にしたしわ寄せ */
