@@ -218,15 +218,13 @@ div.note {
 	font-size: 85%;
 	color	: white	;
 }
-#right div.toc {
-	float		: left			;
-	width		: 44%			;
-	padding		: 30px 4% 30px 4%	;
-	margin-bottom	: 30px			;
-	font-size	: 86%			;
+#right table {
+	width	: 100%			;
 	}
-#right div.toc + .toc {
-	padding-left	: 0			;
+#right td {
+	padding		: 5px 1% 15px 2%	;
+	font-size	: 86%			;
+	vertical-align:	top;
 	}
 #update	{
 	font-size	: 80%			;
@@ -253,7 +251,7 @@ div.note {
 	color			: darkgray		;
 	height			: 18px			;
 	vertical-align	: top			;
-	margin-top		: 5px			;
+	margin		: 5px 0 0 3px			;
 	}
 .toc span.color1 { color: #000; }
 .toc span.color2 { color: #999; }
