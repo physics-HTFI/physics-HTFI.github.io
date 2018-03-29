@@ -137,7 +137,7 @@
       <div id="lheader"><img src="../css/logo.png"></div>
       <div id="menu">
         <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <a href="000.html" class="item"><span class="toc_chapter_num"></span>力学編のあらすじ</a>
+        <a href="000.html" class="item"><span class="toc_chapter_num">0</span>要約</a>
         <span class="part">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
@@ -1075,9 +1075,13 @@
 </h3>
 <img class="graph" src="fig/0e513.png">
 <div class="p">
-もう1つの例として、右図のように、2次元平面上において、
+もう1つの例として、2次元平面上において、
 <span id="MathJax-Element-238-Frame" class="mjx-chtml"><span id="MJXc-Node-3424" class="mjx-math"><span id="MJXc-Node-3425" class="mjx-mrow"><span id="MJXc-Node-3426" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.519em; padding-right: 0.006em;">y</span></span><span id="MJXc-Node-3427" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-3428" class="mjx-mi MJXc-space3"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.519em; padding-right: 0.06em;">f</span></span><span id="MJXc-Node-3429" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-3430" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-3431" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-3432" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
-のグラフの形状で定義される床との衝突を考える。拘束条件
+のグラフの形の床との衝突を考える<!--
+--><span class="weak"><!--
+-->（右図）<!--
+--></span><!--
+-->。拘束条件
 <span id="MathJax-Element-239-Frame" class="mjx-chtml"><span id="MJXc-Node-3433" class="mjx-math"><span id="MJXc-Node-3434" class="mjx-mrow"><span id="MJXc-Node-3435" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">G</span></span></span></span></span>
 およびその微分
 <span id="MathJax-Element-240-Frame" class="mjx-chtml"><span id="MJXc-Node-3436" class="mjx-math"><span id="MJXc-Node-3437" class="mjx-mrow"><span id="MJXc-Node-3438" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">∇</span></span><span id="MJXc-Node-3439" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">G</span></span></span></span></span>
@@ -1123,7 +1127,7 @@
 --><span class="weak"><!--
 -->ところで、衝突は計算誤差を増大させる性質を持つ。というのも、曲面に衝突した場合、位置のずれが運動方向のずれを生じさせるからである。そのため、すぐに誤差が無視できなくなり、計算が意味をなさなくなってしまう。実際、上のシミュレーションでも、（ステップ幅
 <span id="MathJax-Element-251-Frame" class="mjx-chtml"><span id="MJXc-Node-3674" class="mjx-math"><span id="MJXc-Node-3675" class="mjx-mrow"><span id="MJXc-Node-3676" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em; padding-right: 0.007em;">δ</span></span><span id="MJXc-Node-3677" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span></span></span></span>
-が毎回異なる実装のため）時間が経つにつれて毎回全く異なる運動になる。結果が異なってしまうのは理論の欠陥のようにも見えるが、そうではなく、現実世界での再現困難性を反映しているのである。実際、曲がった床にボールを落として跳ねさせる実験を行うと、同じところから落としたつもりでも、数回跳ねると毎回違う運動になってしまう。この性質が、理論にも正しく反映されているわけである。<!--
+が毎回異なる実装のため）時間が経つにつれて毎回全く異なる運動になる。結果が異なってしまうのは理論や計算の欠陥のようにも見えるが、そうではなく、現実世界での再現困難性を反映しているのである。実際、曲がった床にボールを落として跳ねさせる実験を行うと、同じところから落としたつもりでも、数回跳ねると毎回違う運動になってしまう。この性質が、理論にも正しく反映されているわけである。<!--
 --></span><!--
 -->
 </div>
