@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-<url><lastmod>2018-04-01</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+<url><lastmod>2018-04-08</lastmod><loc>https://physics-htfi.github.io/</loc></url>
 <url><lastmod>2018-03-29</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/000.html</loc></url><!--f522a-->
 <url><lastmod>2018-03-30</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--943a8-->
 <url><lastmod>2017-11-19</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--347c8-->
@@ -30,8 +30,9 @@
 <url><lastmod>2017-10-14</lastmod><loc>https://physics-htfi.github.io/electrodynamics/010.html</loc></url><!--9476e-->
 <url><lastmod>2017-11-10</lastmod><loc>https://physics-htfi.github.io/electrodynamics/011.html</loc></url><!--454d9-->
 <url><lastmod>2018-01-02</lastmod><loc>https://physics-htfi.github.io/electrodynamics/012.html</loc></url><!--465ea-->
-<url><lastmod>2018-02-25</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--abb1d-->
-<url><lastmod>2018-03-29</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--b6831-->
-<url><lastmod>2018-04-01</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--042ba-->
+<url><lastmod>2018-04-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--d7a04-->
+<url><lastmod>2018-04-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--95169-->
+<url><lastmod>2018-04-08</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--92292-->
+<url><lastmod>2018-04-08</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--cf87c-->
 </urlset>
 
