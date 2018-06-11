@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-<url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+<url><lastmod>2018-06-11</lastmod><loc>https://physics-htfi.github.io/</loc></url>
 <url><lastmod>2018-05-26</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/000.html</loc></url><!--e97ca-->
 <url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--a9bdc-->
 <url><lastmod>2018-06-09</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--ba3b1-->
@@ -10,7 +10,7 @@
 <url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/006.html</loc></url><!--4bba0-->
 <url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/007.html</loc></url><!--596e5-->
 <url><lastmod>2018-05-05</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/008.html</loc></url><!--dd610-->
-<url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/009.html</loc></url><!--7a8a3-->
+<url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/009.html</loc></url><!--c06ba-->
 <url><lastmod>2018-04-16</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/010.html</loc></url><!--9cadd-->
 <url><lastmod>2018-01-17</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/011.html</loc></url><!--83566-->
 <url><lastmod>2018-01-17</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/012.html</loc></url><!--eeecc-->
@@ -29,6 +29,7 @@
 <url><lastmod>2017-10-14</lastmod><loc>https://physics-htfi.github.io/electrodynamics/010.html</loc></url><!--9476e-->
 <url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/electrodynamics/011.html</loc></url><!--bb09d-->
 <url><lastmod>2018-01-02</lastmod><loc>https://physics-htfi.github.io/electrodynamics/012.html</loc></url><!--465ea-->
+<url><lastmod>2018-06-11</lastmod><loc>https://physics-htfi.github.io/gravitation/001.html</loc></url><!--8d481-->
 <url><lastmod>2018-04-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--d7a04-->
 <url><lastmod>2018-05-04</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--d756d-->
 <url><lastmod>2018-04-15</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--ad8aa-->
