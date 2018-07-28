@@ -9,7 +9,7 @@
     <meta property="og:title" content="力学 第14章 可積分条件 - 物理学の見つけ方">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon_large.png">
-    <title>偏微分の可換性とポテンシャルの存在条件 | 物理学の見つけ方</title>
+    <title>偏微分の可換性とポテンシャルの存在条件 - 物理学の見つけ方</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="shortcut icon" href="../css/favicon.png">
     <script src="../css/style.js" type="text/javascript"></script>
@@ -192,7 +192,7 @@
 </h3>
 <div class="p">
 この章では以下の2つの定理を証明・導出する：
-<span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-6-Frame" class="mjx-chtml" style="text-align: center;"><span id="MJXc-Node-24" class="mjx-math"><span id="MJXc-Node-25" class="mjx-mrow"><span id="MJXc-Node-26" class="mjx-mtable" style="vertical-align: -0.95em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-27" class="mjx-mtr" style="height: 1.2em;"><span id="MJXc-Node-28" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: right; width: 2.612em;"><span id="MJXc-Node-29" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-30" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">15.1</span></span><span id="MJXc-Node-31" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">:</span></span><span id="MJXc-Node-32" class="mjx-mspace" style="width: 0.278em; height: 0px;"></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-33" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: left; width: 4.5em;"><span id="MJXc-Node-34" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-35" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">偏</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">微</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">分</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">は</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">可</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">換</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">で</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">あ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">る</span></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-36" class="mjx-mtr" style="height: 1.2em;"><span id="MJXc-Node-37" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-38" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-39" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">15.2</span></span><span id="MJXc-Node-40" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">:</span></span><span id="MJXc-Node-41" class="mjx-mspace" style="width: 0.278em; height: 0px;"></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-42" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-43" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-44" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">可</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">積</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">分</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">条</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">件</span></span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span></span></span>
+<span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-6-Frame" class="mjx-chtml" style="text-align: center;"><span id="MJXc-Node-24" class="mjx-math"><span id="MJXc-Node-25" class="mjx-mrow"><span id="MJXc-Node-26" class="mjx-mtable" style="vertical-align: -0.95em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-27" class="mjx-mtr" style="height: 1.2em;"><span id="MJXc-Node-28" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: right; width: 2.612em;"><span id="MJXc-Node-29" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-30" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">14.1</span></span><span id="MJXc-Node-31" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">:</span></span><span id="MJXc-Node-32" class="mjx-mspace" style="width: 0.278em; height: 0px;"></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-33" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: left; width: 4.5em;"><span id="MJXc-Node-34" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-35" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">偏</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">微</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">分</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">は</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">可</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">換</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">で</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">あ</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">る</span></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-36" class="mjx-mtr" style="height: 1.2em;"><span id="MJXc-Node-37" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-38" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-39" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">14.2</span></span><span id="MJXc-Node-40" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.372em;">:</span></span><span id="MJXc-Node-41" class="mjx-mspace" style="width: 0.278em; height: 0px;"></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-42" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-43" class="mjx-mrow" style="margin-top: -0.175em;"><span id="MJXc-Node-44" class="mjx-mtext"><span class="mjx-char" style="padding-top: 0.519em; padding-bottom: 0.225em;"><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">可</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">積</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">分</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">条</span><span class="mjx-charbox MJXc-TeX-unknown-R" style="padding-bottom: 0.3em;">件</span></span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span></span></span>
 1つ目については、第6章の【6.3-注2】で結果だけ示していたので、ここで証明する。2つ目は、ベクトル場
 <span id="MathJax-Element-7-Frame" class="mjx-chtml"><span id="MJXc-Node-45" class="mjx-math"><span id="MJXc-Node-46" class="mjx-mrow"><span id="MJXc-Node-47" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.208em;">V</span></span></span></span></span>
 が与えられたときに、ある関数
@@ -297,7 +297,7 @@
 <span id="MathJax-Element-28-Frame" class="mjx-chtml"><span id="MJXc-Node-386" class="mjx-math"><span id="MJXc-Node-387" class="mjx-mrow"><span id="MJXc-Node-388" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-389" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-390" class="mjx-texatom" style=""><span id="MJXc-Node-391" class="mjx-mrow"><span id="MJXc-Node-392" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span></span></span></span><span id="MJXc-Node-393" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-394" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-395" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-396" class="mjx-texatom" style=""><span id="MJXc-Node-397" class="mjx-mrow"><span id="MJXc-Node-398" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span id="MJXc-Node-399" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-400" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.372em;">…</span></span><span id="MJXc-Node-401" class="mjx-mo MJXc-space1"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-402" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-403" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-404" class="mjx-texatom" style=""><span id="MJXc-Node-405" class="mjx-mrow"><span id="MJXc-Node-406" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></span></span></span></span></span></span>
 の線形和
 <span id="MathJax-Element-29-Frame" class="mjx-chtml"><span id="MJXc-Node-407" class="mjx-math"><span id="MJXc-Node-408" class="mjx-mrow"><span id="MJXc-Node-409" class="mjx-munderover"><span class="mjx-base"><span id="MJXc-Node-410" class="mjx-mo"><span class="mjx-char MJXc-TeX-size1-R" style="padding-top: 0.519em; padding-bottom: 0.519em;">∑</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.439em; padding-right: 0.071em;"><span id="MJXc-Node-411" class="mjx-texatom" style=""><span id="MJXc-Node-412" class="mjx-mrow"><span id="MJXc-Node-413" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span></span></span></span></span><span id="MJXc-Node-414" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-415" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">λ</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-416" class="mjx-texatom" style=""><span id="MJXc-Node-417" class="mjx-mrow"><span id="MJXc-Node-418" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span></span></span></span></span><span id="MJXc-Node-419" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-420" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-421" class="mjx-texatom" style=""><span id="MJXc-Node-422" class="mjx-mrow"><span id="MJXc-Node-423" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em;">i</span></span></span></span></span></span></span></span></span>
-で書ける。そのような基底行列の取り方には任意性があるが、ここでは以下の【16.1-注1】のものを考える。
+で書ける。そのような基底行列の取り方には任意性があるが、ここでは以下の【14.1-注1】のものを考える。
 </div>
 <div class="p">
 さて、定理を背理法で示す。もし、式(<!--
@@ -333,7 +333,7 @@
 <h3>
 <!--
 --><span><!--
--->【16.1-注1】1次ベクトル場の分解<!--
+-->【14.1-注1】1次ベクトル場の分解<!--
 --></span><!--
 -->
 </h3>
@@ -354,7 +354,7 @@
 <span id="MathJax-Element-42-Frame" class="mjx-chtml"><span id="MJXc-Node-963" class="mjx-math"><span id="MJXc-Node-964" class="mjx-mrow"><span id="MJXc-Node-965" class="mjx-texatom"><span id="MJXc-Node-966" class="mjx-mrow"><span id="MJXc-Node-967" class="mjx-mstyle" style="color: blue;"><span id="MJXc-Node-968" class="mjx-mrow"><span id="MJXc-Node-969" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-970" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-971" class="mjx-texatom" style=""><span id="MJXc-Node-972" class="mjx-mrow"><span id="MJXc-Node-973" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></span></span></span><span id="MJXc-Node-974" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-975" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-976" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-977" class="mjx-texatom" style=""><span id="MJXc-Node-978" class="mjx-mrow"><span id="MJXc-Node-979" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></span></span></span><span id="MJXc-Node-980" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-981" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.026em;"><span id="MJXc-Node-982" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.026em;">E</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-983" class="mjx-texatom" style=""><span id="MJXc-Node-984" class="mjx-mrow"><span id="MJXc-Node-985" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></span></span></span></span></span></span></span></span></span></span>
 は反対称行列の基底となるようにとっている<!--
 --><span class="weak"><!--
--->（以下の【16.1-注2】に合わせた）<!--
+-->（以下の【14.1-注2】に合わせた）<!--
 --></span><!--
 -->。
 </div>
@@ -432,7 +432,7 @@
 <span id="MathJax-Element-63-Frame" class="mjx-chtml"><span id="MJXc-Node-1170" class="mjx-math"><span id="MJXc-Node-1171" class="mjx-mrow"><span id="MJXc-Node-1172" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">∇</span></span><span id="MJXc-Node-1173" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.298em;">×</span></span><span id="MJXc-Node-1174" class="mjx-mi MJXc-space2"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.208em;">V</span></span><span id="MJXc-Node-1175" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-1176" class="mjx-mn MJXc-space3"><span class="mjx-char MJXc-TeX-main-B" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span>
 <!--
 --><span class="weak"><!--
--->（次節の【16.2-注1】の補足参照）<!--
+-->（次節の【14.2-注1】の補足参照）<!--
 --></span><!--
 -->と書ける。
 </div>
@@ -441,7 +441,7 @@
 <h3>
 <!--
 --><span><!--
--->【16.1-注2】行列の分解<!--
+-->【14.1-注2】行列の分解<!--
 --></span><!--
 -->
 </h3>
@@ -575,7 +575,7 @@
 --><span class="weak"><!--
 -->なお、可積分条件(<!--
 --><span id="MathJax-Element-103-Frame" class="mjx-chtml"><span id="MJXc-Node-1710" class="mjx-math"><span id="MJXc-Node-1711" class="mjx-mrow"><a href="#mjx-eqn-equPE"><span id="MJXc-Node-1712" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1713" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></a></span></span></span><!--
--->)は、以下の【16.2-注1】の式(<!--
+-->)は、以下の【14.2-注1】の式(<!--
 --><span id="MathJax-Element-104-Frame" class="mjx-chtml"><span id="MJXc-Node-1714" class="mjx-math"><span id="MJXc-Node-1715" class="mjx-mrow"><a href="#mjx-eqn-eqnGN"><span id="MJXc-Node-1716" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1717" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
 -->)や式(<!--
 --><span id="MathJax-Element-105-Frame" class="mjx-chtml"><span id="MJXc-Node-1718" class="mjx-math"><span id="MJXc-Node-1719" class="mjx-mrow"><a href="#mjx-eqn-eqBnJ"><span id="MJXc-Node-1720" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1721" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></a></span></span></span><!--
@@ -587,7 +587,7 @@
 <h3>
 <!--
 --><span><!--
--->【16.2-注1】可積分条件(<!--
+-->【14.2-注1】可積分条件(<!--
 --><span id="MathJax-Element-106-Frame" class="mjx-chtml"><span id="MJXc-Node-1722" class="mjx-math"><span id="MJXc-Node-1723" class="mjx-mrow"><a href="#mjx-eqn-equPE"><span id="MJXc-Node-1724" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1725" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></a></span></span></span><!--
 -->)の別表現：式(<!--
 --><span id="MathJax-Element-107-Frame" class="mjx-chtml"><span id="MJXc-Node-1726" class="mjx-math"><span id="MJXc-Node-1727" class="mjx-mrow"><a href="#mjx-eqn-eqnGN"><span id="MJXc-Node-1728" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1729" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
@@ -677,7 +677,7 @@
 <span id="MathJax-Element-130-Frame" class="mjx-chtml"><span id="MJXc-Node-2111" class="mjx-math"><span id="MJXc-Node-2112" class="mjx-mrow"><span id="MJXc-Node-2113" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.225em; padding-bottom: 0.372em;">⇐</span></span></span></span></span>
 」であるが、これは
 <span id="MathJax-Element-131-Frame" class="mjx-chtml"><span id="MJXc-Node-2114" class="mjx-math"><span id="MJXc-Node-2115" class="mjx-mrow"><span id="MJXc-Node-2116" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.519em;">ϕ</span></span></span></span></span>
-の2階偏微分が可換であることを主張するものであり、16.1節で見たように成立する。
+の2階偏微分が可換であることを主張するものであり、14.1節で見たように成立する。
 </div>
 <h3>
 <!--
@@ -908,7 +908,7 @@
 <span id="MathJax-Element-207-Frame" class="mjx-chtml"><span id="MJXc-Node-2888" class="mjx-math"><span id="MJXc-Node-2889" class="mjx-mrow"><span id="MJXc-Node-2890" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em;">θ</span></span></span></span></span>
 を微分して得られるベクトル場
 <span id="MathJax-Element-208-Frame" class="mjx-chtml"><span id="MJXc-Node-2891" class="mjx-math"><span id="MJXc-Node-2892" class="mjx-mrow"><span id="MJXc-Node-2893" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.208em;">V</span></span></span></span></span>
-は、以下の【16.2-注2】の式(<!--
+は、以下の【14.2-注2】の式(<!--
 --><span id="MathJax-Element-209-Frame" class="mjx-chtml"><span id="MJXc-Node-2894" class="mjx-math"><span id="MJXc-Node-2895" class="mjx-mrow"><a href="#mjx-eqn-eqcYe"><span id="MJXc-Node-2896" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2897" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">16</span></span></span></a></span></span></span><!--
 -->)のようになり、原点では定義されていない<!--
 --><span class="weak"><!--
@@ -929,7 +929,7 @@
 <div class="p">
 このように、可積分条件を満たさない領域があったり、空間に穴があったりする場合、多価関数<!--
 --><span class="weak"><!--
--->（複数の値���とる関数）<!--
+-->（複数の値をとる関数）<!--
 --></span><!--
 -->になることがあるわけである。
 </div>
@@ -937,7 +937,7 @@
 <h3>
 <!--
 --><span><!--
--->【16.2-注2】角度の微分<!--
+-->【14.2-注2】角度の微分<!--
 --></span><!--
 -->
 </h3>
