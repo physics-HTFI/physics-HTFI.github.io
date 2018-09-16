@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-<url><lastmod>2018-09-10</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+<url><lastmod>2018-09-16</lastmod><loc>https://physics-htfi.github.io/</loc></url>
 <url><lastmod>2018-07-14</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--2b149-->
-<url><lastmod>2018-06-23</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--7f7df-->
+<url><lastmod>2018-09-11</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--0aed1-->
 <url><lastmod>2018-07-26</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/003.html</loc></url><!--3b135-->
 <url><lastmod>2018-09-01</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/004.html</loc></url><!--2e544-->
 <url><lastmod>2018-07-11</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/005.html</loc></url><!--cdc48-->
@@ -15,16 +15,16 @@
 <url><lastmod>2018-09-02</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/012.html</loc></url><!--65759-->
 <url><lastmod>2018-09-06</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/013.html</loc></url><!--9dfc8-->
 <url><lastmod>2018-09-06</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/014.html</loc></url><!--ca9e6-->
-<url><lastmod>2018-09-08</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/015.html</loc></url><!--cea5e-->
+<url><lastmod>2018-09-16</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/015.html</loc></url><!--7ebd4-->
 <url><lastmod>2018-07-22</lastmod><loc>https://physics-htfi.github.io/electrodynamics/001.html</loc></url><!--b776a-->
 <url><lastmod>2018-07-20</lastmod><loc>https://physics-htfi.github.io/electrodynamics/002.html</loc></url><!--2ba7b-->
 <url><lastmod>2018-07-16</lastmod><loc>https://physics-htfi.github.io/electrodynamics/003.html</loc></url><!--80d1f-->
 <url><lastmod>2018-08-31</lastmod><loc>https://physics-htfi.github.io/electrodynamics/004.html</loc></url><!--991ac-->
 <url><lastmod>2018-08-28</lastmod><loc>https://physics-htfi.github.io/electrodynamics/005.html</loc></url><!--ad4a9-->
 <url><lastmod>2018-09-09</lastmod><loc>https://physics-htfi.github.io/electrodynamics/006.html</loc></url><!--d83e2-->
-<url><lastmod>2018-09-02</lastmod><loc>https://physics-htfi.github.io/electrodynamics/007.html</loc></url><!--c9cb7-->
-<url><lastmod>2018-09-10</lastmod><loc>https://physics-htfi.github.io/electrodynamics/008.html</loc></url><!--a25e7-->
-<url><lastmod>2018-06-14</lastmod><loc>https://physics-htfi.github.io/electrodynamics/009.html</loc></url><!--2bc70-->
+<url><lastmod>2018-09-15</lastmod><loc>https://physics-htfi.github.io/electrodynamics/007.html</loc></url><!--1769f-->
+<url><lastmod>2018-09-15</lastmod><loc>https://physics-htfi.github.io/electrodynamics/008.html</loc></url><!--a4efe-->
+<url><lastmod>2018-09-16</lastmod><loc>https://physics-htfi.github.io/electrodynamics/009.html</loc></url><!--d24c3-->
 <url><lastmod>2017-10-14</lastmod><loc>https://physics-htfi.github.io/electrodynamics/010.html</loc></url><!--9476e-->
 <url><lastmod>2018-06-10</lastmod><loc>https://physics-htfi.github.io/electrodynamics/011.html</loc></url><!--bb09d-->
 <url><lastmod>2018-01-02</lastmod><loc>https://physics-htfi.github.io/electrodynamics/012.html</loc></url><!--465ea-->
@@ -33,7 +33,7 @@
 <url><lastmod>2018-04-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--d7a04-->
 <url><lastmod>2018-05-04</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--d756d-->
 <url><lastmod>2018-08-11</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--1c6a0-->
-<url><lastmod>2018-04-10</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--60429-->
+<url><lastmod>2018-09-13</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--4a2b5-->
 <url><lastmod>2018-05-06</lastmod><loc>https://physics-htfi.github.io/thermodynamics/005.html</loc></url><!--81c87-->
 <url><lastmod>2018-05-10</lastmod><loc>https://physics-htfi.github.io/thermodynamics/006.html</loc></url><!--6dab2-->
 <url><lastmod>2018-05-21</lastmod><loc>https://physics-htfi.github.io/thermodynamics/007.html</loc></url><!--223ac-->
