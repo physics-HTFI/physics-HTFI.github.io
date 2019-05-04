@@ -1,4 +1,4 @@
-// 画面右側に+-ボタンを配置
+// 画面右側に折り畳み用+-ボタンを配置
 var	h3tags;
 function addFold() {
 	h3tags = document.getElementsByTagName("h3");
@@ -22,6 +22,11 @@ function fold(h3tag) {
 		}
 	}
 }
+var	allowFold = true;
+window.onload = function() {
+	if(allowFold) { addFold(); }
+}
+
 
 // 数値計算の実行用ウィンドウを開く
 function startSimulation(htmlPath) {
@@ -33,11 +38,6 @@ function startSimulation(htmlPath) {
 	div.addEventListener('click',function () { div.parentNode.removeChild(div); }, false);
 	var body = document.getElementsByTagName('body')[0];
 	body.insertBefore(div, body.firstChild);
-}
-
-var	allowFold = true;
-window.onload = function() {
-	if(allowFold) { addFold(); }
 }
 
 

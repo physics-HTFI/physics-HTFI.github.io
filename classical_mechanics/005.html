@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a class="item youAreHere"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a href="012.html" class="item"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a href="015.html" class="item"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第5章 ボール同士の衝突 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>5. ボール同士の衝突</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">5.</span><span class="chapter_name">ボール同士の衝突<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第5章 ボール同士の衝突 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <img class="graph" src="fig/ec42a.gif">
 <div class="p">
 2つのボールが弾性衝突した時の速度変化は、作用・反作用の法則による衝突公式(<!--
@@ -239,7 +236,7 @@
 </div>
 <h2><span class="section_num">5.1</span><span class="section_name">
 2体衝突でのダランベールの原理
-</span> </h2>
+</span></h2>
 <div class="p">
 この節では、ダランベールの原理の拡張を考え、式(<!--
 --><span id="MathJax-Element-11-Frame" class="mjx-chtml"><span id="MJXc-Node-191" class="mjx-math"><span id="MJXc-Node-192" class="mjx-mrow"><a href="#mjx-eqn-eqSwe"><span id="MJXc-Node-193" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-194" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">5</span></span></span></a></span></span></span><!--
@@ -463,8 +460,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【5.1-注1】作用・反作用の法則：式(<!--
+--><span class="note_num"><!--
+-->【5.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->作用・反作用の法則：式(<!--
 --><span id="MathJax-Element-71-Frame" class="mjx-chtml"><span id="MJXc-Node-1378" class="mjx-math"><span id="MJXc-Node-1379" class="mjx-mrow"><a href="#mjx-eqn-eqdLS"><span id="MJXc-Node-1380" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1381" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -538,7 +539,7 @@
 </div>
 <h2><span class="section_num">5.2</span><span class="section_name">
 2体衝突での弾性衝突条件
-</span> </h2>
+</span></h2>
 <div class="p">
 この節では、弾性衝突条件(<!--
 --><span id="MathJax-Element-89-Frame" class="mjx-chtml"><span id="MJXc-Node-1665" class="mjx-math"><span id="MJXc-Node-1666" class="mjx-mrow"><a href="#mjx-eqn-eqgDC"><span id="MJXc-Node-1667" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1668" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">12</span></span></span></a></span></span></span><!--
@@ -623,8 +624,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【5.2-注1】重心
+--><span class="note_num"><!--
+-->【5.2-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->重心
 <span id="MathJax-Element-110-Frame" class="mjx-chtml"><span id="MJXc-Node-2211" class="mjx-math"><span id="MJXc-Node-2212" class="mjx-mrow"><span id="MJXc-Node-2213" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-2214" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-2215" class="mjx-texatom" style=""><span id="MJXc-Node-2216" class="mjx-mrow"><span id="MJXc-Node-2217" class="mjx-texatom"><span id="MJXc-Node-2218" class="mjx-mrow"><span id="MJXc-Node-2219" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.519em;">g</span></span></span></span></span></span></span></span></span></span></span>
 <!--
 --></span><!--
@@ -761,8 +766,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【5.2-注2】2つのボールの弾性衝突の公式<!--
+--><span class="note_num"><!--
+-->【5.2-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->2つのボールの弾性衝突の公式<!--
 --></span><!--
 -->
 </h3>
@@ -844,7 +853,7 @@
 ボールの運動
 <span id="MathJax-Element-158-Frame" class="mjx-chtml"><span id="MJXc-Node-3182" class="mjx-math"><span id="MJXc-Node-3183" class="mjx-mrow"><span id="MJXc-Node-3184" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.006em;">X</span></span><span id="MJXc-Node-3185" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-3186" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-3187" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-3188" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 の計算
-</span> </h2>
+</span></h2>
 <div class="p">
 衝突公式(<!--
 --><span id="MathJax-Element-159-Frame" class="mjx-chtml"><span id="MJXc-Node-3189" class="mjx-math"><span id="MJXc-Node-3190" class="mjx-mrow"><a href="#mjx-eqn-eqhQn"><span id="MJXc-Node-3191" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-3192" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">13</span></span></span></a></span></span></span><!--
@@ -911,10 +920,11 @@
 <div class="p">
 <input value="実行" type="image" src="fig/7086a.gif" onclick="startSimulation('fig/cc28e.html')"> <input value="実行" type="image" src="fig/6e0ae.gif" onclick="startSimulation('fig/df482.html')">
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

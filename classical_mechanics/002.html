@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a class="item youAreHere"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a href="012.html" class="item"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a href="015.html" class="item"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第2章 ニュートンの運動方程式 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>2. ニュートンの運動方程式</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">2.</span><span class="chapter_name">ニュートンの運動方程式<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第2章 ニュートンの運動方程式 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <img class="graph" src="fig/9295d.gif">
 <div class="p">
 物体に働く力
@@ -246,7 +243,7 @@
 </div>
 <h2><span class="section_num">2.1</span><span class="section_name">
 重力の定量化
-</span> </h2>
+</span></h2>
 <div class="p">
 力という概念は、日常的によく使うものではあるが、それをどのように定量化すればよいかは自明ではない。まず、力は、向きと大きさを持っているので、何らかのベクトルで表すことができそうである。例えば重力であれば、向きは鉛直下方向、大きさは重い物体ほど大きくなる。力の向きは直感的に分かるだろうから、力の大きさをどのように定量化するかが問題になる。
 </div>
@@ -334,8 +331,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【2.1-注1】天秤を用いた重さの定量化<!--
+--><span class="note_num"><!--
+-->【2.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->天秤を用いた重さの定量化<!--
 --></span><!--
 -->
 </h3>
@@ -495,7 +496,7 @@
 ニュートンの運動方程式：式(<!--
 --><span id="MathJax-Element-82-Frame" class="mjx-chtml"><span id="MJXc-Node-637" class="mjx-math"><span id="MJXc-Node-638" class="mjx-mrow"><a href="#mjx-eqn-eqJcH"><span id="MJXc-Node-639" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-640" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></a></span></span></span><!--
 -->)
-</span> </h2>
+</span></h2>
 <div class="p">
 もともとの目的は、一般の力
 <span id="MathJax-Element-83-Frame" class="mjx-chtml"><span id="MJXc-Node-641" class="mjx-math"><span id="MJXc-Node-642" class="mjx-mrow"><span id="MJXc-Node-643" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.519em; padding-right: 0.056em;">f</span></span></span></span></span>
@@ -597,8 +598,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【2.1-注1】フックの法則<!--
+--><span class="note_num"><!--
+-->【2.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->フックの法則<!--
 --></span><!--
 -->
 </h3>
@@ -800,8 +805,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【2.2-注1】運動方程式(<!--
+--><span class="note_num"><!--
+-->【2.2-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->運動方程式(<!--
 --><span id="MathJax-Element-161-Frame" class="mjx-chtml"><span id="MJXc-Node-1222" class="mjx-math"><span id="MJXc-Node-1223" class="mjx-mrow"><a href="#mjx-eqn-eqJcH"><span id="MJXc-Node-1224" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1225" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">7</span></span></span></a></span></span></span><!--
 -->)による質量
 <span id="MathJax-Element-162-Frame" class="mjx-chtml"><span id="MJXc-Node-1226" class="mjx-math"><span id="MJXc-Node-1227" class="mjx-mrow"><span id="MJXc-Node-1228" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">m</span></span></span></span></span>
@@ -880,7 +889,7 @@
 </div>
 <h2><span class="section_num">2.3</span><span class="section_name">
 力の例
-</span> </h2>
+</span></h2>
 <div class="p">
 前節までで、力
 <span id="MathJax-Element-185-Frame" class="mjx-chtml"><span id="MJXc-Node-1348" class="mjx-math"><span id="MJXc-Node-1349" class="mjx-mrow"><span id="MJXc-Node-1350" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.519em; padding-right: 0.056em;">f</span></span></span></span></span>
@@ -957,8 +966,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【2.3-注1】定数の力の場合の解析解(<!--
+--><span class="note_num"><!--
+-->【2.3-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->定数の力の場合の解析解(<!--
 --><span id="MathJax-Element-198-Frame" class="mjx-chtml"><span id="MJXc-Node-1467" class="mjx-math"><span id="MJXc-Node-1468" class="mjx-mrow"><a href="#mjx-eqn-eqEiD"><span id="MJXc-Node-1469" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1470" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -1074,8 +1087,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【2.3-注2】1次の力の場合の解析解：式(<!--
+--><span class="note_num"><!--
+-->【2.3-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->1次の力の場合の解析解：式(<!--
 --><span id="MathJax-Element-222-Frame" class="mjx-chtml"><span id="MJXc-Node-1686" class="mjx-math"><span id="MJXc-Node-1687" class="mjx-mrow"><a href="#mjx-eqn-eqgAN"><span id="MJXc-Node-1688" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1689" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">11</span></span></span></a></span></span></span><!--
 -->)，式(<!--
 --><span id="MathJax-Element-223-Frame" class="mjx-chtml"><span id="MJXc-Node-1690" class="mjx-math"><span id="MJXc-Node-1691" class="mjx-mrow"><a href="#mjx-eqn-eqfQV"><span id="MJXc-Node-1692" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-1693" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">12</span></span></span></a></span></span></span><!--
@@ -1184,10 +1201,11 @@
 --></span><!--
 -->。
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

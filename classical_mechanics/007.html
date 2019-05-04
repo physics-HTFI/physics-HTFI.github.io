@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a class="item youAreHere"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a href="012.html" class="item"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a href="015.html" class="item"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第7章 動く振り子 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>7. 動く振り子</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">7.</span><span class="chapter_name">動く振り子<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第7章 動く振り子 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <img class="graph" src="fig/23431.gif">
 <div class="p">
 拘束条件が時間とともに変化する場合、拘束力
@@ -229,7 +226,7 @@
 </div>
 <h2><span class="section_num">7.1</span><span class="section_name">
 初期値に対する拘束条件と拘束力
-</span> </h2>
+</span></h2>
 <div class="p">
 この節では、初期値
 <span id="MathJax-Element-15-Frame" class="mjx-chtml"><span id="MJXc-Node-163" class="mjx-math"><span id="MJXc-Node-164" class="mjx-mrow"><span id="MJXc-Node-165" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-166" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-167" class="mjx-texatom" style=""><span id="MJXc-Node-168" class="mjx-mrow"><span id="MJXc-Node-169" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span></span><span id="MJXc-Node-170" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-171" class="mjx-msubsup MJXc-space1"><span class="mjx-base"><span id="MJXc-Node-172" class="mjx-texatom"><span id="MJXc-Node-173" class="mjx-mrow"><span id="MJXc-Node-174" class="mjx-munderover"><span class="mjx-stack"><span class="mjx-over" style="height: 0.17em; padding-bottom: 0.06em; padding-left: 0.111em;"><span id="MJXc-Node-176" class="mjx-mo" style="vertical-align: top;"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.298em;">˙</span></span></span><span class="mjx-op"><span id="MJXc-Node-175" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-177" class="mjx-texatom" style=""><span id="MJXc-Node-178" class="mjx-mrow"><span id="MJXc-Node-179" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span></span></span></span></span>
@@ -282,8 +279,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【7.1-注1】合成関数の微分公式<!--
+--><span class="note_num"><!--
+-->【7.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->合成関数の微分公式<!--
 --></span><!--
 -->
 </h3>
@@ -378,8 +379,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【7.1-注2】時間に依存する場合の拘束力：式(<!--
+--><span class="note_num"><!--
+-->【7.1-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->時間に依存する場合の拘束力：式(<!--
 --><span id="MathJax-Element-57-Frame" class="mjx-chtml"><span id="MJXc-Node-776" class="mjx-math"><span id="MJXc-Node-777" class="mjx-mrow"><a href="#mjx-eqn-eqZrs"><span id="MJXc-Node-778" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-779" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">5</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -442,7 +447,7 @@
 物体の運動
 <span id="MathJax-Element-71-Frame" class="mjx-chtml"><span id="MJXc-Node-1087" class="mjx-math"><span id="MJXc-Node-1088" class="mjx-mrow"><span id="MJXc-Node-1089" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-1090" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-1091" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-1092" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-1093" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 の計算
-</span> </h2>
+</span></h2>
 <div class="p">
 物体の運動
 <span id="MathJax-Element-72-Frame" class="mjx-chtml"><span id="MJXc-Node-1094" class="mjx-math"><span id="MJXc-Node-1095" class="mjx-mrow"><span id="MJXc-Node-1096" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-1097" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-1098" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-1099" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-1100" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
@@ -597,7 +602,7 @@
 </div>
 <h2><span class="section_num">7.3</span><span class="section_name">
 （計算手法の補足）
-</span> </h2>
+</span></h2>
 <div class="p">
 拘束力は、式(<!--
 --><span id="MathJax-Element-115-Frame" class="mjx-chtml"><span id="MJXc-Node-2070" class="mjx-math"><span id="MJXc-Node-2071" class="mjx-mrow"><a href="#mjx-eqn-eqZrs"><span id="MJXc-Node-2072" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2073" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">5</span></span></span></a></span></span></span><!--
@@ -716,8 +721,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【7.3-注1】差分化した拘束系の運動方程式：式(<!--
+--><span class="note_num"><!--
+-->【7.3-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->差分化した拘束系の運動方程式：式(<!--
 --><span id="MathJax-Element-142-Frame" class="mjx-chtml"><span id="MJXc-Node-2383" class="mjx-math"><span id="MJXc-Node-2384" class="mjx-mrow"><a href="#mjx-eqn-eqiQf"><span id="MJXc-Node-2385" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2386" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">9</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -787,10 +796,11 @@
 <span id="MathJax-Element-161-Frame" class="mjx-chtml"><span id="MJXc-Node-3001" class="mjx-math"><span id="MJXc-Node-3002" class="mjx-mrow"><span id="MJXc-Node-3003" class="mjx-mi"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.446em; padding-bottom: 0.298em;">■</span></span></span></span></span>
 </div>
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

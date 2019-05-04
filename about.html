@@ -8,50 +8,55 @@
     <link rel='shortcut icon' href='css/favicon.png'/>
     <script src="css/style.js" type="text/javascript"></script>
     <script type="text/javascript">allowFold = false;</script>
+    <style>p { margin: 0 30px 30px; }</style>
   </head>
-  <body>
-    <div id='left' class='index'>
-      <div id="lheader"><img src="css/logo.png"></div>
-      <div id="menu">
-        <div id="breadcrumb"><a href="./">ホーム</a> &gt; その他</div>
+  <body class='chapter'>
+    <div class='center'>
+      <div id='left'>
+        <div class='logo'><a href='./'><img src='css/logo.png'></a></div>
+        <div id='menu'>
+          <div id="breadcrumb"><a href="./"><img src="css/home.png"/></a> › その他</div>
+        </div>
       </div>
-    </div>
-    <div id='right'>
-      <div id='rheader'><a href="./">物理学の見つけ方</a></div>
-      <div id='contents'>
-        <h1>このサイトについて</h1>
-        <div class='p'>物理学の理論的な知識を持っていない仮想的な人物を考える。その人が、物理理論の構築に独力で成功したとするならば、その時その人は、どのような思考経路をたどったのだろうか。</div>
-        <h3>方針</h3>
-        <div class='p'>定義や概念が先にあってそれを説明するのではなく、実際の実験と結びついた問題を考える中でそれらを見つけていきたい。</div>
-        <div class='p'>とはいえ、最初から満足のいくものは作れないので、少しずつ手直しを続けていく。手直しの基準は「今の自分から見て欲しいと思えるものになっているか」である。</div>
-        <div class='p'><img src="about/gm.png"></div>
-        <h2><span class="section_num">1.</span> <span class="section_name">リンク</span> </h2>
-        <div class='p'>このサイトはフリーソフトウェアを使用して作られているので、感謝の意を込めてそれらを紹介する。</div>
-        <h3><a href='http://www.gnuplot.info/'>gnuplot</a></h3>
-        <img class='graph' src='about/gnuplot.png'/>
-        <div class='p'>gnuplotはグラフ描画ツールである。公式サイトのギャラリーは<a href='http://gnuplot.sourceforge.net/demo/'>ここ<a>。コマンドは比較的単純で使いやすい。定番のツールであり、日本語のドキュメントも多く見つかる。<span class='weak'>このサイトでは、2次元グラフを描画するために使用している。</span></div>
-        <h3><a href='https://matplotlib.org/'>Matplotlib</a></h3>
-        <img class='graph' src='about/matplotlib.png'/>
-        <div class='p'>Matplotlibはグラフ描画ツールである。公式サイトのギャラリーは<a href='https://matplotlib.org/gallery.html'>ここ<a>。<a href='https://www.python.org/'>Python</a>という既存のプログラミング言語を使って処理を記述する形になるので、ファイル入力やデータ加工などの複雑な処理と連携しやすい一方、設計思想が難解である。<span class='weak'>このサイトでは、3次元グラフを描画するために使用している。</span></div>
-        <h3><a href='https://inkscape.org/ja/'>Inkscape</a></h3>
-        <img class='graph' src='about/Inkscape.png'/>
-        <div class='p'>Inkscapeは2次元イラスト作成ツールである。拡大縮小しても劣化しないベクター形式の画像を扱うためのツールである。<span class='weak'>このサイトのほぼすべての2次元図で使用している。</span></div>
-        <h3><a href='https://www.blender.org/'>Blender</a></h3>
-        <img class='graph' src='about/Blender.png'/>
-        <div class='p'>Blenderは3次元CGコンテンツ作成ツールである。1枚絵だけでなくアニメーションを出力することもできる。<span class='weak'>このサイトでは、力学編第13章のシミュレーション動画および3次元の図で使用している。</span></div>
-        <h3><a href='https://www.lyx.org/WebJa.Home'>LyX</a></h3>
-        <img class='graph' src='about/LyX.png'/>
-        <div class='p'>Lyxは数式を使った文書用のエディタである。PDFで出力するのが標準的な使い方である。<span class='weak'>このサイトの記事は全てこれを用いて書いている。</span></div>
-        <h3><a href='https://www.mathjax.org/'>MathJax</a></h3>
-        <div class='p'>Mathjaxはwebブラウザ上で数式を表示させるための標準的なライブラリである。<span class='weak'>このサイトの本文中の数式は全てこれを用いている。</span></div>
-        <h3><a href='http://kripken.github.io/emscripten-site/'>Emscripten</a></h3>
-        <img class='graph' src='about/emscripten.png'/>
-        <div class='p'>EmscriptenはC++言語などで書かれたプログラムをwebブラウザ上で実行できる形に変換するためのツールである。右図のように、C++で書かれたシミュレーションが（コードに手を加えることなく）ブラウザ上で実行できる。<span class='weak'>このサイトでは、ブラウザ上で数値シミュレーションを実行するために用いている。</span></div>
-        <h3><a href='https://git-scm.com/'>Git</a>、<a href='https://github.com/'>GitHub</a>、<a href='https://tortoisegit.org/'>TortoiseGit</a></h3>
-        <img class='graph' src='about/TortoiseGit.png'/>
-		<div class='p'>Gitはバージョン管理システム、即ち、過去のファイルと現在のファイルを比較したり、過去の状態に戻したりするツールである。過去の履歴は全てリポジトリと呼ばれるフォルダに格納される。GitHubはそのリポジトリをインターネット上に設置し管理するためのサービスである。TortoiseGitはGitを扱いやすくするツールであり、右図のように変更されたファイルを視覚的に確認できる。<span class='weak'>GitHubには作成したリポジトリを自動的にwebページとして公開する機能があり、このサイトはそれを使って公開されている。</span></div>
-	</div>
-      <div id='footer'>© 2016-2019 物理学の見つけ方</div>
+      <div id='right'>
+        <div id='contents'>
+          <h1><span class="chapter_name">このサイトについて</span></h1>
+            <p>物理学の理論的な知識を持っていない仮想的な人物を考える。もしその人が独力で物理理論の構築に成功したとするならば、その人は、どのような思考経路をたどったのだろうか。</p>
+            <h3>方針</h3>
+              <p>定義や概念が先にあってそれを説明するのではなく、実際の実験と結びついた問題を考える中でそれらを見つけていきたい。<span class='weak'>例えば、いきなり座標の微分として速度を導入する代わりに、キャッチボールの運動を求めようとする中で、速度が座標の微分であることを自然に見いだしたい。</span></p>
+              <p>最初から満足のいくものは作れないので、少しずつ手直しを続けていく。そのため、完成度は章によってばらつきがあり、叩き台のままの章もある。手直しの基準は「今の自分から見て欲しいと思えるものになっているか」である。</p>
+              <p><img src="about/gm.png"></p>
+            <h2><span class="section_num">1.</span> <span class="section_name">プライバシーポリシー</span> </h2>
+              <p>（<a href='https://www.google.co.jp/analytics/terms/jp.html'>Google アナリティクス利用規約</a> 第7項に基づく記述。）</p>
+              <p>このサイトでは、アクセス解析のために Google アナリティクスを使用しています。Google アナリティクスは、データ収集のために Cookie を使用します。Google アナリティクスでデータが収集、処理される仕組みについては、外部サイト<a href='https://policies.google.com/technologies/partner-sites?hl=ja'>「Google のサービスを使用するサイトやアプリから収集した情報の Google による使用」</a>を参照してください。</p>
+            <h2><span class="section_num">2.</span> <span class="section_name">リンク</span> </h2>
+              <p>このサイトはフリーソフトウェアを使用して作られているので、感謝の意を込めてそれらを紹介する。</p>
+              <h3><a href='http://www.gnuplot.info/'>gnuplot</a></h3>
+                <img class='graph' src='about/gnuplot.png'/>
+                <p>gnuplotはグラフ描画ツールである。公式サイトのギャラリーは<a href='http://gnuplot.sourceforge.net/demo/'>ここ</a>。コマンドは比較的単純で使いやすい。定番のツールであり、日本語のドキュメントも多く見つかる。<span class='weak'>このサイトでは、2次元グラフを描画するために使用している。</span></p>
+              <h3><a href='https://matplotlib.org/'>Matplotlib</a></h3>
+                <img class='graph' src='about/matplotlib.png'/>
+                <p>Matplotlibはグラフ描画ツールである。公式サイトのギャラリーは<a href='https://matplotlib.org/gallery.html'>ここ</a>。<a href='https://www.python.org/'>Python</a>という既存のプログラミング言語を使って処理を記述する形になるので、ファイル入力やデータ加工などの複雑な処理と連携しやすい一方、設計思想が難解である。<span class='weak'>このサイトでは、3次元グラフを描画するために使用している。</span></p>
+              <h3><a href='https://inkscape.org/ja/'>Inkscape</a></h3>
+                <img class='graph' src='about/Inkscape.png'/>
+                <p>Inkscapeは2次元イラスト作成ツールである。拡大縮小しても劣化しないベクター形式の画像を扱うためのツールである。<span class='weak'>このサイトのほぼすべての2次元図で使用している。</span></p>
+              <h3><a href='https://www.blender.org/'>Blender</a></h3>
+                <img class='graph' src='about/Blender.png'/>
+                <p>Blenderは3次元CGコンテンツ作成ツールである。1枚絵だけでなくアニメーションを出力することもできる。<span class='weak'>このサイトでは、力学編第13章のシミュレーション動画および3次元の図で使用している。</span></p>
+              <h3><a href='https://www.lyx.org/WebJa.Home'>LyX</a></h3>
+                <img class='graph' src='about/LyX.png'/>
+                <p>Lyxは数式を使った文書用のエディタである。PDFで出力するのが標準的な使い方である。<span class='weak'>このサイトの記事は全てこれを用いて書いている。</span></p>
+              <h3><a href='https://www.mathjax.org/'>MathJax</a></h3>
+                <p>Mathjaxはwebブラウザ上で数式を表示させるための標準的なライブラリである。<span class='weak'>このサイトの本文中の数式は全てこれを用いている。</span></p>
+              <h3><a href='http://kripken.github.io/emscripten-site/'>Emscripten</a></h3>
+                <img class='graph' src='about/emscripten.png'/>
+                <p>EmscriptenはC++言語などで書かれたプログラムをwebブラウザ上で実行できる形に変換するためのツールである。右図のように、C++で書かれたシミュレーションが（コードに手を加えることなく）ブラウザ上で実行できる。<span class='weak'>このサイトでは、ブラウザ上で数値シミュレーションを実行するために用いている。</span></p>
+              <h3><a href='https://git-scm.com/'>Git</a>、<a href='https://github.com/'>GitHub</a>、<a href='https://tortoisegit.org/'>TortoiseGit</a></h3>
+                <img class='graph' src='about/TortoiseGit.png'/>
+                <p>Gitはバージョン管理システム、即ち、過去のファイルと現在のファイルを比較したり、過去の状態に戻したりするツールである。過去の履歴は全てリポジトリと呼ばれるフォルダに格納される。GitHubはそのリポジトリをインターネット上に設置し管理するためのサービスである。TortoiseGitはGitを扱いやすくするツールであり、右図のように変更されたファイルを視覚的に確認できる。<span class='weak'>GitHubには作成したリポジトリを自動的にwebページとして公開する機能があり、このサイトはそれを使って公開されている。</span></p>
+        </div>
+        <div id='footer'>© 2016-2019 物理学の見つけ方</div>
+      </div>
     </div>
   </body>
 </html>

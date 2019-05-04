@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a href="012.html" class="item"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a class="item youAreHere"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第15章 可積分条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>15. 可積分条件</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">15.</span><span class="chapter_name">可積分条件<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第15章 可積分条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <div class="p">
 多変数関数
 <span id="MathJax-Element-1-Frame" class="mjx-chtml"><span id="MJXc-Node-1" class="mjx-math"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.519em;">ϕ</span></span><span id="MJXc-Node-4" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-5" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-6" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-7" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
@@ -200,7 +197,7 @@
 </div>
 <h2><span class="section_num">15.1</span><span class="section_name">
 偏微分は可換である
-</span> </h2>
+</span></h2>
 <div class="p">
 第6章の【6.3-注2】で、偏微分が可換だと述べたが、証明していなかった。この節でその証明を行う。
 </div>
@@ -325,8 +322,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【15.1-注1】1次ベクトル場の分解<!--
+--><span class="note_num"><!--
+-->【15.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->1次ベクトル場の分解<!--
 --></span><!--
 -->
 </h3>
@@ -437,8 +438,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【15.1-注2】行列の分解<!--
+--><span class="note_num"><!--
+-->【15.1-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->行列の分解<!--
 --></span><!--
 -->
 </h3>
@@ -509,7 +514,7 @@
 </div>
 <h2><span class="section_num">15.2</span><span class="section_name">
 ベクトル場の可積分条件
-</span> </h2>
+</span></h2>
 <div class="p">
 ベクトル場
 <span id="MathJax-Element-83-Frame" class="mjx-chtml"><span id="MJXc-Node-1451" class="mjx-math"><span id="MJXc-Node-1452" class="mjx-mrow"><span id="MJXc-Node-1453" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.208em;">V</span></span><span id="MJXc-Node-1454" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-1455" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-1456" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-1457" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
@@ -749,8 +754,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【15.2-注2】ベクトル場の積分<!--
+--><span class="note_num"><!--
+-->【15.2-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->ベクトル場の積分<!--
 --></span><!--
 -->
 </h3>
@@ -879,8 +888,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【15.2-注2】角度の微分<!--
+--><span class="note_num"><!--
+-->【15.2-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->角度の微分<!--
 --></span><!--
 -->
 </h3>
@@ -953,7 +966,7 @@
 </div>
 <h2><span class="section_num">15.3</span><span class="section_name">
 拘束条件の可積分条件
-</span> </h2>
+</span></h2>
 <div class="p">
 座標
 <span id="MathJax-Element-197-Frame" class="mjx-chtml"><span id="MJXc-Node-3538" class="mjx-math"><span id="MJXc-Node-3539" class="mjx-mrow"><span id="MJXc-Node-3540" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span>
@@ -1088,8 +1101,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【15.3-注1】補足<!--
+--><span class="note_num"><!--
+-->【15.3-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->補足<!--
 --></span><!--
 -->
 </h3>
@@ -1336,10 +1353,11 @@
 しかあり得ない。
 <span id="MathJax-Element-303-Frame" class="mjx-chtml"><span id="MJXc-Node-5043" class="mjx-math"><span id="MJXc-Node-5044" class="mjx-mrow"><span id="MJXc-Node-5045" class="mjx-mi"><span class="mjx-char MJXc-TeX-ams-R" style="padding-top: 0.446em; padding-bottom: 0.298em;">■</span></span></span></span></span>
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

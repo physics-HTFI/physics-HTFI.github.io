@@ -134,34 +134,31 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 熱力学</div>
-        <span class="part" style="background-image: url(../css/BG51light.png);">温度</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 熱力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG51light.png) no-repeat top right;">温度</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>温度の定量</a>
-        <span class="part" style="background-image: url(../css/BG52light.png);">閉鎖系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG52light.png) no-repeat top right;">閉鎖系の平衡</span>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>気体のエネルギー</a>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>可逆な操作</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>不可逆性の定量</a>
         <a class="item youAreHere"><span class="toc_chapter_num">5</span>閉鎖系の平衡条件</a>
-        <span class="part" style="background-image: url(../css/BG53light.png);">開放系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG53light.png) no-repeat top right;">開放系の平衡</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>多相系の平衡条件</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>複数の物質の混合</a>
-        <span class="part" style="background-image: url(../css/BG54light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG54light.png) no-repeat top right;">補遺（数学）</span>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>制約条件付き極値問題</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="熱力学 第5章 閉鎖系の平衡条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>5. 閉鎖系の平衡条件</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">5.</span><span class="chapter_name">閉鎖系の平衡条件<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="熱力学 第5章 閉鎖系の平衡条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <div class="p">
 実現する平衡状態は、制約条件の下でのエントロピーの最大点である。
 </div>
@@ -204,7 +201,7 @@
 </div>
 <h2><span class="section_num">5.1</span><span class="section_name">
 これまでのまとめ
-</span> </h2>
+</span></h2>
 <div class="p">
 これまでの段階で得られている結果をまとめておく。系は、複数のピストン付き容器および弾み車からなる孤立系であるとし、それらの容器は、断熱容器であるが、容器同士が接触している場合には熱を通すとする。
 </div>
@@ -310,7 +307,7 @@
 </div>
 <h2><span class="section_num">5.2</span><span class="section_name">
 熱を通さない仕切り
-</span> </h2>
+</span></h2>
 <div class="p">
 第3章の問題を繰り返しておく。容器に熱を通さない仕切りを入れて、2つの容器<!--
 --><span class="weak"><!--
@@ -443,7 +440,7 @@
 熱を通す仕切りの場合の平衡条件：式(<!--
 --><span id="MathJax-Element-41-Frame" class="mjx-chtml"><span id="MJXc-Node-852" class="mjx-math"><span id="MJXc-Node-853" class="mjx-mrow"><a href="#mjx-eqn-eqcAL"><span id="MJXc-Node-854" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-855" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">11</span></span></span></a></span></span></span><!--
 -->)
-</span> </h2>
+</span></h2>
 <div class="p">
 前節の問題において、仕切りの固定を外す時に、熱を通す仕切りに取り換えることを考える。これは、第2章で扱った問題と同じである。第2章では、温度と圧力が両方の容器で一致するという条件を直感的に要請した。
 </div>
@@ -536,7 +533,7 @@
 </div>
 <h2><span class="section_num">5.4</span><span class="section_name">
 熱効率は1より小さい
-</span> </h2>
+</span></h2>
 <div class="p">
 ここでは熱機関の効率を考える。熱機関とは、高温熱源・低温熱源・弾み車をサイクルでつないだものである。高温熱源から
 <span id="MathJax-Element-64-Frame" class="mjx-chtml"><span id="MJXc-Node-1501" class="mjx-math"><span id="MJXc-Node-1502" class="mjx-mrow"><span id="MJXc-Node-1503" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.446em;">Q</span></span></span></span></span>
@@ -623,8 +620,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【5.4-注1】カルノーサイクル<!--
+--><span class="note_num"><!--
+-->【5.4-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->カルノーサイクル<!--
 --></span><!--
 -->
 </h3>
@@ -770,10 +771,11 @@
 <span id="MathJax-Element-111-Frame" class="mjx-chtml"><span id="MJXc-Node-2026" class="mjx-math"><span id="MJXc-Node-2027" class="mjx-mrow"><span id="MJXc-Node-2028" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-2029" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.446em;">Q</span></span></span><span class="mjx-stack" style="vertical-align: -0.327em;"><span class="mjx-sup" style="font-size: 70.7%; padding-bottom: 0.255em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-2035" class="mjx-mo" style=""><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.298em;">′</span></span></span><span class="mjx-sub" style="font-size: 70.7%; padding-right: 0.071em;"><span id="MJXc-Node-2030" class="mjx-texatom" style=""><span id="MJXc-Node-2031" class="mjx-mrow"><span id="MJXc-Node-2032" class="mjx-texatom"><span id="MJXc-Node-2033" class="mjx-mrow"><span id="MJXc-Node-2034" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">L</span></span></span></span></span></span></span></span></span></span></span></span>
 を奪うことが可能である。
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

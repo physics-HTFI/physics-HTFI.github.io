@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a class="item youAreHere"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a href="015.html" class="item"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第12章 拘束された剛体 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>12. 拘束された剛体</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">12.</span><span class="chapter_name">拘束された剛体<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第12章 拘束された剛体 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <img class="graph" src="fig/516ad.gif">
 <div class="p">
 剛体上の1点を固定した場合の運動方程式は式(<!--
@@ -229,7 +226,7 @@
 </div>
 <h2><span class="section_num">12.1</span><span class="section_name">
 1点を固定した剛体
-</span> </h2>
+</span></h2>
 <img class="graph" src="fig/31f6d.png">
 <div class="p">
 剛体上の1点
@@ -367,8 +364,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【12.1-注1】式(<!--
+--><span class="note_num"><!--
+-->【12.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->式(<!--
 --><span id="MathJax-Element-48-Frame" class="mjx-chtml"><span id="MJXc-Node-825" class="mjx-math"><span id="MJXc-Node-826" class="mjx-mrow"><a href="#mjx-eqn-eqUzS"><span id="MJXc-Node-827" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-828" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></a></span></span></span><!--
 -->)の各項の計算<!--
 --></span><!--
@@ -457,8 +458,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【12.1-注2】慣性モーメントとトルクの変換公式（平行軸の定理）<!--
+--><span class="note_num"><!--
+-->【12.1-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->慣性モーメントとトルクの変換公式（平行軸の定理）<!--
 --></span><!--
 -->
 </h3>
@@ -546,7 +551,7 @@
 </div>
 <h2><span class="section_num">12.2</span><span class="section_name">
 2点を固定した剛体
-</span> </h2>
+</span></h2>
 <img class="graph" src="fig/41d25.png">
 <div class="p">
 剛体上の固定点
@@ -624,8 +629,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【12.2-注1】軸を固定した剛体の運動方程式：式(<!--
+--><span class="note_num"><!--
+-->【12.2-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->軸を固定した剛体の運動方程式：式(<!--
 --><span id="MathJax-Element-116-Frame" class="mjx-chtml"><span id="MJXc-Node-2517" class="mjx-math"><span id="MJXc-Node-2518" class="mjx-mrow"><a href="#mjx-eqn-eqPsk"><span id="MJXc-Node-2519" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2520" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">11</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -836,10 +845,11 @@
 <div class="p">
 <input value="実行" type="image" src="fig/bb96e.gif" onclick="startSimulation('fig/6ba37.html')">
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

@@ -134,34 +134,31 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 熱力学</div>
-        <span class="part" style="background-image: url(../css/BG51light.png);">温度</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 熱力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG51light.png) no-repeat top right;">温度</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>温度の定量</a>
-        <span class="part" style="background-image: url(../css/BG52light.png);">閉鎖系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG52light.png) no-repeat top right;">閉鎖系の平衡</span>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>気体のエネルギー</a>
         <a class="item youAreHere"><span class="toc_chapter_num">3</span>可逆な操作</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>不可逆性の定量</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>閉鎖系の平衡条件</a>
-        <span class="part" style="background-image: url(../css/BG53light.png);">開放系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG53light.png) no-repeat top right;">開放系の平衡</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>多相系の平衡条件</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>複数の物質の混合</a>
-        <span class="part" style="background-image: url(../css/BG54light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG54light.png) no-repeat top right;">補遺（数学）</span>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>制約条件付き極値問題</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="熱力学 第3章 可逆な操作 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>3. 可逆な操作</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">3.</span><span class="chapter_name">可逆な操作<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="熱力学 第3章 可逆な操作 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <div class="p">
 可逆操作＝「断熱容器の準静変形」と「共等温変形」。
 </div>
@@ -247,7 +244,7 @@
 1個の断熱容器の可逆操作：式(<!--
 --><span id="MathJax-Element-8-Frame" class="mjx-chtml"><span id="MJXc-Node-109" class="mjx-math"><span id="MJXc-Node-110" class="mjx-mrow"><a href="#mjx-eqn-eqZhE"><span id="MJXc-Node-111" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-112" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></a></span></span></span><!--
 -->)
-</span> </h2>
+</span></h2>
 <div class="p">
 この節では、断熱容器が1つだけある場合の可逆操作について述べる。<!--
 --><span class="weak"><!--
@@ -330,8 +327,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【3.1-注1】等エントロピー曲線<!--
+--><span class="note_num"><!--
+-->【3.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->等エントロピー曲線<!--
 --></span><!--
 -->
 </h3>
@@ -531,7 +532,7 @@
 -->)、等温時→式(<!--
 --><span id="MathJax-Element-66-Frame" class="mjx-chtml"><span id="MJXc-Node-563" class="mjx-math"><span id="MJXc-Node-564" class="mjx-mrow"><a href="#mjx-eqn-eqtPA"><span id="MJXc-Node-565" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-566" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
 -->)
-</span> </h2>
+</span></h2>
 <div class="p">
 さて、冒頭の問題は、2個の容器がある場合に対応する。従って、2個の容器がある場合の可逆操作を考える必要がある。容器が2個になった場合でも、前節の結果はそれぞれの容器に対して成り立つ、即ち、各々の断熱容器を準静変形する過程は可逆である。この節では、これらに加えて、共等温変形(<!--
 --><span id="MathJax-Element-67-Frame" class="mjx-chtml"><span id="MJXc-Node-567" class="mjx-math"><span id="MJXc-Node-568" class="mjx-mrow"><a href="#mjx-eqn-eqXhH"><span id="MJXc-Node-569" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-570" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">6</span></span></span></a></span></span></span><!--
@@ -788,10 +789,11 @@
 <span id="MathJax-Element-137-Frame" class="mjx-chtml"><span id="MJXc-Node-1504" class="mjx-math"><span id="MJXc-Node-1505" class="mjx-mrow"><span id="MJXc-Node-1506" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.12em;"><span id="MJXc-Node-1507" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.12em;">T</span></span></span><span class="mjx-sub" style="font-size: 70.7%; vertical-align: -0.212em; padding-right: 0.071em;"><span id="MJXc-Node-1508" class="mjx-texatom" style=""><span id="MJXc-Node-1509" class="mjx-mrow"><span id="MJXc-Node-1510" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">0</span></span></span></span></span></span></span></span></span>
 を用いたものと一致しなければならない。そのためには、熱容量や圧力の関数形に対して、何らかの条件を課さなければならない。この条件を書き下すことが、次章の前半のテーマとなる。
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

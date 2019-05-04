@@ -134,34 +134,31 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 熱力学</div>
-        <span class="part" style="background-image: url(../css/BG51light.png);">温度</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 熱力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG51light.png) no-repeat top right;">温度</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>温度の定量</a>
-        <span class="part" style="background-image: url(../css/BG52light.png);">閉鎖系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG52light.png) no-repeat top right;">閉鎖系の平衡</span>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>気体のエネルギー</a>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>可逆な操作</a>
         <a href="004.html" class="item"><span class="toc_chapter_num">4</span>不可逆性の定量</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>閉鎖系の平衡条件</a>
-        <span class="part" style="background-image: url(../css/BG53light.png);">開放系の平衡</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG53light.png) no-repeat top right;">開放系の平衡</span>
         <a class="item youAreHere"><span class="toc_chapter_num">6</span>多相系の平衡条件</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>複数の物質の混合</a>
-        <span class="part" style="background-image: url(../css/BG54light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG54light.png) no-repeat top right;">補遺（数学）</span>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>制約条件付き極値問題</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="熱力学 第6章 多相系の平衡条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>6. 多相系の平衡条件</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">6.</span><span class="chapter_name">多相系の平衡条件<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="熱力学 第6章 多相系の平衡条件 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <div class="p">
 液体と気体のように、複数の相が共存する場合の平衡条件。
 </div>
@@ -179,7 +176,7 @@
 --></span><!--
 -->。<!--
 --><span class="weak"><!--
--->（固相は結晶構造が異なる複数種類が存在することが多い。例えば、炭素であればグラファイトとダダイヤモンドがあるし、氷についても20種類近く存在することが知られている。）<!--
+-->（固相は結晶構造が異なる複数種類が存在することが多い。例えば、炭素であればグラファイトとダイヤモンドがあるし、氷についても20種類近く存在することが知られている。）<!--
 --></span><!--
 -->
 </div>
@@ -207,7 +204,7 @@
 </div>
 <h2><span class="section_num">6.1</span><span class="section_name">
 物質量の関数としての、エネルギーとエントロピー
-</span> </h2>
+</span></h2>
 <div class="p">
 水と水蒸気が共存する系では、水の内部エネルギーとエントロピーそれぞれ
 <span id="MathJax-Element-1-Frame" class="mjx-chtml"><span id="MJXc-Node-1" class="mjx-math"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-msubsup"><span class="mjx-base" style="margin-right: -0.084em;"><span id="MJXc-Node-4" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.084em;">U</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.225em; padding-right: 0.071em;"><span id="MJXc-Node-5" class="mjx-texatom" style=""><span id="MJXc-Node-6" class="mjx-mrow"><span id="MJXc-Node-7" class="mjx-texatom"><span id="MJXc-Node-8" class="mjx-mrow"><span id="MJXc-Node-9" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">l</span></span><span id="MJXc-Node-10" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">i</span></span><span id="MJXc-Node-11" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.519em; padding-right: 0.007em;">q</span></span></span></span></span></span></span></span><span id="MJXc-Node-12" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="margin-top: -0.144em; padding-bottom: 0.519em;">,</span></span><span id="MJXc-Node-13" class="mjx-msubsup MJXc-space1"><span class="mjx-base" style="margin-right: -0.032em;"><span id="MJXc-Node-14" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.519em; padding-bottom: 0.298em; padding-right: 0.032em;">S</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.13em; padding-right: 0.071em;"><span id="MJXc-Node-15" class="mjx-texatom" style=""><span id="MJXc-Node-16" class="mjx-mrow"><span id="MJXc-Node-17" class="mjx-texatom"><span id="MJXc-Node-18" class="mjx-mrow"><span id="MJXc-Node-19" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">l</span></span><span id="MJXc-Node-20" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">i</span></span><span id="MJXc-Node-21" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.151em; padding-bottom: 0.519em; padding-right: 0.007em;">q</span></span></span></span></span></span></span></span></span></span></span>
@@ -354,7 +351,7 @@
 </div>
 <h2><span class="section_num">6.2</span><span class="section_name">
 転移エネルギーと転移エントロピー
-</span> </h2>
+</span></h2>
 <div class="p">
 今考えているのは、水と水蒸気の2相平衡である。容器全体の内部エネルギーは保存するわけだが、それぞれの相の内部エネルギーを、前節に従って決めただけでは保存しない。というのも、水を水蒸気に変化させるのに必要なエネルギー<!--
 --><span class="weak"><!--
@@ -517,7 +514,7 @@
 </div>
 <h2><span class="section_num">6.3</span><span class="section_name">
 平衡条件
-</span> </h2>
+</span></h2>
 <div class="p">
 内部エネルギーおよびエントロピーとして、前節のように相転移を考慮したようにとっているとする。平衡状態において実現する状態は、内部エネルギーが一定という制約条件の下で、エントロピーが最大となる点である。この節では、その平衡条件が式(<!--
 --><span id="MathJax-Element-91-Frame" class="mjx-chtml"><span id="MJXc-Node-2340" class="mjx-math"><span id="MJXc-Node-2341" class="mjx-mrow"><a href="#mjx-eqn-eqjZk"><span id="MJXc-Node-2342" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2343" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">12</span></span></span></a></span></span></span><!--
@@ -668,8 +665,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【6.3-注1】ギブズの相律<!--
+--><span class="note_num"><!--
+-->【6.3-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->ギブズの相律<!--
 --></span><!--
 -->
 </h3>
@@ -739,10 +740,11 @@
 -->)の6つであり、数が一致している。従って、解が1つに決まる。
 </div>
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 

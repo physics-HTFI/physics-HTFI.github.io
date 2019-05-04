@@ -134,42 +134,39 @@
 @font-face {font-family: MJXc-TeX-size4-R; src: local('MathJax_Size4'), local('MathJax_Size4-Regular')}
 @font-face {font-family: MJXc-TeX-size4-Rw; src /*1*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot'); src /*2*/: url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf') format('opentype')}
 </style></head>
-  <body>
-    <div id="left">
-      <div id="lheader"><img src="../css/logo.png"></div>
-      <div id="menu">
+  <body class="chapter">
+    <div class="center">
+      <div id="left">
+        <div class="logo"><a href=".."><img src="../css/logo.png"></a></div>
+        <div id="menu">
 <!-- begin menu -->
-        <div id="breadcrumb"><a href="..">ホーム</a> &gt; 力学</div>
-        <span class="part" style="background-image: url(../css/BG11light.png);">自由な運動</span>
+        <div id="breadcrumb"><a href=".."><img src="../css/home.png"></a> › 力学</div>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG11light.png) no-repeat top right;">自由な運動</span>
         <a href="001.html" class="item"><span class="toc_chapter_num">1</span>キャッチボール</a>
         <a href="002.html" class="item"><span class="toc_chapter_num">2</span>ニュートンの運動方程式</a>
-        <span class="part" style="background-image: url(../css/BG12light.png);">衝突</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG12light.png) no-repeat top right;">衝突</span>
         <a href="003.html" class="item"><span class="toc_chapter_num">3</span>壁との衝突</a>
         <a class="item youAreHere"><span class="toc_chapter_num">4</span>動く壁との衝突</a>
         <a href="005.html" class="item"><span class="toc_chapter_num">5</span>ボール同士の衝突</a>
-        <span class="part" style="background-image: url(../css/BG13light.png);">拘束された運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG13light.png) no-repeat top right;">拘束された運動</span>
         <a href="006.html" class="item"><span class="toc_chapter_num">6</span>振り子</a>
         <a href="007.html" class="item"><span class="toc_chapter_num">7</span>動く振り子</a>
         <a href="008.html" class="item"><span class="toc_chapter_num">8</span>二重振り子</a>
         <a href="009.html" class="item"><span class="toc_chapter_num">9</span>自由な座標</a>
-        <span class="part" style="background-image: url(../css/BG14light.png);">剛体の運動</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG14light.png) no-repeat top right;">剛体の運動</span>
         <a href="010.html" class="item"><span class="toc_chapter_num">10</span>剛体の座標・速度</a>
         <a href="011.html" class="item"><span class="toc_chapter_num">11</span>自由な剛体</a>
         <a href="012.html" class="item"><span class="toc_chapter_num">12</span>拘束された剛体</a>
         <a href="013.html" class="item"><span class="toc_chapter_num">13</span>滑り・転がり</a>
-        <span class="part" style="background-image: url(../css/BG15light.png);">補遺（数学）</span>
+        <span class="part" style="background: url(../css/left_PartUnderLine.png) no-repeat bottom right, url(../css/BG15light.png) no-repeat top right;">補遺（数学）</span>
         <a href="014.html" class="item"><span class="toc_chapter_num">14</span>3次元の密度積分</a>
         <a href="015.html" class="item"><span class="toc_chapter_num">15</span>可積分条件</a>
 <!-- end menu -->
+        </div>
       </div>
-    </div>
-    <div id="right">
-      <div id="rheader">
-        <div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-text="力学 第4章 動く壁との衝突 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
-        <a href="..">物理学の見つけ方</a>
-      </div>
-      <div id="contents">
-<h1>4. 動く壁との衝突</h1>
+      <div id="right">
+        <div id="contents">
+<h1><span class="chapter_num">4.</span><span class="chapter_name">動く壁との衝突<div class="tweet"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-dnt="true" data-text="力学 第4章 動く壁との衝突 - 物理学の見つけ方"></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
 <img class="graph" src="fig/05a7e.gif">
 <div class="p">
 動いている壁との弾性衝突によるボールの速度変化は、相対性原理による衝突公式(<!--
@@ -265,7 +262,7 @@
 相対性原理による衝突公式(<!--
 --><span id="MathJax-Element-19-Frame" class="mjx-chtml"><span id="MJXc-Node-270" class="mjx-math"><span id="MJXc-Node-271" class="mjx-mrow"><a href="#mjx-eqn-eqHkQ"><span id="MJXc-Node-272" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-273" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
 -->)の導出
-</span> </h2>
+</span></h2>
 <div class="p">
 この節では、壁とともに移動する観測者を考えることで、弾性衝突の公式(<!--
 --><span id="MathJax-Element-20-Frame" class="mjx-chtml"><span id="MJXc-Node-274" class="mjx-math"><span id="MJXc-Node-275" class="mjx-mrow"><a href="#mjx-eqn-eqHkQ"><span id="MJXc-Node-276" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-277" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
@@ -339,8 +336,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.1-注1】相対性原理<!--
+--><span class="note_num"><!--
+-->【4.1-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->相対性原理<!--
 --></span><!--
 -->
 </h3>
@@ -484,8 +485,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.1-注2】ガリレイ変換：式(<!--
+--><span class="note_num"><!--
+-->【4.1-注2】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->ガリレイ変換：式(<!--
 --><span id="MathJax-Element-66-Frame" class="mjx-chtml"><span id="MJXc-Node-726" class="mjx-math"><span id="MJXc-Node-727" class="mjx-mrow"><a href="#mjx-eqn-eqpJW"><span id="MJXc-Node-728" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-729" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">5</span></span></span></a></span></span></span><!--
 -->)<!--
 --></span><!--
@@ -698,8 +703,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.1-注3】合成関数の微分公式（連鎖律）<!--
+--><span class="note_num"><!--
+-->【4.1-注3】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->合成関数の微分公式（連鎖律）<!--
 --></span><!--
 -->
 </h3>
@@ -786,8 +795,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.1-注4】ベクトル値関数の全微分<!--
+--><span class="note_num"><!--
+-->【4.1-注4】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->ベクトル値関数の全微分<!--
 --></span><!--
 -->
 </h3>
@@ -875,7 +888,7 @@
 の導出：式(<!--
 --><span id="MathJax-Element-182-Frame" class="mjx-chtml"><span id="MJXc-Node-2561" class="mjx-math"><span id="MJXc-Node-2562" class="mjx-mrow"><a href="#mjx-eqn-eqwMr"><span id="MJXc-Node-2563" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2564" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">18</span></span></span></a></span></span></span><!--
 -->)
-</span> </h2>
+</span></h2>
 <div class="p">
 残る課題は、式(<!--
 --><span id="MathJax-Element-183-Frame" class="mjx-chtml"><span id="MJXc-Node-2565" class="mjx-math"><span id="MJXc-Node-2566" class="mjx-mrow"><a href="#mjx-eqn-eqHkQ"><span id="MJXc-Node-2567" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-2568" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">8</span></span></span></a></span></span></span><!--
@@ -1064,8 +1077,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.2-注1】壁が時間変化している場合の弾性衝突条件<!--
+--><span class="note_num"><!--
+-->【4.2-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->壁が時間変化している場合の弾性衝突条件<!--
 --></span><!--
 -->
 </h3>
@@ -1097,7 +1114,7 @@
 ボールの運動
 <span id="MathJax-Element-237-Frame" class="mjx-chtml"><span id="MJXc-Node-3440" class="mjx-math"><span id="MJXc-Node-3441" class="mjx-mrow"><span id="MJXc-Node-3442" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span id="MJXc-Node-3443" class="mjx-mrow MJXc-space1"><span id="MJXc-Node-3444" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">(</span></span><span id="MJXc-Node-3445" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.372em; padding-bottom: 0.298em;">t</span></span><span id="MJXc-Node-3446" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.446em; padding-bottom: 0.593em;">)</span></span></span></span></span></span>
 の計算
-</span> </h2>
+</span></h2>
 <div class="p">
 衝突公式(<!--
 --><span id="MathJax-Element-238-Frame" class="mjx-chtml"><span id="MJXc-Node-3447" class="mjx-math"><span id="MJXc-Node-3448" class="mjx-mrow"><a href="#mjx-eqn-eqtME"><span id="MJXc-Node-3449" class="mjx-mrow MathJax_ref"><span id="MJXc-Node-3450" class="mjx-mtext"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">19</span></span></span></a></span></span></span><!--
@@ -1205,8 +1222,12 @@
 <div class="note">
 <h3>
 <!--
---><span><!--
--->【4.3-注1】双曲線関数<!--
+--><span class="note_num"><!--
+-->【4.3-注1】<!--
+--></span><!--
+--><!--
+--><span class="note_name"><!--
+-->双曲線関数<!--
 --></span><!--
 -->
 </h3>
@@ -1215,10 +1236,11 @@
 <span class="mjx-chtml MJXc-display" style="text-align: center;"><span id="MathJax-Element-261-Frame" class="mjx-chtml" style="text-align: center;"><span id="MJXc-Node-3900" class="mjx-math"><span id="MJXc-Node-3901" class="mjx-mrow"><span id="MJXc-Node-3902" class="mjx-mtable" style="vertical-align: -5.446em; padding: 0px 0.167em;"><span class="mjx-table"><span id="MJXc-Node-3903" class="mjx-mtr" style="height: 2.485em;"><span id="MJXc-Node-3904" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: right; width: 4.275em;"><span id="MJXc-Node-3905" class="mjx-mrow" style="margin-top: 0.469em;"><span id="MJXc-Node-3906" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">tanh</span></span><span id="MJXc-Node-3907" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-3908" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-3909" class="mjx-mtd" style="padding: 0px 0px 0px 0px; text-align: left; width: 9.764em;"><span id="MJXc-Node-3910" class="mjx-mrow"><span id="MJXc-Node-3911" class="mjx-mi"></span><span id="MJXc-Node-3912" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-3913" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 2.833em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 2.833em; top: -1.396em;"><span id="MJXc-Node-3914" class="mjx-mrow"><span id="MJXc-Node-3915" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">sinh</span></span><span id="MJXc-Node-3916" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-3917" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span><span class="mjx-denominator" style="width: 2.833em; bottom: -0.795em;"><span id="MJXc-Node-3918" class="mjx-mrow"><span id="MJXc-Node-3919" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">cosh</span></span><span id="MJXc-Node-3920" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-3921" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 2.833em;" class="mjx-line"></span></span><span style="height: 2.191em; vertical-align: -0.795em;" class="mjx-vsize"></span></span><span id="MJXc-Node-3922" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-3923" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 3.784em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 3.784em; top: -1.469em;"><span id="MJXc-Node-3924" class="mjx-mrow"><span id="MJXc-Node-3925" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-3926" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3927" class="mjx-texatom" style=""><span id="MJXc-Node-3928" class="mjx-mrow"><span id="MJXc-Node-3929" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span><span id="MJXc-Node-3930" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3931" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-3932" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3933" class="mjx-texatom" style=""><span id="MJXc-Node-3934" class="mjx-mrow"><span id="MJXc-Node-3935" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3936" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span></span><span class="mjx-denominator" style="width: 3.784em; bottom: -0.866em;"><span id="MJXc-Node-3937" class="mjx-mrow"><span id="MJXc-Node-3938" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-3939" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.409em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3940" class="mjx-texatom" style=""><span id="MJXc-Node-3941" class="mjx-mrow"><span id="MJXc-Node-3942" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span><span id="MJXc-Node-3943" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span id="MJXc-Node-3944" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-3945" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.409em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3946" class="mjx-texatom" style=""><span id="MJXc-Node-3947" class="mjx-mrow"><span id="MJXc-Node-3948" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3949" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.784em;" class="mjx-line"></span></span><span style="height: 2.335em; vertical-align: -0.866em;" class="mjx-vsize"></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-3950" class="mjx-mtr" style="height: 2.526em;"><span id="MJXc-Node-3951" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-3952" class="mjx-mrow" style="margin-top: 0.469em;"><span id="MJXc-Node-3953" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">cosh</span></span><span id="MJXc-Node-3954" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-3955" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-3956" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-3957" class="mjx-mrow"><span id="MJXc-Node-3958" class="mjx-mi"></span><span id="MJXc-Node-3959" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-3960" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 3.784em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 3.784em; top: -1.469em;"><span id="MJXc-Node-3961" class="mjx-mrow"><span id="MJXc-Node-3962" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-3963" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3964" class="mjx-texatom" style=""><span id="MJXc-Node-3965" class="mjx-mrow"><span id="MJXc-Node-3966" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span><span id="MJXc-Node-3967" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">+</span></span><span id="MJXc-Node-3968" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-3969" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3970" class="mjx-texatom" style=""><span id="MJXc-Node-3971" class="mjx-mrow"><span id="MJXc-Node-3972" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3973" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span></span><span class="mjx-denominator" style="width: 3.784em; bottom: -0.756em;"><span id="MJXc-Node-3974" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.784em;" class="mjx-line"></span></span><span style="height: 2.226em; vertical-align: -0.756em;" class="mjx-vsize"></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-3975" class="mjx-mtr" style="height: 2.526em;"><span id="MJXc-Node-3976" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-3977" class="mjx-mrow" style="margin-top: 0.469em;"><span id="MJXc-Node-3978" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">sinh</span></span><span id="MJXc-Node-3979" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-3980" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-3981" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-3982" class="mjx-mrow"><span id="MJXc-Node-3983" class="mjx-mi"></span><span id="MJXc-Node-3984" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-3985" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 3.784em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 3.784em; top: -1.469em;"><span id="MJXc-Node-3986" class="mjx-mrow"><span id="MJXc-Node-3987" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-3988" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3989" class="mjx-texatom" style=""><span id="MJXc-Node-3990" class="mjx-mrow"><span id="MJXc-Node-3991" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span><span id="MJXc-Node-3992" class="mjx-mo MJXc-space2"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3993" class="mjx-msubsup MJXc-space2"><span class="mjx-base"><span id="MJXc-Node-3994" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">e</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-3995" class="mjx-texatom" style=""><span id="MJXc-Node-3996" class="mjx-mrow"><span id="MJXc-Node-3997" class="mjx-mo"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.298em; padding-bottom: 0.446em;">−</span></span><span id="MJXc-Node-3998" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span></span></span></span></span><span class="mjx-denominator" style="width: 3.784em; bottom: -0.756em;"><span id="MJXc-Node-3999" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.784em;" class="mjx-line"></span></span><span style="height: 2.226em; vertical-align: -0.756em;" class="mjx-vsize"></span></span><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-4000" class="mjx-mtr" style="height: 1.3em;"><span id="MJXc-Node-4001" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-4002" class="mjx-mrow" style="margin-top: -0.2em;"><span class="mjx-strut"></span></span></span></span><span id="MJXc-Node-4003" class="mjx-mtr" style="height: 2.556em;"><span id="MJXc-Node-4004" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: right;"><span id="MJXc-Node-4005" class="mjx-mrow"><span id="MJXc-Node-4006" class="mjx-mfrac"><span class="mjx-box MJXc-stacked" style="width: 1.295em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 1.295em; top: -1.396em;"><span id="MJXc-Node-4007" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span></span><span class="mjx-denominator" style="width: 1.295em; bottom: -0.795em;"><span id="MJXc-Node-4008" class="mjx-mrow"><span id="MJXc-Node-4009" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.446em; padding-bottom: 0.298em; padding-right: 0.003em;">d</span></span><span id="MJXc-Node-4010" class="mjx-mi"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 1.295em;" class="mjx-line"></span></span><span style="height: 2.191em; vertical-align: -0.795em;" class="mjx-vsize"></span></span><span id="MJXc-Node-4011" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">tanh</span></span><span id="MJXc-Node-4012" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-4013" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span><span class="mjx-strut"></span></span></span><span id="MJXc-Node-4014" class="mjx-mtd" style="padding: 0.15em 0px 0px 0px; text-align: left;"><span id="MJXc-Node-4015" class="mjx-mrow" style="margin-top: 0.028em;"><span id="MJXc-Node-4016" class="mjx-mi"></span><span id="MJXc-Node-4017" class="mjx-mo MJXc-space3"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.077em; padding-bottom: 0.298em;">=</span></span><span id="MJXc-Node-4018" class="mjx-mfrac MJXc-space3"><span class="mjx-box MJXc-stacked" style="width: 3.222em; padding: 0px 0.12em;"><span class="mjx-numerator" style="width: 3.222em; top: -1.368em;"><span id="MJXc-Node-4019" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">1</span></span></span><span class="mjx-denominator" style="width: 3.222em; bottom: -1.011em;"><span id="MJXc-Node-4020" class="mjx-mrow"><span id="MJXc-Node-4021" class="mjx-msubsup"><span class="mjx-base"><span id="MJXc-Node-4022" class="mjx-mi"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">cosh</span></span></span><span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.631em; padding-left: 0px; padding-right: 0.071em;"><span id="MJXc-Node-4023" class="mjx-texatom" style=""><span id="MJXc-Node-4024" class="mjx-mrow"><span id="MJXc-Node-4025" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.372em; padding-bottom: 0.372em;">2</span></span></span></span></span></span><span id="MJXc-Node-4026" class="mjx-mo"><span class="mjx-char"></span></span><span id="MJXc-Node-4027" class="mjx-mi MJXc-space1"><span class="mjx-char MJXc-TeX-math-I" style="padding-top: 0.225em; padding-bottom: 0.298em;">x</span></span></span></span><span style="border-bottom: 1.3px solid; top: -0.296em; width: 3.222em;" class="mjx-line"></span></span><span style="height: 2.378em; vertical-align: -1.011em;" class="mjx-vsize"></span></span><span class="mjx-strut"></span></span></span></span></span></span></span></span></span></span>
 </div>
 </div>
-      </div>
+        </div>
 <!-- begin footer -->
       <div id="footer">© 2016-2019 物理学の見つけ方</div>
 <!-- end footer -->
+      </div>
     </div>
   
 
