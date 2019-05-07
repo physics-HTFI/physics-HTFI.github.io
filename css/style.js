@@ -41,22 +41,6 @@ function startSimulation(htmlPath) {
 }
 
 
-// ウィンドウが小さいときの水平スクロールに対応
-var scrollX_pre = 0;
-window.addEventListener('scroll', function horizontalScroll() {
-	if(scrollX_pre != window.scrollX) {
-		scrollX_pre = window.scrollX;
-		if(window.scrollX == 0) {
-			document.getElementById("left").style.left = ""; // これがないとウィンドウサイズ変更時に画面左端に張り付く
-		}
-		else {
-			document.getElementById("left").style.left = - window.scrollX + "px";
-		}
-	}
-}
-, false);
-
-
 // GoogleAnalytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

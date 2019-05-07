@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-<url><lastmod>2019-05-05</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+<url><lastmod>2019-05-18</lastmod><loc>https://physics-htfi.github.io/</loc></url>
 <url><lastmod>2019-04-10</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--dc1a8-->
 <url><lastmod>2019-03-19</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--dc365-->
-<url><lastmod>2019-03-30</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/003.html</loc></url><!--4a8f2-->
+<url><lastmod>2019-03-30</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/003.html</loc></url><!--5457d-->
 <url><lastmod>2019-03-20</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/004.html</loc></url><!--634b3-->
 <url><lastmod>2019-02-03</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/005.html</loc></url><!--c50ce-->
 <url><lastmod>2019-03-28</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/006.html</loc></url><!--561fb-->
@@ -22,6 +22,10 @@
 <url><lastmod>2019-04-14</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/004.html</loc></url><!--3628d-->
 <url><lastmod>2019-04-13</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/005.html</loc></url><!--1fc25-->
 <url><lastmod>2019-04-03</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/006.html</loc></url><!--29004-->
+<url><lastmod>2019-05-18</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/007.html</loc></url><!--823d9-->
+<url><lastmod>2019-05-18</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/008.html</loc></url><!--c8b5c-->
+<url><lastmod>2019-05-18</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/009.html</loc></url><!--e7e8d-->
+<url><lastmod>2019-05-18</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/010.html</loc></url><!--9faef-->
 <url><lastmod>2019-05-01</lastmod><loc>https://physics-htfi.github.io/electrodynamics/001.html</loc></url><!--f5b98-->
 <url><lastmod>2018-07-20</lastmod><loc>https://physics-htfi.github.io/electrodynamics/002.html</loc></url><!--6e450-->
 <url><lastmod>2018-08-23</lastmod><loc>https://physics-htfi.github.io/electrodynamics/003.html</loc></url><!--c779a-->
@@ -44,7 +48,7 @@
 <url><lastmod>2019-02-16</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--d7c2e-->
 <url><lastmod>2019-04-18</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--873f5-->
 <url><lastmod>2019-03-29</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--eccef-->
-<url><lastmod>2018-09-13</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--8d9e6-->
+<url><lastmod>2019-05-04</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--8d9e6-->
 <url><lastmod>2018-05-06</lastmod><loc>https://physics-htfi.github.io/thermodynamics/005.html</loc></url><!--05357-->
 <url><lastmod>2019-04-10</lastmod><loc>https://physics-htfi.github.io/thermodynamics/006.html</loc></url><!--2bbae-->
 <url><lastmod>2018-05-21</lastmod><loc>https://physics-htfi.github.io/thermodynamics/007.html</loc></url><!--bdd80-->
