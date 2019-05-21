@@ -22,13 +22,9 @@ function fold(h3tag) {
 		}
 	}
 }
-var	allowFold = true;
-window.onload = function() {
-	if(allowFold) { addFold(); }
-}
 
 
-// 数値計算の実行用ウィンドウを開く
+// シミュレーション画面を開く
 function startSimulation(htmlPath) {
 	var iframe = document.createElement('iframe');
 	iframe.src = htmlPath;
@@ -36,10 +32,35 @@ function startSimulation(htmlPath) {
 	div.id = 'simulation';
 	div.insertBefore(iframe, div.firstChild);
 	div.addEventListener('click',function () { div.parentNode.removeChild(div); }, false);
+	div.addEventListener('touchstart',function () { div.parentNode.removeChild(div); }, false);
 	var body = document.getElementsByTagName('body')[0];
 	body.insertBefore(div, body.firstChild);
 }
 
+// シミュレーション開始のボタンクリック処理
+function addStartSimulationListener() {
+	buttons = document.getElementsByTagName('input');
+	for(var i=0; i<buttons.length; i++) {
+		buttons[i].addEventListener('touchend', function() { startSimulation(this.getAttribute('html-path')); });
+		buttons[i].addEventListener('click', function() { startSimulation(this.getAttribute('html-path')); });
+	}
+}
+
+// シミュレーション画面のボタンクリック処理
+function addParameterChangedListener(funcs) {
+	buttons = document.getElementsByTagName('input');
+	for(var i=0; i<funcs.length; i++) {
+		buttons[i].addEventListener('touchstart', funcs[i]);
+		buttons[i].addEventListener('click', funcs[i]);
+	}
+}
+
+
+var	allowFold = true;
+window.onload = function() {
+	if(allowFold) { addFold(); }
+	addStartSimulationListener();
+};
 
 // GoogleAnalytics
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
