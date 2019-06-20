@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172.422" height="113.044" version="1.1" viewBox="0 0 172.42134 113.04343" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <marker id="marker1233" overflow="visible" orient="auto">
+   <path transform="scale(.4) rotate(180) translate(10)" d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill="#f00" fill-rule="evenodd" stroke="#f00" stroke-width="1pt"/>
+  </marker>
+  <marker id="marker1193" overflow="visible" orient="auto">
+   <path transform="scale(.4) rotate(180) translate(10)" d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill="#f00" fill-rule="evenodd" stroke="#f00" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="scale(.4) rotate(180) translate(10)" d="m0 0l5-5-17.5 5 17.5 5-5-5z" fill="#f00" fill-rule="evenodd" stroke="#f00" stroke-width="1pt"/>
+  </marker>
+  <symbol id="g4094">
+   <path d="m135.453 8.429c0-0.51647-0.43994-1.01381-1.01377-1.01381-0.65037 0-1.03292 0.5356-1.03292 1.01381 0 0.51646 0.43995 1.01378 1.01379 1.01378 0.65037 0 1.03291-0.53558 1.03291-1.01378z" stroke-linejoin="round" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+   <path d="m138.388 12.807c-0.68861 0.19128-1.03291 0.84163-1.03291 1.31983 0 0.42084 0.32518 0.8799 0.95641 0.8799 0.66947 0 1.37721-0.55471 1.37721-1.49199 0-1.0138-1.01379-1.68329-2.1806-1.68329-1.0903 0-1.79804 0.82253-2.04672 1.16683-0.4782-0.80339-1.54939-1.16683-2.63969-1.16683-2.41014 0-3.71087 2.35278-3.71087 2.984 0 0.2678 0.28693 0.2678 0.45909 0.2678 0.22954 0 0.36344 0 0.43995-0.24866 0.55472-1.74066 1.93193-2.31452 2.71619-2.31452 0.72688 0 1.07118 0.34431 1.07118 0.95642 0 0.36343-0.26779 1.41548-0.43995 2.1041l-0.65035 2.62054c-0.28693 1.16683-0.97555 1.74068-1.62588 1.74068-0.0957 0-0.5356 0-0.91816-0.28693 0.68861-0.19128 1.03292-0.84164 1.03292-1.31984 0-0.42081-0.32518-0.8799-0.95641-0.8799-0.66949 0-1.37723 0.55472-1.37723 1.492 0 1.01379 1.01379 1.68328 2.18062 1.68328 1.09028 0 1.79803-0.82251 2.0467-1.16682 0.47821 0.80339 1.54939 1.16682 2.63969 1.16682 2.41016 0 3.71086-2.35276 3.71086-2.98399 0-0.2678-0.28691-0.2678-0.45907-0.2678-0.22954 0-0.36344 0-0.43995 0.24867-0.55471 1.74066-1.93193 2.31451-2.71619 2.31451-0.72688 0-1.07118-0.34431-1.07118-0.95641 0-0.40169 0.24867-1.41549 0.42081-2.12323 0.13392-0.49733 0.57386-2.29538 0.66949-2.60143 0.28692-1.14769 0.95641-1.74067 1.6259-1.74067 0.0957 0 0.5356 0 0.91814 0.28693z" stroke-linejoin="round" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+  </symbol>
+  <symbol id="g4090">
+   <path d="m143.564 17.695c0-0.3883-0.32136-0.76321-0.77661-0.76321-0.40169 0-0.76321 0.32136-0.76321 0.76321 0 0.48203 0.3883 0.7766 0.76321 0.7766 0.42847 0 0.77661-0.33473 0.77661-0.7766zm-2.03524 2.50388v0.48202c0.84355 0 0.96406 0.0804 0.96406 0.73645v3.48133c0 0.57575-0.13392 0.57575-1.00422 0.57575v0.48203c0.0267 0 0.96405-0.0536 1.49964-0.0536 0.46864 0 0.95067 0.0134 1.41931 0.0536v-0.48203c-0.77661 0-0.91049 0-0.91049-0.56236v-4.86047z" stroke-linejoin="round" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+   <path d="m151.95 21.899c0-1.16491-0.57576-1.84778-2.00846-1.84778-1.09797 0-1.80763 0.60254-2.18254 1.29881h-0.0128v-1.29881l-1.96828 0.14728v0.48203c0.8971 0 1.00422 0.0937 1.00422 0.74983v3.46794c0 0.57575-0.13392 0.57575-1.00422 0.57575v0.48203c0.0267 0 0.96406-0.0536 1.52643-0.0536 0.49542 0 1.41931 0.0402 1.53982 0.0536v-0.48203c-0.87033 0-1.00424 0-1.00424-0.57575v-2.41015c0-1.40593 1.11136-2.06202 1.99508-2.06202 0.93728 0 1.05779 0.73643 1.05779 1.4193v3.05287c0 0.57575-0.13392 0.57575-1.00424 0.57575v0.48203c0.0267 0 0.96406-0.0536 1.52643-0.0536 0.49542 0 1.41932 0.0402 1.53982 0.0536v-0.48203c-0.87033 0-1.00422 0-1.00422-0.57575z" stroke-linejoin="round" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+  </symbol>
+ </defs>
+ <g stroke-linejoin="round">
+  <rect x=".499999" y="34.1636" width="171.421" height="78.3798" color="#000000" color-rendering="auto" fill="#dcdcdc" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke-miterlimit="1e5" stroke-width=".999995" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m0.499999 34.1636h171.421" color="#000000" color-rendering="auto" fill="none" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke="#555" stroke-miterlimit="100" stroke-width="2.99999" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m143.498 1.0088c0-0.20085 0-0.5088-0.32136-0.5088-0.33475 0-0.33475 0.33474-0.33475 0.57576v12.2248c0 0.24101 0 0.57576 0.33475 0.57576 0.32136 0 0.32136-0.30797 0.32136-0.50881zm2.95913 0.067c0-0.24102 0-0.57576-0.33475-0.57576-0.32134 0-0.32134 0.30795-0.32134 0.5088v12.3587c0 0.20084 0 0.50881 0.32134 0.50881 0.33475 0 0.33475-0.33475 0.33475-0.57576z" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+  <path d="m29.2435 84.9575c0-0.20084 0-0.5222-0.32135-0.5222-0.33474 0-0.33474 0.30796-0.33474 0.5222v8.11417h-4.08386c-0.20085 0-0.53558 0-0.53558 0.32135 0 0.33474 0.30795 0.33474 0.53558 0.33474h8.82383c0.21424 0 0.53559 0 0.53559-0.32135 0-0.33474-0.30797-0.33474-0.53559-0.33474h-4.08388z" fill="#f00" stroke-miterlimit="1e5" stroke-width="1.59999"/>
+  <path d="m132.448 101.964h-88.1377" color="#000000" color-rendering="auto" fill="none" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke="#000" stroke-dasharray="1.79999584, 1.79999584" stroke-width=".299999" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m132.448 101.964v-74.1757" color="#000000" color-rendering="auto" fill="none" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stroke="#000" stroke-dasharray="1.79999584, 1.79999584" stroke-width=".299999" style="isolation:auto;mix-blend-mode:normal"/>
+ </g>
+ <circle transform="rotate(-26.402)" cx="27.2768" cy="44.4265" r="4.99999" color="#000000" fill="#5e5bff"/>
+ <g fill="none" shape-rendering="auto" stroke="#f00" stroke-linecap="round">
+  <path d="m44.3099 27.7883 88.1377 74.1757" color="#000000" color-rendering="auto" image-rendering="auto" marker-end="url(#Arrow1Mend)" solid-color="#000000" stroke-width="1.99999" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m44.3099 27.7883 88.1377 2e-6" color="#000000" color-rendering="auto" image-rendering="auto" marker-end="url(#marker1233)" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+  <path d="m44.3099 27.7883 2e-6 74.1757" color="#000000" color-rendering="auto" image-rendering="auto" marker-end="url(#marker1193)" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+ </g>
+ <use width="100%" height="100%" xlink:href="#g4094"/>
+ <use transform="translate(10.607 85.5854)" width="100%" height="100%" xlink:href="#g4094"/>
+ <use transform="translate(-117.803 81.5617)" width="100%" height="100%" fill="#ff0000" xlink:href="#g4094"/>
+ <use width="100%" height="100%" xlink:href="#g4090"/>
+ <use transform="translate(10.608,82.9764)" width="100%" height="100%" xlink:href="#g4090"/>
+ <use transform="translate(-117.802 80.8123)" width="100%" height="100%" fill="#ff0000" xlink:href="#g4090"/>
+</svg>
