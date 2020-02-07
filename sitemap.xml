@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-  <url><lastmod>2020-01-12</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+  <url><lastmod>2020-02-07</lastmod><loc>https://physics-htfi.github.io/</loc></url>
   <url><lastmod>2019-12-14</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--ecacf-->
   <url><lastmod>2020-01-02</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--e42dc-->
   <url><lastmod>2020-01-02</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/003.html</loc></url><!--c2879-->
@@ -13,8 +13,8 @@
   <url><lastmod>2020-01-02</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/010.html</loc></url><!--1072f-->
   <url><lastmod>2019-12-30</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/011.html</loc></url><!--ccb3f-->
   <url><lastmod>2019-12-30</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/012.html</loc></url><!--73e86-->
-  <url><lastmod>2020-01-02</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/013.html</loc></url><!--dccb3-->
-  <url><lastmod>2020-01-03</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/014.html</loc></url><!--44fc3-->
+  <url><lastmod>2020-01-14</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/013.html</loc></url><!--85f03-->
+  <url><lastmod>2020-01-14</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/014.html</loc></url><!--17423-->
   <url><lastmod>2020-01-11</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/015.html</loc></url><!--5c5d4-->
   <url><lastmod>2019-05-27</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/001.html</loc></url><!--b6d07-->
   <url><lastmod>2019-04-20</lastmod><loc>https://physics-htfi.github.io/continuum_mechanics/002.html</loc></url><!--1ca86-->
@@ -45,8 +45,8 @@
   <url><lastmod>2018-12-02</lastmod><loc>https://physics-htfi.github.io/gravitation/003.html</loc></url><!--2ac9c-->
   <url><lastmod>2018-11-15</lastmod><loc>https://physics-htfi.github.io/gravitation/004.html</loc></url><!--9bc09-->
   <url><lastmod>2018-12-04</lastmod><loc>https://physics-htfi.github.io/gravitation/005.html</loc></url><!--3c642-->
-  <url><lastmod>2019-08-30</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--c4260-->
-  <url><lastmod>2019-12-11</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--74588-->
+  <url><lastmod>2020-02-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/001.html</loc></url><!--04d94-->
+  <url><lastmod>2020-02-07</lastmod><loc>https://physics-htfi.github.io/thermodynamics/002.html</loc></url><!--7918a-->
   <url><lastmod>2019-12-04</lastmod><loc>https://physics-htfi.github.io/thermodynamics/003.html</loc></url><!--85ab5-->
   <url><lastmod>2019-09-28</lastmod><loc>https://physics-htfi.github.io/thermodynamics/004.html</loc></url><!--9c40b-->
   <url><lastmod>2019-08-23</lastmod><loc>https://physics-htfi.github.io/thermodynamics/005.html</loc></url><!--1f4a7-->
