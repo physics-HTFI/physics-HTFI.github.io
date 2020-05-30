@@ -10,7 +10,7 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
     <title>電荷に働くローレンツ力 - 物理学の見つけ方</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/chapter.css" type="text/css">
     <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
     <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
@@ -166,6 +166,10 @@ mjx-container[jax="CHTML"][display="true"] {
   margin: 1em 0;
 }
 
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
 mjx-container[jax="CHTML"][display="true"] mjx-math {
   padding: 0;
 }
@@ -210,9 +214,11 @@ mjx-stretchy-h > * {
 
 mjx-stretchy-h > * > mjx-c {
   display: inline-block;
+  transform: scalex(1.0000001);
 }
 
 mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
   padding: .001em 0;
   width: initial;
 }
@@ -255,7 +261,7 @@ mjx-stretchy-v > mjx-end > mjx-c {
 }
 
 mjx-stretchy-v > * > mjx-c {
-  transform: scale(1);
+  transform: scaley(1.0000001);
   transform-origin: left center;
   overflow: hidden;
 }
@@ -749,6 +755,10 @@ mjx-mtable[align="bottom"] > mjx-table {
   vertical-align: bottom;
 }
 
+mjx-mtable[side="right"] mjx-labels {
+  min-width: 100%;
+}
+
 mjx-mtr {
   display: table-row;
   text-align: left;
@@ -941,108 +951,92 @@ mjx-utext {
 }
 
 mjx-c::before {
-  display: inline-block;
+  display: block;
   width: 0;
 }
 
-.mjx-n mjx-c {
-  font-family: MJXZERO, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-I, MJXTEX-MI, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-b.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-BI, MJXTEX-B, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-cal mjx-c {
-  font-family: MJXZERO, MJXTEX-C, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-cal.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-C-B, MJXTEX-C, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ds mjx-c {
-  font-family: MJXZERO, MJXTEX-A, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1;
-}
-
-.mjx-fr mjx-c {
-  font-family: MJXZERO, MJXTEX-FR, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-fr.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-FR-B, MJXTEX-FR, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-sc mjx-c {
-  font-family: MJXZERO, MJXTEX-SC, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-sc.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-SC-B, MJXTEX-SC, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss mjx-c {
-  font-family: MJXZERO, MJXTEX-SS, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-B, MJXTEX-SS, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-I, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-b.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-B, MJXTEX-SS-I, MJXTEX-BI, MJXTEX-B, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ty mjx-c {
-  font-family: MJXZERO, MJXTEX-T, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-var mjx-c {
-  font-family: MJXZERO, MJXTEX-A, MJXTEX, MJXTEX-I, MJXTEX-S1;
-}
-
-.mjx-os mjx-c {
-  font-family: MJXZERO, MJXTEX-C, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-os.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-C-B, MJXTEX-C, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-mit mjx-c {
-  font-family: MJXZERO, MJXTEX-MI, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-lop mjx-c {
-  font-family: MJXZERO, MJXTEX-S2, MJXTEX-S1, MJXTEX, MJXTEX-I, MJXTEX-A;
-}
-
-.mjx-sop mjx-c {
-  font-family: MJXZERO, MJXTEX-S1, MJXTEX, MJXTEX-I, MJXTEX-A;
-}
-
-.mjx-s3 mjx-c {
-  font-family: MJXZERO, MJXTEX-S3, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-s4 mjx-c {
-  font-family: MJXZERO, MJXTEX-S4, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
 .MJX-TEX {
-  font-family: MJXZERO;
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
 }
 
 mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
@@ -1066,12 +1060,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 @font-face /* 3 */ {
   font-family: MJXTEX-I;
-  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
+  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
 }
 
 @font-face /* 4 */ {
   font-family: MJXTEX-MI;
-  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
+  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
 }
 
 @font-face /* 5 */ {
@@ -1110,7 +1104,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 12 */ {
-  font-family: MJXTEX-C-B;
+  font-family: MJXTEX-CB;
   src: url("../css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
 }
 
@@ -1120,7 +1114,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 14 */ {
-  font-family: MJXTEX-FR-B;
+  font-family: MJXTEX-FRB;
   src: url("../css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
 }
 
@@ -1130,12 +1124,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 16 */ {
-  font-family: MJXTEX-SS-B;
+  font-family: MJXTEX-SSB;
   src: url("../css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
 }
 
 @font-face /* 17 */ {
-  font-family: MJXTEX-SS-I;
+  font-family: MJXTEX-SSI;
   src: url("../css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
 }
 
@@ -1159,717 +1153,539 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   src: url("../css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
 
- mjx-c.mjx-c28::before {
+mjx-c.mjx-c28::before {
+  padding: 0.75em 0.389em 0.25em 0;
   content: "(";
 }
 
-mjx-c.mjx-c28 {
+mjx-c.mjx-c29::before {
   padding: 0.75em 0.389em 0.25em 0;
-}
-
- mjx-c.mjx-c29::before {
   content: ")";
 }
 
-mjx-c.mjx-c29 {
-  padding: 0.75em 0.389em 0.25em 0;
-}
-
- mjx-c.mjx-c2B::before {
+mjx-c.mjx-c2B::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "+";
 }
 
-mjx-c.mjx-c2B {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
- mjx-c.mjx-c2C::before {
+mjx-c.mjx-c2C::before {
+  padding: 0.121em 0.278em 0.194em 0;
   content: ",";
 }
 
-mjx-c.mjx-c2C {
-  padding: 0.121em 0.278em 0.194em 0;
-}
-
- mjx-c.mjx-c2E::before {
+mjx-c.mjx-c2E::before {
+  padding: 0.12em 0.278em 0 0;
   content: ".";
 }
 
-mjx-c.mjx-c2E {
-  padding: 0.12em 0.278em 0 0;
-}
-
- mjx-c.mjx-c2F::before {
+mjx-c.mjx-c2F::before {
+  padding: 0.75em 0.5em 0.25em 0;
   content: "/";
 }
 
-mjx-c.mjx-c2F {
-  padding: 0.75em 0.5em 0.25em 0;
-}
-
- mjx-c.mjx-c30::before {
+mjx-c.mjx-c30::before {
+  padding: 0.666em 0.5em 0.022em 0;
   content: "0";
 }
 
-mjx-c.mjx-c30 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c31::before {
+mjx-c.mjx-c31::before {
+  padding: 0.666em 0.5em 0 0;
   content: "1";
 }
 
-mjx-c.mjx-c31 {
+mjx-c.mjx-c32::before {
   padding: 0.666em 0.5em 0 0;
-}
-
- mjx-c.mjx-c32::before {
   content: "2";
 }
 
-mjx-c.mjx-c32 {
-  padding: 0.666em 0.5em 0 0;
-}
-
- mjx-c.mjx-c33::before {
+mjx-c.mjx-c33::before {
+  padding: 0.665em 0.5em 0.022em 0;
   content: "3";
 }
 
-mjx-c.mjx-c33 {
-  padding: 0.665em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c34::before {
+mjx-c.mjx-c34::before {
+  padding: 0.677em 0.5em 0 0;
   content: "4";
 }
 
-mjx-c.mjx-c34 {
-  padding: 0.677em 0.5em 0 0;
-}
-
- mjx-c.mjx-c35::before {
+mjx-c.mjx-c35::before {
+  padding: 0.666em 0.5em 0.022em 0;
   content: "5";
 }
 
-mjx-c.mjx-c35 {
+mjx-c.mjx-c36::before {
   padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c36::before {
   content: "6";
 }
 
-mjx-c.mjx-c36 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c37::before {
+mjx-c.mjx-c37::before {
+  padding: 0.676em 0.5em 0.022em 0;
   content: "7";
 }
 
-mjx-c.mjx-c37 {
-  padding: 0.676em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c38::before {
+mjx-c.mjx-c38::before {
+  padding: 0.666em 0.5em 0.022em 0;
   content: "8";
 }
 
-mjx-c.mjx-c38 {
+mjx-c.mjx-c39::before {
   padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c39::before {
   content: "9";
 }
 
-mjx-c.mjx-c39 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c3A::before {
+mjx-c.mjx-c3A::before {
+  padding: 0.43em 0.278em 0 0;
   content: ":";
 }
 
-mjx-c.mjx-c3A {
-  padding: 0.43em 0.278em 0 0;
-}
-
- mjx-c.mjx-c3D::before {
+mjx-c.mjx-c3D::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "=";
 }
 
-mjx-c.mjx-c3D {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
- mjx-c.mjx-c41::before {
+mjx-c.mjx-c41::before {
+  padding: 0.716em 0.75em 0 0;
   content: "A";
 }
 
-mjx-c.mjx-c41 {
-  padding: 0.716em 0.75em 0 0;
-}
-
- mjx-c.mjx-c43::before {
+mjx-c.mjx-c43::before {
+  padding: 0.705em 0.722em 0.021em 0;
   content: "C";
 }
 
-mjx-c.mjx-c43 {
-  padding: 0.705em 0.722em 0.021em 0;
-}
-
- mjx-c.mjx-c5B::before {
+mjx-c.mjx-c5B::before {
+  padding: 0.75em 0.278em 0.25em 0;
   content: "[";
 }
 
-mjx-c.mjx-c5B {
+mjx-c.mjx-c5D::before {
   padding: 0.75em 0.278em 0.25em 0;
-}
-
- mjx-c.mjx-c5D::before {
   content: "]";
 }
 
-mjx-c.mjx-c5D {
-  padding: 0.75em 0.278em 0.25em 0;
-}
-
- mjx-c.mjx-c64::before {
+mjx-c.mjx-c64::before {
+  padding: 0.694em 0.556em 0.011em 0;
   content: "d";
 }
 
-mjx-c.mjx-c64 {
-  padding: 0.694em 0.556em 0.011em 0;
-}
-
- mjx-c.mjx-c65::before {
+mjx-c.mjx-c65::before {
+  padding: 0.448em 0.444em 0.011em 0;
   content: "e";
 }
 
-mjx-c.mjx-c65 {
-  padding: 0.448em 0.444em 0.011em 0;
-}
-
- mjx-c.mjx-c67::before {
+mjx-c.mjx-c67::before {
+  padding: 0.453em 0.5em 0.206em 0;
   content: "g";
 }
 
-mjx-c.mjx-c67 {
-  padding: 0.453em 0.5em 0.206em 0;
-}
-
- mjx-c.mjx-c6B::before {
+mjx-c.mjx-c6B::before {
+  padding: 0.694em 0.528em 0 0;
   content: "k";
 }
 
-mjx-c.mjx-c6B {
-  padding: 0.694em 0.528em 0 0;
-}
-
- mjx-c.mjx-c6D::before {
+mjx-c.mjx-c6D::before {
+  padding: 0.442em 0.833em 0 0;
   content: "m";
 }
 
-mjx-c.mjx-c6D {
-  padding: 0.442em 0.833em 0 0;
-}
-
- mjx-c.mjx-c6F::before {
+mjx-c.mjx-c6F::before {
+  padding: 0.448em 0.5em 0.01em 0;
   content: "o";
 }
 
-mjx-c.mjx-c6F {
-  padding: 0.448em 0.5em 0.01em 0;
-}
-
- mjx-c.mjx-c70::before {
+mjx-c.mjx-c70::before {
+  padding: 0.442em 0.556em 0.194em 0;
   content: "p";
 }
 
-mjx-c.mjx-c70 {
-  padding: 0.442em 0.556em 0.194em 0;
-}
-
- mjx-c.mjx-c72::before {
+mjx-c.mjx-c72::before {
+  padding: 0.442em 0.392em 0 0;
   content: "r";
 }
 
-mjx-c.mjx-c72 {
-  padding: 0.442em 0.392em 0 0;
-}
-
- mjx-c.mjx-c73::before {
+mjx-c.mjx-c73::before {
+  padding: 0.448em 0.394em 0.011em 0;
   content: "s";
 }
 
-mjx-c.mjx-c73 {
-  padding: 0.448em 0.394em 0.011em 0;
-}
-
 mjx-c.mjx-cA8::before {
+  padding: 0.669em 0.5em 0 0;
   content: "\A8";
 }
 
-mjx-c.mjx-cA8 {
-  padding: 0.669em 0.5em 0 0;
-}
-
 mjx-c.mjx-cD7::before {
+  padding: 0.491em 0.778em 0 0;
   content: "\D7";
 }
 
-mjx-c.mjx-cD7 {
-  padding: 0.491em 0.778em 0 0;
-}
-
 mjx-c.mjx-c2D9::before {
+  padding: 0.669em 0.5em 0 0;
   content: "\2D9";
 }
 
-mjx-c.mjx-c2D9 {
-  padding: 0.669em 0.5em 0 0;
-}
-
 mjx-c.mjx-c2212::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "\2212";
 }
 
-mjx-c.mjx-c2212 {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
 mjx-c.mjx-c22C5::before {
+  padding: 0.31em 0.278em 0 0;
   content: "\22C5";
 }
 
-mjx-c.mjx-c22C5 {
-  padding: 0.31em 0.278em 0 0;
-}
-
 mjx-c.mjx-c22EF::before {
+  padding: 0.31em 1.172em 0 0;
   content: "\22EF";
 }
 
-mjx-c.mjx-c22EF {
-  padding: 0.31em 1.172em 0 0;
-}
-
-.mjx-b mjx-c.mjx-c30::before {
-  content: "0";
-}
-
-.mjx-b mjx-c.mjx-c30 {
-  padding: 0.654em 0.575em 0.01em 0;
-}
-
-.mjx-i mjx-c.mjx-c65::before {
+mjx-c.mjx-c1D452.TEX-I::before {
+  padding: 0.442em 0.466em 0.011em 0;
   content: "e";
 }
 
-.mjx-i mjx-c.mjx-c65 {
-  padding: 0.442em 0.466em 0.011em 0;
-}
-
-.mjx-i mjx-c.mjx-c6C::before {
+mjx-c.mjx-c1D459.TEX-I::before {
+  padding: 0.694em 0.298em 0.011em 0;
   content: "l";
 }
 
-.mjx-i mjx-c.mjx-c6C {
-  padding: 0.694em 0.298em 0.011em 0;
-}
-
-.mjx-i mjx-c.mjx-c6D::before {
+mjx-c.mjx-c1D45A.TEX-I::before {
+  padding: 0.442em 0.878em 0.011em 0;
   content: "m";
 }
 
-.mjx-i mjx-c.mjx-c6D {
-  padding: 0.442em 0.878em 0.011em 0;
-}
-
-.mjx-i mjx-c.mjx-c6E::before {
+mjx-c.mjx-c1D45B.TEX-I::before {
+  padding: 0.442em 0.6em 0.011em 0;
   content: "n";
 }
 
-.mjx-i mjx-c.mjx-c6E {
-  padding: 0.442em 0.6em 0.011em 0;
-}
-
-.mjx-i mjx-c.mjx-c71::before {
+mjx-c.mjx-c1D45E.TEX-I::before {
+  padding: 0.442em 0.46em 0.194em 0;
   content: "q";
 }
 
-.mjx-i mjx-c.mjx-c71 {
-  padding: 0.442em 0.46em 0.194em 0;
-}
-
-mjx-mo[noIC].mjx-i mjx-c.mjx-c71:last-child {
+[noIC] mjx-c.mjx-c1D45E.TEX-I:last-child::before {
   padding-right: 0.446em;
 }
 
-mjx-mi[noIC].mjx-i mjx-c.mjx-c71:last-child {
-  padding-right: 0.446em;
-}
-
-.mjx-i mjx-c.mjx-c74::before {
+mjx-c.mjx-c1D461.TEX-I::before {
+  padding: 0.626em 0.361em 0.011em 0;
   content: "t";
 }
 
-.mjx-i mjx-c.mjx-c74 {
-  padding: 0.626em 0.361em 0.011em 0;
-}
-
-mjx-c.mjx-c3B4::before {
-  content: "\3B4";
-}
-
-.mjx-i mjx-c.mjx-c3B4 {
-  padding: 0.717em 0.444em 0.01em 0;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c42::before {
+mjx-c.mjx-c1D469.TEX-BI::before {
+  padding: 0.686em 0.866em 0 0;
   content: "B";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c42 {
-  padding: 0.686em 0.866em 0 0;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c45::before {
+mjx-c.mjx-c1D46C.TEX-BI::before {
+  padding: 0.68em 0.825em 0 0;
   content: "E";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c45 {
-  padding: 0.68em 0.825em 0 0;
-}
-
-mjx-mo[noIC].mjx-b.mjx-i mjx-c.mjx-c45:last-child {
+[noIC] mjx-c.mjx-c1D46C.TEX-BI:last-child::before {
   padding-right: 0.81em;
 }
 
-mjx-mi[noIC].mjx-b.mjx-i mjx-c.mjx-c45:last-child {
-  padding-right: 0.81em;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c49::before {
+mjx-c.mjx-c1D470.TEX-BI::before {
+  padding: 0.686em 0.573em 0 0;
   content: "I";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c49 {
-  padding: 0.686em 0.573em 0 0;
-}
-
-mjx-mo[noIC].mjx-b.mjx-i mjx-c.mjx-c49:last-child {
+[noIC] mjx-c.mjx-c1D470.TEX-BI:last-child::before {
   padding-right: 0.511em;
 }
 
-mjx-mi[noIC].mjx-b.mjx-i mjx-c.mjx-c49:last-child {
-  padding-right: 0.511em;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c66::before {
+mjx-c.mjx-c1D487.TEX-BI::before {
+  padding: 0.701em 0.624em 0.201em 0;
   content: "f";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c66 {
-  padding: 0.701em 0.624em 0.201em 0;
-}
-
-mjx-mo[noIC].mjx-b.mjx-i mjx-c.mjx-c66:last-child {
+[noIC] mjx-c.mjx-c1D487.TEX-BI:last-child::before {
   padding-right: 0.568em;
 }
 
-mjx-mi[noIC].mjx-b.mjx-i mjx-c.mjx-c66:last-child {
-  padding-right: 0.568em;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c67::before {
+mjx-c.mjx-c1D488.TEX-BI::before {
+  padding: 0.452em 0.545em 0.202em 0;
   content: "g";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c67 {
-  padding: 0.452em 0.545em 0.202em 0;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c76::before {
+mjx-c.mjx-c1D497.TEX-BI::before {
+  padding: 0.453em 0.567em 0.008em 0;
   content: "v";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c76 {
-  padding: 0.453em 0.567em 0.008em 0;
-}
-
-.mjx-b.mjx-i mjx-c.mjx-c78::before {
+mjx-c.mjx-c1D499.TEX-BI::before {
+  padding: 0.452em 0.659em 0.008em 0;
   content: "x";
 }
 
-.mjx-b.mjx-i mjx-c.mjx-c78 {
-  padding: 0.452em 0.659em 0.008em 0;
+mjx-c.mjx-c1D6FF.TEX-I::before {
+  padding: 0.717em 0.444em 0.01em 0;
+  content: "\3B4";
 }
 
-.mjx-sop mjx-c.mjx-c5B::before {
+mjx-c.mjx-c1D7CE.TEX-B::before {
+  padding: 0.654em 0.575em 0.01em 0;
+  content: "0";
+}
+
+mjx-c.mjx-c5B.TEX-S1::before {
+  padding: 0.85em 0.417em 0.349em 0;
   content: "[";
 }
 
-.mjx-sop mjx-c.mjx-c5B {
+mjx-c.mjx-c5D.TEX-S1::before {
   padding: 0.85em 0.417em 0.349em 0;
-}
-
-.mjx-sop mjx-c.mjx-c5D::before {
   content: "]";
 }
-
-.mjx-sop mjx-c.mjx-c5D {
-  padding: 0.85em 0.417em 0.349em 0;
-}
 </style></head>
-  <body class="chapter">
-    <div class="center">
-      <div class="left">
-        <div class="fixed">
-          <div class="logo"><a href=".."></a></div>
+  <body>
+    <div id="Center">
+      <nav id="LeftPane">
+        <div id="LeftPane_fixed">
+          <div id="Logo"><a id="Logo_link" href=".."></a></div>
 <!-- begin menu -->
-          <div class="breadcrumb"><a href=".."></a> › 電磁力学</div>
-          <div class="menu">
-            <div class="part BG31light">静電磁場</div>
-            <div class="chapter"><span class="num">1</span><a href="001.html" class="name">静止した電荷に働く力</a></div>
-            <div class="chapter"><span class="num">2</span><a href="002.html" class="name">電流に働く力</a></div>
-            <div class="chapter youAreHere"><span class="num">3</span><a class="name">運動する電荷に働く力</a></div>
-            <div class="chapter"><span class="num">4</span><a href="004.html" class="name">電荷・電流密度の逆算</a></div>
-            <div class="part BG32light">相対性理論</div>
-            <div class="chapter"><span class="num">5</span><a href="005.html" class="name">ガリレイ変換の矛盾</a></div>
-            <div class="chapter"><span class="num">6</span><a href="006.html" class="name">矛盾の解消</a></div>
-            <div class="chapter"><span class="num">7</span><a href="007.html" class="name">相対論的力学</a></div>
-            <div class="part BG33light">変動する電磁場</div>
-            <div class="chapter"><span class="num">8</span><a href="008.html" class="name">マクスウェル方程式</a></div>
-            <div class="chapter"><span class="num">9</span><a href="009.html" class="name">静的な法則の再導出</a></div>
-            <div class="chapter"><span class="num">10</span><a href="010.html" class="name">電磁波の放射</a></div>
-            <div class="part BG34light">自己力</div>
-            <div class="chapter"><span class="num">11</span><a href="011.html" class="name">電磁場のエネルギー</a></div>
-            <div class="chapter"><span class="num">12</span><a href="012.html" class="name">自己力</a></div>
-            <div class="part BG35light">補遺（数学）</div>
-            <div class="chapter"><span class="num">13</span><a href="013.html" class="name">テンソル場の積分</a></div>
-            <div class="chapter"><span class="num">14</span><a href="014.html" class="name">テンソル場の微分</a></div>
+          <div id="Breadcrumb"><a id="Breadcrumb_link" href=".."></a> › 電磁力学</div>
+          <div id="TOC">
+            <div class="TOC_part TOC_bg31">静電磁場</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">静止した電荷に働く力</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">電流に働く力</a></div>
+            <div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">3</span><a class="TOC_chapterName">運動する電荷に働く力</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">電荷・電流密度の逆算</a></div>
+            <div class="TOC_part TOC_bg32">相対性理論</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">5</span><a href="005.html" class="TOC_chapterName">ガリレイ変換の矛盾</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">6</span><a href="006.html" class="TOC_chapterName">矛盾の解消</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">7</span><a href="007.html" class="TOC_chapterName">相対論的力学</a></div>
+            <div class="TOC_part TOC_bg33">変動する電磁場</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">8</span><a href="008.html" class="TOC_chapterName">マクスウェル方程式</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">9</span><a href="009.html" class="TOC_chapterName">静的な法則の再導出</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">10</span><a href="010.html" class="TOC_chapterName">電磁波の放射</a></div>
+            <div class="TOC_part TOC_bg34">自己力</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">11</span><a href="011.html" class="TOC_chapterName">電磁場のエネルギー</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">12</span><a href="012.html" class="TOC_chapterName">自己力</a></div>
+            <div class="TOC_part TOC_bg35">補遺（数学）</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">13</span><a href="013.html" class="TOC_chapterName">テンソル場の積分</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">14</span><a href="014.html" class="TOC_chapterName">テンソル場の微分</a></div>
           </div>
 <!-- end menu -->
         </div>
-      </div>
-      <div class="right">
-        <div class="contents">
-        <h1><span class="num">3.</span><span class="name">運動する電荷に働く力<div class='tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
-        <img class="graph" src="fig/0f4c5.gif">
-        <div class="p">
+      </nav>
+      <div id="RightPane">
+        <article id="RightPane_contents">
+        <h1><span id="h1_num">3.</span>運動する電荷に働く力<span id='h1_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span></h1>
+        <img class="Image_graph" src="fig/0f4c5.gif">
+        <p>
           磁場中を運動する電荷は、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)と呼ばれる力を受ける。
-        </div>
-        <div class="p">
-          この章のシミュレーション<span class="weak">（クリックで計算開始）</span>：<br><input value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
-        </div>
+        </p>
+        <p>
+          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
+        </p>
         <h3><span>電流は電荷の流れである</span></h3>
-        <div class="p">
+        <p>
           前章で見たように、電流は磁場を作り、逆に磁場は電流にアンペール力を与える。電流は、導線の中を「何か」が流れることによって生じていると考えられる。ということは、磁場を発生させたり、アンペール力を受けているのは実際にはその「何か」ということになる。
-        </div>
-        <div class="p">
-          この章では、3.1節で、その「何か」の正体が電荷に他ならないことについて述べ、電荷が磁場から受ける力<span class="weak">（＝ローレンツ力）</span>について述べる。その後、3.2節で、導線の中を流れている電荷は、電子と呼ばれる粒子のようなものであることを見る。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-mtable style="min-width: 6.715em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ロ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, serif" variant="normal">ー</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">レ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ン</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ツ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">力</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">は</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">、</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">子</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">の</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">れ</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> 
-        </div>
-        <h2><span class="num">3.1</span><span class="name">ローレンツ力</span></h2>
-        <div class="p">
+        </p>
+        <p>
+          この章では、3.1節で、その「何か」の正体が電荷に他ならないことについて述べ、電荷が磁場から受ける力<span class="Color_weak">（＝ローレンツ力）</span>について述べる。その後、3.2節で、導線の中を流れている電荷は、電子と呼ばれる粒子のようなものであることを見る。
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 6.715em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ロ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, serif" variant="normal">ー</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">レ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ン</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ツ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">力</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">は</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">、</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">子</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">の</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">れ</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+        </p>
+        <h2><span class="h2_num">3.1</span><span class="h2_name">ローレンツ力</span></h2>
+        <p>
           この節では、電流の正体が電荷の流れであること、および、磁場中を動く電荷にはローレンツ力と呼ばれる力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことについて述べる。
-        </div>
+        </p>
         <h3><span>シャトルボール実験：電流は電荷の流れ</span></h3>
-        <img class="graph" src="fig/88765.svg">
-        <div class="p">
-          導線を切断すると電流は止まる。従って、導線の中を「何か」が流れていると考えるのは自然である。その「何か」は電荷を帯びていることが、右図のようなシャトルボール実験<span class="weak">（Shuttling ball experiment）</span>を行うと分かる<span class="weak">（シャトルとは往復を繰り返すものという意味である）</span>。これは、金属などの帯電しやすいボールを吊り下げて、一方の電極につけた後、手を離すとボールが減衰することなく勝手に往復運動を繰り返すというものである。
-        </div>
-        <div class="p">
+        <img class="Image_graph" src="fig/88765.svg">
+        <p>
+          導線を切断すると電流は止まる。従って、導線の中を「何か」が流れていると考えるのは自然である。その「何か」は電荷を帯びていることが、右図のようなシャトルボール実験<span class="Color_weak">（Shuttling ball experiment）</span>を行うと分かる<span class="Color_weak">（シャトルとは往復を繰り返すものという意味である）</span>。これは、金属などの帯電しやすいボールを吊り下げて、一方の電極につけた後、手を離すとボールが減衰することなく勝手に往復運動を繰り返すというものである。
+        </p>
+        <p>
           ボールの運動を詳しく見ると次のようになる。まず、正極はプラスに帯電し、負極はマイナスに帯電しているため、接触したボールが電極と同じ符号に帯電する。すると、反発力を受けることになるので、反対側に移動する。その後反対側の電極に接触すると、今度は逆符号の電荷をもつようになり、逆方向の反発力を受け元の電極のほうに戻ってくる。これにより、往復運動を繰り返すことになる。
-        </div>
-        <div class="p">
-          重要なのは、この実験では、電流が発生するということである<span class="weak">（ただし非常に小さい）</span>。よって、電流は電荷の移動を伴うことになる。ボールの電荷を測れば、どれだけの電荷が運ばれているかが分かる。実際に測定を行うと、単位時間あたりに運ばれる電荷の量と、電流の値は比例関係にあり、比例係数は、電流が
+        </p>
+        <p>
+          重要なのは、この実験では、電流が発生するということである<span class="Color_weak">（ただし非常に小さい）</span>。よって、電流は電荷の移動を伴うことになる。ボールの電荷を測れば、どれだけの電荷が運ばれているかが分かる。実際に測定を行うと、単位時間あたりに運ばれる電荷の量と、電流の値は比例関係にあり、比例係数は、電流が
            <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
           の時、1秒当たり運ばれる電荷は
            <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
           となる。つまり
            <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c73"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.432em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
-          と見なせるわけである。<span class="weak">比例係数がきれいになっているのは、こうなるように電荷の単位であるクーロン
+          と見なせるわけである。<span class="Color_weak">比例係数がきれいになっているのは、こうなるように電荷の単位であるクーロン
            <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
           を定義したからである（電流の単位であるアンペアの定義を先に行ったうえで、クーロンの定義を行うという流れになっている）。第1章でクーロンの定義が中途半端な値になっていると述べたが、それは、ここを揃えるためだったのである。</span>
-        </div>
-        <div class="p">
+        </p>
+        <p>
           そこで、電流が、電荷の流れと等価であることを認めることにしよう。
-        </div>
+        </p>
         <h3><span>ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：運動する電荷に働く力</span></h3>
-        <div class="p">
-          第2章で見たように、磁場中におかれた電流にはアンペール力が働く。そして、電流は電荷の流れを伴う。ということは、磁場中を動く荷電粒子<span class="weak">（＝電荷を持った粒子）</span>は、アンペール力に対応するような力を受けると考えられる。この力をローレンツ力という。アンペール力は、電流内を運動する電荷が受けるローレンツ力により説明できるはずである。
-        </div>
-        <div class="p">
+        <p>
+          第2章で見たように、磁場中におかれた電流にはアンペール力が働く。そして、電流は電荷の流れを伴う。ということは、磁場中を動く荷電粒子<span class="Color_weak">（＝電荷を持った粒子）</span>は、アンペール力に対応するような力を受けると考えられる。この力をローレンツ力という。アンペール力は、電流内を運動する電荷が受けるローレンツ力により説明できるはずである。
+        </p>
+        <p>
           まず、電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を持つ荷電粒子が磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c42"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
           の中を運動するときの、ローレンツ力を考える。電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を持つ多数の荷電粒子が、一斉に同じ速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c76"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           で動いている状況を考えてみる。すると、これによって発生する電流要素
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c49"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は、以下のようになる：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.598em" side="right"><mjx-table style="width: auto; min-width: 5.442em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c49"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c6E"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c76"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c6C"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.598em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:pEq"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-          <span class="weak">
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6E"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-msup><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.598em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.598em" side="right"><mjx-table style="width: auto; min-width: 5.442em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.598em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:pEq"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+          <span class="Color_weak">
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5B TEX-S1"></mjx-c></mjx-mo><mjx-msup><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5D TEX-S1"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
           は荷電粒子の導線上での個数密度、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c6C"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
           は電流要素の長さ。</span>
-        </div>
-        <div class="p">
+        </p>
+        <p>
           1つの荷電粒子に働くローレンツ力を
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c66"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           とおくと、電流要素に働く力はローレンツ力の和なので
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6E"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c6C"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c66"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           である。これと、アンペール力
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B4"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c49"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c42"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           に式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ApEq"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を代入したものが等しいのだから、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c66"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は以下のようになる：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.229em" side="right"><mjx-table style="width: auto; min-width: 5.073em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c66"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c76"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c42"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.229em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:mMp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.229em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.229em" side="right"><mjx-table style="width: auto; min-width: 5.073em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.229em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:mMp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
           ローレンツ力
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c66"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は荷電粒子の速度に依存し、しかも速度と垂直な方向に働くという奇妙な性質を持っていることになる。
-        </div>
-        <img class="graph" src="fig/0f4c5.gif">
-        <div class="p">
+        </p>
+        <img class="Image_graph" src="fig/0f4c5.gif">
+        <p>
           一様磁場の場合に数値計算を行うと、右図のように磁場の方向に沿ったらせん運動をする。
-        </div>
-        <div class="p">
-          <input value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
-        </div>
+        </p>
+        <p>
+          <input class="Simulation_button" value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
+        </p>
         <h3><span>電磁気力を受ける荷電粒子の運動方程式：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <div class="p">
-          以上により、磁場中を運動する電荷には、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことが分かった。磁場だけでなく電場が存在する場合には、クーロン力も働く。その場合は、ローレンツ力とクーロン力を単純に足し合わせればよい。クーロン力とローレンツ力をまとめて電磁気力という<span class="weak">（ローレンツ力と言った時にクーロン力も含める流儀もある）</span>。また、電場と磁場を合わせて電磁場という。
-        </div>
-        <div class="p">
+        <p>
+          以上により、磁場中を運動する電荷には、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことが分かった。磁場だけでなく電場が存在する場合には、クーロン力も働く。その場合は、ローレンツ力とクーロン力を単純に足し合わせればよい。クーロン力とローレンツ力をまとめて電磁気力という<span class="Color_weak">（ローレンツ力と言った時にクーロン力も含める流儀もある）</span>。また、電場と磁場を合わせて電磁場という。
+        </p>
+        <p>
           以上により、電磁場中での荷電粒子の運動
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c74"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
           は、以下の運動方程式：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c42"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:hXP"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:hXP"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
           によって求められる。これが、電磁力学において、電荷の運動を支配する方程式である。後は、電磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="2"><mjx-c class="mjx-c42"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          が分かれば上式を解くことができるわけだが、静電磁場については、これまでに出てきたクーロンの法則とビオ・サバールの法則から求められる。<span class="weak">しかし、電磁場の源となる電荷・電流密度が時間変化する場合には、クーロンの法則やビオ・アバールの法則は成り立たないことが次章で分かる。そのため、次章以降では、そのような場合の電磁場を与える法則を導くことが主題となる。</span>
-        </div>
-        <h2><span class="num">3.2</span><span class="name">電流は、電子の流れ</span></h2>
-        <div class="p">
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="2"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+          が分かれば上式を解くことができるわけだが、静電磁場については、これまでに出てきたクーロンの法則とビオ・サバールの法則から求められる。<span class="Color_weak">しかし、電磁場の源となる電荷・電流密度が時間変化する場合には、クーロンの法則やビオ・アバールの法則は成り立たないことが次章で分かる。そのため、次章以降では、そのような場合の電磁場を与える法則を導くことが主題となる。</span>
+        </p>
+        <h2><span class="h2_num">3.2</span><span class="h2_name">電流は、電子の流れ</span></h2>
+        <p>
           前節では思考実験的にローレンツ力を考えたが、ローレンツ力は非常に小さいので、実際に帯電した物体を動かして直接測定するのは難しい。この節では、導線を流れる電流が、電子と呼ばれる荷電粒子の流れであり、それを用いれば、ローレンツ力を直接確認できることを見る。
-        </div>
+        </p>
         <h3><span>エジソン効果：加熱した導線は電子を放出する</span></h3>
-        <div class="p">
+        <p>
           電流が流れている導線の中には、電荷が流れているわけだが、その電荷を持っているものを導線から取り出すことはできないだろうか。
-        </div>
-        <img class="graph" src="fig/f970d.svg">
-        <div class="p">
-          そのためには、導線を加熱すればよいことが知られている。例えば、白熱電球のタングステンフィラメントは2000℃程度になるが、この時右図のように、負極側のフィラメント<span class="red">A</span>と、電球内に挿入した正極<span class="red">B</span>の間に電流が流れることが知られている。これをエジソン効果という。本来であれば、この回路は閉じていないため電流が流れないはずである。従って、何かが空中を伝っているのだと考えられる。その何かのことを電子と呼ぶ。ただし、図中の電源を逆向きにすると電流は流れなくなる。
-        </div>
-        <div class="p">
-          同図のように、電流はB→Aに向かって流れる<span class="weak">（＋から－）</span>。しかし電子は、加熱したAから飛び出すはずなので、電流の向きとは逆のA→Bに向かって流れていくはずである<span class="weak">（－から＋）</span>。即ち、電子の流れは、電流の向きとは逆向きになる。これは、電子は負の電荷を持つことを意味する。<span class="weak">本来であれば、電子の電荷を正として、電流の向きも電子の流れる方向にとるほうが自然だが、そうなっていないのは1.1節で述べた様な歴史的な事情である。要は、電子が発見され前に決められたものが、そのままになっているわけである。</span>
-        </div>
+        </p>
+        <img class="Image_graph" src="fig/f970d.svg">
+        <p>
+          そのためには、導線を加熱すればよいことが知られている。例えば、白熱電球のタングステンフィラメントは2000℃程度になるが、この時右図のように、負極側のフィラメント<span class="Color_red">A</span>と、電球内に挿入した正極<span class="Color_red">B</span>の間に電流が流れることが知られている。これをエジソン効果という。本来であれば、この回路は閉じていないため電流が流れないはずである。従って、何かが空中を伝っているのだと考えられる。その何かのことを電子と呼ぶ。ただし、図中の電源を逆向きにすると電流は流れなくなる。
+        </p>
+        <p>
+          同図のように、電流はB→Aに向かって流れる<span class="Color_weak">（＋から－）</span>。しかし電子は、加熱したAから飛び出すはずなので、電流の向きとは逆のA→Bに向かって流れていくはずである<span class="Color_weak">（－から＋）</span>。即ち、電子の流れは、電流の向きとは逆向きになる。これは、電子は負の電荷を持つことを意味する。<span class="Color_weak">本来であれば、電子の電荷を正として、電流の向きも電子の流れる方向にとるほうが自然だが、そうなっていないのは1.1節で述べた様な歴史的な事情である。要は、電子が発見され前に決められたものが、そのままになっているわけである。</span>
+        </p>
         <h3><span>電子銃による電子ビームの可視化</span></h3>
-        <img class="graph" src="fig/94de2.svg">
-        <div class="p">
+        <img class="Image_graph" src="fig/94de2.svg">
+        <p>
           右図で模式的に示したように、エジソン効果によって放出された電子に高い電圧をかけて加速させて電子ビームを発生させる装置を、電子銃という。電子銃の内部はほぼ真空であるが、わずかにヘリウムガスなどを入れておくと、電子ビームに沿って発光する。これにより、電子ビームに外部から電場や磁場をかけたときに、電子ビームがどのような影響を受けるかを可視化することができる。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           電子は負の電荷を持つと述べた。従って、電子ビームに電場をかけると、電場と逆方向に曲がる。また、磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c42"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           をかけると、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c76"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c42"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          の方向に曲がることが確認できる<span class="weak">（
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c76"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+          の方向に曲がることが確認できる<span class="Color_weak">（
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は電子の速度、マイナスがついているのは電荷が負であるため）</span>。
-        </div>
+        </p>
         <h3><span>電子は粒子的な性質を持つ</span></h3>
-        <div class="p">
-          もし、電子が粒子であれば、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="weak">（再掲）</span>
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c42"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:MyU"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+        <p>
+          もし、電子が粒子であれば、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Color_weak">（再掲）</span>
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:MyU"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
           に従うだろう。電子の運動を観察することで、電子1個の質量
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           と電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を特定したい。まず、上式の両辺を
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           で割ればわかるように、常に
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           がまとまって現れる。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を比電荷という。よって、この比電荷が同じであれば、まったく同じように運動するので、この式を用いた実験から求められるのは比電荷のみであり、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           個別の値は分からない。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           というわけでまず、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を測定する方法を考える。電子の運動を直接観測することは難しいので、電子ビームの軌跡を測定することになる。軌跡から加速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
           を逆算するには、電子の速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
           が必要である。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
           は、クーロン力とローレンツ力を釣り合わせて
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c78"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
           が
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-b"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          になるように調節することにより、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AMyU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)から求まる。後は、その速度の状態で、例えば、ビームに垂直に磁場をかけるとビームが円形になるので<span class="weak">（3.1節）</span>、その半径から加速度を逆算することで、比電荷が得られる。電子の比電荷は、以下のようになることが知られている：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c38"></mjx-c><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-TeXAtom></mjx-math></mjx-container> 
-        </div>
-        <div class="p">
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-b"><mjx-c class="mjx-c1D7CE TEX-B"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+          になるように調節することにより、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AMyU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)から求まる。後は、その速度の状態で、例えば、ビームに垂直に磁場をかけるとビームが円形になるので<span class="Color_weak">（3.1節）</span>、その半径から加速度を逆算することで、比電荷が得られる。電子の比電荷は、以下のようになることが知られている：
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c38"></mjx-c><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
+        </p>
+        <p>
           よって残るは、電子の電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           と質量
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           であるが、どちらか一方が分かればよい。電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           を求める実験として、ミリカンの油滴実験が知られており、以下の【3.2-注1】のようにすればよい。このような実験により、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           および
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は以下のようになることが知られている：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-mtable style="min-width: 11.831em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mphantom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo></mjx-mphantom></mjx-TeXAtom><mjx-mn class="mjx-n"><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> 
-        </div>
-        <div class="p">
-          <span class="weak">電子が粒子であるならば、その大きさはどうなのだろうか。また、導線の中をどのように流れているのだろうか。</span><span class="weak">この話題は非常に興味深いが、現状では深入りせずに、通常のマクロな物体の運動に引き続き着目する。電子のようなミクロな世界の性質は量子力学の主題である。</span>
-        </div>
-        <div class="note">
-          <h3><span class="num">【3.2-注1】</span><span class="name">素電荷を求める：ミリカンの油滴実験</span></h3>
-          <div class="p">
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 11.831em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mphantom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo></mjx-mphantom></mjx-TeXAtom><mjx-mn class="mjx-n"><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+        </p>
+        <p>
+          <span class="Color_weak">電子が粒子であるならば、その大きさはどうなのだろうか。また、導線の中をどのように流れているのだろうか。</span><span class="Color_weak">この話題は非常に興味深いが、現状では深入りせずに、通常のマクロな物体の運動に引き続き着目する。電子のようなミクロな世界の性質は量子力学の主題である。</span>
+        </p>
+        <div class="Note">
+          <h3><span class="h3_num">【3.2-注1】</span><span class="h3_name">素電荷を求める：ミリカンの油滴実験</span></h3>
+          <p>
             電磁気力だけでは比電荷しかわからないので、重力とのバランスを考える。まず、霧吹きで油を撒く。すると、霧を構成する小さな油滴は、重力
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c66"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            によって下へ向かう。<span class="weak">
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+            によって下へ向かう。<span class="Color_weak">
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
             は油滴の質量であり、油滴の大きさと比重から求まる。</span>油滴は噴霧した時の摩擦で勝手に帯電しているので、うまく電場
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
             を調節することにより、重力と逆方向のクーロン力
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c66"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
             をかけて、油滴を静止させることができる：
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c45"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+            <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> </displayed-eq>
             これにより、唯一の未知数である油滴の電荷
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
             が求まる。
-          </div>
-          <div class="p">
+          </p>
+          <p>
             このような実験を様々な油滴に対して行うと、
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c71"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
             は、必ずある電荷
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
             ：
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c65"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+            <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
             の整数倍になることが知られている。この
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
             を素電荷といい、電子の電荷は
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            となる。この実験をミリカンの油滴実験という<span class="weak">（かなり簡略化している）</span>。
-          </div>
+             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+            となる。この実験をミリカンの油滴実験という<span class="Color_weak">（かなり簡略化している）</span>。
+          </p>
         </div>
-        </div>
+        </article>
 <!-- begin footer -->
-      <div class="footer">© 2016-2020 物理学の見つけ方</div>
+      <footer>© 2016-2020 物理学の見つけ方</footer>
 <!-- end footer -->
       </div>
     </div>

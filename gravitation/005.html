@@ -10,7 +10,7 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
     <title>アインシュタイン方程式 - 物理学の見つけ方</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/chapter.css" type="text/css">
     <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
     <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
@@ -166,6 +166,10 @@ mjx-container[jax="CHTML"][display="true"] {
   margin: 1em 0;
 }
 
+mjx-container[jax="CHTML"][display="true"][width="full"] {
+  display: flex;
+}
+
 mjx-container[jax="CHTML"][display="true"] mjx-math {
   padding: 0;
 }
@@ -210,9 +214,11 @@ mjx-stretchy-h > * {
 
 mjx-stretchy-h > * > mjx-c {
   display: inline-block;
+  transform: scalex(1.0000001);
 }
 
 mjx-stretchy-h > * > mjx-c::before {
+  display: inline-block;
   padding: .001em 0;
   width: initial;
 }
@@ -255,7 +261,7 @@ mjx-stretchy-v > mjx-end > mjx-c {
 }
 
 mjx-stretchy-v > * > mjx-c {
-  transform: scale(1);
+  transform: scaley(1.0000001);
   transform-origin: left center;
   overflow: hidden;
 }
@@ -749,6 +755,10 @@ mjx-mtable[align="bottom"] > mjx-table {
   vertical-align: bottom;
 }
 
+mjx-mtable[side="right"] mjx-labels {
+  min-width: 100%;
+}
+
 mjx-mtr {
   display: table-row;
   text-align: left;
@@ -941,108 +951,92 @@ mjx-utext {
 }
 
 mjx-c::before {
-  display: inline-block;
+  display: block;
   width: 0;
 }
 
-.mjx-n mjx-c {
-  font-family: MJXZERO, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-I, MJXTEX-MI, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-b.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-BI, MJXTEX-B, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-cal mjx-c {
-  font-family: MJXZERO, MJXTEX-C, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-cal.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-C-B, MJXTEX-C, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ds mjx-c {
-  font-family: MJXZERO, MJXTEX-A, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1;
-}
-
-.mjx-fr mjx-c {
-  font-family: MJXZERO, MJXTEX-FR, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-fr.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-FR-B, MJXTEX-FR, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-sc mjx-c {
-  font-family: MJXZERO, MJXTEX-SC, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-sc.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-SC-B, MJXTEX-SC, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss mjx-c {
-  font-family: MJXZERO, MJXTEX-SS, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-B, MJXTEX-SS, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-I, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ss.mjx-b.mjx-i mjx-c {
-  font-family: MJXZERO, MJXTEX-SS-B, MJXTEX-SS-I, MJXTEX-BI, MJXTEX-B, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-ty mjx-c {
-  font-family: MJXZERO, MJXTEX-T, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-var mjx-c {
-  font-family: MJXZERO, MJXTEX-A, MJXTEX, MJXTEX-I, MJXTEX-S1;
-}
-
-.mjx-os mjx-c {
-  font-family: MJXZERO, MJXTEX-C, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-os.mjx-b mjx-c {
-  font-family: MJXZERO, MJXTEX-C-B, MJXTEX-C, MJXTEX-B, MJXTEX-BI, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-mit mjx-c {
-  font-family: MJXZERO, MJXTEX-MI, MJXTEX-I, MJXTEX, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-lop mjx-c {
-  font-family: MJXZERO, MJXTEX-S2, MJXTEX-S1, MJXTEX, MJXTEX-I, MJXTEX-A;
-}
-
-.mjx-sop mjx-c {
-  font-family: MJXZERO, MJXTEX-S1, MJXTEX, MJXTEX-I, MJXTEX-A;
-}
-
-.mjx-s3 mjx-c {
-  font-family: MJXZERO, MJXTEX-S3, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
-.mjx-s4 mjx-c {
-  font-family: MJXZERO, MJXTEX-S4, MJXTEX, MJXTEX-I, MJXTEX-S1, MJXTEX-A;
-}
-
 .MJX-TEX {
-  font-family: MJXZERO;
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
 }
 
 mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
@@ -1066,12 +1060,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 @font-face /* 3 */ {
   font-family: MJXTEX-I;
-  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
+  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
 }
 
 @font-face /* 4 */ {
   font-family: MJXTEX-MI;
-  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
+  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
 }
 
 @font-face /* 5 */ {
@@ -1110,7 +1104,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 12 */ {
-  font-family: MJXTEX-C-B;
+  font-family: MJXTEX-CB;
   src: url("../css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
 }
 
@@ -1120,7 +1114,7 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 14 */ {
-  font-family: MJXTEX-FR-B;
+  font-family: MJXTEX-FRB;
   src: url("../css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
 }
 
@@ -1130,12 +1124,12 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 }
 
 @font-face /* 16 */ {
-  font-family: MJXTEX-SS-B;
+  font-family: MJXTEX-SSB;
   src: url("../css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
 }
 
 @font-face /* 17 */ {
-  font-family: MJXTEX-SS-I;
+  font-family: MJXTEX-SSI;
   src: url("../css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
 }
 
@@ -1159,395 +1153,300 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
   src: url("../css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
 
- mjx-c.mjx-c28::before {
+mjx-c.mjx-c28::before {
+  padding: 0.75em 0.389em 0.25em 0;
   content: "(";
 }
 
-mjx-c.mjx-c28 {
+mjx-c.mjx-c29::before {
   padding: 0.75em 0.389em 0.25em 0;
-}
-
- mjx-c.mjx-c29::before {
   content: ")";
 }
 
-mjx-c.mjx-c29 {
-  padding: 0.75em 0.389em 0.25em 0;
-}
-
- mjx-c.mjx-c2B::before {
+mjx-c.mjx-c2B::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "+";
 }
 
-mjx-c.mjx-c2B {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
- mjx-c.mjx-c30::before {
+mjx-c.mjx-c30::before {
+  padding: 0.666em 0.5em 0.022em 0;
   content: "0";
 }
 
-mjx-c.mjx-c30 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c31::before {
+mjx-c.mjx-c31::before {
+  padding: 0.666em 0.5em 0 0;
   content: "1";
 }
 
-mjx-c.mjx-c31 {
+mjx-c.mjx-c32::before {
   padding: 0.666em 0.5em 0 0;
-}
-
- mjx-c.mjx-c32::before {
   content: "2";
 }
 
-mjx-c.mjx-c32 {
-  padding: 0.666em 0.5em 0 0;
-}
-
- mjx-c.mjx-c34::before {
+mjx-c.mjx-c34::before {
+  padding: 0.677em 0.5em 0 0;
   content: "4";
 }
 
-mjx-c.mjx-c34 {
-  padding: 0.677em 0.5em 0 0;
-}
-
- mjx-c.mjx-c38::before {
+mjx-c.mjx-c38::before {
+  padding: 0.666em 0.5em 0.022em 0;
   content: "8";
 }
 
-mjx-c.mjx-c38 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
- mjx-c.mjx-c3B::before {
+mjx-c.mjx-c3B::before {
+  padding: 0.43em 0.278em 0.194em 0;
   content: ";";
 }
 
-mjx-c.mjx-c3B {
-  padding: 0.43em 0.278em 0.194em 0;
-}
-
- mjx-c.mjx-c3D::before {
+mjx-c.mjx-c3D::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "=";
 }
 
-mjx-c.mjx-c3D {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
 mjx-c.mjx-c2212::before {
+  padding: 0.583em 0.778em 0.082em 0;
   content: "\2212";
 }
 
-mjx-c.mjx-c2212 {
-  padding: 0.583em 0.778em 0.082em 0;
-}
-
 mjx-c.mjx-c2218::before {
+  padding: 0.444em 0.5em 0 0;
   content: "\2218";
 }
 
-mjx-c.mjx-c2218 {
-  padding: 0.444em 0.5em 0 0;
-}
-
 mjx-c.mjx-c2219::before {
+  padding: 0.444em 0.5em 0 0;
   content: "\2219";
 }
 
-mjx-c.mjx-c2219 {
-  padding: 0.444em 0.5em 0 0;
-}
-
 mjx-c.mjx-c221D::before {
+  padding: 0.442em 0.778em 0.011em 0;
   content: "\221D";
 }
 
-mjx-c.mjx-c221D {
-  padding: 0.442em 0.778em 0.011em 0;
-}
-
-mjx-c.mjx-c2234::before {
+mjx-c.mjx-c2234.TEX-A::before {
+  padding: 0.471em 0.667em 0.082em 0;
   content: "\2234";
 }
 
-mjx-c.mjx-c2234 {
-  padding: 0.471em 0.667em 0.082em 0;
-}
-
 mjx-c.mjx-c2260::before {
+  padding: 0.716em 0.778em 0.215em 0;
   content: "\2260";
 }
 
-mjx-c.mjx-c2260 {
-  padding: 0.716em 0.778em 0.215em 0;
-}
-
 mjx-c.mjx-c2261::before {
+  padding: 0.464em 0.778em 0 0;
   content: "\2261";
 }
 
-mjx-c.mjx-c2261 {
-  padding: 0.464em 0.778em 0 0;
-}
-
-.mjx-i mjx-c.mjx-c47::before {
+mjx-c.mjx-c1D43A.TEX-I::before {
+  padding: 0.705em 0.786em 0.022em 0;
   content: "G";
 }
 
-.mjx-i mjx-c.mjx-c47 {
-  padding: 0.705em 0.786em 0.022em 0;
-}
-
-.mjx-i mjx-c.mjx-c52::before {
+mjx-c.mjx-c1D445.TEX-I::before {
+  padding: 0.683em 0.759em 0.021em 0;
   content: "R";
 }
 
-.mjx-i mjx-c.mjx-c52 {
-  padding: 0.683em 0.759em 0.021em 0;
-}
-
-.mjx-i mjx-c.mjx-c54::before {
+mjx-c.mjx-c1D447.TEX-I::before {
+  padding: 0.677em 0.704em 0 0;
   content: "T";
 }
 
-.mjx-i mjx-c.mjx-c54 {
-  padding: 0.677em 0.704em 0 0;
-}
-
-mjx-mo[noIC].mjx-i mjx-c.mjx-c54:last-child {
+[noIC] mjx-c.mjx-c1D447.TEX-I:last-child::before {
   padding-right: 0.584em;
 }
 
-mjx-mi[noIC].mjx-i mjx-c.mjx-c54:last-child {
-  padding-right: 0.584em;
-}
-
-.mjx-i mjx-c.mjx-c63::before {
+mjx-c.mjx-c1D450.TEX-I::before {
+  padding: 0.442em 0.433em 0.011em 0;
   content: "c";
 }
 
-.mjx-i mjx-c.mjx-c63 {
-  padding: 0.442em 0.433em 0.011em 0;
-}
-
-.mjx-i mjx-c.mjx-c67::before {
+mjx-c.mjx-c1D454.TEX-I::before {
+  padding: 0.442em 0.477em 0.205em 0;
   content: "g";
 }
 
-.mjx-i mjx-c.mjx-c67 {
-  padding: 0.442em 0.477em 0.205em 0;
-}
-
-.mjx-i mjx-c.mjx-c6B::before {
+mjx-c.mjx-c1D458.TEX-I::before {
+  padding: 0.694em 0.521em 0.011em 0;
   content: "k";
 }
 
-.mjx-i mjx-c.mjx-c6B {
-  padding: 0.694em 0.521em 0.011em 0;
-}
-
-mjx-c.mjx-c3B1::before {
+mjx-c.mjx-c1D6FC.TEX-I::before {
+  padding: 0.442em 0.64em 0.011em 0;
   content: "\3B1";
 }
 
-.mjx-i mjx-c.mjx-c3B1 {
-  padding: 0.442em 0.64em 0.011em 0;
-}
-
-mjx-c.mjx-c3B2::before {
+mjx-c.mjx-c1D6FD.TEX-I::before {
+  padding: 0.705em 0.566em 0.194em 0;
   content: "\3B2";
 }
 
-.mjx-i mjx-c.mjx-c3B2 {
-  padding: 0.705em 0.566em 0.194em 0;
-}
-
-mjx-c.mjx-c3B3::before {
+mjx-c.mjx-c1D6FE.TEX-I::before {
+  padding: 0.441em 0.543em 0.216em 0;
   content: "\3B3";
 }
 
-.mjx-i mjx-c.mjx-c3B3 {
-  padding: 0.441em 0.543em 0.216em 0;
-}
-
-mjx-mo[noIC].mjx-i mjx-c.mjx-c3B3:last-child {
+[noIC] mjx-c.mjx-c1D6FE.TEX-I:last-child::before {
   padding-right: 0.518em;
 }
 
-mjx-mi[noIC].mjx-i mjx-c.mjx-c3B3:last-child {
-  padding-right: 0.518em;
-}
-
-mjx-c.mjx-c3C0::before {
+mjx-c.mjx-c1D70B.TEX-I::before {
+  padding: 0.431em 0.57em 0.011em 0;
   content: "\3C0";
 }
 
-.mjx-i mjx-c.mjx-c3C0 {
-  padding: 0.431em 0.57em 0.011em 0;
-}
-
-.mjx-s3 mjx-c.mjx-c28::before {
+mjx-c.mjx-c28.TEX-S3::before {
+  padding: 1.45em 0.736em 0.949em 0;
   content: "(";
 }
 
-.mjx-s3 mjx-c.mjx-c28 {
+mjx-c.mjx-c29.TEX-S3::before {
   padding: 1.45em 0.736em 0.949em 0;
-}
-
-.mjx-s3 mjx-c.mjx-c29::before {
   content: ")";
 }
-
-.mjx-s3 mjx-c.mjx-c29 {
-  padding: 1.45em 0.736em 0.949em 0;
-}
 </style></head>
-  <body class="chapter">
-    <div class="center">
-      <div class="left">
-        <div class="fixed">
-          <div class="logo"><a href=".."></a></div>
+  <body>
+    <div id="Center">
+      <nav id="LeftPane">
+        <div id="LeftPane_fixed">
+          <div id="Logo"><a id="Logo_link" href=".."></a></div>
 <!-- begin menu -->
-          <div class="breadcrumb"><a href=".."></a> › 重力理論</div>
-          <div class="menu">
-            <div class="part BG41light">ニュートンの重力理論</div>
-            <div class="chapter"><span class="num">1</span><a href="001.html" class="name">天体の運動</a></div>
-            <div class="part BG42light">アインシュタインの重力理論</div>
-            <div class="chapter"><span class="num">2</span><a href="002.html" class="name">計量が重力場を決める</a></div>
-            <div class="chapter"><span class="num">3</span><a href="003.html" class="name">等価原理の整合性</a></div>
-            <div class="chapter"><span class="num">4</span><a href="004.html" class="name">重力は時空の曲率</a></div>
-            <div class="chapter youAreHere"><span class="num">5</span><a class="name">アインシュタイン方程式</a></div>
+          <div id="Breadcrumb"><a id="Breadcrumb_link" href=".."></a> › 重力理論</div>
+          <div id="TOC">
+            <div class="TOC_part TOC_bg41">ニュートンの重力理論</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">天体の運動</a></div>
+            <div class="TOC_part TOC_bg42">アインシュタインの重力理論</div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">計量が重力場を決める</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">3</span><a href="003.html" class="TOC_chapterName">等価原理の整合性</a></div>
+            <div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">重力は時空の曲率</a></div>
+            <div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">5</span><a class="TOC_chapterName">アインシュタイン方程式</a></div>
           </div>
 <!-- end menu -->
         </div>
-      </div>
-      <div class="right">
-        <div class="contents">
-        <h1><span class="num">5.</span><span class="name">アインシュタイン方程式<div class='tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='重力理論 第5章 アインシュタイン方程式 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div></span></h1>
-        <div class="p">
+      </nav>
+      <div id="RightPane">
+        <article id="RightPane_contents">
+        <h1><span id="h1_num">5.</span>アインシュタイン方程式<span id='h1_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='重力理論 第5章 アインシュタイン方程式 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span></h1>
+        <p>
           重力場を支配する方程式は、アインシュタイン方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AsFu"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)。
-        </div>
+        </p>
         <h3><span>重力場の方程式が知りたい</span></h3>
-        <div class="p">
+        <p>
           重力場を記述する方程式が知りたい。重力場の情報は計量テンソル場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           の中に全て含まれるので、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           に対する方程式となるはずである。前章では、重力の有無が、リーマン曲率テンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           がゼロかどうかで判断できることが分かった。よって、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           に対する方程式だと思われる。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           に対する方程式が、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           に含まれる
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           に対する方程式にもなる。
-        </div>
-        <h2><span class="num">5.1</span><span class="name">アインシュタイン方程式</span></h2>
+        </p>
+        <h2><span class="h2_num">5.1</span><span class="h2_name">アインシュタイン方程式</span></h2>
         <h3><span>エネルギー運動量テンソル</span></h3>
-        <div class="p">
+        <p>
           ニュートンの重力理論で見た通り、重力の源は質量である。従って、求める重力の方程式には、リーマン曲率テンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           と質量が現れるはずである。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           しかし、重力の源となるのは質量だけではない。等価原理により、物体が地上で受ける重力加速度は、物体の運動によらず変わらない。一方、相対論的力学によると、運動している物体は加速度を受けにくくなる。即ち、運動している物体のほうが大きな重力を受けることになる。ここで、作用・反作用の法則が成り立つとするならば、物体が地球を引き付ける重力についても、運動している物体のほうが大きくなるはずである。要するに、物体が作り出す重力は、運動している場合のほうが大きくなると考えられる。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           運動に関する量といえば、エネルギー運動量テンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           である。よって、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           が重力の源となると推測できる。
-        </div>
+        </p>
         <h3><span>アインシュタインテンソル</span></h3>
-        <div class="p">
+        <p>
           重力の源がエネルギー運動量テンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           であることを認めれば、後は、これとリーマン曲率テンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           を結び付ける関係式が分かればよい。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           と
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          は足の数<span class="weak">（＝
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+          は足の数<span class="Color_weak">（＝
            <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-math></mjx-container> 
           の数）</span>が違うので、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c221D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c221D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           などとすることはできない。そもそも、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           がゼロであったとしても、重力は存在し得る。例えば、地球の周りの宇宙空間は
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
           であるが、地球の重力場の影響を受ける、即ち、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2260"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2260"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
           である。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           従って、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           から
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           が完全に決まるわけではない。そこで、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           を縮約してみる：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> </displayed-eq>
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           をリッチテンソルという。これは足の数が2つであり、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           と一致している。では、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c221D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c221D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           としてよいだろうか。両方とも対称行列であるので、その点では問題ない。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           しかし問題がある。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           はエネルギー運動量テンソルの保存則
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
           を満たす。一方、リッチテンソル
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           の場合、ビアンキの恒等式
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> </displayed-eq>
           において、最初の下付き添え字を上げた後、以下のような縮約を考えてみよう：
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-mtable style="min-width: 13.714em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B3"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B1"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c3B2"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2234"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2234"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mrow><mjx-mo class="mjx-s3"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-mo class="mjx-s3"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow><mjx-script style="vertical-align: 1.177em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 13.714em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2234 TEX-A"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2234 TEX-A"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mrow><mjx-mo class="mjx-s3"><mjx-c class="mjx-c28 TEX-S3"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-s3"><mjx-c class="mjx-c29 TEX-S3"></mjx-c></mjx-mo></mjx-mrow><mjx-script style="vertical-align: 1.177em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
           ただし、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           であり、スカラー曲率と呼ばれる。これにより、リッチテンソルは
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
           を満たさないことが分かる。しかし
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c47"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c52"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c52"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2261"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mn class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D445 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> </displayed-eq>
           ととれば、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c47"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-msup><mjx-TeXAtom texclass="ORD"></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2219"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
           となる。
-        </div>
-        <div class="p">
+        </p>
+        <p>
           そこで、重力場の方程式として
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 8.895em" side="right"><mjx-table style="width: auto; min-width: 4.739em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c47"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.895em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:wPd"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-          の形がとれそうである<span class="weak">（
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 8.895em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 8.895em" side="right"><mjx-table style="width: auto; min-width: 4.739em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.895em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:wPd"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+          の形がとれそうである<span class="Color_weak">（
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
           は定数）</span>。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c47"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
           をアインシュタインテンソルという。式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AwPd"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が成り立つことを認めることにする。
-        </div>
+        </p>
         <h3><span>係数合わせ→アインシュタイン方程式</span></h3>
-        <div class="p">
+        <p>
           式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AwPd"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の係数
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を決めたい。そのためには、重力が弱く<span class="weak">（＝ミンコフスキー計量に近い座標系を取ることができ）</span>、物体の速度が小さい時に、ニュートンの重力理論に帰着することを要請すればよい。実際に計算を行うと、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle size="sm"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c3C0"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c47"></mjx-c></mjx-mi></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c63"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+          を決めたい。そのためには、重力が弱く<span class="Color_weak">（＝ミンコフスキー計量に近い座標系を取ることができ）</span>、物体の速度が小さい時に、ニュートンの重力理論に帰着することを要請すればよい。実際に計算を行うと、
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle size="sm"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
           となることが分かる。従って、求める方程式は
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 10.67em" side="right"><mjx-table style="width: auto; min-width: 6.514em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c47"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c3C0"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c47"></mjx-c></mjx-mi></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c63"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c54"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 10.67em; min-width: 100%"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.194em"><mjx-mtd id="mjx-eqn-eq:sFu"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.194em; vertical-align: -0.813em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 10.67em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 10.67em" side="right"><mjx-table style="width: auto; min-width: 6.514em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mn class="mjx-n"><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 10.67em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.12em"><mjx-mtd id="mjx-eqn-eq:sFu"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.12em; vertical-align: -0.739em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
           となる。これが求めたかった方程式であり、アインシュタイン方程式と呼ばれる。
-        </div>
-        </div>
+        </p>
+        </article>
 <!-- begin footer -->
-      <div class="footer">© 2016-2020 物理学の見つけ方</div>
+      <footer>© 2016-2020 物理学の見つけ方</footer>
 <!-- end footer -->
       </div>
     </div>
