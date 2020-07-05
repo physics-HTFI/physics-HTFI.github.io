@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="180" height="18" version="1.1" viewBox="0 0 47.624999 4.7625001" xmlns="http://www.w3.org/2000/svg"><g><circle cx="40.545" cy="3.1743" r="6.8645" fill="#3d4d70" style="font-variant-east_asian:normal"/><circle cx="40.545" cy="3.1743" r="5.1395" fill="#506494" style="font-variant-east_asian:normal"/><circle cx="40.545" cy="3.1743" r="3.4145" fill="#788bb5" style="font-variant-east_asian:normal"/><circle cx="40.545" cy="3.1743" r="1.6896" fill="#b0bbd4" style="font-variant-east_asian:normal"/></g></svg>
+<svg width="180" height="18" version="1.1" viewBox="0 0 47.625 4.7625" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <circle cx="40.545" cy="3.1743" r="6.8645" fill="#dee7ff" stop-color="#000000" style="font-variant-east_asian:normal;font-variation-settings:normal"/>
+  <circle cx="40.545" cy="3.1743" r="5.1395" fill="#cad6f4" stop-color="#000000" style="font-variant-east_asian:normal;font-variation-settings:normal"/>
+  <circle cx="40.545" cy="3.1743" r="3.4145" fill="#bbc7e2" stop-color="#000000" style="font-variant-east_asian:normal;font-variation-settings:normal"/>
+  <circle cx="40.545" cy="3.1743" r="1.6896" fill="#b0bbd4" stop-color="#000000" style="font-variant-east_asian:normal;font-variation-settings:normal"/>
+ </g>
+</svg>

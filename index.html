@@ -20,19 +20,17 @@
     <script src='css/style.js' type='text/javascript'></script>
   </head>
   <body>
-    <div id='Center'>
-      <header id='Header'>
-        <div id='Header_contents'>
-          <div id='Header_logo'>
-            <div id='Header_about'>
-              <a href='about.html'>このサイトについて</a><br>
-              <a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-text='物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
-            </div>
-          </div>
-          <p id='Header_concept'>定義や概念が先にあってそれを説明するのではなく、<br>実際の実験と結びついた問題を考える中でそれらを見つけていきたい。</p>
-          <p id='Header_misc'>( <span class="Header_version">ver.</span> の値は、完成時に <span class="Header_version">ver. 10.0</span> になる。)</p>
+    <header id='Title'>
+      <div id='Title_container'>
+        <h1 id='Title_name'><span id='Title_logo'></span>物理学の見つけ方</h1>
+        <div id='Title_abstract'>
+          <p>定義や概念が先にあってそれを説明するのではなく、実際の実験と結びついた問題を考える中でそれらを見つけていきたい。</p>
         </div>
-      </header>
+        <a id='Title_about' href='about.html'>このサイトについて</a>
+        <span id='Title_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-text='物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span>
+      </div>
+    </header>
+    <div id='Center'>
       <div id='TOC_group'>
         <nav class='TOC'>
           <h1 class='TOC_title'>力学<span class='TOC_version'>ver. 7.18</span></h1>
@@ -123,11 +121,20 @@
           <div class='TOC_chapter'><span class='TOC_chapterNumber'>9</span><a href='thermodynamics/009.html'>制約条件付き極値問題</a><span class='TOC_chapterDate'>2020.05.26</span></div>
         </nav>
       </div>
-      <script>setDateColor();</script>
-      <div id='Twitter'>
-        <a class='twitter-timeline' data-chrome='noheader nofooter transparent' data-theme='dark' height='600px' data-border-color='#ccc' href='https://twitter.com/physicsHTFI?ref_src=twsrc%5Etfw'></a> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
-      </div>
-      <footer>© 2016-2020 物理学の見つけ方</footer>
     </div>
+    <script>setDateColor();</script>
+    <footer>
+      <div id='Footer_container'>
+        <div id='Footer_left'>
+          <p>
+            <span class='Color_weak'>TIPS:</span><br>
+            <span class='Color_weak'>・<span class='Title_version'>ver.</span> の値は、最高が <span class='Title_version'>ver. 10.0</span>（完成時）。</span><br>
+            <span class='Color_weak'>・数式番号にマウスカーソルを合わせると、画面上部にその数式が表示される。</span>
+          </p>
+          <p id='copyright'>© 2016-2020 物理学の見つけ方</p>
+        </div>
+        <div id='Footer_twitter'><a class='twitter-timeline' data-chrome='noheader nofooter transparent' data-theme='dark' height='600px' data-border-color='#ccc' href='https://twitter.com/physicsHTFI?ref_src=twsrc%5Etfw'></a> <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></div>
+      </div>
+    </footer>
   </body>
 </html>

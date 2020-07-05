@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -5,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@physicsHTFI">
-    <meta property="og:url" content="https://physics-htfi.github.io/classical_mechanics/001.html">
-    <meta property="og:title" content="力学 第1章 キャッチボール - 物理学の見つけ方">
+    <!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/classical_mechanics/001.html"><!-- end og_url -->
+    <!-- begin og_title --><meta property="og:title" content="力学 第1章 キャッチボール - 物理学の見つけ方"><!-- end og_title -->
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
-    <title>放物運動の運動方程式とその解法 - 物理学の見つけ方</title>
+    <!-- begin title --><title>放物運動の運動方程式とその解法 - 物理学の見つけ方</title><!-- end title -->
     <link rel="stylesheet" href="../css/chapter.css" type="text/css">
     <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
     <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="../css/favicon180.png" sizes="180x180">
     <script src="../css/style.js" type="text/javascript"></script>
-<!-- begin breadcrumb -->
-    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "自由な運動" } }, { "@type": "ListItem", "position": 3, "item": { "name": "キャッチボール" } } ] } </script>
-<!-- end breadcrumb -->
+    <!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "自由な運動" } } ] } </script><!-- end breadcrumb -->
   <style id="MJX-CHTML-styles">
 mjx-container[jax="CHTML"] {
   line-height: 0;
@@ -1562,12 +1561,34 @@ mjx-c.mjx-c7D.TEX-S3::before {
 }
 </style></head>
   <body>
+    <header id="Logo">
+      <a id="Logo_link" href=".."></a>
+      <span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='力学 第1章 キャッチボール - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
+    </header>
+    <header id="Title">
+      <div id="Title_container">
+        <span id="Title_num"><!-- begin chapter_num -->力学編　第1章<!-- end chapter_num --></span>
+        <h1 id="Title_name"><!-- begin chapter_name -->キャッチボール<!-- end chapter_name --></h1>
+        <div id="Title_abstract">
+        <img class="Image_graph" src="fig/e7fe5.gif">
+        <p>
+          投げられたボールの運動
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+          を求めるには、
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+          における初期位置(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AVpU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)・初期速度(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ATux"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を与えた上で、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ARdb"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を解けばよい。
+        </p>
+        <p>
+          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/a4921.gif" html-path="fig/44e8e.html">
+        </p>
+        </div>
+      </div>
+    </header>
     <div id="Center">
       <nav id="LeftPane">
         <div id="LeftPane_fixed">
-          <div id="Logo"><a id="Logo_link" href=".."></a></div>
+          <a id="LeftPane_logo" href=".."></a>
 <!-- begin menu -->
-          <div id="Breadcrumb"><a id="Breadcrumb_link" href=".."></a> › 力学</div>
           <div id="TOC">
             <div class="TOC_part TOC_bg11">自由な運動</div>
             <div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">1</span><a class="TOC_chapterName">キャッチボール</a></div>
@@ -1595,18 +1616,6 @@ mjx-c.mjx-c7D.TEX-S3::before {
       </nav>
       <div id="RightPane">
         <article id="RightPane_contents">
-        <h1><span id="h1_num">1.</span>キャッチボール<span id='h1_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='力学 第1章 キャッチボール - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span></h1>
-        <img class="Image_graph" src="fig/e7fe5.gif">
-        <p>
-          投げられたボールの運動
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          を求めるには、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          における初期位置(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AVpU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)・初期速度(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ATux"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を与えた上で、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ARdb"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を解けばよい。
-        </p>
-        <p>
-          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/a4921.gif" html-path="fig/44e8e.html">
-        </p>
         <h3><span>ボールの運動 <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> は、初期値(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AByC"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)と運動方程式から計算できる</span></h3>
         <img class="Image_graph" src="fig/855d7.svg">
         <p>
@@ -2140,10 +2149,10 @@ mjx-c.mjx-c7D.TEX-S3::before {
           が決まって解(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AbZy"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が得られる。</span>
         </p>
         </article>
-<!-- begin footer -->
-      <footer>© 2016-2020 物理学の見つけ方</footer>
-<!-- end footer -->
       </div>
     </div>
+<!-- begin footer -->
+    <footer>© 2016-2020 物理学の見つけ方</footer>
+<!-- end footer -->
   </body>
 </html>

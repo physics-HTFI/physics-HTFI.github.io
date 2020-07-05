@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -5,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@physicsHTFI">
-    <meta property="og:url" content="https://physics-htfi.github.io/electrodynamics/008.html">
-    <meta property="og:title" content="電磁力学 第8章 マクスウェル方程式 - 物理学の見つけ方">
+    <!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/electrodynamics/008.html"><!-- end og_url -->
+    <!-- begin og_title --><meta property="og:title" content="電磁力学 第8章 マクスウェル方程式 - 物理学の見つけ方"><!-- end og_title -->
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
-    <title>マクスウェル方程式 - 物理学の見つけ方</title>
+    <!-- begin title --><title>マクスウェル方程式 - 物理学の見つけ方</title><!-- end title -->
     <link rel="stylesheet" href="../css/chapter.css" type="text/css">
     <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
     <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="../css/favicon180.png" sizes="180x180">
     <script src="../css/style.js" type="text/javascript"></script>
-<!-- begin breadcrumb -->
-    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "電磁力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "変動する電磁場" } }, { "@type": "ListItem", "position": 3, "item": { "name": "マクスウェル方程式" } } ] } </script>
-<!-- end breadcrumb -->
+    <!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "電磁力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "変動する電磁場" } } ] } </script><!-- end breadcrumb -->
   <style id="MJX-CHTML-styles">
 mjx-container[jax="CHTML"] {
   line-height: 0;
@@ -1845,12 +1844,26 @@ mjx-c.mjx-c7D.TEX-S4::before {
 }
 </style></head>
   <body>
+    <header id="Logo">
+      <a id="Logo_link" href=".."></a>
+      <span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第8章 マクスウェル方程式 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
+    </header>
+    <header id="Title">
+      <div id="Title_container">
+        <span id="Title_num"><!-- begin chapter_num -->電磁力学編　第8章<!-- end chapter_num --></span>
+        <h1 id="Title_name"><!-- begin chapter_name -->マクスウェル方程式<!-- end chapter_name --></h1>
+        <div id="Title_abstract">
+        <p>
+          電磁場の時間変化は、マクスウェル方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtQz"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)によって与えられる。これにより、電磁場中での荷電粒子の運動は、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AqSE"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で記述されることになる。
+        </p>
+        </div>
+      </div>
+    </header>
     <div id="Center">
       <nav id="LeftPane">
         <div id="LeftPane_fixed">
-          <div id="Logo"><a id="Logo_link" href=".."></a></div>
+          <a id="LeftPane_logo" href=".."></a>
 <!-- begin menu -->
-          <div id="Breadcrumb"><a id="Breadcrumb_link" href=".."></a> › 電磁力学</div>
           <div id="TOC">
             <div class="TOC_part TOC_bg31">静電磁場</div>
             <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">静止した電荷に働く力</a></div>
@@ -1877,10 +1890,6 @@ mjx-c.mjx-c7D.TEX-S4::before {
       </nav>
       <div id="RightPane">
         <article id="RightPane_contents">
-        <h1><span id="h1_num">8.</span>マクスウェル方程式<span id='h1_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第8章 マクスウェル方程式 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span></h1>
-        <p>
-          電磁場の時間変化は、マクスウェル方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtQz"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)によって与えられる。これにより、電磁場中での荷電粒子の運動は、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AqSE"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で記述されることになる。
-        </p>
         <h3><span>ローレンツ変換を用いて、第5章の議論を繰り返す</span></h3>
         <p>
           時間変動する電磁場の方程式<span class="Color_weak">（＝マクスウェル方程式）</span>を求める、という当初の問題にようやく取り組むことができる。ここまでの流れは次のようになる。運動方程式をガリレイ変換すれば、電磁場の変換則が得られて、電磁場の時間変化を与える方程式のヒントが得られるはずであった。しかしそこには矛盾が存在した<span class="Color_weak">（第5章）</span>。矛盾を解消するためには、ローレンツ変換を考えればよく<span class="Color_weak">（第6章）</span>、それに合わせて、運動方程式も相対論的なものへ置き換えればよかった<span class="Color_weak">（第7章）</span>。
@@ -2042,8 +2051,6 @@ mjx-c.mjx-c7D.TEX-S4::before {
              <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
             に置き換えたものを使えばよい：
             <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 16.317em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: blue"><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mrow space="3"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-mstyle></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mrow space="4"><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo></mjx-mrow><mjx-mrow><mjx-mo class="mjx-lop"><mjx-c class="mjx-c5B TEX-S2"></mjx-c></mjx-mo><mjx-msup><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow><mjx-script style="vertical-align: 0.477em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-lop"><mjx-c class="mjx-c5D TEX-S2"></mjx-c></mjx-mo></mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5B TEX-S1"></mjx-c></mjx-mo><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c28 TEX-S1"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em; margin-left: 0.051em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2225"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22A5"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-sop"><mjx-c class="mjx-c29 TEX-S1"></mjx-c></mjx-mo></mjx-mrow><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5D TEX-S1"></mjx-c></mjx-mo></mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mrow space="4"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c28 TEX-S1"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2225"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c22A5"></mjx-c></mjx-mo></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-sop"><mjx-c class="mjx-c29 TEX-S1"></mjx-c></mjx-mo></mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          </p>
-          <p>
           </p>
         </div>
         <h2><span class="h2_num">8.2</span><span class="h2_name">マクスウェル方程式の導出</span></h2>
@@ -2265,10 +2272,10 @@ mjx-c.mjx-c7D.TEX-S4::before {
           の時間発展も同時に計算する必要がある。
         </p>
         </article>
-<!-- begin footer -->
-      <footer>© 2016-2020 物理学の見つけ方</footer>
-<!-- end footer -->
       </div>
     </div>
+<!-- begin footer -->
+    <footer>© 2016-2020 物理学の見つけ方</footer>
+<!-- end footer -->
   </body>
 </html>

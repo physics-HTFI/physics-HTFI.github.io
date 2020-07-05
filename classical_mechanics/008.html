@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -5,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@physicsHTFI">
-    <meta property="og:url" content="https://physics-htfi.github.io/classical_mechanics/008.html">
-    <meta property="og:title" content="力学 第8章 二重振り子 - 物理学の見つけ方">
+    <!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/classical_mechanics/008.html"><!-- end og_url -->
+    <!-- begin og_title --><meta property="og:title" content="力学 第8章 二重振り子 - 物理学の見つけ方"><!-- end og_title -->
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
-    <title>二重振り子の運動方程式の導出 - 物理学の見つけ方</title>
+    <!-- begin title --><title>二重振り子の運動方程式の導出 - 物理学の見つけ方</title><!-- end title -->
     <link rel="stylesheet" href="../css/chapter.css" type="text/css">
     <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
     <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="../css/favicon180.png" sizes="180x180">
     <script src="../css/style.js" type="text/javascript"></script>
-<!-- begin breadcrumb -->
-    <script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "拘束された運動" } }, { "@type": "ListItem", "position": 3, "item": { "name": "二重振り子" } } ] } </script>
-<!-- end breadcrumb -->
+    <!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "拘束された運動" } } ] } </script><!-- end breadcrumb -->
   <style id="MJX-CHTML-styles">
 mjx-container[jax="CHTML"] {
   line-height: 0;
@@ -1862,12 +1861,36 @@ mjx-c.mjx-c5D.TEX-S4::before {
 }
 </style></head>
   <body>
+    <header id="Logo">
+      <a id="Logo_link" href=".."></a>
+      <span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='力学 第8章 二重振り子 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
+    </header>
+    <header id="Title">
+      <div id="Title_container">
+        <span id="Title_num"><!-- begin chapter_num -->力学編　第8章<!-- end chapter_num --></span>
+        <h1 id="Title_name"><!-- begin chapter_name -->二重振り子<!-- end chapter_name --></h1>
+        <div id="Title_abstract">
+        <img class="Image_graph" src="fig/5e77d.gif">
+        <p>
+          「複数の物体」間に「複数の拘束条件」がかかっている場合、拘束力
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46D TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.056em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c63"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
+          は、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APyi"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で与えられる。物体の運動
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+          を計算するには、拘束条件(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AzSM"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を満たす初期値
+           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.319em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+          のもとで、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHeY"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を解けばよい。
+        </p>
+        <p>
+          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/53475.gif" html-path="fig/d0b8b.html"><input class="Simulation_button" value="実行" type="image" src="fig/828f5.gif" html-path="fig/37f65.html"> <input class="Simulation_button" value="実行" type="image" src="fig/81b3c.gif" html-path="fig/2e57a.html"><input class="Simulation_button" value="実行" type="image" src="fig/2ddee.gif" html-path="fig/69f99.html"> <input class="Simulation_button" value="実行" type="image" src="fig/bf49f.gif" html-path="fig/3b0d4.html"><input class="Simulation_button" value="実行" type="image" src="fig/a6015.gif" html-path="fig/a4bf8.html">
+        </p>
+        </div>
+      </div>
+    </header>
     <div id="Center">
       <nav id="LeftPane">
         <div id="LeftPane_fixed">
-          <div id="Logo"><a id="Logo_link" href=".."></a></div>
+          <a id="LeftPane_logo" href=".."></a>
 <!-- begin menu -->
-          <div id="Breadcrumb"><a id="Breadcrumb_link" href=".."></a> › 力学</div>
           <div id="TOC">
             <div class="TOC_part TOC_bg11">自由な運動</div>
             <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">キャッチボール</a></div>
@@ -1895,20 +1918,6 @@ mjx-c.mjx-c5D.TEX-S4::before {
       </nav>
       <div id="RightPane">
         <article id="RightPane_contents">
-        <h1><span id="h1_num">8.</span>二重振り子<span id='h1_tweet'><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='力学 第8章 二重振り子 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script></span></h1>
-        <img class="Image_graph" src="fig/5e77d.gif">
-        <p>
-          「複数の物体」間に「複数の拘束条件」がかかっている場合、拘束力
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46D TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.056em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c63"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
-          は、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APyi"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で与えられる。物体の運動
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          を計算するには、拘束条件(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AzSM"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を満たす初期値
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.319em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D47F TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          のもとで、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHeY"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を解けばよい。
-        </p>
-        <p>
-          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/53475.gif" html-path="fig/d0b8b.html"><input class="Simulation_button" value="実行" type="image" src="fig/828f5.gif" html-path="fig/37f65.html"> <input class="Simulation_button" value="実行" type="image" src="fig/81b3c.gif" html-path="fig/2e57a.html"><input class="Simulation_button" value="実行" type="image" src="fig/2ddee.gif" html-path="fig/69f99.html"> <input class="Simulation_button" value="実行" type="image" src="fig/bf49f.gif" html-path="fig/3b0d4.html"><input class="Simulation_button" value="実行" type="image" src="fig/a6015.gif" html-path="fig/a4bf8.html">
-        </p>
         <h3><span>多体系の拘束力 <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msup><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46D TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.056em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c63"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> を求めたい</span></h3>
         <img class="Image_graph" src="fig/6f1dc.svg">
         <p>
@@ -2710,10 +2719,10 @@ mjx-c.mjx-c5D.TEX-S4::before {
           <input class="Simulation_button" value="実行" type="image" src="fig/bf49f.gif" html-path="fig/3b0d4.html"> <input class="Simulation_button" value="実行" type="image" src="fig/a6015.gif" html-path="fig/a4bf8.html">
         </p>
         </article>
-<!-- begin footer -->
-      <footer>© 2016-2020 物理学の見つけ方</footer>
-<!-- end footer -->
       </div>
     </div>
+<!-- begin footer -->
+    <footer>© 2016-2020 物理学の見つけ方</footer>
+<!-- end footer -->
   </body>
 </html>
