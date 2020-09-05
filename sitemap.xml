@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-  <url><lastmod>2020-09-02</lastmod><loc>https://physics-htfi.github.io/</loc></url>
+  <url><lastmod>2020-09-06</lastmod><loc>https://physics-htfi.github.io/</loc></url>
   <url><lastmod>2020-07-14</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/001.html</loc></url><!--1f658-->
   <url><lastmod>2020-08-29</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/002.html</loc></url><!--96287-->
   <url><lastmod>2020-07-15</lastmod><loc>https://physics-htfi.github.io/classical_mechanics/003.html</loc></url><!--8f3bc-->
@@ -53,9 +53,10 @@
   <url><lastmod>2020-08-30</lastmod><loc>https://physics-htfi.github.io/thermodynamics/006.html</loc></url><!--972c3-->
   <url><lastmod>2020-09-01</lastmod><loc>https://physics-htfi.github.io/thermodynamics/007.html</loc></url><!--8f2bc-->
   <url><lastmod>2020-05-20</lastmod><loc>https://physics-htfi.github.io/thermodynamics/008.html</loc></url><!--048c1-->
-  <url><lastmod>2020-08-02</lastmod><loc>https://physics-htfi.github.io/thermodynamics/009.html</loc></url><!--4b34e-->
-  <url><lastmod>2020-07-26</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/001.html</loc></url><!--2651f-->
+  <url><lastmod>2020-09-05</lastmod><loc>https://physics-htfi.github.io/thermodynamics/009.html</loc></url><!--16574-->
+  <url><lastmod>2020-09-05</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/001.html</loc></url><!--c49fe-->
   <url><lastmod>2020-08-30</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/002.html</loc></url><!--0515b-->
-  <url><lastmod>2020-09-02</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/003.html</loc></url><!--3b059-->
+  <url><lastmod>2020-09-05</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/003.html</loc></url><!--544de-->
+  <url><lastmod>2020-09-06</lastmod><loc>https://physics-htfi.github.io/statistical_mechanics/004.html</loc></url><!--290cf-->
 </urlset>
 
