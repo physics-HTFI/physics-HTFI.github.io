@@ -1,0 +1,13 @@
+<svg width="145.6" height="79.127" viewBox="0 0 38.523 20.936" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="a" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill-rule="evenodd" stroke="#000" stroke-width=".4pt"/>
+</marker>
+</defs>
+<g transform="translate(220.874 -133.94)">
+<rect style="font-variation-settings:normal;opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000;stop-opacity:1" width="38.523" height="20.718" x="-220.874" y="134.157" rx="0" ry="0"/>
+<path style="font-variation-settings:normal;opacity:1;fill:#fff;fill-opacity:1;stroke:#555;stroke-width:.793757;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:100;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000;stop-opacity:1" d="M-185.539 133.94a16.074 16.074 0 0 1-8.037 13.92 16.074 16.074 0 0 1-16.073 0 16.074 16.074 0 0 1-8.037-13.92"/>
+<path d="m-200.073 136 3.626 5.385" color="#000" fill="none" marker-end="url(#a)" stroke="#000" style="isolation:auto;mix-blend-mode:normal;stroke-width:.264583;marker-end:url(#a)"/>
+<circle transform="rotate(-11.402)" cx="-223.01" cy="93.763" r="1.323" color="#000" fill="#5e5bff" style="stroke-width:.264583"/>
+</g>
+</svg>

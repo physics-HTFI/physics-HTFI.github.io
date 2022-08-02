@@ -1,6 +1,6 @@
 <svg width="211.937" height="97.845" viewBox="0 0 56.075 25.888" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<marker id="a" overflow="visible" orient="auto">
+<marker id="a" overflow="visible" orient="auto" refX="0" refY="0" viewBox="0 0 8.887 5.078" markerWidth="8.887" markerHeight="5.078" preserveAspectRatio="xMidYMid">
 <path d="m-4 0-2 2 7-2-7-2Z" fill="#fff" fill-rule="evenodd" stroke="#fff" stroke-width=".4pt"/>
 </marker>
 </defs>

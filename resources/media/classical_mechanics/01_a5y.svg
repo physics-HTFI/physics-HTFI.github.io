@@ -7,14 +7,12 @@
 <path d="m-147.732 44.037-3.485-.175-1.109-3.023 3.332-.449z" fill="#8e8e8e" style="stroke-width:.264582" transform="translate(166.92 -32.764)"/>
 <path d="m-147.732 44.037.514-3.412-1.102-4.089-.674 3.854z" fill="#575757" style="stroke-width:.264582" transform="translate(166.92 -32.764)"/>
 <path d="m-152.78 38.295 4.46-1.759-.674 3.854-3.332.449z" fill="#a0a0a0" style="stroke-width:.264582" transform="translate(166.92 -32.764)"/>
-<g stroke="#000">
-<path d="M22.333 12.77c3.439-2.55 7.16-7.719 7.05-8.375" fill="none" stroke-miterlimit="100000" stroke-width=".19155592"/>
-<path d="M23.976 11.33c-.26 0 3.407-7.328 5.39-6.89 1.816.401-1.355 5.938-5.39 6.89z" fill="#fff" fill-opacity=".991" stroke-miterlimit="100000" stroke-width=".19155592"/>
-<g fill="none" stroke-miterlimit="100">
-<path d="M24.114 11.255a33.961 33.961 0 0 0 4.321-5.062" stroke-width=".11482772"/>
+<path d="M-144.586 45.534c3.438-2.55 7.159-7.719 7.05-8.374" fill="none" stroke-miterlimit="100000" stroke-width=".192" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#414141;stroke-width:.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000;stop-opacity:1" transform="translate(166.92 -32.764)"/>
+<path d="M-142.944 44.094c-.26 0 3.407-7.328 5.39-6.89 1.816.401-1.355 5.939-5.39 6.89z" fill="#fff" fill-opacity=".991" stroke-miterlimit="100000" stroke-width=".192" style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:#fff;fill-opacity:1;stroke:#414141;stroke-width:.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000;stop-opacity:1" transform="translate(166.92 -32.764)"/>
+<g fill="none" stroke-miterlimit="100" style="stroke:#000">
+<path d="M24.114 11.255a33.961 33.961 0 0 0 4.321-5.062" stroke-width=".434"/>
 <g stroke-width=".29">
-<path d="m25.416 9.096-.088.934 1.019-.169M26.073 8.166l-.074 1.125 1.264-.346M26.835 7.058 26.76 8.4l1.33-.437" stroke-width=".07672819999999998"/>
-</g>
+<path d="m25.416 9.096-.088.934 1.019-.169M26.073 8.166l-.074 1.125 1.264-.346M26.835 7.058 26.76 8.4l1.33-.437"/>
 </g>
 </g>
 <path d="M-148.48 48.32v7.472h-2.518l4.365 4.17 4.366-4.17h-2.519V48.32z" fill="red" style="stroke-width:.264582" transform="translate(166.92 -32.764)"/>

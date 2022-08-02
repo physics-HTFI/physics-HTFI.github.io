@@ -15,12 +15,10 @@
 </marker>
 </defs>
 <g transform="translate(204.294 -876.408)">
-<g color="#000">
-<path d="M.5 134.19h165.431" fill="none" marker-end="url(#a)" stroke="#000" stroke-width=".8" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -204.426 876.275)"/>
-<path d="M11.5 143.69V38.208" fill="none" marker-end="url(#b)" stroke="#000" stroke-width=".8" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -204.426 876.275)"/>
-<path d="M1.779 69.891h125.343l9.721 64.299H11.5Z" fill="#e2fbe2" stroke="#008400" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -204.426 876.275)"/>
-<path d="M66.96 7.641c35.882-21.543 48.583 17.844 98.103-.64l16.104 53.11c-66.472 22.431-83.522-41.19-128.374 0z" fill="#ebeaff" stroke="#00f" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -204.426 876.275)"/>
-</g>
+<path d="M-204.294 911.78h43.77" color="#000" fill="none" marker-end="url(#a)" stroke="#000" stroke-width=".212" style="isolation:auto;mix-blend-mode:normal;shape-rendering:auto"/>
+<path d="M-201.383 914.293v-27.908" color="#000" fill="none" marker-end="url(#b)" stroke="#000" stroke-width=".212" style="isolation:auto;mix-blend-mode:normal;shape-rendering:auto"/>
+<path d="M-203.955 894.767h33.163l2.572 17.013h-33.163z" color="#000" fill="#e2fbe2" stroke="#008400" style="isolation:auto;mix-blend-mode:normal;stroke-width:.264583;shape-rendering:auto"/>
+<path d="M-186.71 878.297c9.494-5.7 12.855 4.721 25.957-.169l4.26 14.052c-17.587 5.935-22.098-10.899-33.965 0z" color="#000" fill="#ebeaff" stroke="#00f" style="isolation:auto;mix-blend-mode:normal;stroke-width:.264583;shape-rendering:auto"/>
 <path d="m-201.383 911.78 10.925-19.6M-203.955 894.767l17.245-16.317M-170.792 894.767l10.04-16.5M-168.22 911.78l11.728-19.6" color="#000" style="isolation:auto;mix-blend-mode:normal;fill:none;stroke:#000;stroke-width:.132291;stroke-dasharray:.529165,.529165;shape-rendering:auto"/>
 <g stroke-linejoin="round" stroke-width="1.5">
 <g stroke-miterlimit="100000">
