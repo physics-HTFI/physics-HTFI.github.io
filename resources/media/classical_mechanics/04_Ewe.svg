@@ -1,0 +1,35 @@
+<svg width="171.422" height="117.62" viewBox="0 0 45.355 31.12" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="d" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="e" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="b" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<marker id="c" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<marker id="a" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2Z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+</defs>
+<g transform="translate(169.632 -202.406)">
+<path color="#000" fill="#dcdcdc" style="isolation:auto;mix-blend-mode:normal" d="M-169.632 205.449h45.355v28.077h-45.355z"/>
+<g fill="none" stroke-linejoin="round" color="#000">
+<path d="M.5 12h171.421" stroke="#555" stroke-miterlimit="100" stroke-width="3" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -169.764 202.274)"/>
+<path d="M132.448 79.8H44.31M132.448 79.8V5.625" stroke="#000" stroke-dasharray="1.8, 1.8" stroke-width=".3" style="isolation:auto;mix-blend-mode:normal" transform="matrix(.26458 0 0 .26458 -169.764 202.274)"/>
+</g>
+<circle transform="rotate(-26.402)" cx="-232.177" cy="112.19" r="1.323" color="#000" fill="#5e5bff" style="stroke-width:.264585"/>
+<path d="m-158.04 203.762 23.32 19.626" color="#000" marker-end="url(#a)" stroke-width=".529" style="isolation:auto;mix-blend-mode:normal;fill:none;stroke:red;stroke-linecap:round;marker-end:url(#a);shape-rendering:auto"/>
+<path d="M-158.04 203.762h23.32" color="#000" marker-end="url(#b)" style="isolation:auto;mix-blend-mode:normal;fill:none;stroke:red;stroke-width:.264585;stroke-linecap:round;shape-rendering:auto"/>
+<path d="M-158.04 203.762v19.626" color="#000" marker-end="url(#c)" style="isolation:auto;mix-blend-mode:normal;fill:none;stroke:red;stroke-width:.264585;stroke-linecap:round;shape-rendering:auto"/>
+<g fill="green" stroke-linejoin="round" stroke-miterlimit="100000" stroke-width="1.6">
+<path d="M-129.489 214.349h.86c.72 0 1.423-.526 1.423-1.093 0-.39-.334-.764-.997-.764h-1.64c-.096 0-.152 0-.152.096 0 .06.046.06.147.06.066 0 .157.005.218.01.08.01.11.026.11.082 0 .02-.004.035-.02.096l-.678 2.717c-.05.198-.06.238-.46.238-.086 0-.142 0-.142.096 0 .061.061.061.076.061.142 0 .501-.015.643-.015.106 0 .218.005.324.005.111 0 .222.01.329.01.035 0 .101 0 .101-.101 0-.056-.046-.056-.142-.056-.187 0-.329 0-.329-.09 0-.031.01-.056.015-.087zm.365-1.508c.045-.177.055-.193.273-.193h.486c.42 0 .688.137.688.486 0 .198-.101.633-.298.815-.254.228-.557.268-.78.268h-.713zM-126.352 211.336c0-.053 0-.134-.085-.134-.089 0-.089.088-.089.152v3.234c0 .064 0 .153.089.153.085 0 .085-.082.085-.135zm.783.018c0-.064 0-.152-.089-.152-.085 0-.085.081-.085.134v3.27c0 .053 0 .135.085.135.089 0 .089-.089.089-.153zM-148.363 230.576h.86c.719 0 1.422-.526 1.422-1.093 0-.39-.334-.764-.997-.764h-1.64c-.096 0-.151 0-.151.096 0 .06.045.06.146.06.066 0 .157.005.218.01.081.01.111.026.111.082 0 .02-.005.035-.02.096l-.678 2.717c-.05.198-.06.238-.46.238-.087 0-.142 0-.142.096 0 .061.06.061.076.061.141 0 .5-.015.642-.015.107 0 .218.005.324.005.112 0 .223.01.33.01.035 0 .1 0 .1-.101 0-.056-.045-.056-.141-.056-.187 0-.33 0-.33-.09 0-.031.01-.056.016-.087zm.364-1.508c.046-.177.056-.193.273-.193h.486c.42 0 .689.137.689.486 0 .198-.102.633-.299.815-.253.228-.557.268-.78.268h-.713zM-144.288 227.765c0-.053 0-.138-.085-.138-.089 0-.089.081-.089.138v2.147h-1.08c-.053 0-.142 0-.142.085 0 .089.082.089.142.089h2.334c.057 0 .142 0 .142-.085 0-.089-.081-.089-.142-.089h-1.08Z"/>
+</g>
+<path d="M-132.304 220.145v-12.627" fill="none" marker-end="url(#d)" stroke="green" stroke-width=".529"/>
+<path d="M-139.81 225.828h-12.626" fill="none" marker-end="url(#e)" stroke="green" stroke-width=".529"/>
+</g>
+</svg>

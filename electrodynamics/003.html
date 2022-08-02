@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@physicsHTFI">
-    <!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/electrodynamics/003.html"><!-- end og_url -->
-    <!-- begin og_title --><meta property="og:title" content="電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方"><!-- end og_title -->
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
-    <!-- begin title --><title>電荷に働くローレンツ力 - 物理学の見つけ方</title><!-- end title -->
-    <link rel="stylesheet" href="../css/chapter.css" type="text/css">
-    <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
-    <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
-    <link rel="apple-touch-icon" href="../css/favicon180.png" sizes="180x180">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"></script>
-    <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-P8VWTJPJPT'); gtag('config', 'UA-84006000-1');</script>
-    <script src="../css/style.js" type="text/javascript"></script>
-    <!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "電磁力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "静電磁場" } } ] } </script><!-- end breadcrumb -->
-  <style id="MJX-CHTML-styles">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@physicsHTFI">
+<!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/electrodynamics/003.html"><!-- end og_url -->
+<!-- begin og_title --><meta property="og:title" content="電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方"><!-- end og_title -->
+<meta property="og:description" content="">
+<meta property="og:image" content="https://physics-htfi.github.io/resources/css/favicon192.png">
+<!-- begin title --><title>電荷に働くローレンツ力 - 物理学の見つけ方</title><!-- end title -->
+<link rel="stylesheet" href="../resources/css/chapter.css">
+<link rel="stylesheet" href="../resources/css/chapter_TOC_classical_mechanics.css">
+<link rel="icon" href="../resources/css/favicon.svg">
+<link rel="apple-touch-icon" href="../resources/css/favicon180.png" sizes="180x180">
+<script defer="" src="../resources/js/chapter.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"></script>
+<script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-P8VWTJPJPT'); gtag('config', 'UA-84006000-1');</script>
+<!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "電磁力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "静電磁場" } } ] } </script><!-- end breadcrumb -->
+<style id="MJX-CHTML-styles">
 mjx-container[jax="CHTML"] {
   line-height: 0;
 }
@@ -1046,112 +1045,112 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 @font-face /* 0 */ {
   font-family: MJXZERO;
-  src: url("../css/font/woff-v2/MathJax_Zero.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Zero.woff") format("woff");
 }
 
 @font-face /* 1 */ {
   font-family: MJXTEX;
-  src: url("../css/font/woff-v2/MathJax_Main-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Regular.woff") format("woff");
 }
 
 @font-face /* 2 */ {
   font-family: MJXTEX-B;
-  src: url("../css/font/woff-v2/MathJax_Main-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Bold.woff") format("woff");
 }
 
 @font-face /* 3 */ {
   font-family: MJXTEX-I;
-  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
 }
 
 @font-face /* 4 */ {
   font-family: MJXTEX-MI;
-  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
 }
 
 @font-face /* 5 */ {
   font-family: MJXTEX-BI;
-  src: url("../css/font/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
 }
 
 @font-face /* 6 */ {
   font-family: MJXTEX-S1;
-  src: url("../css/font/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size1-Regular.woff") format("woff");
 }
 
 @font-face /* 7 */ {
   font-family: MJXTEX-S2;
-  src: url("../css/font/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size2-Regular.woff") format("woff");
 }
 
 @font-face /* 8 */ {
   font-family: MJXTEX-S3;
-  src: url("../css/font/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size3-Regular.woff") format("woff");
 }
 
 @font-face /* 9 */ {
   font-family: MJXTEX-S4;
-  src: url("../css/font/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size4-Regular.woff") format("woff");
 }
 
 @font-face /* 10 */ {
   font-family: MJXTEX-A;
-  src: url("../css/font/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_AMS-Regular.woff") format("woff");
 }
 
 @font-face /* 11 */ {
   font-family: MJXTEX-C;
-  src: url("../css/font/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
 }
 
 @font-face /* 12 */ {
   font-family: MJXTEX-CB;
-  src: url("../css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
 }
 
 @font-face /* 13 */ {
   font-family: MJXTEX-FR;
-  src: url("../css/font/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
 }
 
 @font-face /* 14 */ {
   font-family: MJXTEX-FRB;
-  src: url("../css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
 }
 
 @font-face /* 15 */ {
   font-family: MJXTEX-SS;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
 }
 
 @font-face /* 16 */ {
   font-family: MJXTEX-SSB;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
 }
 
 @font-face /* 17 */ {
   font-family: MJXTEX-SSI;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
 }
 
 @font-face /* 18 */ {
   font-family: MJXTEX-SC;
-  src: url("../css/font/woff-v2/MathJax_Script-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Script-Regular.woff") format("woff");
 }
 
 @font-face /* 19 */ {
   font-family: MJXTEX-T;
-  src: url("../css/font/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
 }
 
 @font-face /* 20 */ {
   font-family: MJXTEX-V;
-  src: url("../css/font/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Vector-Regular.woff") format("woff");
 }
 
 @font-face /* 21 */ {
   font-family: MJXTEX-VB;
-  src: url("../css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
 
 mjx-c.mjx-c28::before {
@@ -1440,265 +1439,279 @@ mjx-c.mjx-c5D.TEX-S1::before {
   content: "]";
 }
 </style></head>
-  <body>
-    <header id="Logo">
-      <a id="Logo_link" href=".."></a>
-      <span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
-    </header>
-    <header id="Title">
-      <div id="Title_container">
-        <span id="Title_num"><!-- begin chapter_num -->電磁力学編　第3章<!-- end chapter_num --></span>
-        <h1 id="Title_name"><!-- begin chapter_name -->運動する電荷に働く力<!-- end chapter_name --></h1>
-        <div id="Title_abstract">
-        <img class="Image_graph" src="fig/0f4c5.gif">
-        <p>
-          磁場中を運動する電荷は、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)と呼ばれる力を受ける。
-        </p>
-        <p>
-          この章のシミュレーション<span class="Color_weak">（クリックで計算開始）</span>：<br><input class="Simulation_button" value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
-        </p>
-        </div>
-      </div>
-    </header>
-    <div id="Center">
-      <nav id="LeftPane">
-        <div id="LeftPane_fixed">
-          <a id="LeftPane_logo" href=".."></a>
+<body>
+<header id="Logo">
+<a id="Logo_link" href=".."></a>
+<span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='電磁力学 第3章 運動する電荷に働く力 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
+</header>
+<header id="Title">
+<div id="Title_container">
+<span id="Title_num"><!-- begin chapter_num -->電磁力学編　第3章<!-- end chapter_num --></span>
+<h1 id="Title_name"><!-- begin chapter_name -->運動する電荷に働く力<!-- end chapter_name --></h1>
+<div id="Title_abstract">
+<p>
+<div class="thumbnail">
+<button type="button" name="electrodynamics/03_rkK" class="thumbnail_click_button"><video muted="" loop="" autoplay="" src="../resources/media/electrodynamics/03_rkK.mp4" class="thumbnail_video"></video></button>
+<div class="thumbnail_playpause">
+<button type="button" class="thumbnail_playpause_button thumbnail_playpause_pause"></button>
+</div>
+</div>
+</p>
+<p>
+磁場中を運動する電荷は、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)と呼ばれる力を受ける。
+</p>
+</div>
+</div>
+</header>
+<div id="Center">
+<nav id="LeftPane">
+<div id="LeftPane_fixed">
+<a id="LeftPane_logo" href=".."></a>
 <!-- begin menu -->
-          <div id="TOC">
-            <div class="TOC_part TOC_bg31">静電磁場</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">静止した電荷に働く力</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">電流に働く力</a></div>
-            <div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">3</span><a class="TOC_chapterName">運動する電荷に働く力</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">電荷・電流密度の逆算</a></div>
-            <div class="TOC_part TOC_bg32">相対性理論</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">5</span><a href="005.html" class="TOC_chapterName">ガリレイ変換の矛盾</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">6</span><a href="006.html" class="TOC_chapterName">矛盾の解消</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">7</span><a href="007.html" class="TOC_chapterName">相対論的力学</a></div>
-            <div class="TOC_part TOC_bg33">変動する電磁場</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">8</span><a href="008.html" class="TOC_chapterName">マクスウェル方程式</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">9</span><a href="009.html" class="TOC_chapterName">静的な法則の再導出</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">10</span><a href="010.html" class="TOC_chapterName">電磁波の放射</a></div>
-            <div class="TOC_part TOC_bg34">自己力</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">11</span><a href="011.html" class="TOC_chapterName">電磁場のエネルギー</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">12</span><a href="012.html" class="TOC_chapterName">自己力</a></div>
-            <div class="TOC_part TOC_bg35">補遺（数学）</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">13</span><a href="013.html" class="TOC_chapterName">テンソル場の積分</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">14</span><a href="014.html" class="TOC_chapterName">テンソル場の微分</a></div>
-          </div>
+<div id="TOC">
+<div class="TOC_part TOC_electrodynamics_1">静電磁場</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">静止した電荷に働く力</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">電流に働く力</a></div>
+<div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">3</span><a class="TOC_chapterName">運動する電荷に働く力</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">電荷・電流密度の逆算</a></div>
+<div class="TOC_part TOC_electrodynamics_2">相対性理論</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">5</span><a href="005.html" class="TOC_chapterName">ガリレイ変換の矛盾</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">6</span><a href="006.html" class="TOC_chapterName">矛盾の解消</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">7</span><a href="007.html" class="TOC_chapterName">相対論的力学</a></div>
+<div class="TOC_part TOC_electrodynamics_3">変動する電磁場</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">8</span><a href="008.html" class="TOC_chapterName">マクスウェル方程式</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">9</span><a href="009.html" class="TOC_chapterName">静的な法則の再導出</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">10</span><a href="010.html" class="TOC_chapterName">電磁波の放射</a></div>
+<div class="TOC_part TOC_electrodynamics_4">自己力</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">11</span><a href="011.html" class="TOC_chapterName">電磁場のエネルギー</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">12</span><a href="012.html" class="TOC_chapterName">自己力</a></div>
+<div class="TOC_part TOC_electrodynamics_5">補遺（数学）</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">13</span><a href="013.html" class="TOC_chapterName">テンソル場の積分</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">14</span><a href="014.html" class="TOC_chapterName">テンソル場の微分</a></div>
+</div>
 <!-- end menu -->
-        </div>
-      </nav>
-      <div id="RightPane">
-        <article id="RightPane_contents">
-        <h3><span>電流は電荷の流れである</span></h3>
-        <p>
-          前章で見たように、電流は磁場を作り、逆に磁場は電流にアンペール力を与える。電流は、導線の中を「何か」が流れることによって生じていると考えられる。ということは、磁場を発生させたり、アンペール力を受けているのは実際にはその「何か」ということになる。
-        </p>
-        <p>
-          この章では、3.1節で、その「何か」の正体が電荷に他ならないことについて述べ、電荷が磁場から受ける力<span class="Color_weak">（＝ローレンツ力）</span>について述べる。その後、3.2節で、導線の中を流れている電荷は、電子と呼ばれる粒子のようなものであることを見る。
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 6.715em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ロ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, serif" variant="normal">ー</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">レ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ン</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">ツ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">力</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">は</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">、</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">子</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">の</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, MJXZERO, serif" variant="normal">れ</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-        </p>
-        <h2><span class="h2_num">3.1</span><span class="h2_name">ローレンツ力</span></h2>
-        <p>
-          この節では、電流の正体が電荷の流れであること、および、磁場中を動く電荷にはローレンツ力と呼ばれる力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことについて述べる。
-        </p>
-        <h3><span>シャトルボール実験：電流は電荷の流れ</span></h3>
-        <img class="Image_graph" src="fig/88765.svg">
-        <p>
-          導線を切断すると電流は止まる。従って、導線の中を「何か」が流れていると考えるのは自然である。その「何か」は電荷を帯びていることが、右図のようなシャトルボール実験<span class="Color_weak">（Shuttling ball experiment）</span>を行うと分かる<span class="Color_weak">（シャトルとは往復を繰り返すものという意味である）</span>。これは、金属などの帯電しやすいボールを吊り下げて、一方の電極につけた後、手を離すとボールが減衰することなく勝手に往復運動を繰り返すというものである。
-        </p>
-        <p>
-          ボールの運動を詳しく見ると次のようになる。まず、正極はプラスに帯電し、負極はマイナスに帯電しているため、接触したボールが電極と同じ符号に帯電する。すると、反発力を受けることになるので、反対側に移動する。その後反対側の電極に接触すると、今度は逆符号の電荷をもつようになり、逆方向の反発力を受け元の電極のほうに戻ってくる。これにより、往復運動を繰り返すことになる。
-        </p>
-        <p>
-          重要なのは、この実験では、電流が発生するということである<span class="Color_weak">（ただし非常に小さい）</span>。よって、電流は電荷の移動を伴うことになる。ボールの電荷を測れば、どれだけの電荷が運ばれているかが分かる。実際に測定を行うと、単位時間あたりに運ばれる電荷の量と、電流の値は比例関係にあり、比例係数は、電流が
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-          の時、1秒当たり運ばれる電荷は
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-          となる。つまり
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c73"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.432em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
-          と見なせるわけである。<span class="Color_weak">比例係数がきれいになっているのは、こうなるように電荷の単位であるクーロン
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-          を定義したからである（電流の単位であるアンペアの定義を先に行ったうえで、クーロンの定義を行うという流れになっている）。第1章でクーロンの定義が中途半端な値になっていると述べたが、それは、ここを揃えるためだったのである。</span>
-        </p>
-        <p>
-          そこで、電流が、電荷の流れと等価であることを認めることにしよう。
-        </p>
-        <h3><span>ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：運動する電荷に働く力</span></h3>
-        <p>
-          第2章で見たように、磁場中におかれた電流にはアンペール力が働く。そして、電流は電荷の流れを伴う。ということは、磁場中を動く荷電粒子<span class="Color_weak">（＝電荷を持った粒子）</span>は、アンペール力に対応するような力を受けると考えられる。この力をローレンツ力という。アンペール力は、電流内を運動する電荷が受けるローレンツ力により説明できるはずである。
-        </p>
-        <p>
-          まず、電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を持つ荷電粒子が磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          の中を運動するときの、ローレンツ力を考える。電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を持つ多数の荷電粒子が、一斉に同じ速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          で動いている状況を考えてみる。すると、これによって発生する電流要素
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は、以下のようになる：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.598em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.598em" side="right"><mjx-table style="width: auto; min-width: 5.442em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.598em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:pEq"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          <span class="Color_weak">
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5B TEX-S1"></mjx-c></mjx-mo><mjx-msup><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5D TEX-S1"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          は荷電粒子の導線上での個数密度、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          は電流要素の長さ。</span>
-        </p>
-        <p>
-          1つの荷電粒子に働くローレンツ力を
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          とおくと、電流要素に働く力はローレンツ力の和なので
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          である。これと、アンペール力
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          に式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ApEq"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を代入したものが等しいのだから、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は以下のようになる：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.229em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.229em" side="right"><mjx-table style="width: auto; min-width: 5.073em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.229em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:mMp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          ローレンツ力
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は荷電粒子の速度に依存し、しかも速度と垂直な方向に働くという奇妙な性質を持っていることになる。
-        </p>
-        <img class="Image_graph" src="fig/0f4c5.gif">
-        <p>
-          一様磁場の場合に数値計算を行うと、右図のように磁場の方向に沿ったらせん運動をする。
-        </p>
-        <p>
-          <input class="Simulation_button" value="実行" type="image" src="fig/a61fb.gif" html-path="fig/9f391.html">
-        </p>
-        <h3><span>電磁気力を受ける荷電粒子の運動方程式：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          以上により、磁場中を運動する電荷には、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことが分かった。磁場だけでなく電場が存在する場合には、クーロン力も働く。その場合は、ローレンツ力とクーロン力を単純に足し合わせればよい。クーロン力とローレンツ力をまとめて電磁気力という<span class="Color_weak">（ローレンツ力と言った時にクーロン力も含める流儀もある）</span>。また、電場と磁場を合わせて電磁場という。
-        </p>
-        <p>
-          以上により、電磁場中での荷電粒子の運動
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-          は、以下の運動方程式：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:hXP"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          によって求められる。これが、電磁力学において、電荷の運動を支配する方程式である。後は、電磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="2"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          が分かれば上式を解くことができるわけだが、静電磁場については、これまでに出てきたクーロンの法則とビオ・サバールの法則から求められる。<span class="Color_weak">しかし、電磁場の源となる電荷・電流密度が時間変化する場合には、クーロンの法則やビオ・アバールの法則は成り立たないことが次章で分かる。そのため、次章以降では、そのような場合の電磁場を与える法則を導くことが主題となる。</span>
-        </p>
-        <h2><span class="h2_num">3.2</span><span class="h2_name">電流は、電子の流れ</span></h2>
-        <p>
-          前節では思考実験的にローレンツ力を考えたが、ローレンツ力は非常に小さいので、実際に帯電した物体を動かして直接測定するのは難しい。この節では、導線を流れる電流が、電子と呼ばれる荷電粒子の流れであり、それを用いれば、ローレンツ力を直接確認できることを見る。
-        </p>
-        <h3><span>エジソン効果：加熱した導線は電子を放出する</span></h3>
-        <p>
-          電流が流れている導線の中には、電荷が流れているわけだが、その電荷を持っているものを導線から取り出すことはできないだろうか。
-        </p>
-        <img class="Image_graph" src="fig/f970d.svg">
-        <p>
-          そのためには、導線を加熱すればよいことが知られている。例えば、白熱電球のタングステンフィラメントは2000℃程度になるが、この時右図のように、負極側のフィラメント<span class="Color_red">A</span>と、電球内に挿入した正極<span class="Color_red">B</span>の間に電流が流れることが知られている。これをエジソン効果という。本来であれば、この回路は閉じていないため電流が流れないはずである。従って、何かが空中を伝っているのだと考えられる。その何かのことを電子と呼ぶ。ただし、図中の電源を逆向きにすると電流は流れなくなる。
-        </p>
-        <p>
-          同図のように、電流はB→Aに向かって流れる<span class="Color_weak">（＋から－）</span>。しかし電子は、加熱したAから飛び出すはずなので、電流の向きとは逆のA→Bに向かって流れていくはずである<span class="Color_weak">（－から＋）</span>。即ち、電子の流れは、電流の向きとは逆向きになる。これは、電子は負の電荷を持つことを意味する。<span class="Color_weak">本来であれば、電子の電荷を正として、電流の向きも電子の流れる方向にとるほうが自然だが、そうなっていないのは1.1節で述べた様な歴史的な事情である。要は、電子が発見され前に決められたものが、そのままになっているわけである。</span>
-        </p>
-        <h3><span>電子銃による電子ビームの可視化</span></h3>
-        <img class="Image_graph" src="fig/94de2.svg">
-        <p>
-          右図で模式的に示したように、エジソン効果によって放出された電子に高い電圧をかけて加速させて電子ビームを発生させる装置を、電子銃という。電子銃の内部はほぼ真空であるが、わずかにヘリウムガスなどを入れておくと、電子ビームに沿って発光する。これにより、電子ビームに外部から電場や磁場をかけたときに、電子ビームがどのような影響を受けるかを可視化することができる。
-        </p>
-        <p>
-          電子は負の電荷を持つと述べた。従って、電子ビームに電場をかけると、電場と逆方向に曲がる。また、磁場
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          をかけると、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          の方向に曲がることが確認できる<span class="Color_weak">（
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は電子の速度、マイナスがついているのは電荷が負であるため）</span>。
-        </p>
-        <h3><span>電子は粒子的な性質を持つ</span></h3>
-        <p>
-          もし、電子が粒子であれば、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Color_weak">（再掲）</span>
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:MyU"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          に従うだろう。電子の運動を観察することで、電子1個の質量
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          と電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を特定したい。まず、上式の両辺を
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          で割ればわかるように、常に
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          がまとまって現れる。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を比電荷という。よって、この比電荷が同じであれば、まったく同じように運動するので、この式を用いた実験から求められるのは比電荷のみであり、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          個別の値は分からない。
-        </p>
-        <p>
-          というわけでまず、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を測定する方法を考える。電子の運動を直接観測することは難しいので、電子ビームの軌跡を測定することになる。軌跡から加速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-          を逆算するには、電子の速度
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-          が必要である。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-          は、クーロン力とローレンツ力を釣り合わせて
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-          が
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-b"><mjx-c class="mjx-c1D7CE TEX-B"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          になるように調節することにより、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AMyU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)から求まる。後は、その速度の状態で、例えば、ビームに垂直に磁場をかけるとビームが円形になるので<span class="Color_weak">（3.1節）</span>、その半径から加速度を逆算することで、比電荷が得られる。電子の比電荷は、以下のようになることが知られている：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c38"></mjx-c><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
-        </p>
-        <p>
-          よって残るは、電子の電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          と質量
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          であるが、どちらか一方が分かればよい。電荷
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を求める実験として、ミリカンの油滴実験が知られており、以下の【3.2-注1】のようにすればよい。このような実験により、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          および
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は以下のようになることが知られている：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 11.831em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mphantom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo></mjx-mphantom></mjx-TeXAtom><mjx-mn class="mjx-n"><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-        </p>
-        <p>
-          <span class="Color_weak">電子が粒子であるならば、その大きさはどうなのだろうか。また、導線の中をどのように流れているのだろうか。</span><span class="Color_weak">この話題は非常に興味深いが、現状では深入りせずに、通常のマクロな物体の運動に引き続き着目する。電子のようなミクロな世界の性質は量子力学の主題である。</span>
-        </p>
-        <div class="Note">
-          <h3><span class="h3_num">【3.2-注1】</span><span class="h3_name">素電荷を求める：ミリカンの油滴実験</span></h3>
-          <p>
-            電磁気力だけでは比電荷しかわからないので、重力とのバランスを考える。まず、霧吹きで油を撒く。すると、霧を構成する小さな油滴は、重力
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            によって下へ向かう。<span class="Color_weak">
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-            は油滴の質量であり、油滴の大きさと比重から求まる。</span>油滴は噴霧した時の摩擦で勝手に帯電しているので、うまく電場
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            を調節することにより、重力と逆方向のクーロン力
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            をかけて、油滴を静止させることができる：
-            <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> </displayed-eq>
-            これにより、唯一の未知数である油滴の電荷
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-            が求まる。
-          </p>
-          <p>
-            このような実験を様々な油滴に対して行うと、
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-            は、必ずある電荷
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            ：
-            <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
-            の整数倍になることが知られている。この
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            を素電荷といい、電子の電荷は
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-            となる。この実験をミリカンの油滴実験という<span class="Color_weak">（かなり簡略化している）</span>。
-          </p>
-        </div>
-        </article>
-      </div>
-    </div>
-<!-- begin footer -->
-    <footer>© 2016-2021 物理学の見つけ方</footer>
-<!-- end footer -->
-  </body>
+</div>
+</nav>
+<div id="RightPane">
+<article id="RightPane_contents">
+<h3><span>電流は電荷の流れである</span></h3>
+<p>
+前章で見たように、電流は磁場を作り、逆に磁場は電流にアンペール力を与える。電流は、導線の中を「何か」が流れることによって生じていると考えられる。ということは、磁場を発生させたり、アンペール力を受けているのは実際にはその「何か」ということになる。
+</p>
+<p>
+この章では、3.1節で、その「何か」の正体が電荷に他ならないことについて述べ、電荷が磁場から受ける力<span class="Color_weak">（＝ローレンツ力）</span>について述べる。その後、3.2節で、導線の中を流れている電荷は、電子と呼ばれる粒子のようなものであることを見る。
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 6.715em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ロ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ー</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">レ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ン</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">ツ</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">力</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mspace style="width: 0.278em"></mjx-mspace></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">は</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">、</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">電</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">子</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">の</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">流</mjx-utext><mjx-utext style="font-size: 80.1%; padding: 0.936em 0 0.25em 0; font-family: MJXZERO, serif" variant="normal">れ</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+</p>
+<h2><span class="h2_num">3.1</span><span class="h2_name">ローレンツ力</span></h2>
+<p>
+この節では、電流の正体が電荷の流れであること、および、磁場中を動く電荷にはローレンツ力と呼ばれる力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことについて述べる。
+</p>
+<h3><span>シャトルボール実験：電流は電荷の流れ</span></h3>
+<img class="Image_graph" src="../resources/media/electrodynamics/03.emt.svg">
+<p>
+導線を切断すると電流は止まる。従って、導線の中を「何か」が流れていると考えるのは自然である。その「何か」は電荷を帯びていることが、右図のようなシャトルボール実験<span class="Color_weak">（Shuttling ball experiment）</span>を行うと分かる<span class="Color_weak">（シャトルとは往復を繰り返すものという意味である）</span>。これは、金属などの帯電しやすいボールを吊り下げて、一方の電極につけた後、手を離すとボールが減衰することなく勝手に往復運動を繰り返すというものである。
+</p>
+<p>
+ボールの運動を詳しく見ると次のようになる。まず、正極はプラスに帯電し、負極はマイナスに帯電しているため、接触したボールが電極と同じ符号に帯電する。すると、反発力を受けることになるので、反対側に移動する。その後反対側の電極に接触すると、今度は逆符号の電荷をもつようになり、逆方向の反発力を受け元の電極のほうに戻ってくる。これにより、往復運動を繰り返すことになる。
+</p>
+<p>
+重要なのは、この実験では、電流が発生するということである<span class="Color_weak">（ただし非常に小さい）</span>。よって、電流は電荷の移動を伴うことになる。ボールの電荷を測れば、どれだけの電荷が運ばれているかが分かる。実際に測定を行うと、単位時間あたりに運ばれる電荷の量と、電流の値は比例関係にあり、比例係数は、電流が
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+の時、1秒当たり運ばれる電荷は
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+となる。つまり
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c41"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c73"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.432em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
+と見なせるわけである。<span class="Color_weak">比例係数がきれいになっているのは、こうなるように電荷の単位であるクーロン
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+を定義したからである（電流の単位であるアンペアの定義を先に行ったうえで、クーロンの定義を行うという流れになっている）。第1章でクーロンの定義が中途半端な値になっていると述べたが、それは、ここを揃えるためだったのである。</span>
+</p>
+<p>
+そこで、電流が、電荷の流れと等価であることを認めることにしよう。
+</p>
+<h3><span>ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：運動する電荷に働く力</span></h3>
+<p>
+第2章で見たように、磁場中におかれた電流にはアンペール力が働く。そして、電流は電荷の流れを伴う。ということは、磁場中を動く荷電粒子<span class="Color_weak">（＝電荷を持った粒子）</span>は、アンペール力に対応するような力を受けると考えられる。この力をローレンツ力という。アンペール力は、電流内を運動する電荷が受けるローレンツ力により説明できるはずである。
+</p>
+<p>
+まず、電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を持つ荷電粒子が磁場
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+の中を運動するときの、ローレンツ力を考える。電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を持つ多数の荷電粒子が、一斉に同じ速度
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+で動いている状況を考えてみる。すると、これによって発生する電流要素
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は、以下のようになる：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.598em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.598em" side="right"><mjx-table style="width: auto; min-width: 5.442em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.598em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:pEq"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+<span class="Color_weak">
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5B TEX-S1"></mjx-c></mjx-mo><mjx-msup><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mo class="mjx-sop"><mjx-c class="mjx-c5D TEX-S1"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+は荷電粒子の導線上での個数密度、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+は電流要素の長さ。</span>
+</p>
+<p>
+1つの荷電粒子に働くローレンツ力を
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+とおくと、電流要素に働く力はローレンツ力の和なので
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D459 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+である。これと、アンペール力
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D470 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+に式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3ApEq"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を代入したものが等しいのだから、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は以下のようになる：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.229em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.229em" side="right"><mjx-table style="width: auto; min-width: 5.073em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.229em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:mMp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+ローレンツ力
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は荷電粒子の速度に依存し、しかも速度と垂直な方向に働くという奇妙な性質を持っていることになる。
+</p>
+<div class="thumbnail">
+<button type="button" name="electrodynamics/03_rkK" class="thumbnail_click_button"><video muted="" loop="" autoplay="" src="../resources/media/electrodynamics/03_rkK.mp4" class="thumbnail_video"></video></button>
+<div class="thumbnail_playpause">
+<button type="button" class="thumbnail_playpause_button thumbnail_playpause_pause"></button>
+</div>
+</div>
+<p>
+一様磁場の場合に数値計算を行うと、右図のように磁場の方向に沿ったらせん運動をする。
+</p>
+<h3><span>電磁気力を受ける荷電粒子の運動方程式：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+以上により、磁場中を運動する電荷には、ローレンツ力(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AmMp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が働くことが分かった。磁場だけでなく電場が存在する場合には、クーロン力も働く。その場合は、ローレンツ力とクーロン力を単純に足し合わせればよい。クーロン力とローレンツ力をまとめて電磁気力という<span class="Color_weak">（ローレンツ力と言った時にクーロン力も含める流儀もある）</span>。また、電場と磁場を合わせて電磁場という。
+</p>
+<p>
+以上により、電磁場中での荷電粒子の運動
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D461 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+は、以下の運動方程式：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:hXP"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+によって求められる。これが、電磁力学において、電荷の運動を支配する方程式である。後は、電磁場
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="2"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+が分かれば上式を解くことができるわけだが、静電磁場については、これまでに出てきたクーロンの法則とビオ・サバールの法則から求められる。<span class="Color_weak">しかし、電磁場の源となる電荷・電流密度が時間変化する場合には、クーロンの法則やビオ・アバールの法則は成り立たないことが次章で分かる。そのため、次章以降では、そのような場合の電磁場を与える法則を導くことが主題となる。</span>
+</p>
+<h2><span class="h2_num">3.2</span><span class="h2_name">電流は、電子の流れ</span></h2>
+<p>
+前節では思考実験的にローレンツ力を考えたが、ローレンツ力は非常に小さいので、実際に帯電した物体を動かして直接測定するのは難しい。この節では、導線を流れる電流が、電子と呼ばれる荷電粒子の流れであり、それを用いれば、ローレンツ力を直接確認できることを見る。
+</p>
+<h3><span>エジソン効果：加熱した導線は電子を放出する</span></h3>
+<p>
+電流が流れている導線の中には、電荷が流れているわけだが、その電荷を持っているものを導線から取り出すことはできないだろうか。
+</p>
+<img class="Image_graph" src="../resources/media/electrodynamics/03.8i5.svg">
+<p>
+そのためには、導線を加熱すればよいことが知られている。例えば、白熱電球のタングステンフィラメントは2000℃程度になるが、この時右図のように、負極側のフィラメント<span class="Color_red">A</span>と、電球内に挿入した正極<span class="Color_red">B</span>の間に電流が流れることが知られている。これをエジソン効果という。本来であれば、この回路は閉じていないため電流が流れないはずである。従って、何かが空中を伝っているのだと考えられる。その何かのことを電子と呼ぶ。ただし、図中の電源を逆向きにすると電流は流れなくなる。
+</p>
+<p>
+同図のように、電流はB→Aに向かって流れる<span class="Color_weak">（＋から－）</span>。しかし電子は、加熱したAから飛び出すはずなので、電流の向きとは逆のA→Bに向かって流れていくはずである<span class="Color_weak">（－から＋）</span>。即ち、電子の流れは、電流の向きとは逆向きになる。これは、電子は負の電荷を持つことを意味する。<span class="Color_weak">本来であれば、電子の電荷を正として、電流の向きも電子の流れる方向にとるほうが自然だが、そうなっていないのは1.1節で述べた様な歴史的な事情である。要は、電子が発見され前に決められたものが、そのままになっているわけである。</span>
+</p>
+<h3><span>電子銃による電子ビームの可視化</span></h3>
+<img class="Image_graph" src="../resources/media/electrodynamics/03.JsK.svg">
+<p>
+右図で模式的に示したように、エジソン効果によって放出された電子に高い電圧をかけて加速させて電子ビームを発生させる装置を、電子銃という。電子銃の内部はほぼ真空であるが、わずかにヘリウムガスなどを入れておくと、電子ビームに沿って発光する。これにより、電子ビームに外部から電場や磁場をかけたときに、電子ビームがどのような影響を受けるかを可視化することができる。
+</p>
+<p>
+電子は負の電荷を持つと述べた。従って、電子ビームに電場をかけると、電場と逆方向に曲がる。また、磁場
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+をかけると、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+の方向に曲がることが確認できる<span class="Color_weak">（
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D497 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は電子の速度、マイナスがついているのは電荷が負であるため）</span>。
+</p>
+<h3><span>電子は粒子的な性質を持つ</span></h3>
+<p>
+もし、電子が粒子であれば、運動方程式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AhXP"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Color_weak">（再掲）</span>
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.741em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.741em" side="right"><mjx-table style="width: auto; min-width: 8.585em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-b mjx-i" space="3"><mjx-c class="mjx-c1D469 TEX-BI"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.741em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:MyU"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+に従うだろう。電子の運動を観察することで、電子1個の質量
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+と電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を特定したい。まず、上式の両辺を
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+で割ればわかるように、常に
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+がまとまって現れる。
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を比電荷という。よって、この比電荷が同じであれば、まったく同じように運動するので、この式を用いた実験から求められるのは比電荷のみであり、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+個別の値は分からない。
+</p>
+<p>
+というわけでまず、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2F"></mjx-c></mjx-mo></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を測定する方法を考える。電子の運動を直接観測することは難しいので、電子ビームの軌跡を測定することになる。軌跡から加速度
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+を逆算するには、電子の速度
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+が必要である。
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+は、クーロン力とローレンツ力を釣り合わせて
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.111em; margin-bottom: -0.554em"><mjx-mo class="mjx-n"><mjx-c class="mjx-cA8"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D499 TEX-BI"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+が
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mn class="mjx-b"><mjx-c class="mjx-c1D7CE TEX-B"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+になるように調節することにより、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AMyU"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)から求まる。後は、その速度の状態で、例えば、ビームに垂直に磁場をかけるとビームが円形になるので<span class="Color_weak">（3.1節）</span>、その半径から加速度を逆算することで、比電荷が得られる。電子の比電荷は、以下のようになることが知られている：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c38"></mjx-c><mjx-c class="mjx-c38"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c22C5"></mjx-c></mjx-mo><mjx-mi class="mjx-n" space="3"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
+</p>
+<p>
+よって残るは、電子の電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+と質量
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+であるが、どちらか一方が分かればよい。電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を求める実験として、ミリカンの油滴実験が知られており、以下の【3.2-注1】のようにすればよい。このような実験により、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+および
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は以下のようになることが知られている：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mtable style="min-width: 11.831em"><mjx-table><mjx-itable><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mphantom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo></mjx-mphantom></mjx-TeXAtom><mjx-mn class="mjx-n"><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c39"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c6B"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+</p>
+<p>
+<span class="Color_weak">電子が粒子であるならば、その大きさはどうなのだろうか。また、導線の中をどのように流れているのだろうか。</span><span class="Color_weak">この話題は非常に興味深いが、現状では深入りせずに、通常のマクロな物体の運動に引き続き着目する。電子のようなミクロな世界の性質は量子力学の主題である。</span>
+</p>
+<div class="Note">
+<h3><span class="h3_num">【3.2-注1】</span><span class="h3_name">素電荷を求める：ミリカンの油滴実験</span></h3>
+<p>
+電磁気力だけでは比電荷しかわからないので、重力とのバランスを考える。まず、霧吹きで油を撒く。すると、霧を構成する小さな油滴は、重力
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c67"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+によって下へ向かう。<span class="Color_weak">
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+は油滴の質量であり、油滴の大きさと比重から求まる。</span>油滴は噴霧した時の摩擦で勝手に帯電しているので、うまく電場
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を調節することにより、重力と逆方向のクーロン力
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-b mjx-i" noIC="true"><mjx-c class="mjx-c1D487 TEX-BI"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c65"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+をかけて、油滴を静止させることができる：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D488 TEX-BI"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-b mjx-i"><mjx-c class="mjx-c1D46C TEX-BI"></mjx-c></mjx-mi></mjx-math></mjx-container> </displayed-eq>
+これにより、唯一の未知数である油滴の電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+が求まる。
+</p>
+<p>
+このような実験を様々な油滴に対して行うと、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c72"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c6F"></mjx-c></mjx-mi><mjx-mi class="mjx-n"><mjx-c class="mjx-c70"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+は、必ずある電荷
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c22EF"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mtext><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c39"></mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mstyle><mjx-mspace style="width: 0.167em"></mjx-mspace></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c43"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> </displayed-eq>
+の整数倍になることが知られている。この
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を素電荷といい、電子の電荷は
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+となる。この実験をミリカンの油滴実験という<span class="Color_weak">（かなり簡略化している）</span>。
+</p>
+</div>
+
+</article>
+</div>
+</div>
+<footer>
+<div id="Footer_container">
+<div id="Footer_TIPS" class="Color_weak">
+TIPS:<br>
+・数式番号にマウスポインターを合わせると、画面上部にその数式が表示される。<br>
+・動画をクリックすると、シミュレーション計算の実行画面が表示される。
+</div>
+<div id="copyright">© 2016-<!-- begin year -->2022<!-- end year --> 物理学の見つけ方</div>
+</div>
+</footer>
+</body>
 </html>

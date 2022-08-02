@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@physicsHTFI">
-    <!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/thermodynamics/005.html"><!-- end og_url -->
-    <!-- begin og_title --><meta property="og:title" content="熱力学 第5章 冷房・暖房の最大効率 - 物理学の見つけ方"><!-- end og_title -->
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://physics-htfi.github.io/css/favicon192.png">
-    <!-- begin title --><title>冷房・暖房の最大効率 - 物理学の見つけ方</title><!-- end title -->
-    <link rel="stylesheet" href="../css/chapter.css" type="text/css">
-    <link rel="icon" href="../css/favicon16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="../css/favicon64.png" sizes="64x64" type="image/png">
-    <link rel="icon" href="../css/favicon192.png" sizes="192x192" type="image/png">
-    <link rel="apple-touch-icon" href="../css/favicon180.png" sizes="180x180">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"></script>
-    <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-P8VWTJPJPT'); gtag('config', 'UA-84006000-1');</script>
-    <script src="../css/style.js" type="text/javascript"></script>
-    <!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "熱力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "可逆性の定量化" } } ] } </script><!-- end breadcrumb -->
-  <style id="MJX-CHTML-styles">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@physicsHTFI">
+<!-- begin og_url --><meta property="og:url" content="https://physics-htfi.github.io/thermodynamics/005.html"><!-- end og_url -->
+<!-- begin og_title --><meta property="og:title" content="熱力学 第5章 冷房・暖房の最大効率 - 物理学の見つけ方"><!-- end og_title -->
+<meta property="og:description" content="">
+<meta property="og:image" content="https://physics-htfi.github.io/resources/css/favicon192.png">
+<!-- begin title --><title>冷房・暖房の最大効率 - 物理学の見つけ方</title><!-- end title -->
+<link rel="stylesheet" href="../resources/css/chapter.css">
+<link rel="stylesheet" href="../resources/css/chapter_TOC_classical_mechanics.css">
+<link rel="icon" href="../resources/css/favicon.svg">
+<link rel="apple-touch-icon" href="../resources/css/favicon180.png" sizes="180x180">
+<script defer="" src="../resources/js/chapter.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"></script>
+<script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js',new Date()); gtag('config','G-P8VWTJPJPT'); gtag('config', 'UA-84006000-1');</script>
+<!-- begin breadcrumb --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "item": { "name": "熱力学" } }, { "@type": "ListItem", "position": 2, "item": { "name": "可逆性の定量化" } } ] } </script><!-- end breadcrumb -->
+<style id="MJX-CHTML-styles">
 mjx-container[jax="CHTML"] {
   line-height: 0;
 }
@@ -1046,112 +1045,112 @@ mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
 
 @font-face /* 0 */ {
   font-family: MJXZERO;
-  src: url("../css/font/woff-v2/MathJax_Zero.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Zero.woff") format("woff");
 }
 
 @font-face /* 1 */ {
   font-family: MJXTEX;
-  src: url("../css/font/woff-v2/MathJax_Main-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Regular.woff") format("woff");
 }
 
 @font-face /* 2 */ {
   font-family: MJXTEX-B;
-  src: url("../css/font/woff-v2/MathJax_Main-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Bold.woff") format("woff");
 }
 
 @font-face /* 3 */ {
   font-family: MJXTEX-I;
-  src: url("../css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Math-Italic.woff") format("woff");
 }
 
 @font-face /* 4 */ {
   font-family: MJXTEX-MI;
-  src: url("../css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Main-Italic.woff") format("woff");
 }
 
 @font-face /* 5 */ {
   font-family: MJXTEX-BI;
-  src: url("../css/font/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
 }
 
 @font-face /* 6 */ {
   font-family: MJXTEX-S1;
-  src: url("../css/font/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size1-Regular.woff") format("woff");
 }
 
 @font-face /* 7 */ {
   font-family: MJXTEX-S2;
-  src: url("../css/font/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size2-Regular.woff") format("woff");
 }
 
 @font-face /* 8 */ {
   font-family: MJXTEX-S3;
-  src: url("../css/font/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size3-Regular.woff") format("woff");
 }
 
 @font-face /* 9 */ {
   font-family: MJXTEX-S4;
-  src: url("../css/font/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Size4-Regular.woff") format("woff");
 }
 
 @font-face /* 10 */ {
   font-family: MJXTEX-A;
-  src: url("../css/font/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_AMS-Regular.woff") format("woff");
 }
 
 @font-face /* 11 */ {
   font-family: MJXTEX-C;
-  src: url("../css/font/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
 }
 
 @font-face /* 12 */ {
   font-family: MJXTEX-CB;
-  src: url("../css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
 }
 
 @font-face /* 13 */ {
   font-family: MJXTEX-FR;
-  src: url("../css/font/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
 }
 
 @font-face /* 14 */ {
   font-family: MJXTEX-FRB;
-  src: url("../css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
 }
 
 @font-face /* 15 */ {
   font-family: MJXTEX-SS;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
 }
 
 @font-face /* 16 */ {
   font-family: MJXTEX-SSB;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
 }
 
 @font-face /* 17 */ {
   font-family: MJXTEX-SSI;
-  src: url("../css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
 }
 
 @font-face /* 18 */ {
   font-family: MJXTEX-SC;
-  src: url("../css/font/woff-v2/MathJax_Script-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Script-Regular.woff") format("woff");
 }
 
 @font-face /* 19 */ {
   font-family: MJXTEX-T;
-  src: url("../css/font/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
 }
 
 @font-face /* 20 */ {
   font-family: MJXTEX-V;
-  src: url("../css/font/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Vector-Regular.woff") format("woff");
 }
 
 @font-face /* 21 */ {
   font-family: MJXTEX-VB;
-  src: url("../css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+  src: url("../resources/css/font/woff-v2/MathJax_Vector-Bold.woff") format("woff");
 }
 
 mjx-stretchy-h.mjx-c23DF mjx-beg mjx-c::before {
@@ -1378,239 +1377,247 @@ mjx-c.mjx-c1D6FF.TEX-I::before {
   content: "\3B4";
 }
 </style></head>
-  <body>
-    <header id="Logo">
-      <a id="Logo_link" href=".."></a>
-      <span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='熱力学 第5章 冷房・暖房の最大効率 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
-    </header>
-    <header id="Title">
-      <div id="Title_container">
-        <span id="Title_num"><!-- begin chapter_num -->熱力学編　第5章<!-- end chapter_num --></span>
-        <h1 id="Title_name"><!-- begin chapter_name -->冷房・暖房の最大効率<!-- end chapter_name --></h1>
-        <div id="Title_abstract">
-        <p>
-          可逆的な装置の場合に、効率が最大になる。
-        </p>
-        </div>
-      </div>
-    </header>
-    <div id="Center">
-      <nav id="LeftPane">
-        <div id="LeftPane_fixed">
-          <a id="LeftPane_logo" href=".."></a>
+<body>
+<header id="Logo">
+<a id="Logo_link" href=".."></a>
+<span id="Logo_tweet"><!-- begin tweet --><a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class='twitter-share-button' data-dnt='true' data-text='熱力学 第5章 冷房・暖房の最大効率 - 物理学の見つけ方'></a><script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script><!-- end tweet --></span>
+</header>
+<header id="Title">
+<div id="Title_container">
+<span id="Title_num"><!-- begin chapter_num -->熱力学編　第5章<!-- end chapter_num --></span>
+<h1 id="Title_name"><!-- begin chapter_name -->冷房・暖房の最大効率<!-- end chapter_name --></h1>
+<div id="Title_abstract">
+<p>
+可逆的な装置の場合に、効率が最大になる。
+</p>
+</div>
+</div>
+</header>
+<div id="Center">
+<nav id="LeftPane">
+<div id="LeftPane_fixed">
+<a id="LeftPane_logo" href=".."></a>
 <!-- begin menu -->
-          <div id="TOC">
-            <div class="TOC_part TOC_bg51">容器同士の接触</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">熱接触での平衡</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">動く仕切り</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">3</span><a href="003.html" class="TOC_chapterName">断熱仕切り</a></div>
-            <div class="TOC_part TOC_bg52">可逆性の定量化</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">2容器系のエントロピー</a></div>
-            <div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">5</span><a class="TOC_chapterName">冷房・暖房の最大効率</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">6</span><a href="006.html" class="TOC_chapterName">重力下での密度分布</a></div>
-            <div class="TOC_part TOC_bg53">粒子数が変化する系</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">7</span><a href="007.html" class="TOC_chapterName">多相系の平衡</a></div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">8</span><a href="008.html" class="TOC_chapterName">多成分・多相系の平衡</a></div>
-            <div class="TOC_part TOC_bg54">補遺（数学）</div>
-            <div class="TOC_chapter"><span class="TOC_chapterNum">9</span><a href="009.html" class="TOC_chapterName">制約条件付き極値問題</a></div>
-          </div>
+<div id="TOC">
+<div class="TOC_part TOC_thermodynamics_1">容器同士の接触</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">1</span><a href="001.html" class="TOC_chapterName">熱接触での平衡</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">2</span><a href="002.html" class="TOC_chapterName">動く仕切り</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">3</span><a href="003.html" class="TOC_chapterName">断熱仕切り</a></div>
+<div class="TOC_part TOC_thermodynamics_2">可逆性の定量化</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">4</span><a href="004.html" class="TOC_chapterName">2容器系のエントロピー</a></div>
+<div class="TOC_chapter TOC_chapter-youAreHere"><span class="TOC_chapterNum">5</span><a class="TOC_chapterName">冷房・暖房の最大効率</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">6</span><a href="006.html" class="TOC_chapterName">重力下での密度分布</a></div>
+<div class="TOC_part TOC_thermodynamics_3">粒子数が変化する系</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">7</span><a href="007.html" class="TOC_chapterName">多相系の平衡</a></div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">8</span><a href="008.html" class="TOC_chapterName">多成分・多相系の平衡</a></div>
+<div class="TOC_part TOC_thermodynamics_4">補遺（数学）</div>
+<div class="TOC_chapter"><span class="TOC_chapterNum">9</span><a href="009.html" class="TOC_chapterName">制約条件付き極値問題</a></div>
+</div>
 <!-- end menu -->
-        </div>
-      </nav>
-      <div id="RightPane">
-        <article id="RightPane_contents">
-        <h3><span>ヒートポンプの最大効率が知りたい</span></h3>
-        <img class="Image_graph" src="fig/d5047.svg">
-        <p>
-          ヒートポンプの最大効率を求めたい。ヒートポンプとは、右図のように、低温側からエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          を奪い、高温側にエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          を加える装置である。低温側はより低温になり、高温側はより高温になる。典型的な利用例はエアコンである<span class="Color_weak">（低温側に人がいれば冷房、高温側にいれば暖房）</span>。外部<span class="Color_weak">（弾み車で代表している）</span>から与えるエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          をなるべく少なくしつつ、汲み上げる熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を大きくしたいわけである。エネルギー保存則より
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 10.414em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 10.414em" side="right"><mjx-table style="width: auto; min-width: 6.258em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 10.414em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:eUp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          が成り立つ。<span class="Color_weak">（添え字HはHigh、LはLowの意味。）</span>
-        </p>
-        <p>
-          ヒートポンプの原理は、小さな容器
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          <span class="Color_weak">（作業容器という）</span>を用いて行う次の操作の繰り返しである：<span class="Color_blue">低温</span>側に
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を接触させた状態で
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を膨張させ低温側からエネルギーを奪う→<span class="Color_red">高温</span>側に接触させた状態で
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を圧縮し高温側にエネルギーを渡す。ただしヒートポンプを継続的に動かすためには、何らかのサイクル構造を持つ必要があるので、1サイクル後にはヒートポンプが元の状態に戻る必要がある。
-        </p>
-        <p>
-          効率が最高なのは、外部からエネルギーを与えずに温度を変えられること、即ち、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          であるが、これは実現できない。なぜなら、その過程は、不可逆過程である「異なる温度の物体同士を接触さ背た時に温度が等しくなる過程」の逆過程だからである。<span class="Color_weak">逆に、効率が最悪なのは、低温側が存在しない場合、即ち、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          であるが、これにはいくらでも近づけることができる。例えば、運動エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          をほぼ全て摩擦熱として高温側に与えるような場合である</span>。
-        </p>
-        <p>
-          このように、ヒートポンプの効率と可逆性が関係していそうである。効率が最高になるのは、おそらく可逆過程だろう。この章では、これを実際に示す。
-        </p>
-        <h2><span class="h2_num">5.1</span><span class="h2_name">ヒートポンプの最大効率</span></h2>
-        <p>
-          この節では、エントロピーを考えることにより、ヒートポンプの効率に対する不等式が得られることを示す。<span class="Color_weak">ヒートポンプの1サイクルでの部屋の温度変化は、十分小さく無視できるとする。</span>
-        </p>
-        <h3><span>熱エネルギー <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> によるエントロピーの変化：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtUW"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          まず、1つの容器に対し、微小な熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を加えた時のエントロピーの変化
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を求める。
-        </p>
-        <p>
-          前章で見たように、エントロピー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          の微分は
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-munder space="3"><mjx-row><mjx-base><mjx-TeXAtom texclass="OP"><mjx-munder><mjx-row><mjx-base><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-row><mjx-row><mjx-under style="padding-top: 0.06em"><mjx-mo class="mjx-n"><mjx-stretchy-h style="width: 3.012em" class="mjx-c23DF"><mjx-beg><mjx-c></mjx-c></mjx-beg><mjx-ext><mjx-c></mjx-c></mjx-ext><mjx-mid><mjx-c></mjx-c></mjx-mid><mjx-ext><mjx-c></mjx-c></mjx-ext><mjx-end><mjx-c></mjx-c></mjx-end></mjx-stretchy-h></mjx-mo></mjx-under></mjx-row></mjx-munder></mjx-TeXAtom></mjx-base></mjx-row><mjx-row><mjx-under style="padding-top: 0.167em; padding-left: 1.329em"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-under></mjx-row></mjx-munder></mjx-math></mjx-container> </displayed-eq>
-          である。今は体積の変化は考えていないので、<span class="Color_green">右辺第2項</span>はゼロである<span class="Color_weak">（
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          ）</span>。また、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          は、体積一定で温度を
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          だけ変えるのに必要なエネルギーであり、今の場合、容器に与えられた熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          に等しい。よって、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          は
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 8.254em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 8.254em" side="right"><mjx-table style="width: auto; min-width: 4.098em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.254em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.079em"><mjx-mtd id="mjx-eqn-eq:tUW"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.079em; vertical-align: -0.686em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          となる。
-        </p>
-        <h3><span>ヒートポンプによるエントロピーの変化：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APsX"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          冒頭のヒートポンプを含む系の場合、2つの容器からなるので、全エントロピーは低温側および高温側のエントロピーそれぞれ
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          の和となる。よって、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtUW"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を用いて
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 13.001em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 13.001em" side="right"><mjx-table style="width: auto; min-width: 8.845em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 13.001em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1.15em"></mjx-mtr><mjx-mtr style="height: 2.379em"><mjx-mtd id="mjx-eqn-eq:PsX" style="padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.229em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          なお、ヒートポンプ装置自体のエントロピー変化はゼロとしている<span class="Color_weak">（1サイクル後には元に戻っているため）</span>。
-        </p>
-        <p>
-          系全体は孤立しているとすれば、エントロピー増大則により式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APsX"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)は
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2265"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          を満たすので
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.912em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.912em" side="right"><mjx-table style="width: auto; min-width: 5.756em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.912em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.229em"><mjx-mtd id="mjx-eqn-eq:Hna"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.229em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          が成り立つことになる。等式は、可逆な場合に成り立つ。
-        </p>
-        <p>
-          <span class="Color_weak">厳密に言えば、エントロピーは平衡状態でしか定義していないので、平衡状態とは言えない作動中のヒートポンプの場合、エントロピーは定義されていない。しかし、最大効率を考えるという目的のためには問題ない。サイクルの終了時に平衡状態になっていない場合でも、そのまま時間がたてば平衡状態になるからである。</span>
-        </p>
-        <h3><span>ヒートポンプ（暖房）の効率：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AFqJ"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c35"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          それではヒートポンプの最大効率を考えよう。まず暖房の場合である。どれだけの熱エネルギーを高温側に加えられるかが興味の対象となる。式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を、弾み車から奪った運動エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          と、高温側に与えた熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          の式にしたい。式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を消去すればよいので、エネルギーの関係式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AeUp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を代入すると：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.7em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.7em" side="right"><mjx-table style="width: auto; min-width: 8.544em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.7em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:FqJ"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          が得られる。効率が最大になるのは、等式が成り立つ場合であり、可逆な場合に成り立つ。最大効率に対応する<span class="Color_red">赤字</span>部分を最大成績係数という。最大成績係数は常に1より大きいので、費やしたエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          よりも多くの熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を汲み上げることが可能である<span class="Color_weak">（可逆に十分近いヒートポンプであれば）</span>。
-        </p>
-        <h3><span>ヒートポンプ（冷房）の効率：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AAuj"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          次は冷房の最大効率である。低温側からどれだけのエネルギーを奪えるかを知りたいので、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)にエネルギーの関係式
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を代入して
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を消去すればよい：
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.611em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.611em" side="right"><mjx-table style="width: auto; min-width: 8.455em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.611em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:Auj"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          等式は、可逆な場合に成り立つ。
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          の場合、即ち
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          と
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          が十分近い場合、<span class="Color_red">赤字</span>部分<span class="Color_weak">（最大成績係数）</span>は1より大きくなり、費やしたエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          よりも多くの熱エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を奪うことが可能である。
-        </p>
-        <h3><span>最大効率の例：逆カルノーサイクル</span></h3>
-        <p>
-          ヒートポンプの最大効率は、可逆な場合に達成できることが分かった。そのような可逆なヒートポンプは、原理的に構成することができる。実際、以下の【5.1-注1】のような逆カルノーサイクルを使えばよい。これは、冒頭で述べたヒートポンプのサイクルを可逆過程だけで構成したものである。
-        </p>
-        <div class="Note">
-          <h3><span class="h3_num">【5.1-注1】</span><span class="h3_name">逆カルノーサイクル</span></h3>
-          <img class="Image_graph" src="fig/1706e.svg">
-          <p>
-            逆カルノーサイクルは、右図のようなヒートポンプサイクルである。全ての操作は準静的に行われる。色が同じ個所は同じ温度である。共等温膨張によって低温側からエネルギー
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-            を吸収し、共等温圧縮によって高温側にエネルギー
-             <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-            を放出する。可逆であるため、最大の効率を持つ、即ち、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AFqJ"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c35"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)および式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AAuj"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の等号が成立する。<span class="Color_weak">（逆カルノーサイクルの効率は最大ではあるが、可逆性を持たせるためには非常にゆっくり動かす必要があるので、時間的な効率という点では最悪である。）</span>
-          </p>
-          <p>
-            なお、これを逆にたどるようなサイクルをカルノーサイクルという。これは、用意された低温源と高温源から力学的なエネルギーを取りだすサイクルである。
-          </p>
-        </div>
-        <h2><span class="h2_num">5.2</span><span class="h2_name">（参考）熱を全て動力に変えることはできない</span></h2>
-        <img class="Image_graph" src="fig/9bdcd.svg">
-        <p>
-          ところで、ヒートポンプは外部エネルギーを温度差に変換するものであったが、逆向きに作動させると、温度差を力学的なエネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          に変換する装置としても使える<span class="Color_weak">（右図）</span>。このように熱を動力に変換する装置を、熱機関という。
-        </p>
-        <p>
-          特に興味があるのは、高温側から奪った熱
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          を全て
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          に変換できることが可能かという問題である<span class="Color_weak">（
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          ）</span>。この場合、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-          低温側は不要になり<span class="Color_weak">（あったとしても触媒としてしか作用しない）</span>、高温熱源だけから
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を取り出すようなサイクルがあることになる。即ち、温度差が不要なエンジンが作れることになる。そうすれば、例えば、空気や地面から熱を奪って運動エネルギーに変換することにより、事実上、燃料なしで永久に動き続ける車が作れるのではないか、という期待が生まれるわけである。このような熱機関を第二種永久機関という。
-        </p>
-        <p>
-          この節では、第二種永久機関が不可能であることを示す。<span class="Color_weak">（なお、第</span><span class="Color_red">一</span><span class="Color_weak">種永久機関というのもあるが、これは、エネルギー保存則を破ってエネルギーを生成するような装置であり、これも不可能である。第二種永久機関のほうはエネルギー保存則を破らない。）</span>
-        </p>
-        <h3><span>第二種永久機関は存在しない：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AgWi"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c37"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
-        <p>
-          熱機関の場合、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に対応する式は
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-math></mjx-container> </displayed-eq>
-          である<span class="Color_weak">（エネルギーの流れの方向が逆になっているので、符号も逆になる）</span>。これに、エネルギー保存を表す
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          を代入して
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          を消去すると
-          <displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.7em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.7em" side="right"><mjx-table style="width: auto; min-width: 8.544em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.7em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:gWi"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
-          となる。<span class="Color_red">赤字</span>部分を最大熱効率といい、1よりも小さな値である。よって、奪った熱
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-          の全てを運動エネルギー
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
-          に変えるようなサイクルは存在せず、必ず、低温熱源に熱を捨てなければならない。即ち、第二種永久機関は存在しない。
-        </p>
-        <p>
-          最大熱効率が実現するのは、可逆な場合である。例えば、【5.1-注1】の逆過程であるカルノーサイクルが最大熱効率を持つ。<span class="Color_weak">（熱効率が最悪なのは、高温熱源から低温熱源にそのまま熱を捨てる場合、即ち、
-           <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
-          の場合である。）</span>
-        </p>
-        </article>
-      </div>
-    </div>
-<!-- begin footer -->
-    <footer>© 2016-2021 物理学の見つけ方</footer>
-<!-- end footer -->
-  </body>
+</div>
+</nav>
+<div id="RightPane">
+<article id="RightPane_contents">
+<h3><span>ヒートポンプの最大効率が知りたい</span></h3>
+<img class="Image_graph" src="../resources/media/thermodynamics/05.65o.svg">
+<p>
+ヒートポンプの最大効率を求めたい。ヒートポンプとは、右図のように、低温側からエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を奪い、高温側にエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を加える装置である。低温側はより低温になり、高温側はより高温になる。典型的な利用例はエアコンである<span class="Color_weak">（低温側に人がいれば冷房、高温側にいれば暖房）</span>。外部<span class="Color_weak">（弾み車で代表している）</span>から与えるエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+をなるべく少なくしつつ、汲み上げる熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を大きくしたいわけである。エネルギー保存則より
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 10.414em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 10.414em" side="right"><mjx-table style="width: auto; min-width: 6.258em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 10.414em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1em"><mjx-mtd id="mjx-eqn-eq:eUp"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c31"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+が成り立つ。<span class="Color_weak">（添え字HはHigh、LはLowの意味。）</span>
+</p>
+<p>
+ヒートポンプの原理は、小さな容器
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+<span class="Color_weak">（作業容器という）</span>を用いて行う次の操作の繰り返しである：「<span class="Color_blue">低温</span>側に作業容器
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を接触させた状態で
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を膨張させ低温側からエネルギーを奪う→<span class="Color_red">高温</span>側に接触させた状態で
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を圧縮し高温側にエネルギーを渡す」。ただしヒートポンプを継続的に動かすためには、何らかのサイクル構造を持つ必要があるので、1サイクル後にはヒートポンプが元の状態に戻る必要がある。
+</p>
+<p>
+効率が最高なのは、外部からエネルギーを与えずに温度を変えられること、即ち、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+であるが、これは実現できない。なぜなら、その過程は、不可逆過程である「異なる温度の物体同士を接触させた時に温度が等しくなる過程」の逆過程だからである。<span class="Color_weak">逆に、効率が最悪なのは、低温側が存在しない場合、即ち、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+であるが、これにはいくらでも近づけることができる。例えば、運動エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+をほぼ全て摩擦熱として高温側に与えるような場合である</span>。
+</p>
+<p>
+このように、ヒートポンプの効率と可逆性が関係していそうである。効率が最高になるのは、おそらく可逆過程だろう。この章では、これを実際に示す。
+</p>
+<h2><span class="h2_num">5.1</span><span class="h2_name">ヒートポンプの最大効率</span></h2>
+<p>
+この節では、エントロピーを考えることにより、ヒートポンプの効率に対する不等式が得られることを示す。<span class="Color_weak">ヒートポンプの1サイクルでの部屋の温度変化は、十分小さく無視できるとする。</span>
+</p>
+<h3><span>熱エネルギー <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> によるエントロピーの変化：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtUW"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+まず、1つの容器に対し、微小な熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を加えた時のエントロピーの変化
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を求める。
+</p>
+<p>
+前章で見たように、エントロピー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の微分は
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-munder space="3"><mjx-row><mjx-base><mjx-TeXAtom texclass="OP"><mjx-munder><mjx-row><mjx-base><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D443 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-row><mjx-row><mjx-under style="padding-top: 0.06em"><mjx-mo class="mjx-n"><mjx-stretchy-h style="width: 3.012em" class="mjx-c23DF"><mjx-beg><mjx-c></mjx-c></mjx-beg><mjx-ext><mjx-c></mjx-c></mjx-ext><mjx-mid><mjx-c></mjx-c></mjx-mid><mjx-ext><mjx-c></mjx-c></mjx-ext><mjx-end><mjx-c></mjx-c></mjx-end></mjx-stretchy-h></mjx-mo></mjx-under></mjx-row></mjx-munder></mjx-TeXAtom></mjx-base></mjx-row><mjx-row><mjx-under style="padding-top: 0.167em; padding-left: 1.329em"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-under></mjx-row></mjx-munder></mjx-math></mjx-container> </displayed-eq>
+である。今は体積の変化は考えていないので、<span class="Color_green">右辺第2項</span>はゼロである<span class="Color_weak">（
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+）</span>。また、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.405em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="font-size: 141.4%"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.06em; padding-left: 0.064em; margin-bottom: -0.549em"><mjx-mo class="mjx-n"><mjx-c class="mjx-c2D9"></mjx-c></mjx-mo></mjx-over><mjx-base style="padding-left: 0.001em"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="s"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D449 TEX-I"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+は、体積一定で温度を
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+だけ変えるのに必要なエネルギーであり、今の場合、容器に与えられた熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+に等しい。よって、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+は
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 8.254em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 8.254em" side="right"><mjx-table style="width: auto; min-width: 4.098em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.254em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.079em"><mjx-mtd id="mjx-eqn-eq:tUW"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c32"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.079em; vertical-align: -0.686em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+となる。
+</p>
+<h3><span>ヒートポンプによるエントロピーの変化：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APsX"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+冒頭のヒートポンプを含む系の場合、2つの容器からなるので、全エントロピーは低温側および高温側のエントロピーそれぞれ
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の和となる。よって、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AtUW"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c32"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を用いて
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 13.001em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 13.001em" side="right"><mjx-table style="width: auto; min-width: 8.845em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mtr><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mlabeledtr><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em"><mjx-mi class="mjx-n"></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2250"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mstyle space="3"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 13.001em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 1.15em"></mjx-mtr><mjx-mtr style="height: 2.379em"><mjx-mtd id="mjx-eqn-eq:PsX" style="padding-top: 0.15em"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c33"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.229em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+なお、ヒートポンプ装置自体のエントロピー変化はゼロとしている<span class="Color_weak">（1サイクル後には元に戻っているため）</span>。
+</p>
+<p>
+系全体は孤立しているとすれば、エントロピー増大則により式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3APsX"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c33"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)は
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D446 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2265"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+を満たすので
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 9.912em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 9.912em" side="right"><mjx-table style="width: auto; min-width: 5.756em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 9.912em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.229em"><mjx-mtd id="mjx-eqn-eq:Hna"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c34"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.229em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+が成り立つことになる。等式は、可逆な場合に成り立つ。
+</p>
+<p>
+<span class="Color_weak">厳密に言えば、エントロピーは平衡状態でしか定義していないので、平衡状態とは言えない作動中のヒートポンプの場合、エントロピーは定義されていない。しかし、最大効率を考えるという目的のためには問題ない。サイクルの終了時に平衡状態になっていない場合でも、そのまま時間がたてば平衡状態になるからである。</span>
+</p>
+<h3><span>ヒートポンプ（暖房）の効率：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AFqJ"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c35"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+それではヒートポンプの最大効率を考えよう。まず暖房の場合である。どれだけの熱エネルギーを高温側に加えられるかが興味の対象となる。式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を、弾み車から奪った運動エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+と、高温側に与えた熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の式にしたい。式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を消去すればよいので、エネルギーの関係式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AeUp"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を代入すると：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.7em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.7em" side="right"><mjx-table style="width: auto; min-width: 8.544em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.7em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:FqJ"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c35"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+が得られる。効率が最大になるのは、等式が成り立つ場合であり、可逆な場合に成り立つ。最大効率に対応する<span class="Color_red">赤字</span>部分を最大成績係数という。最大成績係数は常に1より大きいので、費やしたエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+よりも多くの熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を汲み上げることが可能である<span class="Color_weak">（可逆に十分近いヒートポンプであれば）</span>。
+</p>
+<h3><span>ヒートポンプ（冷房）の効率：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AAuj"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+次は冷房の最大効率である。低温側からどれだけのエネルギーを奪えるかを知りたいので、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)にエネルギーの関係式
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を代入して
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を消去すればよい：
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.611em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.611em" side="right"><mjx-table style="width: auto; min-width: 8.455em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.611em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:Auj"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c36"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+等式は、可逆な場合に成り立つ。
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c32"></mjx-c></mjx-mn><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の場合、即ち
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+と
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+が十分近い場合、<span class="Color_red">赤字</span>部分<span class="Color_weak">（最大成績係数）</span>は1より大きくなり、費やしたエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+よりも多くの熱エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を奪うことが可能である。
+</p>
+<h3><span>最大効率の例：逆カルノーサイクル</span></h3>
+<p>
+ヒートポンプの最大効率は、可逆な場合に達成できることが分かった。そのような可逆なヒートポンプは、原理的に構成することができる。実際、以下の【5.1-注1】のような逆カルノーサイクルを使えばよい。これは、冒頭で述べたヒートポンプのサイクルを可逆過程だけで構成したものである。
+</p>
+<div class="Note">
+<h3><span class="h3_num">【5.1-注1】</span><span class="h3_name">逆カルノーサイクル</span></h3>
+<img class="Image_graph" src="../resources/media/thermodynamics/05.ExG.svg">
+<p>
+逆カルノーサイクルは、右図のようなヒートポンプサイクルである。全ての操作は準静的に行われる。色が同じ個所は同じ温度である。共等温膨張によって低温側からエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を吸収し、共等温圧縮によって高温側にエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を放出する。可逆であるため、最大の効率を持つ、即ち、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AFqJ"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c35"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)および式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AAuj"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c36"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の等号が成立する。<span class="Color_weak">（逆カルノーサイクルの効率は最大ではあるが、可逆性を持たせるためには非常にゆっくり動かす必要があるので、時間的な効率という点では最悪である。）</span>
+</p>
+<p>
+なお、これを逆にたどるようなサイクルをカルノーサイクルという。これは、用意された低温源と高温源から力学的なエネルギーを取りだすサイクルである。
+</p>
+</div>
+<h2><span class="h2_num">5.2</span><span class="h2_name">（参考）熱を全て動力に変えることはできない</span></h2>
+<img class="Image_graph" src="../resources/media/thermodynamics/05.vFV.svg">
+<p>
+ところで、ヒートポンプは外部エネルギーを温度差に変換するものであったが、逆向きに作動させると、温度差を力学的なエネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+に変換する装置としても使える<span class="Color_weak">（右図）</span>。このように熱を動力に変換する装置を、熱機関という。
+</p>
+<p>
+特に興味があるのは、高温側から奪った熱
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を全て
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+に変換できることが可能かという問題である<span class="Color_weak">（
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+）</span>。この場合、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: blue"><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+低温側は不要になり<span class="Color_weak">（あったとしても触媒としてしか作用しない）</span>、高温熱源だけから
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を取り出すようなサイクルがあることになる。即ち、温度差が不要なエンジンが作れることになる。そうすれば、例えば、空気や地面から熱を奪って運動エネルギーに変換することにより、事実上、燃料なしで永久に動き続ける車が作れるのではないか、という期待が生まれるわけである。このような熱機関を第二種永久機関という。
+</p>
+<p>
+この節では、第二種永久機関が不可能であることを示す。<span class="Color_weak">（なお、第</span><span class="Color_red">一</span><span class="Color_weak">種永久機関というのもあるが、これは、エネルギー保存則を破ってエネルギーを生成するような装置であり、これも不可能である。第二種永久機関のほうはエネルギー保存則を破らない。）</span>
+</p>
+<h3><span>第二種永久機関は存在しない：式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AgWi"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c37"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<p>
+熱機関の場合、式(<mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><a href="#mjx-eqn-eq%3AHna"><mjx-mrow class=" MathJax_ref"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c34"></mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に対応する式は
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%" display="true"><mjx-math display="true" style="margin-left: 0; margin-right: 0" class=" MJX-TEX"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-mstyle space="4"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-math></mjx-container> </displayed-eq>
+である<span class="Color_weak">（エネルギーの流れの方向が逆になっているので、符号も逆になる）</span>。これに、エネルギー保存を表す
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+を用いて
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を消去すると
+<displayed-eq> <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%; min-width: 12.7em" display="true" width="full"><mjx-math width="full" display="true" class=" MJX-TEX"><mjx-mtable width="full" style="min-width: 12.7em" side="right"><mjx-table style="width: auto; min-width: 8.544em; margin: 0 2.078em"><mjx-itable width="full"><mjx-mlabeledtr><mjx-mtd><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2264"></mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4C"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D447 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 12.7em"><mjx-itable align="right" style="right: 0"><mjx-mtr style="height: 2.189em"><mjx-mtd id="mjx-eqn-eq:gWi"><mjx-mtext class="mjx-n"><mjx-c class="mjx-c28"></mjx-c><mjx-c class="mjx-c37"></mjx-c><mjx-c class="mjx-c29"></mjx-c></mjx-mtext><mjx-tstrut style="height: 2.189em; vertical-align: -0.836em"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> </displayed-eq>
+となる。<span class="Color_red">赤字</span>部分を最大熱効率といい、1よりも小さな値である。よって、奪った熱
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mi class="mjx-i" noIC="true"><mjx-c class="mjx-c1D444 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c48"></mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の全てを運動エネルギー
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container> 
+に変えるようなサイクルは存在せず、必ず、低温熱源に熱を捨てなければならない。即ち、第二種永久機関は存在しない。
+</p>
+<p>
+最大熱効率が実現するのは、可逆な場合である。例えば、【5.1-注1】の逆過程であるカルノーサイクルが最大熱効率を持つ。<span class="Color_weak">（熱効率が最悪なのは、高温熱源から低温熱源にそのまま熱を捨てる場合、即ち、
+ <mjx-container class="MathJax" jax="CHTML" style="font-size: 124.8%"><mjx-math class=" MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FF TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c30"></mjx-c></mjx-mn></mjx-math></mjx-container> 
+の場合である。）</span>
+</p>
+
+</article>
+</div>
+</div>
+<footer>
+<div id="Footer_container">
+<div id="Footer_TIPS" class="Color_weak">
+TIPS:<br>
+・数式番号にマウスポインターを合わせると、画面上部にその数式が表示される。<br>
+・動画をクリックすると、シミュレーション計算の実行画面が表示される。
+</div>
+<div id="copyright">© 2016-<!-- begin year -->2022<!-- end year --> 物理学の見つけ方</div>
+</div>
+</footer>
+</body>
 </html>

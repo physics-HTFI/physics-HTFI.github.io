@@ -1,0 +1,69 @@
+<svg width="205.922" height="72.751" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id="e" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="c" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="f" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="d" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="green" fill-rule="evenodd" stroke="green" stroke-width=".4pt"/>
+</marker>
+<marker id="b" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<marker id="a" overflow="visible" orient="auto">
+<path d="M1.96 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 1.96 0z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<symbol id="g">
+<path d="M95.764 45.243c-.072.252-.09.27-.108.288-.108.036-.306.036-.468.036-.306 0-.63 0-.63.504 0 .198.144.342.342.342.522 0 1.116-.054 1.656-.054.63 0 1.314.054 1.926.054.126 0 .468 0 .468-.522 0-.306-.288-.324-.468-.324-.252 0-.54 0-.774-.018l.774-3.132c.27.252.864.648 1.818.648 3.132 0 5.076-2.844 5.076-5.31 0-2.214-1.656-2.97-3.15-2.97-1.278 0-2.214.702-2.502.972-.684-.972-1.872-.972-2.07-.972-.666 0-1.188.378-1.566 1.026-.45.72-.684 1.692-.684 1.782 0 .252.27.252.432.252.198 0 .27 0 .36-.09.036-.036.036-.072.144-.522.36-1.44.774-1.8 1.224-1.8.198 0 .414.072.414.666 0 .27-.036.522-.108.774zm4.14-8.64c.522-.612 1.368-1.17 2.232-1.17 1.116 0 1.206.972 1.206 1.368 0 .936-.612 3.15-.9 3.852-.558 1.314-1.44 1.764-2.178 1.764-1.062 0-1.494-.846-1.494-1.044l.036-.252z" color="#000" style="isolation:auto;mix-blend-mode:normal"/>
+</symbol>
+<symbol id="h">
+<path d="M108.825 29.801c.06-.156.108-.24.108-.36 0-.396-.36-.66-.696-.66-.48 0-.612.42-.66.588l-1.524 5.172c-.048.144-.048.18-.048.192 0 .108.072.132.192.168.216.096.24.096.264.096.036 0 .108 0 .192-.204z" color="#000" style="font-variant-east_asian:normal;isolation:auto;mix-blend-mode:normal"/>
+</symbol>
+<symbol id="i">
+<path d="M109.413 39.727c0-.324-.024-.336-.348-.336-.492.48-1.128.768-2.268.768v.396c.324 0 .972 0 1.668-.324v6.156c0 .444-.036.588-1.176.588h-.42v.396c.492-.036 1.524-.036 2.064-.036s1.584 0 2.076.036v-.396h-.42c-1.14 0-1.176-.144-1.176-.588z" color="#000" style="isolation:auto;mix-blend-mode:normal"/>
+</symbol>
+<symbol id="j">
+<path d="M166.635 3.096c.072-.252.072-.288.072-.306 0-.234-.198-.324-.396-.324-.072 0-.09 0-.126.018l-2.322.108c-.252.018-.576.036-.576.54 0 .324.324.324.468.324.198 0 .522 0 .756.036l-2.592 10.386a3.322 3.322 0 0 0-.072.414c0 .432.342.81.864.81.108 0 .918 0 1.17-1.008l1.08-4.266c.09-.342.09-.378.36-.738.288-.396 1.188-1.62 2.682-1.62.468 0 .9.18.9 1.062 0 1.044-.792 3.15-1.134 4.032-.198.486-.252.612-.252.918 0 1.044 1.044 1.62 2.034 1.62 1.908 0 2.808-2.448 2.808-2.808 0-.252-.27-.252-.432-.252-.216 0-.342 0-.414.234-.576 1.998-1.566 2.178-1.854 2.178-.126 0-.306 0-.306-.378 0-.396.198-.882.306-1.17.342-.882 1.17-2.988 1.17-3.996 0-1.656-1.386-2.088-2.682-2.088-.396 0-1.494 0-2.718 1.116z" color="#000" style="font-variant-east_asian:normal;isolation:auto;mix-blend-mode:normal"/>
+</symbol>
+<symbol id="k">
+<path d="M169.562 69.803c.192-.18.696-.576.888-.744.744-.684 1.452-1.344 1.452-2.436 0-1.428-1.2-2.352-2.7-2.352-1.44 0-2.388 1.092-2.388 2.16 0 .588.468.672.636.672.252 0 .624-.18.624-.636 0-.624-.6-.624-.744-.624.348-.876 1.152-1.176 1.74-1.176 1.116 0 1.692.948 1.692 1.956 0 1.248-.876 2.16-2.292 3.612l-1.512 1.56c-.144.132-.144.156-.144.456h4.74l.348-2.148h-.372c-.036.24-.132.84-.276 1.068-.072.096-.984.096-1.176.096h-2.136z" color="#000" style="isolation:auto;mix-blend-mode:normal"/>
+</symbol>
+</defs>
+<g fill="none" color="#000">
+<path d="M23.863 64.852c0-22.425 27.994-40.603 68.485-40.603" stroke="red" stroke-width="1.5"/>
+<path d="M92.348 24.249c78.292 0 88.942 22.66 88.942 45.085" stroke="green" stroke-width="1.5"/>
+<g stroke-dasharray="2, 1">
+<path d="M23.863 42.427v22.425" marker-end="url(#a)" marker-start="url(#b)" stroke="red"/>
+<path d="M51.856 24.249h40.492" marker-end="url(#a)" marker-start="url(#b)" stroke="red"/>
+<path d="M170.639 24.249H92.347" marker-end="url(#c)" marker-start="url(#d)" stroke="green" style="isolation:auto;mix-blend-mode:normal"/>
+<path d="M181.289 46.91v22.425" marker-end="url(#e)" marker-start="url(#f)" stroke="green"/>
+</g>
+</g>
+<use width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#g"/>
+<use transform="translate(-20.533)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#g"/>
+<use transform="translate(60.533 24.88)" width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#g"/>
+<use transform="translate(-62.62 24.88)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#g"/>
+<g fill="green">
+<use width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#h"/>
+<use transform="translate(60.534 24.88)" width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#h"/>
+<use transform="translate(94.053 5.926)" width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#h"/>
+<use transform="translate(67.32 -28.281)" width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#h"/>
+<use width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#i"/>
+<use transform="translate(67.32 -27.962)" width="100%" height="100%" style="font-variant-east_asian:normal" xlink:href="#i"/>
+</g>
+<use transform="translate(-94.028 -1.888)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#i"/>
+<use transform="translate(-62.62 24.88)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#i"/>
+<use width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#j"/>
+<use transform="translate(26.734 34.207)" width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#j"/>
+<use transform="translate(-117.411)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#j"/>
+<use transform="translate(-161.347 26.075)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#j"/>
+<use width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#k"/>
+<use transform="translate(33.519 -18.636)" width="100%" height="100%" fill="green" style="font-variant-east_asian:normal" xlink:href="#k"/>
+<use transform="translate(-81.066 -24.88)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#k"/>
+<use transform="translate(-110.626 -52.842)" width="100%" height="100%" fill="red" stroke-width=".94" style="font-variant-east_asian:normal" xlink:href="#k"/>
+</svg>

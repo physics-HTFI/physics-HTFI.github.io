@@ -1,0 +1,38 @@
+<svg width="172.422" height="113.044" viewBox="0 0 172.421 113.043" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<marker id="b" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2 2 2z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<marker id="c" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2 2 2z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<marker id="a" overflow="visible" orient="auto">
+<path d="m-4 0-2 2 7-2-7-2 2 2z" fill="red" fill-rule="evenodd" stroke="red" stroke-width=".4pt"/>
+</marker>
+<symbol id="d">
+<path d="M135.453 8.429c0-.516-.44-1.014-1.014-1.014-.65 0-1.033.536-1.033 1.014 0 .516.44 1.014 1.014 1.014.65 0 1.033-.536 1.033-1.014zM138.388 12.807a1.429 1.429 0 0 0-1.033 1.32c0 .42.325.88.957.88.669 0 1.377-.555 1.377-1.492 0-1.014-1.014-1.684-2.18-1.684-1.091 0-1.799.823-2.048 1.167-.478-.803-1.549-1.167-2.64-1.167-2.41 0-3.71 2.353-3.71 2.984 0 .268.287.268.459.268.23 0 .363 0 .44-.248.555-1.741 1.932-2.315 2.716-2.315.727 0 1.071.344 1.071.956 0 .364-.268 1.416-.44 2.105l-.65 2.62c-.287 1.167-.976 1.74-1.626 1.74-.096 0-.536 0-.918-.286a1.429 1.429 0 0 0 1.033-1.32c0-.42-.325-.88-.957-.88-.67 0-1.377.555-1.377 1.492 0 1.014 1.014 1.683 2.18 1.683 1.091 0 1.799-.822 2.048-1.166.478.803 1.549 1.166 2.64 1.166 2.41 0 3.71-2.352 3.71-2.984 0-.267-.287-.267-.459-.267-.23 0-.363 0-.44.248-.555 1.741-1.932 2.315-2.716 2.315-.727 0-1.071-.344-1.071-.957 0-.401.248-1.415.42-2.123.134-.497.574-2.295.67-2.601.287-1.148.956-1.74 1.626-1.74.096 0 .535 0 .918.286z" stroke-linejoin="round" stroke-miterlimit="100000" stroke-width="1.6"/>
+</symbol>
+<symbol id="e">
+<path d="M143.564 17.695a.774.774 0 0 0-.777-.763.763.763 0 0 0-.763.763c0 .482.388.777.763.777a.769.769 0 0 0 .777-.777zm-2.035 2.504v.482c.843 0 .964.08.964.736V24.9c0 .575-.134.575-1.004.575v.482c.026 0 .964-.053 1.5-.053.468 0 .95.013 1.419.053v-.482c-.777 0-.91 0-.91-.562v-4.86zM151.95 21.899c0-1.165-.576-1.848-2.008-1.848-1.098 0-1.808.603-2.183 1.299h-.013v-1.299l-1.968.148v.482c.897 0 1.004.093 1.004.75v3.467c0 .576-.134.576-1.004.576v.482c.027 0 .964-.054 1.526-.054.496 0 1.42.04 1.54.054v-.482c-.87 0-1.004 0-1.004-.576v-2.41c0-1.406 1.111-2.062 1.995-2.062.937 0 1.058.737 1.058 1.42v3.052c0 .576-.134.576-1.004.576v.482c.026 0 .964-.054 1.526-.054.495 0 1.42.04 1.54.054v-.482c-.87 0-1.004 0-1.004-.576z" stroke-linejoin="round" stroke-miterlimit="100000" stroke-width="1.6"/>
+</symbol>
+</defs>
+<g stroke-linejoin="round">
+<path color="#000" fill="#dcdcdc" style="isolation:auto;mix-blend-mode:normal" d="M.5 34.164h171.421v78.38H.5z"/>
+<path d="M.5 34.164h171.421" color="#000" fill="none" stroke="#555" stroke-miterlimit="100" stroke-width="3" style="isolation:auto;mix-blend-mode:normal"/>
+<path d="M143.498 1.009c0-.201 0-.509-.321-.509-.335 0-.335.335-.335.576V13.3c0 .24 0 .575.335.575.321 0 .321-.308.321-.508zm2.96.067c0-.241 0-.576-.336-.576-.321 0-.321.308-.321.509v12.359c0 .2 0 .508.321.508.335 0 .335-.334.335-.575z"/>
+<path d="M29.244 84.957c0-.2 0-.522-.322-.522-.335 0-.335.308-.335.522v8.115h-4.083c-.201 0-.536 0-.536.321 0 .335.308.335.536.335h8.823c.215 0 .536 0 .536-.322 0-.334-.308-.334-.536-.334h-4.083z" fill="red"/>
+<path d="M132.448 101.964H44.31M132.448 101.964V27.788" color="#000" fill="none" stroke="#000" stroke-dasharray="1.79999584, 1.79999584" stroke-width=".3" style="isolation:auto;mix-blend-mode:normal"/>
+</g>
+<circle transform="rotate(-26.402)" cx="27.277" cy="44.426" r="5" color="#000" fill="#5e5bff"/>
+<g fill="none" stroke="red" stroke-linecap="round" color="#000">
+<path d="m44.31 27.788 88.138 74.176" marker-end="url(#a)" stroke-width="2" style="isolation:auto;mix-blend-mode:normal"/>
+<path d="M44.31 27.788h88.138" marker-end="url(#b)" style="isolation:auto;mix-blend-mode:normal"/>
+<path d="M44.31 27.788v74.176" marker-end="url(#c)" style="isolation:auto;mix-blend-mode:normal"/>
+</g>
+<use width="100%" height="100%" xlink:href="#d"/>
+<use transform="translate(10.607 85.585)" width="100%" height="100%" xlink:href="#d"/>
+<use transform="translate(-117.803 81.562)" width="100%" height="100%" fill="red" xlink:href="#d"/>
+<use width="100%" height="100%" xlink:href="#e"/>
+<use transform="translate(10.608 82.976)" width="100%" height="100%" xlink:href="#e"/>
+<use transform="translate(-117.802 80.812)" width="100%" height="100%" fill="red" xlink:href="#e"/>
+</svg>

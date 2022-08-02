@@ -1,0 +1,1 @@
+(()=>{"use strict";(class{static Set(){const e=document.querySelectorAll(".TOC_chapterDate"),t=new Date;for(let r of Array.from(e)){let e=r.innerText.split("."),a=new Date(Number(e[0]),Number(e[1])-1,Number(e[2])),c=(t.getTime()-a.getTime())/864e5;r.classList.add(c<90?"TOC_chapterDateColorNew":c<365?"TOC_chapterDateColorRecent":"TOC_chapterDateColorOld")}}}).Set()})();
