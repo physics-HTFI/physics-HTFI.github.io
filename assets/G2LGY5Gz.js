@@ -1,0 +1,1 @@
+import{t as e}from"./BILT4AnT.js";var t=`kernelBlurVaryingDeclaration`,n=`varying sampleCoord{X}: vec2f;`;e.IncludesShadersStoreWGSL[t]||(e.IncludesShadersStoreWGSL[t]=n);

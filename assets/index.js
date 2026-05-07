@@ -1,0 +1,1 @@
+import"./DiGYwUHG.js";(class{static Set(){let e=document.querySelectorAll(`time`),t=new Date;for(let n of Array.from(e)){let e=n.innerText.split(`.`),r=new Date(Number(e[0]),Number(e[1])-1,Number(e[2])),i=(t.getTime()-r.getTime())/(1e3*60*60*24);n.classList.add(i<90?`DateColor_New`:i<365?`DateColor_Recent`:`DateColor_Old`),n.style.color=i<90?`#000`:i<365?`#999`:`#ccc`}}}).Set();

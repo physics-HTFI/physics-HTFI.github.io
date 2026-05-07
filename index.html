@@ -1,157 +1,525 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="3Brk2QC5_tnLC-ZOYvrvYKVxcUCQqDHyXW3urc_AXB4">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@physicsHTFI">
-    <meta property="og:url" content="https://physics-htfi.github.io/">
-    <meta property="og:title" content="物理学の見つけ方">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://physics-htfi.github.io/resources/css/favicon192.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="3Brk2QC5_tnLC-ZOYvrvYKVxcUCQqDHyXW3urc_AXB4"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@physicsHTFI" />
+    <meta property="og:url" content="https://physics-htfi.github.io/" />
+    <meta property="og:title" content="物理学の見つけ方" />
+    <meta property="og:site_name" content="物理学の見つけ方" />
+    <meta property="og:description" content="" />
+    <meta
+      property="og:image"
+      content="https://physics-htfi.github.io/favicon192.png"
+    />
     <title>【物理学の見つけ方】</title>
-    <link rel="stylesheet" href="resources/css/index.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_classical_mechanics.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_continuum_mechanics.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_electrodynamics.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_gravitation.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_thermodynamics.css">
-    <link rel="stylesheet" href="resources/css/chapter_TOC_statistical_mechanics.css">
-    <link rel="icon" href="resources/css/favicon.svg">
-    <link rel="apple-touch-icon" href="resources/css/favicon180.png" sizes="180x180">
-	<script defer src="resources/js/index.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"></script>
-    <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js",new Date()); gtag("config","G-P8VWTJPJPT"); gtag("config", "UA-84006000-1");</script>
+    <link rel="stylesheet" href="assets/index.css" />
+    <link rel="icon" href="favicon.svg" />
+    <link rel="apple-touch-icon" href="favicon180.png" sizes="180x180" />
+    <script type="module" src="assets/index.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P8VWTJPJPT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-P8VWTJPJPT");
+    </script>
   </head>
   <body>
     <header id="Title">
-      <div id="Title_container">
-        <h1 id="Title_name"><span id="Title_logo"></span>物理学の見つけ方</h1>
-        <div id="Title_abstract">
-          <p>定義や概念が先にあってそれを説明するのではなく、実際の実験と結びついた問題を考える中でそれらを見つけていきたい。</p>
-        </div>
-        <span id="Title_tweet"><a href = "https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="物理学の見つけ方"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></span>
-      </div>
+      <h1>物理学の見つけ方</h1>
+      <p>
+        定義や概念が先にあってそれを説明するのではなく、実際の実験と結びついた問題を考える中でそれらを見つけていきたい。
+      </p>
+      <span
+        ><a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-lang="en"
+          data-text="物理学の見つけ方"
+        ></a>
+        <a
+          href="https://twitter.com/physicsHTFI?ref_src=twsrc%5Etfw"
+          class="twitter-follow-button"
+          data-lang="en"
+          data-show-count="false"
+          >Follow @physicsHTFI</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </span>
     </header>
-    <div id="Center">
-      <div id="TOC_group">
-        <nav class="TOC">
-          <h1 class="TOC_title">力学<span class="TOC_version">ver. 8.0</span></h1>
-          <span class="TOC_part TOC_classical_mechanics_1">自由な運動</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="classical_mechanics/001.html">キャッチボール</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="classical_mechanics/002.html">力から加速度を求める</a><span class="TOC_chapterDate">2022.12.24</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="classical_mechanics/003.html">運動方程式の解法</a><span class="TOC_chapterDate">2022.12.23</span></div>
-          <span class="TOC_part TOC_classical_mechanics_2">衝突</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="classical_mechanics/004.html">壁との衝突</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="classical_mechanics/005.html">動く壁との衝突</a><span class="TOC_chapterDate">2022.12.20</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">6</span><a href="classical_mechanics/006.html">ボール同士の衝突</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <span class="TOC_part TOC_classical_mechanics_3">拘束された運動</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">7</span><a href="classical_mechanics/007.html">振り子</a><span class="TOC_chapterDate">2022.12.27</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">8</span><a href="classical_mechanics/008.html">二重振り子</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">9</span><a href="classical_mechanics/009.html">自由な座標</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <span class="TOC_part TOC_classical_mechanics_4">剛体の運動</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">10</span><a href="classical_mechanics/010.html">剛体の座標・速度</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">11</span><a href="classical_mechanics/011.html">自由な剛体</a><span class="TOC_chapterDate">2022.12.19</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">12</span><a href="classical_mechanics/012.html">拘束された剛体</a><span class="TOC_chapterDate">2022.12.19</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">13</span><a href="classical_mechanics/013.html">滑り・転がり</a><span class="TOC_chapterDate">2022.12.23</span></div>
-          <span class="TOC_part TOC_classical_mechanics_5">補遺（数学）</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">14</span><a href="classical_mechanics/014.html">3次元の密度積分</a><span class="TOC_chapterDate">2022.12.11</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">15</span><a href="classical_mechanics/015.html">可積分条件</a><span class="TOC_chapterDate">2022.12.22</span></div>
-        </nav>
-        <nav class="TOC">
-          <h1 class="TOC_title">連続体力学<span class="TOC_version">ver. 1.0</span></h1>
-          <span class="TOC_part TOC_continuum_mechanics_1">弾性体力学</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="continuum_mechanics/001.html">弦の運動</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="continuum_mechanics/002.html">立体の運動</a><span class="TOC_chapterDate">2021.04.08</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="continuum_mechanics/003.html">膜の運動</a><span class="TOC_chapterDate">2019.04.21</span></div>
-          <span class="TOC_part TOC_continuum_mechanics_2">線型振動（質点系）</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="continuum_mechanics/004.html">連成振動の解</a><span class="TOC_chapterDate">2021.03.14</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="continuum_mechanics/005.html">斉次方程式の解</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">6</span><a href="continuum_mechanics/006.html">非斉次方程式の解</a><span class="TOC_chapterDate">2021.02.05</span></div>
-          <span class="TOC_part TOC_continuum_mechanics_3">線形振動（弾性体）</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">7</span><a href="continuum_mechanics/007.html">弾性弦の線形振動</a><span class="TOC_chapterDate">2021.02.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">8</span><a href="continuum_mechanics/008.html">多次元弾性体の場合</a><span class="TOC_chapterDate">2021.02.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">9</span><a href="continuum_mechanics/009.html">多次元波動方程式の解</a><span class="TOC_chapterDate">2021.02.05</span></div>
-          <span class="TOC_part TOC_continuum_mechanics_4">流体力学</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">10</span><a href="continuum_mechanics/010.html">流体の運動方程式</a><span class="TOC_chapterDate">2020.07.05</span></div>
-        </nav>
-        <nav class="TOC">
-          <h1 class="TOC_title">電磁力学<span class="TOC_version">ver. 3.0</span></h1>
-          <span class="TOC_part TOC_electrodynamics_1">静電磁場</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="electrodynamics/001.html">静止した電荷に働く力</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="electrodynamics/002.html">電流に働く力</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="electrodynamics/003.html">運動する電荷に働く力</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="electrodynamics/004.html">電荷・電流密度の逆算</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <span class="TOC_part TOC_electrodynamics_2">相対性理論</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="electrodynamics/005.html">ガリレイ変換の矛盾</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">6</span><a href="electrodynamics/006.html">矛盾の解消</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">7</span><a href="electrodynamics/007.html">相対論的力学</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <span class="TOC_part TOC_electrodynamics_3">変動する電磁場</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">8</span><a href="electrodynamics/008.html">マクスウェル方程式</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">9</span><a href="electrodynamics/009.html">静的な法則の再導出</a><span class="TOC_chapterDate">2021.02.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">10</span><a href="electrodynamics/010.html">電磁波の放射</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <span class="TOC_part TOC_electrodynamics_4">自己力</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">11</span><a href="electrodynamics/011.html">電磁場のエネルギー</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">12</span><a href="electrodynamics/012.html">自己力</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <span class="TOC_part TOC_electrodynamics_5">補遺（数学）</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">13</span><a href="electrodynamics/013.html">テンソル場の積分</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">14</span><a href="electrodynamics/014.html">テンソル場の微分</a><span class="TOC_chapterDate">2020.07.05</span></div>
-        </nav>
-        <nav class="TOC">
-          <h1 class="TOC_title">重力理論<span class="TOC_version">ver. 1.0</span></h1>
-          <span class="TOC_part TOC_gravitation_1">ニュートンの重力理論</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="gravitation/001.html">天体の運動</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <span class="TOC_part TOC_gravitation_2">アインシュタインの重力理論</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="gravitation/002.html">計量が重力場を決める</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="gravitation/003.html">等価原理の整合性</a><span class="TOC_chapterDate">2021.09.24</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="gravitation/004.html">重力は時空の曲率</a><span class="TOC_chapterDate">2020.07.05</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="gravitation/005.html">アインシュタイン方程式</a><span class="TOC_chapterDate">2020.07.05</span></div>
-        </nav>
-        <nav class="TOC">
-          <h1 class="TOC_title">熱力学<span class="TOC_version">ver. 2.1</span></h1>
-          <span class="TOC_part TOC_thermodynamics_1">容器同士の接触</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="thermodynamics/001.html">熱接触での平衡</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="thermodynamics/002.html">動く仕切り</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="thermodynamics/003.html">断熱仕切り</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <span class="TOC_part TOC_thermodynamics_2">可逆性の定量化</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="thermodynamics/004.html">2容器系のエントロピー</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="thermodynamics/005.html">冷房・暖房の最大効率</a><span class="TOC_chapterDate">2022.06.22</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">6</span><a href="thermodynamics/006.html">重力下での密度分布</a><span class="TOC_chapterDate">2021.05.20</span></div>
-          <span class="TOC_part TOC_thermodynamics_3">粒子数が変化する系</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">7</span><a href="thermodynamics/007.html">多相系の平衡</a><span class="TOC_chapterDate">2020.09.20</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">8</span><a href="thermodynamics/008.html">多成分・多相系の平衡</a><span class="TOC_chapterDate">2021.11.23</span></div>
-          <span class="TOC_part TOC_thermodynamics_4">補遺（数学）</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">9</span><a href="thermodynamics/009.html">制約条件付き極値問題</a><span class="TOC_chapterDate">2022.11.23</span></div>
-        </nav>
-        <nav class="TOC">
-          <h1 class="TOC_title">統計力学<span class="TOC_version">ver. 0.8</span></h1>
-          <span class="TOC_part TOC_statistical_mechanics_1">エントロピー</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">1</span><a href="statistical_mechanics/001.html">エントロピーの候補</a><span class="TOC_chapterDate">2020.10.17</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">2</span><a href="statistical_mechanics/002.html">状態数は可逆不変</a><span class="TOC_chapterDate">2020.09.29</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">3</span><a href="statistical_mechanics/003.html">エントロピーの決定</a><span class="TOC_chapterDate">2020.10.08</span></div>
-          <span class="TOC_part TOC_statistical_mechanics_2">計算の簡略化</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">4</span><a href="statistical_mechanics/004.html">カノニカル表示</a><span class="TOC_chapterDate">2020.10.18</span></div>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">5</span><a href="statistical_mechanics/005.html">グランドカノニカル表示</a><span class="TOC_chapterDate">2020.10.12</span></div>
-          <span class="TOC_part TOC_statistical_mechanics_3">時間平均</span>
-          <div class="TOC_chapter"><span class="TOC_chapterNumber">6</span><a href="statistical_mechanics/006.html">分子の速度分布</a><span class="TOC_chapterDate">2020.10.27</span></div>
-        </nav>
-      </div>
-    </div>
+    <main>      <nav>
+        <header>力学<span class="Version">進捗 81%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_classical_mechanics_1">自由な運動</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="classical_mechanics/001.html">キャッチボール</a>
+                <time datetime="2026-03-19">2026.03.19</time>
+              </li>
+              <li>
+                <span>2</span>
+                <a href="classical_mechanics/002.html">力から加速度を求める</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="classical_mechanics/003.html">運動方程式の解法</a>
+                <time datetime="2024-10-11">2024.10.11</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_classical_mechanics_2">衝突</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>4</span>
+                <a href="classical_mechanics/004.html">壁との衝突</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>5</span>
+                <a href="classical_mechanics/005.html">動く壁との衝突</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>6</span>
+                <a href="classical_mechanics/006.html">ボール同士の衝突</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_classical_mechanics_3">拘束された運動</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>7</span>
+                <a href="classical_mechanics/007.html">振り子</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>8</span>
+                <a href="classical_mechanics/008.html">二重振り子</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>9</span>
+                <a href="classical_mechanics/009.html">自由な座標</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_classical_mechanics_4">剛体の運動</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>10</span>
+                <a href="classical_mechanics/010.html">剛体の座標・速度</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>11</span>
+                <a href="classical_mechanics/011.html">自由な剛体</a>
+                <time datetime="2026-03-23">2026.03.23</time>
+              </li>
+              <li>
+                <span>12</span>
+                <a href="classical_mechanics/012.html">拘束された剛体</a>
+                <time datetime="2024-12-09">2024.12.09</time>
+              </li>
+              <li>
+                <span>13</span>
+                <a href="classical_mechanics/013.html">滑り・転がり</a>
+                <time datetime="2024-12-10">2024.12.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_classical_mechanics_5">補遺（数学）</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>14</span>
+                <a href="classical_mechanics/014.html">3次元の密度積分</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>15</span>
+                <a href="classical_mechanics/015.html">可積分条件</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <header>連続体力学<span class="Version">進捗 10%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_continuum_mechanics_1">弾性体力学</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="continuum_mechanics/001.html">弦の運動</a>
+                <time datetime="2024-09-22">2024.09.22</time>
+              </li>
+              <li>
+                <span>2</span>
+                <a href="continuum_mechanics/002.html">立体の運動</a>
+                <time datetime="2024-09-22">2024.09.22</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="continuum_mechanics/003.html">膜の運動</a>
+                <time datetime="2019-04-21">2019.04.21</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_continuum_mechanics_2">線型振動（質点系）</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>4</span>
+                <a href="continuum_mechanics/004.html">連成振動の解</a>
+                <time datetime="2021-03-14">2021.03.14</time>
+              </li>
+              <li>
+                <span>5</span>
+                <a href="continuum_mechanics/005.html">斉次方程式の解</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+              <li>
+                <span>6</span>
+                <a href="continuum_mechanics/006.html">非斉次方程式の解</a>
+                <time datetime="2021-02-05">2021.02.05</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_continuum_mechanics_3">線形振動（弾性体）</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>7</span>
+                <a href="continuum_mechanics/007.html">弾性弦の線形振動</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>8</span>
+                <a href="continuum_mechanics/008.html">多次元弾性体の場合</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>9</span>
+                <a href="continuum_mechanics/009.html">多次元波動方程式の解</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_continuum_mechanics_4">流体力学</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>10</span>
+                <a href="continuum_mechanics/010.html">流体の運動方程式</a>
+                <time datetime="2023-01-21">2023.01.21</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <header>電磁力学<span class="Version">進捗 30%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_electrodynamics_1">静電磁場</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="electrodynamics/001.html">静止した電荷に働く力</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>2</span>
+                <a href="electrodynamics/002.html">電流に働く力</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="electrodynamics/003.html">運動する電荷に働く力</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>4</span>
+                <a href="electrodynamics/004.html">電荷・電流密度の逆算</a>
+                <time datetime="2025-04-30">2025.04.30</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_electrodynamics_2">相対性理論</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>5</span>
+                <a href="electrodynamics/005.html">ガリレイ変換の矛盾</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+              <li>
+                <span>6</span>
+                <a href="electrodynamics/006.html">矛盾の解消</a>
+                <time datetime="2024-09-22">2024.09.22</time>
+              </li>
+              <li>
+                <span>7</span>
+                <a href="electrodynamics/007.html">相対論的力学</a>
+                <time datetime="2024-09-22">2024.09.22</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_electrodynamics_3">変動する電磁場</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>8</span>
+                <a href="electrodynamics/008.html">マクスウェル方程式</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+              <li>
+                <span>9</span>
+                <a href="electrodynamics/009.html">静的な法則の再導出</a>
+                <time datetime="2023-01-31">2023.01.31</time>
+              </li>
+              <li>
+                <span>10</span>
+                <a href="electrodynamics/010.html">電磁波の放射</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_electrodynamics_4">自己力</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>11</span>
+                <a href="electrodynamics/011.html">電磁場のエネルギー</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+              <li>
+                <span>12</span>
+                <a href="electrodynamics/012.html">自己力</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_electrodynamics_5">補遺（数学）</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>13</span>
+                <a href="electrodynamics/013.html">テンソル場の積分</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+              <li>
+                <span>14</span>
+                <a href="electrodynamics/014.html">テンソル場の微分</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <header>重力理論<span class="Version">進捗 10%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_gravitation_1">ニュートンの重力理論</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="gravitation/001.html">天体の運動</a>
+                <time datetime="2024-10-10">2024.10.10</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_gravitation_2">アインシュタインの重力理論</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>2</span>
+                <a href="gravitation/002.html">計量が重力場を決める</a>
+                <time datetime="2024-09-22">2024.09.22</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="gravitation/003.html">等価原理の整合性</a>
+                <time datetime="2021-09-24">2021.09.24</time>
+              </li>
+              <li>
+                <span>4</span>
+                <a href="gravitation/004.html">重力は時空の曲率</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+              <li>
+                <span>5</span>
+                <a href="gravitation/005.html">アインシュタイン方程式</a>
+                <time datetime="2020-07-05">2020.07.05</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <header>熱力学<span class="Version">進捗 31%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_thermodynamics_1">2つの容器の接触</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="thermodynamics/001.html">熱的な接触</a>
+                <time datetime="2026-04-15">2026.04.15</time>
+              </li>
+              <li>
+                <span>2</span>
+                <a href="thermodynamics/002.html">自由に動く仕切り</a>
+                <time datetime="2026-04-18">2026.04.18</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="thermodynamics/003.html">断熱仕切り</a>
+                <time datetime="2026-04-17">2026.04.17</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_thermodynamics_2">可逆性を定量化する</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>4</span>
+                <a href="thermodynamics/004.html">エントロピーの存在条件</a>
+                <time datetime="2026-04-20">2026.04.20</time>
+              </li>
+              <li>
+                <span>5</span>
+                <a href="thermodynamics/005.html">エントロピーの定量化</a>
+                <time datetime="2026-04-21">2026.04.21</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_thermodynamics_3">エントロピーと平衡条件</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>6</span>
+                <a href="thermodynamics/006.html">重力下での密度分布</a>
+                <time datetime="2026-04-30">2026.04.30</time>
+              </li>
+              <li>
+                <span>7</span>
+                <a href="thermodynamics/007.html">多相系の平衡</a>
+                <time datetime="2026-04-30">2026.04.30</time>
+              </li>
+              <li>
+                <span>8</span>
+                <a href="thermodynamics/008.html">多成分・多相系の平衡</a>
+                <time datetime="2026-05-07">2026.05.07</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_thermodynamics_4">エントロピーと最大効率</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>9</span>
+                <a href="thermodynamics/009.html">冷房・暖房の最大効率</a>
+                <time datetime="2026-04-15">2026.04.15</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_thermodynamics_5">補遺（数学）</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>10</span>
+                <a href="thermodynamics/010.html">制約条件付き極値問題</a>
+                <time datetime="2026-04-15">2026.04.15</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <header>統計力学<span class="Version">進捗 1%</span></header>
+        <ul class="nav_Parts">
+          <li>
+            <header class="TOC_statistical_mechanics_1">エントロピー</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>1</span>
+                <a href="statistical_mechanics/001.html">エントロピーの候補</a>
+                <time datetime="2020-10-17">2020.10.17</time>
+              </li>
+              <li>
+                <span>2</span>
+                <a href="statistical_mechanics/002.html">状態数は可逆不変</a>
+                <time datetime="2020-09-29">2020.09.29</time>
+              </li>
+              <li>
+                <span>3</span>
+                <a href="statistical_mechanics/003.html">エントロピーの決定</a>
+                <time datetime="2020-10-08">2020.10.08</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_statistical_mechanics_2">計算の簡略化</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>4</span>
+                <a href="statistical_mechanics/004.html">カノニカル表示</a>
+                <time datetime="2020-10-18">2020.10.18</time>
+              </li>
+              <li>
+                <span>5</span>
+                <a href="statistical_mechanics/005.html">グランドカノニカル表示</a>
+                <time datetime="2020-10-12">2020.10.12</time>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <header class="TOC_statistical_mechanics_3">時間平均</header>
+            <ul class="nav_Chapters">
+              <li>
+                <span>6</span>
+                <a href="statistical_mechanics/006.html">分子の速度分布</a>
+                <time datetime="2020-10-27">2020.10.27</time>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+</main>
     <footer>
-      <div id="Footer_container">
-        <div id="Footer_left">
-          <p>
-            <span class="Color_weak">TIPS:</span><br>
-            <span class="Color_weak">・タイトル横の<span class="Title_version">ver.</span> の値は、完成時に <span class="Title_version">ver. 10.0</span> になる。</span><br>
-            <span class="Color_weak">・<a href="about.html" class="Color_weak">このサイトについて</a></span><br>
-            <span class="Color_weak">・<a href="simulations.html" class="Color_weak">このサイトのシミュレーション一覧</a></span><br>
-          </p>
-          <p id="copyright">© 2016-2023 物理学の見つけ方</p>
-        </div>
-        <div id="Footer_twitter"><a class="twitter-timeline" data-chrome="noheader nofooter transparent" data-theme="dark" data-height="600" data-border-color="#ccc" href="https://twitter.com/physicsHTFI?ref_src=twsrc%5Etfw"></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-      </div>
+      <p>
+        ・<a href="about.html">このサイトについて</a><br />
+        ・<a href="simulations.html">このサイトのシミュレーション一覧</a><br />
+        <small>© 2016-2026 物理学の見つけ方</small>
+      </p>
     </footer>
   </body>
 </html>
