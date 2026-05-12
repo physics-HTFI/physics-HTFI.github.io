@@ -11,7 +11,7 @@
     <meta property="og:site_name" content="物理学の見つけ方">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://physics-htfi.github.io/favicon192.png">
-    <title>力・質量の定義とニュートンの運動方程式 - 物理学の見つけ方</title>
+    <title>力から加速度を求める（ニュートンの運動方程式） - 物理学の見つけ方</title>
     <link rel="stylesheet" href="../assets/chapter.css">
     <link rel="icon" href="../favicon.svg">
     <link rel="apple-touch-icon" href="../favicon180.png" sizes="180x180">
@@ -266,6 +266,22 @@ mjx-break[size="5"] {
   letter-spacing: -0.667em;
 }
 
+mjx-mi {
+  display: inline-block;
+  text-align: left;
+}
+
+mjx-c {
+  display: inline-block;
+  width: 0;
+  text-align: right;
+}
+
+mjx-utext {
+  display: inline-block;
+  padding: .75em 0 .2em 0;
+}
+
 mjx-TeXAtom {
   display: inline-block;
   text-align: left;
@@ -340,22 +356,6 @@ mjx-stretchy-v > mjx-ext {
 mjx-mark {
   display: inline-block;
   height: 0;
-}
-
-mjx-c {
-  display: inline-block;
-  width: 0;
-  text-align: right;
-}
-
-mjx-utext {
-  display: inline-block;
-  padding: .75em 0 .2em 0;
-}
-
-mjx-mi {
-  display: inline-block;
-  text-align: left;
 }
 
 mjx-mrow {
@@ -627,11 +627,6 @@ mjx-mtd[rowalign="axis"] {
   vertical-align: .25em;
 }
 
-mjx-mspace {
-  display: inline-block;
-  text-align: left;
-}
-
 mjx-mfrac {
   display: inline-block;
   text-align: left;
@@ -733,6 +728,11 @@ mjx-line {
 
 mjx-line[type="d"] {
   margin: .18em -.1em;
+}
+
+mjx-mspace {
+  display: inline-block;
+  text-align: left;
 }
 
 mjx-msup {
@@ -1051,6 +1051,50 @@ mjx-container[jax="CHTML"] > mjx-math.NCM-N[breakable] > * {
   src: url("../font/mjx-ncm-sb.woff2") format("woff2");
 }
 
+mjx-stretchy-v.mjx-c5B > mjx-beg {
+  width: 0.667em;
+  margin: 1.5em auto -1.5em;
+}
+
+mjx-stretchy-v.mjx-c5B > mjx-ext > mjx-spacer {
+  margin-top: 0;
+}
+
+mjx-stretchy-v.mjx-c5B > mjx-ext {
+  width: 0.667em;
+  line-height: 1.005em;
+  border-width: 1.47em 0 1.47em;
+}
+
+mjx-stretchy-v.mjx-c5B > mjx-end {
+  width: 0.667em;
+  margin: 0 auto 0;
+}
+
+mjx-stretchy-v.mjx-c5D > mjx-beg {
+  width: 0.667em;
+  margin: 1.5em auto -1.5em;
+}
+
+mjx-stretchy-v.mjx-c5D > mjx-ext > mjx-spacer {
+  margin-top: 0;
+}
+
+mjx-stretchy-v.mjx-c5D > mjx-ext {
+  width: 0.667em;
+  line-height: 1.005em;
+  border-width: 1.47em 0 1.47em;
+}
+
+mjx-stretchy-v.mjx-c5D > mjx-end {
+  width: 0.667em;
+  margin: 0 auto 0;
+}
+
+mjx-c.mjx-c1D487 {
+  padding: 0.702em 0.626em 0.202em 0;
+}
+
 mjx-c.mjx-cA8 {
   padding: 0.652em 0.5em 0 0;
 }
@@ -1059,20 +1103,16 @@ mjx-c.mjx-c1D499 {
   padding: 0.452em 0.659em 0.008em 0;
 }
 
-mjx-c.mjx-c1D487 {
-  padding: 0.702em 0.626em 0.202em 0;
-}
-
 mjx-c.mjx-c31 {
   padding: 0.666em 0.5em 0 0;
 }
 
-mjx-c.mjx-c30 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
 mjx-c.mjx-c1D461 {
   padding: 0.626em 0.361em 0.011em 0;
+}
+
+mjx-c.mjx-c30 {
+  padding: 0.666em 0.5em 0.022em 0;
 }
 
 mjx-c.mjx-c2D9 {
@@ -1095,14 +1135,6 @@ mjx-c.mjx-c1D488 {
   padding: 0.452em 0.545em 0.202em 0;
 }
 
-mjx-c.mjx-c32 {
-  padding: 0.666em 0.5em 0 0;
-}
-
-mjx-c.mjx-c33 {
-  padding: 0.666em 0.5em 0.022em 0;
-}
-
 mjx-c.mjx-c67 {
   padding: 0.453em 0.5em 0.206em 0;
 }
@@ -1111,17 +1143,24 @@ mjx-c.mjx-c35 {
   padding: 0.666em 0.5em 0.022em 0;
 }
 
-mjx-c.mjx-c302 {
-  padding: 0.694em 0 0 0;
-  width: 0.5em;
+mjx-c.mjx-c32 {
+  padding: 0.666em 0.5em 0 0;
+}
+
+mjx-c.mjx-c1D464 {
+  padding: 0.442em 0.716em 0.011em 0;
+}
+
+mjx-c.mjx-c2C6 {
+  padding: 0.694em 0.5em 0 0;
 }
 
 mjx-c.mjx-c7C {
   padding: 0.75em 0.278em 0.25em 0;
 }
 
-mjx-c.mjx-c1D464 {
-  padding: 0.442em 0.716em 0.011em 0;
+mjx-c.mjx-c33 {
+  padding: 0.666em 0.5em 0.022em 0;
 }
 
 mjx-c.mjx-c2C {
@@ -1156,6 +1195,10 @@ mjx-c.mjx-c34 {
   padding: 0.677em 0.5em 0 0;
 }
 
+mjx-c.mjx-c36 {
+  padding: 0.666em 0.5em 0.022em 0;
+}
+
 mjx-c.mjx-c1D7CE {
   padding: 0.655em 0.575em 0.011em 0;
 }
@@ -1168,8 +1211,8 @@ mjx-c.mjx-c70 {
   padding: 0.442em 0.556em 0.194em 0;
 }
 
-mjx-c.mjx-c36 {
-  padding: 0.666em 0.5em 0.022em 0;
+mjx-c.mjx-c37 {
+  padding: 0.676em 0.5em 0.022em 0;
 }
 
 mjx-c.mjx-c2212 {
@@ -1184,11 +1227,11 @@ mjx-c.mjx-c1D459 {
   padding: 0.694em 0.298em 0.011em 0;
 }
 
-mjx-c.mjx-c37 {
-  padding: 0.676em 0.5em 0.022em 0;
+mjx-c.mjx-c38 {
+  padding: 0.666em 0.5em 0.022em 0;
 }
 
-mjx-c.mjx-c38 {
+mjx-c.mjx-c39 {
   padding: 0.666em 0.5em 0.022em 0;
 }
 
@@ -1196,8 +1239,8 @@ mjx-c.mjx-c1D45A {
   padding: 0.442em 0.878em 0.011em 0;
 }
 
-mjx-c.mjx-c39 {
-  padding: 0.666em 0.5em 0.022em 0;
+mjx-c.mjx-c2261 {
+  padding: 0.464em 0.778em 0 0;
 }
 
 mjx-c.mjx-c2026 {
@@ -1232,6 +1275,26 @@ mjx-c.mjx-cD7 {
   padding: 0.491em 0.778em 0 0;
 }
 
+mjx-c.mjx-c1D486 {
+  padding: 0.452em 0.554em 0.008em 0;
+}
+
+mjx-c.mjx-c1D465 {
+  padding: 0.442em 0.572em 0.011em 0;
+}
+
+mjx-c.mjx-c1D466 {
+  padding: 0.442em 0.49em 0.205em 0;
+}
+
+mjx-c.mjx-c1D467 {
+  padding: 0.442em 0.467em 0.011em 0;
+}
+
+mjx-c.mjx-c1D453 {
+  padding: 0.705em 0.552em 0.205em 0;
+}
+
 mjx-c.mjx-c5B {
   padding: 0.75em 0.278em 0.25em 0;
 }
@@ -1247,38 +1310,6 @@ mjx-c.mjx-c1D43F {
 mjx-c.mjx-c2250 {
   padding: 0.601em 0.778em 0 0;
 }
-
-mjx-c.mjx-c1D453 {
-  padding: 0.705em 0.552em 0.205em 0;
-}
-
-mjx-c.mjx-c1D465 {
-  padding: 0.442em 0.572em 0.011em 0;
-}
-
-mjx-c.mjx-c221D {
-  padding: 0.442em 0.778em 0.011em 0;
-}
-
-mjx-c.mjx-c65 {
-  padding: 0.448em 0.444em 0.011em 0;
-}
-
-mjx-c.mjx-c78 {
-  padding: 0.431em 0.528em 0 0;
-}
-
-mjx-c.mjx-c2061 {
-  padding: 0 0 0 0;
-}
-
-mjx-c.mjx-c28.NCM-S4 {
-  padding: 1.146em 0.597em 0.646em 0;
-}
-
-mjx-c.mjx-c29.NCM-S4 {
-  padding: 1.146em 0.597em 0.646em 0;
-}
 </style></head>
   <body>
     <header id="Logo">
@@ -1289,17 +1320,19 @@ mjx-c.mjx-c29.NCM-S4 {
       <span>力学編　第2章</span>
       <h1>力から加速度を求める</h1>
       <p>
-物体に力を加えると、加速度が生じる。この時の加速度
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-を求めるには、物体に働く力
+物体に力を加えると、加速度が生じる。この時、力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を求めた上で、ニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を使えばよい。この
+と加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-が分かれば、物体の運動
+の関係式は、ニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で与えられる。これにより、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+を求めてやれば
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+が決まるので、その
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+を用いて物体の運動
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D461">𝑡</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-は、初期位置・初期速度を与えることにより、計算することができる。逆に、ニュートンの運動方程式は、力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-の測定のために使うこともできる。
+を<span class="Mark weak">（任意の初期値のもとで）</span>計算することができる。
 </p>
     </header>
     <div id="Center">
@@ -1385,8 +1418,9 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
 を生み出しているわけである。ところで、これは重力に限ったことではない。日常的に体験しているように、物体に力を加えれば、その強さに応じて力の方向に加速度が生じる。ということは、力から
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-を決める法則<span class="Mark weak">（ニュートンの運動方程式という）</span>が存在するのではないだろうか。<span class="Sidenote">摩擦がある場合は、力を加えても静止したまま加速しないこともあるが、これは「加えた力と摩擦力が釣り合っているため」と考えられる。綱引きを考えれば分かるように、力は、「足し合わせる」ことによって打ち消せる。</span>
+を決める法則<span class="Mark weak">（<span class="Mark bold">ニュートンの運動方程式</span>という）</span>が存在するのではないだろうか。<span class="Sidenote">摩擦がある場合は、力を加えても静止したまま加速しないこともあるが、これは「加えた力と摩擦力が釣り合っているため」と考えられる。綱引きを考えれば分かるように、力は、「足し合わせる」ことによって打ち消せる。</span>
 </p>
+<h4>もう少し具体的に</h4>
 <p>
 <img class="float" src="img/02_LW3.svg">
 例えば右図のように、バネに繋がれたおもりが振動しているとする。知りたいのは、おもりの運動
@@ -1399,7 +1433,9 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を測定するという実験を行えば、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-をバネの長さの関数として表せるだろう。</span>この時、「おもりに働く力
+をバネの長さの関数として表せるだろう。伸び縮みするほど
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+の大きさは大きくなるはず。</span>この時、「おもりに働く力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 」と「おもりの加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
@@ -1413,25 +1449,21 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D461">𝑡</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 が計算できることになる。
 </p>
+<h4>力を定量化したい（重力を参考に）</h4>
 <p>
 とはいえ、実験から力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を求めるといっても、そのためにはまず、「力」という感覚的な概念を定量化する必要がある。今のところ分かっている運動方程式は、キャッチボールの場合：
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 6.694em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 6.694em;" width="full" side="right"><mjx-table style="width: auto; min-width: 2.538em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 6.694em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:uVB"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31">1</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-だけなので、そこに働く力である重力の定量化から始めるのがよいだろう。そうして得られた重力を用いて式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AuVB"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を書き直せば、重力の場合のニュートンの運動方程式が得られる。その式を参考にすれば、一般的なニュートンの運動方程式が得られるのではないだろうか。そこでこの章では、以下の2つの節に分けて、ニュートンの運動方程式に迫ることにしよう：<span class="Toc"><a href="#section-2.1" class="Toc-num">2.1</a><span class="Toc-name">重力の定量化</span><a href="#section-2.2" class="Toc-num">2.2</a><span class="Toc-name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span><a href="#section-2.3" class="Toc-num">2.3</a><span class="Toc-name">（補足）単位</span></span>
-</p>
-<p>
-<span class="Mark weak">上では例としてバネを取り上げたが、力学の主な目的は、物体の運動
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D461">𝑡</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-を計算することである。その流れをまとめておく：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mtable style="min-width: 31.076em;"><mjx-table><mjx-itable><mjx-mtr style="height: 0.998em;"><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em;"><mjx-mo><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em;"><mjx-mstyle><mjx-mspace style="width: 0.278em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">物体に働く力</mjx-utext></mjx-mtext><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">を、実験などから求める</mjx-utext></mjx-mtext></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr style="height: 1em;"><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em; padding-bottom: 0.15em;"><mjx-mo><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em; padding-bottom: 0.15em;"><mjx-mstyle><mjx-mspace style="width: 0.278em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">加速度</mjx-utext></mjx-mtext><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mrow><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">を、ニュートンの運動方程式</mjx-utext><mjx-c class="mjx-c28" style="padding-top: 0.75em;">(</mjx-c></mjx-mtext><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a><mjx-mtext><mjx-c class="mjx-c29" noic="true" style="padding-top: 0.75em;">)</mjx-c><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">から求める</mjx-utext></mjx-mtext></mjx-mrow></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr style="height: 1.011em;"><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em;"><mjx-mo><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c33">3</mjx-c></mjx-mn><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em;"><mjx-mstyle><mjx-mspace style="width: 0.278em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">初期位置</mjx-utext></mjx-mtext><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-msub><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c30">0</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">と初期速度</mjx-utext></mjx-mtext><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-msub><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.551em;"><mjx-mo style="width: 0; margin-left: -0.139em;"><mjx-c class="mjx-c2D9">˙</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c30">0</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">を与えた上で物体の運動</mjx-utext></mjx-mtext><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-msub><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D461">𝑡</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mspace style="width: 0.222em;"></mjx-mspace><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">を計算する</mjx-utext></mjx-mtext></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> 
-</span>
+だけなので、そこに働く力である重力の定量化から始めるのがよいだろう。そうして得られた重力を用いて運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AuVB"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を書き直せば、重力の場合のニュートンの運動方程式が得られる。その式を参考にすれば、一般的なニュートンの運動方程式が得られるのではないだろうか。そこでこの章では、重力の定量化から始めて、ニュートンの運動方程式に迫ることにしよう：<span class="Toc"><a href="#section-2.1" class="Toc-num">2.1</a><span class="Toc-name">重力の定量化</span><a href="#section-2.2" class="Toc-num">2.2</a><span class="Toc-name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span><a href="#section-2.3" class="Toc-num">2.3</a><span class="Toc-name"><span class="Tag">補足</span>単位</span></span>
 </p>
 <h2 id="section-2.1"><span class="h2_num">2.1</span><span class="h2_name">重力の定量化</span></h2>
 <p>
-この節では、まず、重力
+重力を
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-の定量化を、よく知られた天秤の方法を用いて行う。その後、
+と書くことにする。この節では、まず、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の定量化を、天秤を用いて行う。その後、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 と加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
@@ -1439,29 +1471,31 @@ mjx-c.mjx-c29.NCM-S4 {
 </p>
 <h3 id="section-2.1.1"><span class="h3_num">2.1.1</span><span class="h3_name">重力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> の定量化には、天秤が使える：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
 <p>
-力という概念は、日常的なものではあるが、それをどのように定量化すればよいかは自明ではない。とはいえ、力は、向きと大きさを持っているので、何らかのベクトルで表すことができそうである。重力
+力という概念は、日常的なものではあるが、それをどのように定量化すればよいかは自明ではない。とはいえ、力は、向きと大きさを持っているので、何らかのベクトルで表すことができそうである。<span class="Sidenote">重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-であれば、向きは「鉛直下方向」、大きさは「重い物体ほど大きくなる」といった具合である。力の向きは直感的に分かるだろうから、力の大きさをどのように定量化するかが問題になる。
+であれば、向きは「鉛直下方向」、大きさは「重い物体ほど大きくなる」といった具合である。</span>力の向きは直感的に分かるだろうから、力の大きさをどのように定量化するかが主要な問題になる。
 </p>
+<h4>重力の向き ＝ 重力加速度の向き</h4>
 <p>
-重力
+まず、重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-において、その向きは、重力加速度
+の向きについてだが、これは、重力加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-math></mjx-container> 
-の方向に一致するので、以下の形で書けるはずである：<span class="Mark weak">（
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c302">̂</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+の方向に一致すると考えるのが自然だろう。よって、以下の形で書けるはずである：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 7.755em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 7.755em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.599em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c2C6">ˆ</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 7.755em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.132em;"><mjx-mtd id="mjx-eqn:eq:CwS"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.132em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+<span class="Sidenote">
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c2C6">ˆ</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
 は、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を正規化したもの：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c302">̂</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle size="sm"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-）</span>
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 7.755em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 7.755em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.599em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c302">̂</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 7.755em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.132em;"><mjx-mtd id="mjx-eqn:eq:CwS"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.132em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-係数
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.34em; margin-bottom: -0.515em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-c2C6">ˆ</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle size="sm"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+。</span>係数
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
 は、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 の大きさである<span class="Mark weak">（重いものほど大きくなるようにとるのが自然だろう）</span>。
 </p>
+<h4>重力の大きさ ＝ 物体の重さ</h4>
 <p>
 重力を定量化するためには、重力の大きさ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
@@ -1469,28 +1503,30 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
 の定量化としては、これをそのまま用いて
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 14.984em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 14.984em;" width="full" side="right"><mjx-table style="width: auto; min-width: 10.828em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mo space="4"><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">天秤で決めた重さ</mjx-utext></mjx-mtext><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 14.984em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1em;"><mjx-mtd id="mjx-eqn:eq:LdC"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c33">3</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-とするのが自然だろう。
+とするのが自然だろう。これで、重力(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の定量化ができたことになる。
 </p>
+<h4><span class="Tag">参考</span>このように定義された重力は、加法性を持つ</h4>
 <p>
 <img class="float" src="img/02_Ahz.svg">
-なお、本章の冒頭でも触れたように、力は足し合わせ可能だと考えられる。この性質を加法性という。式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ALdC"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c33">3</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の重さ
+なお、本章の冒頭でも触れたように、力は足し合わせ可能だと考えられる。このように足し合わせ出来る性質を<span class="Mark bold">加法性</span>という。式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ALdC"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c33">3</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の重さ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
 は、この加法性を持ったものになっている。即ち、重さがそれぞれ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 の2つの物体を合体させると、全体の重さは、和
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-になる<span class="Mark weak">（右図）</span>。この性質が重力(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)にも受け継がれるので、重力も加法性を持つ、即ち、合体した物体全体に働く重力は、元の各物体に働く重力の和になる。力がベクトルとして表されることを期待しているので、これは好ましい性質である。
+になる<span class="Mark weak">（右図）</span>。この性質が重力(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)にも受け継がれるので、重力も加法性を持つ、即ち、<span class="Mark under">合体した物体全体に働く重力は、元の各物体に働く重力の和に一致する</span>。力がベクトルとして表されることを期待しているので、これは好ましい性質である。
 </p>
 <article class="Note">
 <h3 id="section-2.1-注1"><span class="h3_num">【2.1-注1】</span><span class="h3_name">天秤を用いた重さの定量化</span></h3>
+<h4>重さの基準</h4>
 <p>
 天秤を用いて重さを実際に量るには、まず、重さの基準となる物体
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
-<span class="Mark weak">（1リットルの水と同じくらいの重さ）</span>を持ってきて、その重さを
+<span class="Mark weak">（1リットルの水と同じくらいの重さとする）</span>を持ってきて、その重さを
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.705em;">k</mjx-c><mjx-c class="mjx-c67" noic="true" style="padding-top: 0.705em;">g</mjx-c><mjx-c class="mjx-c66" style="padding-top: 0.705em;">f</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-と定義する<span class="Mark weak">（
+と定義する。<span class="Sidenote">
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.705em;">k</mjx-c><mjx-c class="mjx-c67" noic="true" style="padding-top: 0.705em;">g</mjx-c><mjx-c class="mjx-c66" style="padding-top: 0.705em;">f</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-は重さを表す単位で重量キログラムという）</span>。さらに、「
+は重さを表す単位で重量キログラムという。</span>さらに、「
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を10等分したもの」を
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mn><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
@@ -1498,6 +1534,7 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.705em;">k</mjx-c><mjx-c class="mjx-c67" noic="true" style="padding-top: 0.705em;">g</mjx-c><mjx-c class="mjx-c66" style="padding-top: 0.705em;">f</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
 と定義する。<span class="Sidenote">10等分するには、10個に分けられた分割物体の重さが互いに等しくなっていることを確認する必要がある。そのためには、任意の2つの分割物体を天秤の各皿に乗せて、天秤が釣り合うかどうかを見ればよい。全ての組み合わせで釣り合っていれば、分割物体の重さは等しい。</span>
 </p>
+<h4>重さの測定</h4>
 <p>
 <img class="float" src="img/02_tZR.svg">
 これらを使って、次のように、任意の物体
@@ -1525,65 +1562,68 @@ mjx-c.mjx-c29.NCM-S4 {
 <p>
 重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-が定量化できたので、これを使って、今分かっている唯一の運動方程式であるキャッチボールの運動方程式
+が定量化できたので、これを使って、今分かっている唯一の運動方程式であるキャッチボールの運動方程式：<span class="Mark weak">（前章の<a href="001.html#section-1.2">1.2節</a>）</span>
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 6.694em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 6.694em;" width="full" side="right"><mjx-table style="width: auto; min-width: 2.538em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 6.694em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:sJQ"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c34">4</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-を書き換えよう。これは簡単で、以下のようになる：
+を書き換えよう。
+</p>
+<h4>重力におけるニュートンの運動方程式</h4>
+<p>
+これは簡単で、以下のようになる：
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.694em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.694em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.538em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd style="text-align: right; padding-right: 0;"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-TeXAtom><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.694em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.157em;"><mjx-mtd id="mjx-eqn:eq:cZU"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c35">5</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.157em; vertical-align: -0.697em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-<span class="Mark weak">（
+<span class="Sidenote">この式に
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-の定義式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を代入すれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AsJQ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c34">4</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に戻る。）</span>これが、重力
+の定義式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を代入してみれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AsJQ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c34">4</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に戻ることがすぐ分かる。</span>これが、重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 と加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
 を関係づける方程式、即ち、重力におけるニュートンの運動方程式である。
 </p>
+<h4>係数の解釈は後で</h4>
 <p>
 係数
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="sm"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-は、物理的意味を持つものなのだろうか。気になる所だが、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AcZU"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c35">5</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を導くことがこの節の目的だったので、とりあえず次に進むことにしよう。一般的な力を考える中で、この係数の意味も分かってくることが期待される。
+は、物理的意味を持つものなのだろうか。気になる所だが、この節の目的は、重力を定量化して式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AcZU"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c35">5</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を導くことだったので、とりあえず次に進むことにしよう。一般的な力を考える中で、この係数の意味も分かってくることが期待される。
 </p>
-<h2 id="section-2.2"><span class="h2_num">2.2</span><span class="h2_name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h2>
+<h2 id="section-2.2"><span class="h2_num">2.2</span><span class="h2_name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h2>
 <p>
-この節では、まず、一般の力の定量化を行う。その後それを用いて、本章の目的であるニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を導く。
+この節では、まず、一般の力の定量化を行う。その後それを用いて、本章の目的であるニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を導く。
 </p>
-<h3 id="section-2.2.1"><span class="h3_num">2.2.1</span><span class="h3_name">一般の力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> は、バネ量りによって定量化できる</span></h3>
+<h3 id="section-2.2.1"><span class="h3_num">2.2.1</span><span class="h3_name">一般の力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> を定量化したい</span></h3>
 <p>
 一般の力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を定量化したい。これまでも何度か指摘してきたように、力には加法性があると思われる。従って、2つの力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-が1つの物体に働いて全体として釣り合っている時、それらのベクトル和がゼロ：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mtable style="min-width: 15.14em;"><mjx-table><mjx-itable><mjx-mtr style="height: 0.952em;"><mjx-mtd style="text-align: right; padding-right: 0;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-right: 1em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c1D7CE">𝟎</mjx-c></mjx-mn></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: right; padding-left: 1em;"><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">（釣り合いの式）</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable></mjx-math></mjx-container> 
-となるように定量化するのが自然である。2つの力のうち一方は、既に定量化が終わっている重力を考えるのがよいだろう。
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+が1つの物体に働いて全体として<span class="Mark uwave">釣り合っている</span>時、それらのベクトル和がゼロ：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 19.296em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 19.296em;" width="full" side="right"><mjx-table style="width: auto; min-width: 15.14em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd style="text-align: right; padding-right: 0;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-right: 1em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c1D7CE">𝟎</mjx-c></mjx-mn></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: right; padding-left: 1em;"><mjx-mtext><mjx-utext style="font-size: 88.4%; padding: 0.848em 0 0.226em 0; font-family: MJX-NCM-ZERO, serif;" variant="normal">（釣り合いの式）</mjx-utext></mjx-mtext><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 19.296em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1em;"><mjx-mtd id="mjx-eqn:eq:ZOY"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c36">6</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+とすべきである。2つの力のうち一方は、既に定量化が終わっている重力を考えるのがよいだろう。
 </p>
+<h4>まず、バネの力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> を定量化する</h4>
 <p>
 <img class="float" src="img/02_w55.svg">
-そこで右図のように、バネに物体をつけて持ち上げ、そのまま静止させる。この時、バネによる力
+式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AZOY"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c36">6</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を使って、まず、バネの力を定量化することを考えよう。右図のように、バネにおもりをつけて持ち上げ、そのまま静止させる。この時、バネによる力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 と重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 は釣り合っているので、上述のように
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c1D7CE">𝟎</mjx-c></mjx-mn></mjx-math></mjx-container> 
-が成り立つはず。よって、
+が成り立つ。よって、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 は
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.595em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.595em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.439em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mo space="4"><mjx-c class="mjx-c2212">−</mjx-c></mjx-mo><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.595em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.046em;"><mjx-mtd id="mjx-eqn:eq:zXt"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c36">6</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.046em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-と定量化できるだろう。この時、バネの伸び
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-と重力の大きさ
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-は1対1対応すること<span class="Mark weak">（以下の<a href="002.html#section-2.2-注1">【2.2-注1】</a>）</span>が知られている。よって、バネの伸び
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を測定すれば
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-が決まるので、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AzXt"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c36">6</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を使うことにより、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-から
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-を決めることもできる。
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.595em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.595em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.439em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mo space="4"><mjx-c class="mjx-c2212">−</mjx-c></mjx-mo><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.595em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.046em;"><mjx-mtd id="mjx-eqn:eq:zXt"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c37">7</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.046em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+と定量化できるはずである。この時、バネの伸びとおもりの重さは1対1対応すること<span class="Mark weak">（以下の<a href="002.html#section-2.2-注1">【2.2-注1】</a>）</span>が知られている。これを使うことにより、<span class="Mark under">バネの伸びを測定するだけで、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+の値が分かる</span>。<span class="Sidenote">次の様な流れである：バネの伸びを測定する → おもりの重さが決まる → 重力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+が決まる → 式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AzXt"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c37">7</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)からバネの力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+が分かる。</span>
 </p>
+<h4>バネを使って、一般の力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> を定量化する</h4>
 <p>
-この性質を使って、一般の力の大きさを測ることができる。即ち、バネに一般の力
+このバネの性質を使って、一般の力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+を測ることができる。実際、バネに一般の力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を作用させたまま釣り合わせた時、その時の
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
@@ -1593,121 +1633,142 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73" noic="true" style="padding-top: 0.448em;">s</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c1D7CE">𝟎</mjx-c></mjx-mn></mjx-math></mjx-container> 
 から、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を決めることができる。要するに、
+を決めることができる。<span class="Sidenote">要するに、バネにかかる力は「
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-が等しい力は、<span class="Mark weak">重力でない場合であっても、</span>全て大きさが等しくなると定義するわけである。
+が一致するならば（重力以外の場合でも）全て大きさが等しい」と定義するわけである。</span>
 </p>
+<h4>力は加法性を持つ</h4>
 <p>
 <img class="float" src="img/02_LdZ.svg">
 このようにして定量化した力は、力の向きがそろっていない場合の釣り合いにおいてもうまくいくことが、実験的に分かっている。例えば右図のように、ある物体に、3つの力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c33">3</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c33">3</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 を加えた時、その物体を静止させることができれば
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c33">3</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c1D7CE">𝟎</mjx-c></mjx-mn></mjx-math></mjx-container> 
-が成り立つ。これは、力の加法性が、矛盾なく成立しているということであり、良い知らせである。
+が成り立つ。これは、力の加法性が矛盾なく成立しているということであり、良い知らせである。
 </p>
 <article class="Note">
 <h3 id="section-2.2-注1"><span class="h3_num">【2.2-注1】</span><span class="h3_name">バネ量りの原理</span></h3>
 <p>
 バネにおもりを吊るした時、おもりの重さ
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
 とバネの伸び
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-は、1対1対応する。即ち、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+は、1対1対応する。<span class="Sidenote">即ち、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
 を決めれば
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
 が決まるし、逆に、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+から
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+が逆算することもできる（予め
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-が分かれば
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
-が逆算できる<span class="Mark weak">（予め
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
 と
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D459">𝑙</mjx-c></mjx-mi></mjx-math></mjx-container> 
-の対応表を作っておく）</span>。
-</p>
-<p>
-これを使って、物体の重さを量ることができる。これをバネ量りという。
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
+の対応表を作っておく）。おもりが重いほどバネは伸びるはずなので、これは直感的に自明だろう。</span>これを使って、物体の重さを量ることができる。これを<span class="Mark bold">バネ量り</span>という。<span class="Sidenote">バネ量りには、あらかじめ目盛りが入っており、物体を吊り下げた時の目盛りの値を読み取ることで
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+の値が分かるようになっている。</span>
 </p>
 </article>
-<h3 id="section-2.2.2"><span class="h3_num">2.2.2</span><span class="h3_name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
+<h3 id="section-2.2.2"><span class="h3_num">2.2.2</span><span class="h3_name">ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</span></h3>
 <p>
 さて、もともと求めたかったのは、一般の力における運動方程式である。前節で求めた、重力における運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AcZU"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c35">5</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Mark weak">（再掲）</span>
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.694em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.694em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.538em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-TeXAtom><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.694em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.157em;"><mjx-mtd id="mjx-eqn:eq:BtZ"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c37">7</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.157em; vertical-align: -0.697em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.694em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.694em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.538em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.694em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.157em;"><mjx-mtd id="mjx-eqn:eq:BtZ"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c38">8</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.157em; vertical-align: -0.697em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
 はその特殊な場合であるため、これを一般化することを考える。
 </p>
+<h4>最も単純な一般化でよい</h4>
 <p>
-もっとも単純なのは、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ABtZ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c37">7</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の重力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-を、重力以外の力
+もっとも単純なのは、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ABtZ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c38">8</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の重力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を、重力以外の任意の力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-に置き換えたもの：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.316em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.316em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.16em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-TeXAtom><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.316em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.157em;"><mjx-mtd id="mjx-eqn:eq:gSo"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c38">8</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.157em; vertical-align: -0.697em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-である。これが正しいかどうかは、実験的に確かめるべきであるが、実際に正しいことが知られている。従って、重力を使って求めた比例係数
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="sm"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-は、実際には、重力に限らない普遍的な値ということである。
+にそのまま置き換えたもの：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.316em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.316em;" width="full" side="right"><mjx-table style="width: auto; min-width: 4.16em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-TeXAtom><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.316em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.157em;"><mjx-mtd id="mjx-eqn:eq:gSo"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c39">9</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.157em; vertical-align: -0.697em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+である。これが正しいかどうかは、もちろん実験的に確かめるべきである。<span class="Sidenote">加速度
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+と力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+はともに測定可能な量なので、様々な
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+に対して測定を行い、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AgSo"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c39">9</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が成り立つことを確認すればよい。</span>実験を行った結果、実際に正しいことが知られている。
 </p>
+<h4><span class="Mark red bg">係数</span>に名前を付ける</h4>
 <p>
+従って、重力を使って求めた比例係数
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="sm"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+は、実際には、重力に限らない普遍的な値ということである。そこで、これに名前を付けておこう。この係数の逆数を、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
+と書き、<span class="Mark bold">質量</span>と呼ぶ：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.909em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.909em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.753em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c2261">≡</mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.909em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 2.078em;"><mjx-mtd id="mjx-eqn:eq:rG4"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 2.078em; vertical-align: -0.96em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+<span class="Sidenote"><span class="Caption">質量は加法性を持つ</span>
 <img class="float" src="img/02_YCm.svg">
-そこで、これに名前を付けておこう。この係数の逆数を、
+質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-と書く：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-math></mjx-container> 
+は加法性を持つ。なぜなら、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ArG4"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)より質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を質量と呼ぶ。<span class="Mark weak">逆数をとったことにより、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-は重さ
+が重さ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
-に比例する。よって、</span>質量
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-も加法性を持つ。即ち、質量
+に比例するので、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D464">𝑤</mjx-c></mjx-mi></mjx-math></mjx-container> 
+の加法性が引き継がれるからである。よって右図のように、質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 の2つの物体を合体させたものは、質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-を持つようになる<span class="Mark weak">（右図）</span>。<span class="Sidenote">重力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-<span class="Mark weak">（式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)）</span>を、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を用いて書いておくと
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 7.917em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 7.917em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.761em; margin: 0 2.078em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 7.917em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.046em;"><mjx-mtd id="mjx-eqn:eq:y30"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c39">9</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.046em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-となる。</span>
+を持つようになる。</span>
 </p>
+<h4>ニュートンの運動方程式：式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)</h4>
 <p>
 質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を用いて運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AgSo"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c38">8</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を書き直すと
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.653em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.653em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.497em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.653em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:JcH"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
-となる。これを、ニュートンの運動方程式という。<span class="Sidenote">複数の力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mo space="2"><mjx-c class="mjx-c2026">…</mjx-c></mjx-mo></mjx-math></mjx-container> 
-が働いている場合、力の加法性が成り立つので、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に
+を用いて運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AgSo"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c39">9</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を書き直すと、きれいな式になる：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.653em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.653em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.497em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.653em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:JcH"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+これを、<span class="Mark bold">ニュートンの運動方程式</span><span class="Mark weak">（あるいは単に運動方程式）</span>という。<span class="Sidenote"><span class="Caption">複数の力</span>複数の力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mo space="2"><mjx-c class="mjx-c2026">…</mjx-c></mjx-mo></mjx-math></mjx-container> 
+が働いている場合、力の加法性が成り立つので、運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)には
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-mo space="3"><mjx-c class="mjx-c22EF">⋯</mjx-c></mjx-mo></mjx-math></mjx-container> 
-を代入すればよい。</span><span class="Mark weak">（
+を代入すればよい。</span><span class="Sidenote"><span class="Caption">重力</span>式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3ACwS"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c32">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)で与えた重力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を、質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-と
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-の単位については、以下の<a href="002.html#section-2.2-注2">【2.2-注2】</a>を参照。）</span>運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)により、物体に固有の質量
+を用いて書いておくと
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.917em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.917em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.761em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.917em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.046em;"><mjx-mtd id="mjx-eqn:eq:y30"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c32" style="padding-top: 0.666em;">2</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.046em; vertical-align: -0.296em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+となる。当然だが、これを式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)に代入すると、キャッチボールの運動方程式：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D488">𝒈</mjx-c></mjx-mi></mjx-math></mjx-container> 
+になる。</span>
+</p>
+<h4>質量と力から運動が計算できる</h4>
+<p>
+ニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を使えば、「物体に固有の量である質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-と、物体にかかる力
+」と「その物体にかかる力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-が分かれば、力の種類<span class="Mark weak">（重力、バネ、手押しなど）</span>には依らず、その物体の加速度
+」の情報だけから、<span class="Mark weak">力の種類（重力、バネ、手押しなど）には依らず、</span>その物体の加速度
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-が分かる。よって、<a href="001.html">第1章</a>と同様に、初期位置・初期速度の下で、運動を計算することができる。<span class="Mark weak">具体的な計算は<a href="003.html">第3章</a>で扱う。</span>
+が分かる。
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+が分かれば、<a href="001.html">第1章</a>と同じロジックが使えるので、初期位置・初期速度の下で、運動を計算することができる。<span class="Sidenote">具体的な計算は<a href="003.html">第3章</a>で扱う。なお、質量
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
+と力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+の単位については、以下の<a href="002.html#section-2.2-注2">【2.2-注2】</a>を参照。</span>
 </p>
 <article class="Note">
 <h3 id="section-2.2-注2"><span class="h3_num">【2.2-注2】</span><span class="h3_name">質量 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> と力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> の単位</span></h3>
+<h4>質量の単位</h4>
 <p>
 質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
 の単位は、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-と書き、キログラムと読む。
+と書き、<span class="Mark bold">キログラム</span>と読む。<span class="Mark weak">地球上において</span>
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.705em;">k</mjx-c><mjx-c class="mjx-c67" noic="true" style="padding-top: 0.705em;">g</mjx-c><mjx-c class="mjx-c66" style="padding-top: 0.705em;">f</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
 の重力を受ける物体の質量が
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-となる。<span class="Mark weak">（1リットルの水の質量がおよそ
+となる。1リットルの水の質量がほぼ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-。）</span>
+である。
 </p>
+<h4>力の単位</h4>
 <p>
 力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
@@ -1715,18 +1776,18 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
 を用いて書くと、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi><mjx-mo space="3"><mjx-c class="mjx-c22C5">⋅</mjx-c></mjx-mo><mjx-mi space="3"><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi><mjx-mo space="3"><mjx-c class="mjx-c22C5">⋅</mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi><mjx-c class="mjx-c73">s</mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo><mjx-c class="mjx-c2212">−</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-TeXAtom></mjx-math></mjx-container> 
-となる<span class="Mark weak">（式(</span><mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container><span class="Mark weak">)の両辺の単位が一致することからわかる）</span>。あるいは略記して
+となる<span class="Mark weak">（式(</span><mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container><span class="Mark weak">)の両辺の単位が一致することからわかる）</span>。あるいは略記して
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c4E">N</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-とも書く<span class="Mark weak">（ニュートンと読む）</span>。<span class="Sidenote">単位の一般論については、次節を参照。</span>
+とも書く<span class="Mark weak">（<span class="Mark bold">ニュートン</span>と読む）</span>。<span class="Sidenote">単位の一般論については、次節を参照。</span>
 </p>
 </article>
-<h3 id="section-2.2.3"><span class="h3_num">2.2.3</span><span class="h3_name">ニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を用いた、力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> と質量 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> の測定</span></h3>
+<h3 id="section-2.2.3"><span class="h3_num">2.2.3</span><span class="h3_name"><span class="Tag">参考</span>ニュートンの運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を用いて、力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> と質量 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> を測定する</span></h3>
 <p>
-運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が正しいことが分かってしまえば、逆に、力
+運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)が正しいことが分かってしまえば、逆に、力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 と質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を測定する手段として、この式を使うこともできる<span class="Mark weak">（以下の<a href="002.html#section-2.2-注4">【2.2-注4】</a>）</span>。そうすれば、これまでのように、重力を経由しなくてもよくなる。<span class="Sidenote">これまでは、天秤を用いて重力
+を定義・測定する手段として、この式を使うこともできる<span class="Mark weak">（以下の<a href="002.html#section-2.2-注3">【2.2-注3】</a>）</span>。そうすれば、これまでのように、重力を経由しなくてもよくなり、運動方程式から直接これらの概念を扱えるようになる。<span class="Sidenote">これまでは、天秤を用いて重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
 を定量化し、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
@@ -1737,8 +1798,8 @@ mjx-c.mjx-c29.NCM-S4 {
 <article class="Note">
 <h3 id="section-2.2-注3"><span class="h3_num">【2.2-注3】</span><span class="h3_name">運動方程式による質量 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> と力 <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> の測定</span></h3>
 <p>
-運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Mark weak">（再掲）</span>
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.653em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.653em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.497em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.653em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:i7O"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+運動方程式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AJcH"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)：<span class="Mark weak">（再掲）</span>
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 8.653em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 8.653em;" width="full" side="right"><mjx-table style="width: auto; min-width: 3.497em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 8.653em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.002em;"><mjx-mtd id="mjx-eqn:eq:i7O"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.002em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
 を用いることにより、任意の力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 、および、任意の物体の質量
@@ -1746,96 +1807,127 @@ mjx-c.mjx-c29.NCM-S4 {
 を測定することができる。原理的には、以下のようにすればよい：
 </p>
 <section class="Step">
-<span class="Caption">1</span>
-<p>
+<span class="Caption" data-count="1">基準質量を定義する</span>
+<p data-count="1">
 質量の基準となる物体
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
 <span class="Mark weak">（例えば1リットルの水）</span>を用意し、その質量を
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mi><mjx-c class="mjx-c6B" noic="true" style="padding-top: 0.694em;">k</mjx-c><mjx-c class="mjx-c67" style="padding-top: 0.694em;">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
 と定義する。
 </p>
-<span class="Caption">2</span>
-<p>
+<span class="Caption" data-count="2">力を測る</span>
+<p data-count="2">
 未知の力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を定量するには、
+を測定するには、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
 に作用させればよい。その時の加速度
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-を測定すれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ai7O"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の未知数は
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を測定すれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ai7O"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の未知数は
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 だけとなり、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 が求まる：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: magenta;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
 </p>
-<span class="Caption">3</span>
-<p>
+<span class="Caption" data-count="3">質量を測る</span>
+<p data-count="3">
 未知の質量
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
 を定量するには、すでに測定済みの任意の力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を、対象となる物体にかければよい。その時の加速度
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
-を測定すれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ai7O"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c31" style="padding-top: 0.666em;">1</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の未知数は
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: brown;"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を、対象となる物体に作用させればよい。その時の加速度
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: olive;"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を測定すれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ai7O"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)の未知数は
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
 だけとなり、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
 が求まる：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mfrac space="4"><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: brown;"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-mstyle></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: olive;"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.359em; margin-bottom: -0.557em;"><mjx-mo style="width: 0; margin-left: -0.25em;"><mjx-c class="mjx-cA8">¨</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D499">𝒙</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c7C">|</mjx-c></mjx-mo></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-math></mjx-container> 
 <span class="Sidenote">ただし、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
 として、重力
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.058em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c67">g</mjx-c></mjx-mi></mjx-TeXAtom></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
-を採用することはできない<span class="Mark weak">（式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ay30"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c39">9</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を上式に代入すると
+を採用することはできない<span class="Mark weak">（式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3Ay30"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c32" style="padding-top: 0.666em;">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)を上式に代入すると
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D45A">𝑚</mjx-c></mjx-mi></mjx-math></mjx-container> 
 が打ち消すため）</span>。</span>
 </p>
 </section>
 </article>
-<h2 id="section-2.3"><span class="h2_num">2.3</span><span class="h2_name">（補足）単位</span></h2>
+<h2 id="section-2.3"><span class="h2_num">2.3</span><span class="h2_name"><span class="Tag">補足</span>単位</span></h2>
 <p>
-ここまでは、単位について理解していることを前提として話を進めてきた。ここで一度立ち止まって、単位について詳しく見ておく。
+ここまでは、単位について理解していることを前提として話を進めてきた。念のため、ここで単位について見直しておく。
 </p>
-<h3 id="section-2.3.1"><span class="h3_num">2.3.1</span><span class="h3_name">物理量の定量化は、定数倍を除いて一意に決まる</span></h3>
+<h3 id="section-2.3.1"><span class="h3_num">2.3.1</span><span class="h3_name">物理量の定量化は、加法性に基づいて行う</span></h3>
 <p>
 単位を表記するのは、どのように物理量を定量化したかを明示するためである。<span class="Sidenote">例えば、単位を示さずに「この棒の長さは
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
-である」とだけ言われても伝わらない。</span>通常、この定量化には自然なものが存在し、単位<span class="Mark weak">（＝どこで定量値が
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
-になるか）</span>を人為的に与えれば一意に決まる。例えば、「長さ」であれば、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-の長さを与えてやれば、それ以外の長さは、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-であれば「
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-のものを2つ足し合わせた長さ」、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c35" style="padding-top: 0.666em;">5</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-であれば「
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-のものを2等分した長さ」のように決まる。長さ以外の物理量の場合でも、自然に足し算や定数倍が定義でき、単位を与えるだけで自然に定量化できる。<span class="Sidenote">例外は温度で、足し算や定数倍が自然に定義できない。しかし、熱力学編4.2節で見るように、自然な定量化の方法が存在する。</span>
+である」とだけ言われても訳が分からない。</span>通常、この定量化には加法的なものが存在し、基準となる量を1つだけ人為的に定義してやるだけで定量化が完了する。この基準をどう取ったかを示すのが<span class="Mark bold">単位</span>である。
 </p>
+<h4>単位の例：長さ</h4>
 <p>
-このように、定量化には自然な方法が存在する一方で、単位の取り方という形で任意性が残る。とはいえ実際には、単位の取り方を変えても、定量値が定数倍ずれるだけである。<span class="Sidenote">例えば
+例えば、「長さ」であれば、<span class="Mark red bg">長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
+</span>となる物差しを基準として適当に与えてやれば、それ以外の長さも自動的に決まる。実際、「長さ」は加法性を持つので、例えば、長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-math></mjx-container> 
+であれば「<span class="Mark red bg">長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
+</span>のものを2つ足し合わせた長さ」、長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c35" style="padding-top: 0.666em;">5</mjx-c></mjx-mn></mjx-math></mjx-container> 
+であれば「2つ合わせたときに<span class="Mark red bg">長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
+</span>になる長さ」のように決まる。ただし、「<span class="Mark red bg">長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
+</span>」といった表現だと、どのような基準<span class="Mark weak">（物差し）</span>を取ったかが伝わらないため、基準値ごとに
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom space="2" texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+といった<span class="Mark bold">単位記号</span>を割り当てて区別する。この記号を使って、<span class="Mark red bg">長さ
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-math></mjx-container> 
+</span>であれば
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
+のように、基準の取り方を含めた形で表す。この基準の取り方<span class="Mark weak">（あるいは単位記号）</span>が<span class="Mark bold">単位</span>であり、
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mn space="2"><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-math></mjx-container> 
+といった数値部分を<span class="Mark bold">成分</span>という。<span class="Sidenote">長さ以外でも、「時間」「質量」「力の大きさ」なども加法性を持つので、基準値を与えるだけで自然に定量化できる。なお、重要な例外として、「温度」は加法性を持たないが、理論的に自然な定量化の方法が存在する（熱力学編の第5章）。</span>
+</p>
+<h4>単位の取り換え</h4>
+<p>
+このような、加法性に基づいた定量化では、単位を取り換えた際に、成分は定数倍ずれるだけである。<span class="Sidenote">例えば
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-と
+単位と
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-では、定量値が
+単位では、成分が
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mn></mjx-math></mjx-container> 
-倍違うだけ。自然に定量化された温度も同様。</span>物理量を
+倍違う。</span>物理量を
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-のように「定量値×単位」の形で表記するのは、この性質を生かして、単位変換を容易にするためである。実際、
+のように「成分×単位」の形で表記するのは、この性質を生かして、単位変換を容易にするためである。例えば、
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c2192">→</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
 の単位変換は、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-msup space="4"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mn><mjx-script style="vertical-align: 0.393em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-math></mjx-container> 
-を用いて単純な置き換えで実行できる：
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 15.149em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 15.149em;" width="full" side="right"><mjx-table style="width: auto; min-width: 9.993em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mtr style="height: 1.15em;"><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em;"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mo space="3"><mjx-c class="mjx-cD7">×</mjx-c></mjx-mo><mjx-mn space="3"><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em;"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mo space="3"><mjx-c class="mjx-cD7">×</mjx-c></mjx-mo><mjx-msup space="3"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mn><mjx-script style="vertical-align: 0.413em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mn><mjx-c class="mjx-c32">2</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 15.149em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.15em;"></mjx-mtr><mjx-mtr style="height: 1.284em;"><mjx-mtd id="mjx-eqn:eq:YtJ" style="padding-top: 0.15em;"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c32" style="padding-top: 0.666em;">2</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1.134em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: olive;"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+を用いて単純な置き換えで済む：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%; min-width: 15.212em;" display="true" width="full"><mjx-math width="full" display="true" class="NCM-N"><mjx-mtable style="min-width: 15.212em;" width="full" side="right"><mjx-table style="width: auto; min-width: 10.056em; margin: 0 2.578em;"><mjx-itable width="full"><mjx-mtr style="height: 1.15em;"><mjx-mtd style="text-align: right; padding-right: 0; padding-bottom: 0.15em;"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-bottom: 0.15em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mo space="3"><mjx-c class="mjx-cD7">×</mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: olive;"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mlabeledtr style="height: NaNem;"><mjx-mtd style="text-align: right; padding-right: 0; padding-top: 0.15em;"><mjx-tstrut></mjx-tstrut></mjx-mtd><mjx-mtd style="text-align: left; padding-left: 0; padding-top: 0.15em;"><mjx-mstyle><mjx-mi></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mn space="4"><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c2E" noic="true" style="padding-top: 0.666em;">.</mjx-c><mjx-c class="mjx-c32" noic="true" style="padding-top: 0.666em;">2</mjx-c><mjx-c class="mjx-c33" style="padding-top: 0.666em;">3</mjx-c></mjx-mn><mjx-mo space="3"><mjx-c class="mjx-cD7">×</mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: teal;"><mjx-mn><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c30" noic="true" style="padding-top: 0.666em;">0</mjx-c><mjx-c class="mjx-c30" style="padding-top: 0.666em;">0</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c63" noic="true" style="padding-top: 0.448em;">c</mjx-c><mjx-c class="mjx-c6D" style="padding-top: 0.448em;">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mstyle></mjx-TeXAtom></mjx-mstyle><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mlabeledtr></mjx-itable></mjx-table><mjx-labels style="width: 15.212em;"><mjx-itable align="right" style="right: 0;"><mjx-mtr style="height: 1.15em;"></mjx-mtr><mjx-mtr style="height: 1.15em;"><mjx-mtd id="mjx-eqn:eq:YtJ" style="padding-top: 0.15em;"><mjx-mtext><mjx-c class="mjx-c28">(</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.677em;">1</mjx-c><mjx-c class="mjx-c34" style="padding-top: 0.677em;">4</mjx-c></mjx-mtext><mjx-mtext><mjx-c class="mjx-c29">)</mjx-c></mjx-mtext><mjx-tstrut style="height: 1em; vertical-align: -0.25em;"></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-labels></mjx-mtable></mjx-math></mjx-container> 
+</p>
+<h4>ベクトル量の単位</h4>
+<p>
+力のようなベクトル量を定量化する際、ベクトルの大きさについては、上記のように単位を決めれば定量化が済むが、向きについては、向きの基準となるベクトル
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+を追加で与える必要がある。そうすれば、力
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi></mjx-math></mjx-container> 
+は
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-TeXAtom space="4" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-mo space="3"><mjx-c class="mjx-c2B">+</mjx-c></mjx-mo><mjx-TeXAtom space="3" texclass="ORD"><mjx-mstyle style="color: red;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: green;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D486">𝒆</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
+のように書ける。<span class="Mark red bg">赤字</span>部分が成分、<span class="Mark green bg">緑字</span>部分が単位に相当する。<span class="Sidenote">とはいえ、基準となるベクトルは
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mi space="2"><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mi space="2"><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-math></mjx-container> 
+軸から自然に決まるので、通常は省略される。即ち、ベクトルは成分だけで表す：
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;" display="true"><mjx-math display="true" class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D487">𝒇</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mrow space="4"><mjx-mo><mjx-stretchy-v style="height: 3.845em; vertical-align: -1.672em;" class="mjx-c5B"><mjx-beg>⎡</mjx-beg><mjx-ext><mjx-spacer>⎢
+⎢</mjx-spacer></mjx-ext><mjx-end>⎣</mjx-end><mjx-mark></mjx-mark></mjx-stretchy-v></mjx-mo><mjx-mtable style="min-width: 0.977em;"><mjx-table><mjx-itable><mjx-mtr style="height: 0.91em;"><mjx-mtd style="padding-bottom: 0.2em;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr style="height: 1em;"><mjx-mtd style="padding-top: 0.2em; padding-bottom: 0.2em;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr><mjx-mtr style="height: 0.91em;"><mjx-mtd style="padding-top: 0.2em;"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-tstrut></mjx-tstrut></mjx-mtd></mjx-mtr></mjx-itable></mjx-table></mjx-mtable><mjx-mo><mjx-stretchy-v style="height: 3.845em; vertical-align: -1.672em;" class="mjx-c5D"><mjx-beg>⎤</mjx-beg><mjx-ext><mjx-spacer>⎥
+⎥</mjx-spacer></mjx-ext><mjx-end>⎦</mjx-end><mjx-mark></mjx-mark></mjx-stretchy-v></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
+各成分
+ <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D466">𝑦</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub><mjx-mo><mjx-c class="mjx-c2C">,</mjx-c></mjx-mo><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-msub space="2"><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.062em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mi><mjx-c class="mjx-c1D467">𝑧</mjx-c></mjx-mi></mjx-TeXAtom></mjx-script></mjx-msub></mjx-math></mjx-container> 
+自体は、力の単位を持つ。</span>
 </p>
 <h3 id="section-2.3.2"><span class="h3_num">2.3.2</span><span class="h3_name">物理量の積</span></h3>
 <p>
-物理量同士の掛け算や割り算にによって新たに作られた物理量の単位は、単位変換の整合性から決まる。<span class="Sidenote">例えば、微小時間
+物理量同士の積や割り算によって新たに作られた物理量の単位は、単位変換の整合性から決まる。<span class="Sidenote">例えば、微小時間
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D6FF">𝛿</mjx-c></mjx-mi><mjx-mi><mjx-c class="mjx-c1D461">𝑡</mjx-c></mjx-mi><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c5B">[</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73">s</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c5D">]</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
 における長さ
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D43F">𝐿</mjx-c></mjx-mi><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c5B">[</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c5D">]</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
@@ -1847,37 +1939,7 @@ mjx-c.mjx-c29.NCM-S4 {
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.36em; margin-bottom: -0.551em;"><mjx-mo style="width: 0; margin-left: -0.139em;"><mjx-c class="mjx-c2D9">˙</mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi><mjx-c class="mjx-c1D43F">𝐿</mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-TeXAtom></mjx-math></mjx-container> 
 の単位を
  <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo space="3"><mjx-c class="mjx-c22C5">⋅</mjx-c></mjx-mo><mjx-msup space="3"><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c73">s</mjx-c></mjx-mi></mjx-TeXAtom><mjx-script style="vertical-align: 0.363em;"><mjx-TeXAtom size="s" texclass="ORD"><mjx-mo><mjx-c class="mjx-c2212">−</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-TeXAtom></mjx-script></mjx-msup></mjx-math></mjx-container> 
-としてやれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AYtJ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.666em;">1</mjx-c><mjx-c class="mjx-c32" style="padding-top: 0.666em;">2</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)のような単位変換に対して両辺の定量値が一致する。</span>自然な定量化を行っていれば、<span class="Mark weak">ニュートンの運動方程式のような</span>物理法則は、定量値同士の単純な掛け算や割り算で表せることが多い。その式に新たに表れた物理量の単位は、このように単位変換の整合性から決めればよい。
-</p>
-<p>
-ただし、法則中に現れる変数は、複雑な関数形になっている場合ある。その場合は、変数が本来の単位を持つよう、必要に応じて無次元化する必要がある。<span class="Sidenote">そのような変数として例えば、力
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi></mjx-math></mjx-container> 
-を考える。座標
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c5B">[</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c5D">]</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-に対して、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi></mjx-math></mjx-container> 
-が指数関数的に振る舞うことはあり得る。しかしこの場合、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D453">𝑓</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c221D">∝</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c65" noic="true" style="padding-top: 0.448em;">e</mjx-c><mjx-c class="mjx-c78" noic="true" style="padding-top: 0.448em;">x</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c2061">⁡</mjx-c></mjx-mo><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mi><mjx-c class="mjx-c1D465">𝑥</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-のようにはならない。これだと、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c65" noic="true" style="padding-top: 0.448em;">e</mjx-c><mjx-c class="mjx-c78" noic="true" style="padding-top: 0.448em;">x</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c2061">⁡</mjx-c></mjx-mo><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c28">(</mjx-c></mjx-mo><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c29">)</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-がどのような値なのか、単位変換でどうなるのか不明である。実際には、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c65" noic="true" style="padding-top: 0.448em;">e</mjx-c><mjx-c class="mjx-c78" noic="true" style="padding-top: 0.448em;">x</mjx-c><mjx-c class="mjx-c70" style="padding-top: 0.448em;">p</mjx-c></mjx-mi><mjx-mo><mjx-c class="mjx-c2061">⁡</mjx-c></mjx-mo><mjx-mrow space="2"><mjx-mo><mjx-c class="mjx-c28 NCM-S4">(</mjx-c></mjx-mo><mjx-TeXAtom texclass="ORD"><mjx-mstyle size="sm"><mjx-mstyle><mjx-mfrac><mjx-frac type="d"><mjx-num><mjx-nstrut type="d"></mjx-nstrut><mjx-mi><mjx-c class="mjx-c1D43F">𝐿</mjx-c></mjx-mi></mjx-num><mjx-dbox><mjx-dtable><mjx-line type="d"></mjx-line><mjx-row><mjx-den><mjx-dstrut type="d"></mjx-dstrut><mjx-mrow><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-mstyle></mjx-TeXAtom><mjx-mspace style="width: 0.167em;"></mjx-mspace><mjx-TeXAtom texclass="ORD"><mjx-mi><mjx-c class="mjx-c6D">m</mjx-c></mjx-mi></mjx-TeXAtom></mjx-mrow></mjx-den></mjx-row></mjx-dtable></mjx-dbox></mjx-frac></mjx-mfrac></mjx-mstyle></mjx-mstyle></mjx-TeXAtom><mjx-mo><mjx-c class="mjx-c29 NCM-S4">)</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-のようにして、無次元化する必要がある<span class="Mark weak">（
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-TeXAtom texclass="ORD"><mjx-mstyle style="color: red;"><mjx-mn><mjx-c class="mjx-c31">1</mjx-c></mjx-mn></mjx-mstyle></mjx-TeXAtom></mjx-math></mjx-container> 
-の部分は場合によって異なる）</span>。そうすれば、値が定義でき、単位の取り方でその値は変わらないことも分かる<span class="Mark weak">（単位の取り換えは、定量値が定数倍されるだけなので、指数関数部分は変化しない）</span>。</span>
-</p>
-<h3 id="section-2.3.3"><span class="h3_num">2.3.3</span><span class="h3_name">単位を意識する利点</span></h3>
-<p>
-単位変換をすることはほぼないので、普段は、単位を意識する必要はない。ただ、意識しておくと便利なこともある。1つは、計算ミスに気付きやすくなることである。例えば
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mi space="4"><mjx-c class="mjx-c1D435">𝐵</mjx-c></mjx-mi></mjx-math></mjx-container> 
-という関係式が得られたとして、両辺の単位が異なっていたら、どこかで計算を間違えている。
-</p>
-<p>
-もう1つは、関係式の推定である。
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi><mjx-mo space="4"><mjx-c class="mjx-c3D">=</mjx-c></mjx-mo><mjx-mrow space="4"><mjx-mo><mjx-c class="mjx-c5B">[</mjx-c></mjx-mo><mjx-mo><mjx-c class="mjx-c22EF">⋯</mjx-c></mjx-mo><mjx-mo><mjx-c class="mjx-c5D">]</mjx-c></mjx-mo></mjx-mrow></mjx-math></mjx-container> 
-という形の式が欲しい場合、関係しそうな物理量を組み合わせて、
- <mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><mjx-mi><mjx-c class="mjx-c1D434">𝐴</mjx-c></mjx-mi></mjx-math></mjx-container> 
-の単位と同じものを作ることで、ある程度あたりをつけることができたりする。<span class="Sidenote">これを次元解析という。</span>
+としてやれば、式(<mjx-container class="MathJax" jax="CHTML" overflow="scroll" style="font-size: 113.1%;"><mjx-math class="NCM-N"><a href="#mjx-eqn%3Aeq%3AYtJ"><mjx-mrow class="MathJax_ref"><mjx-mtext><mjx-c class="mjx-c31" noic="true" style="padding-top: 0.677em;">1</mjx-c><mjx-c class="mjx-c34" style="padding-top: 0.677em;">4</mjx-c></mjx-mtext></mjx-mrow></a></mjx-math></mjx-container>)のような単位変換に対して、両辺の成分が一致する。</span>加法的な定量化を行っていれば、<span class="Mark weak">（ニュートンの運動方程式のような）</span>物理法則は、物理量同士の積や割り算で表せることが多い。その式に新たに表れた物理量の単位は、このように単位変換の整合性から決めればよい。
 </p>
 </article>
     </div>
